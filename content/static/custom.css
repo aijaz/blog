@@ -1,0 +1,105 @@
+img {
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -ms-border-radius: 0.3em;
+    -o-border-radius: 0.3em;
+    border-radius: 0.3em;
+    -webkit-box-shadow: rgba(0,0,0,0.15) 0 1px 4px;
+    -moz-box-shadow: rgba(0,0,0,0.15) 0 1px 4px;
+    box-shadow: rgba(0,0,0,0.15) 0 1px 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: #fff 0.5em solid;    
+}
+
+div.clear-both {
+    clear: both;
+}
+
+img-center {
+    margin: auto;
+}
+
+div.ail a, div.air a, div.aic a, div.aip a {
+    text-decoration: none !important;
+}
+
+div.ail { 
+    max-width: 100%;
+    float: left;
+    font-size: 12pt;
+    color: #808080;
+    padding-right: 1em;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1em;
+    line-height: 16pt;
+}
+
+div.air { 
+    max-width: 100%;
+    float: right;
+    font-size: 12pt;
+    color: #808080;
+    padding-left: 1em;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1em;
+    line-height: 16pt;
+}
+
+div.aic { 
+    max-width: 100%;
+    font-size: 12pt; 
+    color: #808080;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 16pt;
+}
+
+div.aip { 
+    max-width: 100%;
+    color: #808080;
+    text-align: left;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14pt;
+    line-height: 18pt;
+}
+
+
+div.air img { 
+    max-width: 100%;
+}
+
+
+div.ail img { 
+    max-width: 100%;
+}
+
+
+div.aic img { 
+    max-width: 100%;
+}
+
+
+li.tag-1 { list-style: none; padding: 0; display: inline; }
+li.tag-2 { list-style: none; padding: 0; display: inline; }
+li.tag-3 { list-style: none; padding: 0; display: inline; }
+li.tag-4 { list-style: none; padding: 0; display: inline; }
+li.tag-5 { list-style: none; padding: 0; display: inline; }
+li.tag-6 { list-style: none; padding: 0; display: inline; }
+li.tag-7 { list-style: none; padding: 0; display: inline; }
+li.tag-8 { list-style: none; padding: 0; display: inline; }
+li.tag-9 { list-style: none; padding: 0; display: inline; }
+li.tag-10 { list-style: none; padding: 0; display: inline; }
+
+
+
+
+

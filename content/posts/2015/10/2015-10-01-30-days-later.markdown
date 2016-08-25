@@ -1,0 +1,59 @@
+---
+title: "30 Days Later"
+date: 2015-10-01 18:00
+comments: false
+Category:
+- 30days
+tags:
+- 30days
+description: "For the first time ever I wrote a blog post every day for a month. Here's what I learned."
+---
+
+Well, that was fun. For the first time ever I wrote a blog post every day for a month. Here's what I learned:
+
+<!-- more -->
+
+* Sometimes I really didn't wanna do it. I was tired, or feeling lazy. But just like I said [about exercising][fitness], sometime you just have to show up. It's better than doing nothing.
+* There were times when I had great ideas for posts but not enough time to research them and flesh the ideas out and write them concisely. Those will have to wait for another day. 
+* There were things that I wanted to write about but they were so inconsequential that they seemed inappropriate for the [30 days][] posts. I wanted to write something at least a little bit interesting and not waste the reader's time. In a recent post [Daniel Steinberg quoted Ben Franklin][dsbf] as saying: "Either write something worth reading or do something worth writing." So I didn't want to fill my month with exercises. Those will also have to wait for another day.
+* I wrote the same way almost every day: Write. Commit changes. Push to origin. Check for typos. Edit, commit, push, read. Edit, commit, push, read... and so on. I didn't realize it at first, but I was doing exactly what Daniel [suggested in his post][shh]: Don't be an editor on the first draft. Let the writer in you have a shot first. You can see this in my git commit log below. 
+* The only reason I stuck to this schedule was because I was doing it with my friends [Daniel][], [Brad][], and, of course, [Jaimee][] who also motivated us to start in the first place. I am very grateful to them for their support and companionship this past month.
+
+See you later!
+
+My most recent git commits:
+
+    * bd9b2c4 Wed Sep 30 18:46:31 2015  (HEAD, AijazBlog/aijaz, aijaz) Edited 
+    * aa72f4f Wed Sep 30 18:36:28 2015  Added day 30 - Lever pull-up
+    * 1b9fc17 Tue Sep 29 21:44:27 2015  Edited
+    * 9e9babe Tue Sep 29 21:07:06 2015  Added day 29 - learning
+    * 3f5a46c Mon Sep 28 22:25:42 2015  Edited
+    * 8f44a00 Mon Sep 28 22:19:50 2015  Clarified
+    * 1c44aa3 Mon Sep 28 22:07:26 2015  Changed images
+    * 7a73f2d Mon Sep 28 22:03:54 2015  Added day 28 Yosemite photo
+    * 9c6044e Sun Sep 27 23:57:05 2015  Added day 27 Medina
+    * 309174c Sat Sep 26 18:19:00 2015  Clarified
+    * f6619f9 Sat Sep 26 18:18:13 2015  Clarified
+    * 3587abd Sat Sep 26 18:17:23 2015  Clarified
+    * b90e93c Sat Sep 26 18:12:28 2015  Added day 26
+    * e7bb564 Fri Sep 25 18:01:04 2015  Clarified
+    * e1f5b7b Fri Sep 25 17:57:55 2015  Added day 25 kunya
+    * fbd18fc Thu Sep 24 22:31:44 2015  Clarified
+    * 2925d03 Thu Sep 24 22:30:15 2015  Clarified
+    * a3bce22 Thu Sep 24 22:29:32 2015  Clarified
+    * fed64f5 Thu Sep 24 22:27:27 2015  Added day 24 - Backup iPhone
+    * e8ff6ec Wed Sep 23 22:40:55 2015  Clarified
+    * c6c733d Wed Sep 23 22:23:26 2015  Resized image
+    * 86a0500 Wed Sep 23 22:18:20 2015  Added day 23 Dublin Doors
+    * 4376628 Tue Sep 22 19:16:25 2015  Updated date
+    * 4253ae6 Tue Sep 22 18:06:31 2015  Clarified
+    * 4ec5e2e Tue Sep 22 18:03:30 2015  Added 22 of 30 Emperor
+    ...
+
+[30 days]: /2015/08/31/30-days/
+[fitness]: /2015/09/05/what-i-learned-about-fitness/index.html
+[shh]: http://dimsumthinking.com/Blog/2015/09/24-Shhhh.html
+[dsbf]: http://dimsumthinking.com/Blog/2015/09/23-Your-Choice.html
+[Daniel]: http://dimsumthinking.com/
+[Brad]: http://www.bradheintz.com/no1thing/category/30days/
+[Jaimee]: http://www.jaimeejaimee.com/talktips/

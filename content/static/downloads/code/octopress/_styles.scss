@@ -1,0 +1,53 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+div.ail { 
+    max-width: 100%;
+    float: left;
+    font-size: 12pt;
+    color: #808080;
+    padding-right: 1em;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1em;
+    line-height: 16pt;
+}
+
+div.air { 
+    max-width: 100%;
+    float: right;
+    font-size: 12pt;
+    color: #808080;
+    padding-left: 1em;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1em;
+    line-height: 16pt;
+}
+
+div.aic { 
+    max-width: 100%;
+    font-size: 12pt; 
+    color: #808080;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 16pt;
+}
+
+div.air img { 
+    max-width: 100%;
+}
+
+
+div.ail img { 
+    max-width: 100%;
+}
+
+
+div.aic img { 
+    max-width: 100%;
+}
+

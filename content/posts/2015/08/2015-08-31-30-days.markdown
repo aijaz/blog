@@ -1,0 +1,33 @@
+---
+title: "30 Days"
+date: 2015-08-31 19:26
+comments: false
+Category:
+- 30days
+tags:
+- 30days
+description: "Inspired by @jaimeejaimee and reminded by @bradheintz, I too will start a #30days writing experiment tomorrow. Let's give it a shot."
+---
+
+Inspired by [@jaimeejaimee][] and reminded by [@bradheintz][], I too will start a #30days writing experiment tomorrow. Let's give it a shot.
+
+<!-- more -->
+
+I am fortunate enough to have attended Jaimee's talk on burnout twice -  at [CocoaConf Yosemite][] and at [CocoaConf Chicago][]. In that talk she spoke about using lessons learned from Charles Duhigg's [The Power of Habit][] to form new habits. She introduced us to the concept of [30 days][]. 
+
+When Brad mentioned #30days in a tweet recently I told myself, "Why not?" I'd like to give it a shot. Let's see if I can get myself to write more often. 
+
+Watch this space. 
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I love that you&#39;re doing this <a href="https://twitter.com/bradheintz">@bradheintz</a> - I&#39;m in TOO! I wonder if anyone else would like to join? :o <a href="https://twitter.com/hashtag/30days?src=hash">#30days</a></p>&mdash; jaimee newberry (@jaimeejaimee) <a href="https://twitter.com/jaimeejaimee/status/637657708175331328">August 29, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/jaimeejaimee">@jaimeejaimee</a> <a href="https://twitter.com/bradheintz">@bradheintz</a> <a href="https://twitter.com/hashtag/30days?src=hash">#30days</a>, huh? I’ll join. Starting a new job on Monday. Change is good for creativity, right?</p>&mdash; Aijaz Ansari (@_aijaz_) <a href="https://twitter.com/_aijaz_/status/637667560830271488">August 29, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+[@jaimeejaimee]: http://twitter.com/@jaimeejaimee
+[@bradheintz]: http://twitter.com/@bradheintz
+[The Power of Habit]: http://charlesduhigg.com/the-power-of-habit/
+[CocoaConf Yosemite]: http://cocoaconf.com/yosemite
+[CocoaConf Chicago]: http://cocoaconf.com/chicago
+[30 days]: http://www.jaimeejaimee.com/talktips/

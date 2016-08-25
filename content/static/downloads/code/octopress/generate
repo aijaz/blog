@@ -1,0 +1,9 @@
+#!/bin/bash
+
+rake generate
+
+find /Users/aijaz/octopress/public \
+     -type f \
+     -name '*.html' \
+     -exec /Users/aijaz/octopress/imageCaption.pl '{}' ';'
+

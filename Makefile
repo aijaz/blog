@@ -63,6 +63,9 @@ help:
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	find $(OUTPUTDIR) -type f  -name '*.html' -exec ./imageCaption.pl '{}' ';'
+
+
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
@@ -91,6 +94,8 @@ ifdef PORT
 else
 	$(BASEDIR)/develop_server.sh restart
 endif
+	find $(OUTPUTDIR) -type f  -name '*.html'  -exec ./imageCaption.pl '{}' ';'
+
 
 stopserver:
 	$(BASEDIR)/develop_server.sh stop
