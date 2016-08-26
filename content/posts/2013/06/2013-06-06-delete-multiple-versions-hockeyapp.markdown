@@ -56,16 +56,16 @@ curl command in a loop that goes from 1 to 60.   To this I used the
 [```seq``` command](http://ss64.com/bash/seq.html) that is available on
 Mac OS and Linux:
 
-{% codeblock lang:bash Send a bunch of sequential HTTP DELETE requests %}
-$ TOKEN=4567abcd8901ef234567abcd8901ef23
-$ APPID=1234567890abcdef1234567890abcdef
-$ for version in `seq 60 1`
-do curl -w "$version: Result: %{http_code}\n" \
-        -X DELETE \
-        -H "X-HockeyAppToken: $TOKEN" \
-        https://rink.hockeyapp.net/api/2/apps/$APPID/app_versions/$version
-done
-{% endcodeblock %}
+    :::bash
+    # Send a bunch of sequential HTTP DELETE requests
+    $ TOKEN=4567abcd8901ef234567abcd8901ef23
+    $ APPID=1234567890abcdef1234567890abcdef
+    $ for version in `seq 60 1`
+    do curl -w "$version: Result: %{http_code}\n" \
+            -X DELETE \
+            -H "X-HockeyAppToken: $TOKEN" \
+            https://rink.hockeyapp.net/api/2/apps/$APPID/app_versions/$version
+    done
 
 This will execute the ```curl``` command for version 60 down to version 1
 using the appropriate token and app ids.  I hope you find this as useful

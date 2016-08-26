@@ -141,5 +141,10 @@ ul.tagcloud .list-group-item <span>.badge {
     color: white;
 }
 
+.highlight pre span {
+    font-size: 10pt !important;
+    line-height: 12pt;
+}
+
 
 

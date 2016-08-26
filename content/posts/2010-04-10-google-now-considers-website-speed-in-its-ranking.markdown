@@ -81,71 +81,65 @@ activate <em>mod_gzip</em>.  These are the Apache modules that enable the Expir
 header and Response compression.  I reconfigured Apache with the ```--enable-module=expires``` and ```--activate-module=src/modules/gzip/mod_gzip.c``` options.
 Previously, the relevant lines in my ```httpd.conf``` file looked like this:
 
-    
-{% codeblock httpd.conf (before) lang:bash %}
-    <VirtualHost 216.139.227.47>
-     ServerName www.taskforest.com
-     DocumentRoot ".../taskforest/htdocs/website"
-    </VirtualHost>
-{% endcodeblock %}    
-
+~~~~{.apacheconf}
+<VirtualHost 216.139.227.47>
+ ServerName www.taskforest.com
+ DocumentRoot ".../taskforest/htdocs/website"
+</VirtualHost>
+~~~~
   
 After installing the two new modules, my httpd.conf file looked like this:
 
-    
-    
-{% codeblock httpd.conf (after) lang:bash %}
-    <VirtualHost 216.139.228.44>
-     ServerName www.taskforest.com
-     DocumentRoot ".../taskforest/htdocs/website"  
-     FileEtag None  
+~~~~{.apacheconf}
+<VirtualHost 216.139.228.44>
+ ServerName www.taskforest.com
+ DocumentRoot ".../taskforest/htdocs/website"  
+ FileEtag None  
 
-     # enable expirations
-     ExpiresActive On  
+ # enable expirations
+ ExpiresActive On  
 
-     # unless overridden elsewhere resources expires
-     # after 60 days in the client's cache
-     #
-     ExpiresDefault "access plus 60 days"  
+ # unless overridden elsewhere resources expires
+ # after 60 days in the client's cache
+ #
+ ExpiresDefault "access plus 60 days"  
 
-     # The site's feed expires after 1 day in the cache
-     ExpiresByType application/xml A86400  
+ # The site's feed expires after 1 day in the cache
+ ExpiresByType application/xml A86400  
 
-     # HTML files expire after 1 day in the cache
-     ExpiresByType text/html A86400  
+ # HTML files expire after 1 day in the cache
+ ExpiresByType text/html A86400  
 
-     # Turn compressing on
-     mod_gzip_on Yes  
+ # Turn compressing on
+ mod_gzip_on Yes  
 
-     # Don't bother compressing tiny files
-     mod_gzip_minimum_file_size  1002  
-     mod_gzip_maximum_file_size  0
-     mod_gzip_maximum_inmem_size 60000  
+ # Don't bother compressing tiny files
+ mod_gzip_minimum_file_size  1002  
+ mod_gzip_maximum_file_size  0
+ mod_gzip_maximum_inmem_size 60000  
 
-     # Compress XML files, text files (including HTML)
-     # and directory listings
-     mod_gzip_item_include mime "application/xml"
-     mod_gzip_item_include mime text/*
-     mod_gzip_item_include mime "httpd/unix-directory"  
+ # Compress XML files, text files (including HTML)
+ # and directory listings
+ mod_gzip_item_include mime "application/xml"
+ mod_gzip_item_include mime text/*
+ mod_gzip_item_include mime "httpd/unix-directory"  
 
-     # Compress files based on their names as well
-     mod_gzip_item_include file "\.txt$"
-     mod_gzip_item_include file "\.html$"
-     mod_gzip_item_include file "\.css$"
-     mod_gzip_item_include file "\.js$"  
-     mod_gzip_dechunk Yes
-     mod_gzip_temp_dir "/tmp"
-     mod_gzip_keep_workfiles No  
-    </VirtualHost>
+ # Compress files based on their names as well
+ mod_gzip_item_include file "\.txt$"
+ mod_gzip_item_include file "\.html$"
+ mod_gzip_item_include file "\.css$"
+ mod_gzip_item_include file "\.js$"  
+ mod_gzip_dechunk Yes
+ mod_gzip_temp_dir "/tmp"
+ mod_gzip_keep_workfiles No  
+</VirtualHost>
 
-    <VirtualHost 216.139.228.44>
-     ServerName taskforest.com
-     RedirectMatch (.*) http://www.taskforest.com$1
-    </VirtualHost>  
-{% endcodeblock %}    
-    
+<VirtualHost 216.139.228.44>
+ ServerName taskforest.com
+ RedirectMatch (.*) http://www.taskforest.com$1
+</VirtualHost>  
+~~~~    
 
-  
 For the multiple CSS files, I just copied both of the YUI  style sheets into
 my styles.css file, preserving the copyright comments.  As for the YUI
 javascript files, it turns out that none of them were being used!  They were

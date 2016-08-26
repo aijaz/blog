@@ -41,34 +41,34 @@ That's the solution in a nutshell. To see how I did it, keep reading.
 
 After a little Googling I found an [elegant AppleScript](http://devmake.com/xcode-open-file-in-current-tab-in-external-editor-macvim/) written by [Milan Krystek](https://twitter.com/devmake). This script opens the current file with an external editor. I changed the code to use OmniGraffle Professional instead of MacVim. For completeness I'm including the code that I use over here:
 
-{% codeblock lang:applescript AppleScript to open the current file in an external editor %}
-on run {input, parameters}
-    -- via http://devmake.com/xcode-open-file-in-current-tab-in-external-editor-macvim/
-    
-    set current_document_path to ""
- 
-    tell application "Xcode"
-        set last_word_in_main_window to (word -1 of (get name of window 1))
-        if (last_word_in_main_window is "Edited") then
-            display notification "Please save the current document and try again"
-            -- eventually we could automatically save the document when this becomes annoying
-        else
-            set current_document to document 1 whose name ends with last_word_in_main_window
-            set current_document_path to path of current_document
-        end if
-    end tell
- 
-    tell application "OmniGraffle Professional"
-        if (current_document_path is not "") then
-            activate
-            open current_document_path
-        end if
-    end tell
- 
-    return input
-    
-end run
-{% endcodeblock %}
+    :::lang:applescript 
+    -- AppleScript to open the current file in an external editor
+    on run {input, parameters}
+        -- via http://devmake.com/xcode-open-file-in-current-tab-in-external-editor-macvim/
+        
+        set current_document_path to ""
+     
+        tell application "Xcode"
+            set last_word_in_main_window to (word -1 of (get name of window 1))
+            if (last_word_in_main_window is "Edited") then
+                display notification "Please save the current document and try again"
+                -- eventually we could automatically save the document when this becomes annoying
+            else
+                set current_document to document 1 whose name ends with last_word_in_main_window
+                set current_document_path to path of current_document
+            end if
+        end tell
+     
+        tell application "OmniGraffle Professional"
+            if (current_document_path is not "") then
+                activate
+                open current_document_path
+            end if
+        end tell
+     
+        return input
+        
+    end run
 
 To install this code as a service I first started up Automator. I created a new service and set it up to receive no input and run in XCode as shown below.
 

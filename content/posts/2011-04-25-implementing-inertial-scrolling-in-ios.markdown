@@ -29,13 +29,11 @@ moved in another variable:
 
     
     
-    {% codeblock lang:cpp %}
+    :::objc
     - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
         self.lastFrameOriginY = canvasView.frame.origin.y;
         self.cumulativeDeltaY = 0;
     }
-    {% endcodeblock %}
-    
 
   
 In ```touchesMoved``` I tracked the location of the touch in the view, as well as
@@ -43,9 +41,7 @@ the location of the previous touch in the view.  Subtracting one from the
 other I was able to see how much the touch had moved in between invocations
 and in what direction:
 
-    
-    
-    {% codeblock lang:cpp %}
+    :::objc
     - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
         NSObject * obj = [touches anyObject];
         CGPoint p      = [(UITouch *)obj locationInView: canvasView];
@@ -65,9 +61,6 @@ and in what direction:
             [canvasView setFrame:r];
         }
     }
-    {% endcodeblock %}
-    
-
   
 I didn't really need to implement ```touchesEnded``` because by the time the touches
 ended, the view was already where it needed to be.  That's the whole point of
@@ -99,7 +92,7 @@ computationally intensive.  Here's what it looked like:
 
     
     
-    {% codeblock lang:cpp %}
+    :::objc
     - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {  
         NSObject * obj = [touches anyObject];
         if (obj != nil) {
@@ -137,9 +130,6 @@ computationally intensive.  Here's what it looked like:
              [UIView commitAnimations];
         }
     }
-    {% endcodeblock %}
-    
-
   
 Now that's better!  The scrolling came to a gentle stop as I gingerly tested
 it.  Then I tried a few fast flicks of the view, and the scrolling just
@@ -157,14 +147,14 @@ figure out how to handle fast scrolls.  Here's what I did:
 
 ## Final Version: That's More Like It
 
-I added two new instance variables to my view controller: ```startTime``` and
-```endTime```, whose difference would give me the duration between the touchdown and
+I added two new instance variables to my view controller: ```startTime```
+ and ```endTime```, whose difference would give me the duration between the touchdown and
 touchup events.  I also added a CGPoint called ```previousLocation``` that saved the
 starting location of the touchdown event.
 
     
     
-    {% codeblock lang:cpp %}
+    :::objc
     - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
         self.cumulativeDeltaY = 0;
         self.lastFrameOriginY = canvasView.frame.origin.y;  
@@ -179,16 +169,11 @@ starting location of the touchdown event.
             previousLocation = [(UITouch *)obj locationInView: bgView];
         }
     }
-    {% endcodeblock %}
-    
 
-  
 Now that the starting location and time are saved, we can use these variables
 to figure out whether the flick was 'too fast.'
 
-    
-    
-    {% codeblock lang:cpp %}
+    :::objc
     - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {  
         NSObject * obj = [touches anyObject];  
         // The time at which the touches ended
@@ -246,9 +231,6 @@ to figure out whether the flick was 'too fast.'
              [UIView commitAnimations];
         }
     }
-    {% endcodeblock %}
-    
-
   
 With these new changes the speed is calculated acceptably well in both cases -
 slow scrolls and super-fast flicks.  Note that I used trial and error to come

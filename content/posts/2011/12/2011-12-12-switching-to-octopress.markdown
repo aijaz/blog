@@ -53,9 +53,9 @@ blog 'just right' and what changes I would like to make in the future.
 
 Octopress has a nice shorthand for specifying images:
 
-{% codeblock %}
-{&#037; img [class names] /path/to/image [width] [height] [title text [alt text]] &#037;}
-{% endcodeblock %}
+~~~~{.HTML}
+{% img [class names] /path/to/image [width] [height] [title text [alt text]] %}
+~~~~
 
 Using the proper class names one can have the image float left or right
 or otherwise set its alignment.  However, I like having captions under

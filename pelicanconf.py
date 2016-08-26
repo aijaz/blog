@@ -23,11 +23,16 @@ AUTHOR_FEED_RSS = None
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('TaskForest', 'http://taskforest.com/'),)
+         ('Flask', 'http://flask.pocoo.org/'),
+         ('TaskForest', 'http://taskforest.com/'),
+         )
 
 # Social widget
 SOCIAL = (('Twitter', 'https://twitter.com/_aijaz_'),
-          ('Instagram', 'https://instagram.com/aijaz_ansari'),)
+          ('Instagram', 'https://instagram.com/aijaz_ansari'),
+          ('LinkedIn', 'http://www.linkedin.com/in/aijaz'),
+          ('GitHub', 'http://github.com/aijaz')
+          )
 
 DEFAULT_PAGINATION = 10
 
@@ -74,8 +79,8 @@ CATEGORIES_SAVE_AS = 'categories/index.html'
 TAGS_URL = 'tags/index.html'
 TAGS_SAVE_AS = 'tags/index.html'
 
-
-
+GOOGLE_ANALYTICS = 'UA-12537719-1'
+FAVICON = 'static/favicon.png'
 
 # via http://jhshi.me/2015/10/11/migrating-from-octopress-to-pelican/
 FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)'
@@ -87,7 +92,7 @@ FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)'
 BOOTSTRAP_THEME = 'readable'
 SHOW_ARTICLE_CATEGORY = True
 SHOW_DATE_MODIFIED = True
-PYGMENTS_STYLE = 'vs'
+PYGMENTS_STYLE = 'default'
 CUSTOM_CSS = 'static/custom.css'
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 TWITTER_USERNAME = '_aijaz_'

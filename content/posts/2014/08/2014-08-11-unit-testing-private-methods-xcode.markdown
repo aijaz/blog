@@ -37,11 +37,10 @@ Since I use CocoaPods, I had to create a ```UnitTesting``` configuration for the
 
 With this in place, I was able to use preprocessor directives to make my private methods public (only when testing) in my ```.h``` (interface) file: 
 
-{% codeblock lang:objc %}
-#ifdef TESTING
--(void) myPrivateMethod;
-#endif
-{% endcodeblock %} 
+    :::objc
+    #ifdef TESTING
+    -(void) myPrivateMethod;
+    #endif
 
 ### UPDATE 2014/08/12 08:34
 
