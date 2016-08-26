@@ -104,7 +104,7 @@ SUMMARY_END_MARKER = '<!-- more -->'
 # TAGS_ORDER_BY = 'size-rev'
 
 # tags
-TAG_CLOUD_STEPS = 5
+TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 100
 TAG_CLOUD_SORTING = 'size-rev'
 

@@ -1,3 +1,7 @@
+body {
+    color: #333333;
+}
+
 img {
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
@@ -91,8 +95,16 @@ div.photo-photo {
     margin-bottom: 2em;
 }
 
-h4.photo-header {
+.photo-header {
     margin-bottom: 1em;
+}
+
+.link-header {
+    margin-bottom: 1em;
+}
+
+.published-header {
+    color: #999999;
 }
 
 
