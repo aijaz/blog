@@ -13,7 +13,7 @@ tags:
 description: In this post I show you how a simple change in how I wrote my SQL took my execution time from 21 seconds down to 0.12 seconds.
 ---
 
-<!-- l /images/2015/05/view@2x.jpg Looking out at Hyderabad -->
+<!-- c /images/2015/05/view@2x.jpg Looking out at Hyderabad -->
 
 When you have to execute SQL statements inside large loops, you may find that your app slows down considerably. In this post I show you one way of improving the performance of your app when database access is the bottleneck.
 

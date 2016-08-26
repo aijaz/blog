@@ -53,13 +53,13 @@ STATIC_PATHS = ['images', 'wp', 'static']
 PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['summary', 
            'md-metayaml', 
-           'tag_cloud', 
            'category_order',
            'liquid_tags.img', 
            'liquid_tags.video',
            'liquid_tags.youtube', 
            'liquid_tags.vimeo',
            'liquid_tags.include_code']
+#           'tag_cloud', 
 MENUITEMS = [
     ('About Me', '/about'),
     ('Categories', '/categories'),

@@ -21,6 +21,7 @@ tags:
 ---
 
 <!-- ai l /wp/File.png /wp/File.png 108 136 A File -->
+
 I remember in my first
 Computer Programming class in college, the instructors wanted to make sure we
 understood the concept of persistence by saving application data to disk.  To

@@ -1,5 +1,10 @@
 body {
     color: #333333;
+    line-height: 1.5em !important;
+}
+
+p {
+    margin-bottom: 1.5em !important;
 }
 
 img {
@@ -146,5 +151,22 @@ ul.tagcloud .list-group-item <span>.badge {
     line-height: 12pt;
 }
 
-
+div.quran { 
+ border: 1px solid #e0e0e0 !important;
+ background-color: #f0f0f0 !important;
+ margin-bottom: 1.5em;
+}
+div.qa {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.75em !important;
+    margin-top: 0.5em;
+    display: block;
+}
+div.qe { 
+    margin-top: 1em;
+    text-align: center;
+    margin-bottom: 0.5em;
+    display: block;
+}
 

@@ -57,7 +57,6 @@ drwxr-xr-x  21 aijaz  aijaz       714 Sep  3  2007 Text
 ...
 -rwxr-xr-x   1 aijaz  aijaz       569 Sep  3  2007 findVoipAccess.pl
 $
-{% endcodeblock %}
 ~~~~    
   
 After finishing my work in the rates directory, I want to get back to what I

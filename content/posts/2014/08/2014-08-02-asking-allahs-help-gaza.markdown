@@ -1,8 +1,6 @@
 ---
-published: true
 title: "Asking for Allah's help for the people of Gaza"
 date: 2014-08-02 11:00
-comments: false
 Category:
 - Opinion
 tags:
@@ -23,8 +21,6 @@ description: "As Muslims we know we're supposed to materially help those in need
 <br>
 Was-salaatu was-salaam ala Rasoolillah.
 </Center>
-
-<P>&nbsp;</p>
 
 People of conscience all over the world have been watching with horror as Israel continues its bombing and shelling of civilians in Gaza, seemingly intentionally targeting children and defenseless civilians. Despite feeling powerless we want to do something to help the people there, and not merely watch them being massacred. As Muslims we know we're supposed to materially help those in need as well as pray (make du'aa) for them (as well as other places like Syria and Burma), but sometimes it gets difficult to find a balance between action and prayer. This article, based on notes from various lectures I attended during Ramadan, attempts to help people like me find that balance.
 

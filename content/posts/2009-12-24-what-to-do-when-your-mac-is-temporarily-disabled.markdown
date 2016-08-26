@@ -13,13 +13,13 @@ tags:
 - Service
 ---
 
-
 <!-- ai l /wp/sad_mac1.png /wp/sad_mac1-170x170.png 170 170 Sad Mac -->
 
 Last night my Macbook Pro would not wake up from sleep. After jiggling the mouse and hitting the
 space bar a few times I powered it down. I powered it back up, and I could
 hear it booting up, and could feel the hard disk move, but there was nothing
 on the screen. After a little Googling I suspected the video driver was dead.
+
 <!-- more -->
 
 So, I went to the Apple web site and set up an appointment with a 'Mac Genius'
