@@ -87,6 +87,14 @@ div.aic img {
     max-width: 100%;
 }
 
+div.photo-photo {
+    margin-bottom: 2em;
+}
+
+h4.photo-header {
+    margin-bottom: 1em;
+}
+
 
 li.tag-1 { list-style: none; padding: 0; display: inline; }
 li.tag-2 { list-style: none; padding: 0; display: inline; }

@@ -1,4 +1,5 @@
 ---
+Template: photo
 title: "When Autumn Leaves Start to Fall"
 date: 2012-10-02 09:00
 comments: false

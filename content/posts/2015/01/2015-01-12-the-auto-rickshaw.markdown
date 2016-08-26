@@ -1,4 +1,5 @@
 ---
+Template: photo
 published: true
 title: "The Auto Rickshaw"
 date: 2015-01-12 11:10

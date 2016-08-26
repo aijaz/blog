@@ -1,4 +1,5 @@
 ---
+Template: photo
 title: "Antelope Canyon"
 date: 2012-09-02 11:30
 comments: false

@@ -1,4 +1,5 @@
 ---
+Template: photo
 title: "The Bean"
 date: 2012-08-30 22:54
 comments: false

@@ -1,4 +1,5 @@
 ---
+Template: photo
 title: "Leaving Glen Ellyn"
 date: 2013-10-09 08:35
 comments: false
