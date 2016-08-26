@@ -120,6 +120,30 @@ li.tag-9 { list-style: none; padding: 0; display: inline; }
 li.tag-10 { list-style: none; padding: 0; display: inline; }
 
 
+ul.tagcloud {
+  list-style: none;
+    padding: 0;
+}
+
+ul.tagcloud li {
+    display: inline-block;
+}
+
+li.tag-1  { font-size: 200%; }
+li.tag-2  { font-size: 185%; }
+li.tag-3  { font-size: 170%; }
+li.tag-4  { font-size: 155%; }
+li.tag-5  { font-size: 140%; }
+li.tag-6  { font-size: 125%; }
+li.tag-7  { font-size: 110%; }
+li.tag-8  { font-size: 95%; }
+li.tag-9  { font-size: 80%; }
+li.tag-10 { font-size: 65%; }
+
+ul.tagcloud .list-group-item <span>.badge {
+    background-color: grey;
+    color: white;
+}
 
 
 
