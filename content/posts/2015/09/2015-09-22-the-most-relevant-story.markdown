@@ -5,7 +5,6 @@ comments: false
 Category:
 - Opinion
 tags:
-- 30days
 - HansAnderson
 - Stories
 - Satire

@@ -5,7 +5,6 @@ comments: false
 Category:
 - Photos
 tags:
-- 30days
 - Ireland
 - TrinityCollege
 - Library

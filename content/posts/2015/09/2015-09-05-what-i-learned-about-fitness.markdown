@@ -9,7 +9,6 @@ tags:
 - Exercise
 - Personal Training
 - Nutrition
-- 30days
 - Advice
 description: "I've been working out regularly since I was 16 years old. But it's only in the last ten years that I've really learned how to do it right (for me)."
 ---

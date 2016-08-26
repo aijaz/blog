@@ -6,7 +6,6 @@ Category:
 - Photography
 tags:
 - Walking
-- 30days
 - StreetPhotography
 description: "Once you start exploring new streets you'll start noticing new things again."
 ---

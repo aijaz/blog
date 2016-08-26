@@ -5,7 +5,6 @@ comments: false
 Category:
 - Photography
 tags:
-- 30days
 - HDR
 - Tripod
 description: "Fourteen days in India. Traveling with a tripod. Used it for only one shot. Totally worth it."

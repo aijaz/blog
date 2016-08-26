@@ -5,7 +5,6 @@ comments: false
 Category:
 - DIY
 tags:
-- 30days
 - Plungers
 - Flats
 - Sewing

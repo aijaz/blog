@@ -5,7 +5,6 @@ comments: false
 Category:
 - Computers
 tags:
-- 30days
 - iPhone
 - Backups
 description: "This short post shows you how to back up your iPhone to an external drive."

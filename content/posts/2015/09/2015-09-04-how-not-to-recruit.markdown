@@ -3,12 +3,11 @@ title: "How Not to Recruit"
 date: 2015-09-04 08:00
 comments: false
 Category:
-- 30days
+- Opinion
 tags:
 - advice
 - careers
 - recruiting
-- 30days
 - communication
 description: "Someone asked me if I wanted to work for them this morning. But they did a really poor job doing it."
 ---

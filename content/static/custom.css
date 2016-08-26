@@ -129,16 +129,12 @@ ul.tagcloud li {
     display: inline-block;
 }
 
-li.tag-1  { font-size: 200%; }
-li.tag-2  { font-size: 185%; }
-li.tag-3  { font-size: 170%; }
-li.tag-4  { font-size: 155%; }
-li.tag-5  { font-size: 140%; }
-li.tag-6  { font-size: 125%; }
-li.tag-7  { font-size: 110%; }
-li.tag-8  { font-size: 95%; }
-li.tag-9  { font-size: 80%; }
-li.tag-10 { font-size: 65%; }
+li.tag-1  { font-size: 175%; }
+li.tag-2  { font-size: 150%; }
+li.tag-3  { font-size: 125%; }
+li.tag-4  { font-size: 100%; }
+li.tag-5  { font-size: 75%; }
+li.tag-6  { font-size: 60%; }
 
 ul.tagcloud .list-group-item <span>.badge {
     background-color: grey;

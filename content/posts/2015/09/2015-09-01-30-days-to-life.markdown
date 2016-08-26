@@ -3,9 +3,8 @@ title: "30 Days to Life"
 date: 2015-09-01 09:26
 comments: false
 Category:
-- 30days
+- Opinion
 tags:
-- 30days
 - habits
 - Islam
 - Ramadan

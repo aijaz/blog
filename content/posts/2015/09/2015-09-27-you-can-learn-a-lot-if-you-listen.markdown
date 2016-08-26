@@ -5,7 +5,6 @@ comments: false
 Category:
 - Opinion
 tags:
-- 30days
 - Travel
 - StreetSmarts
 description: "Theres no line at that place. This other place here is packed with locals. It must have better food."

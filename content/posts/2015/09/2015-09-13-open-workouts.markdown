@@ -7,7 +7,6 @@ Category:
 tags:
 - AppleWatch
 - Exercise
-- 30days
 description: "This is one of my favorite things about the Workout App on the Apple Watch"
 ---
 

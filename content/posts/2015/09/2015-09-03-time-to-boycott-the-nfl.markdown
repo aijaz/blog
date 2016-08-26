@@ -3,13 +3,12 @@ title: "It's time to boycott the NFL"
 date: 2015-09-03 11:30
 comments: false
 Category:
-- 30days
+- Editorial
 tags:
 - sports
 - football
 - cte
 - NFL
-- 30days
 - suicide
 description: "We can watch them literally kill each other for our entertainment. Or we can choose not to."
 ---

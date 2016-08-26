@@ -5,7 +5,6 @@ comments: false
 Category:
 - Photography
 tags:
-- 30days
 - Inspection
 - CocoaConf
 - Yosemite

@@ -5,7 +5,6 @@ comments: false
 Category:
 - Computers
 tags:
-- 30days
 - Programming
 - Comments
 description: "Is it ever a bad idea to sign your name on good code that you write?"

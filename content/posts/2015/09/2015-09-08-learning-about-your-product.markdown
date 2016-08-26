@@ -3,11 +3,10 @@ title: "Learning About Your Product"
 date: 2015-09-08 12:00
 comments: false
 Category:
-- 30days
+- Computers
 tags:
 - Careers
 - Development
-- 30days
 description: "When I started a new job I needed to learn about the app I was taking over. So I asked a salesperson to try to sell it to me."
 ---
 

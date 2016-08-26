@@ -3,10 +3,9 @@ title: "Changing Jobs and Keeping Friends"
 date: 2015-09-02 11:49
 comments: false
 Category:
-- 30days
+- Opinion
 tags:
 - work
-- 30days
 - careers
 - interviews
 description: ""

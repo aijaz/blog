@@ -9,7 +9,6 @@ tags:
 - Flash
 - Strobist
 - DavidHobby
-- 30days
 description: ""
 ---
 

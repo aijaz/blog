@@ -5,7 +5,6 @@ comments: false
 Category:
 - Computers
 tags:
-- 30days
 - Teaching
 - Tools
 - LiveStreaming

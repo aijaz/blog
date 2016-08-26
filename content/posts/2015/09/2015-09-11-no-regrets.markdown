@@ -3,13 +3,12 @@ title: "No Regrets"
 date: 2015-09-11 10:00
 comments: false
 Category:
-- 30days
+- Opinion
 tags:
 - Philosophy
 - Psychology
 - Regret
 - SMBC
-- 30days
 description: "In this post I jot down a few thoughts on the concept of regret."
 ---
 

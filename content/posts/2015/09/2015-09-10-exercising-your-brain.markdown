@@ -3,14 +3,13 @@ title: "Exercising Your Brain"
 date: 2015-09-10 08:00
 comments: false
 Category:
-- 30days
+- Science
 tags:
 - Learning
 - Apps
 - Brain
 - Fitness
 - Exercise
-- 30days
 description: "Turns out those apps that claim to improve your brain don't really work. What does is physical exercise."
 ---
 

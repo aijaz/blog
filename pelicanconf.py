@@ -104,9 +104,9 @@ SUMMARY_END_MARKER = '<!-- more -->'
 # TAGS_ORDER_BY = 'size-rev'
 
 # tags
-TAG_CLOUD_STEPS = 10
+TAG_CLOUD_STEPS = 6
 TAG_CLOUD_MAX_ITEMS = 200
-TAG_CLOUD_SORTING = 'alphabetically'
+TAG_CLOUD_SORTING = 'random'
 
 # for liquid
 CODE_DIR = 'static/downloads/code'

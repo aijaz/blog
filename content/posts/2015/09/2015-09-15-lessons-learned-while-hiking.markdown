@@ -8,7 +8,6 @@ tags:
 - Hiking
 - Kids
 - Character
-- 30days
 - Campfire
 description: "In 2009 I took my kids hiking in Wisconsin. It was a character builder for all of us."
 ---

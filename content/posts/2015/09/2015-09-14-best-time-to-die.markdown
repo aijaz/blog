@@ -9,7 +9,6 @@ tags:
 - Life
 - Death
 - Living
-- 30days
 description: "The only certainty in life is that it has an end."
 ---
 

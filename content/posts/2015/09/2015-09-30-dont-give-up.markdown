@@ -5,7 +5,6 @@ comments: false
 Category:
 - Fitness
 tags:
-- 30days
 - Pull-ups
 - P90X
 - Perseverance

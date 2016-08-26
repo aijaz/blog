@@ -5,7 +5,6 @@ comments: false
 Category:
 - History
 tags:
-- 30days
 - DublinDoors
 - TipuSultan
 - JamesJoyce

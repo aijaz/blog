@@ -27,7 +27,6 @@ tags:
 - Fitness
 - Travel
 - Walking
-- 30days
 - Running
 thumbnail: /images/2015/09/explore_tn.jpg
 thumbnailHeight: 256

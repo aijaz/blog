@@ -10,7 +10,6 @@ tags:
 - Knots
 - Safety
 - Boating
-- 30days
 - Camping
 description: "The bowline knot is one of the five most important knots everyone should know."
 ---

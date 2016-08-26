@@ -3,11 +3,10 @@ title: "It's Never Too Late to Learn"
 date: 2015-09-09 22:00
 comments: false
 Category:
-- 30days
+- Opinion
 tags:
 - Learning
 - Rubiks Cube
-- 30days
 description: "It's never too late to learn"
 ---
 
