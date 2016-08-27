@@ -64,6 +64,7 @@ PLUGINS = ['summary',
            'liquid_tags.include_code']
 #           'tag_cloud', 
 MENUITEMS = [
+    ('Blog', '/'),
     ('About Me', '/about'),
     ('Categories', '/categories'),
     ('Tags', '/tags'),

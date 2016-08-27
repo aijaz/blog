@@ -3,13 +3,12 @@ body {
     line-height: 1.5em;
     padding-top: 0;
     font-family: "chaparral-pro","Georgia",sans-serif;
-    font-size: 14pt;
+    // font-size: 14pt;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: "minerva-modern","Helvetica",sans-serif;
     line-height: 1.2em;
-    text-rendering: optimize-legibility;
 }
 
 h1 {
@@ -36,14 +35,7 @@ h1 {
     font-size: 1em;
 }
 
-.container {
-    padding: 0;
-}
 
-
-.site-name {
-    padding: 0;
-}
 
 .navbar {
     margin: 1em 0 0 0 ;
