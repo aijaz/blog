@@ -12,10 +12,10 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=localhost
+SSH_HOST=aijazansari.com
 SSH_PORT=22
 SSH_USER=root
-SSH_TARGET_DIR=/var/www
+SSH_TARGET_DIR=/home/pelican/output
 
 S3_BUCKET=my_s3_bucket
 
@@ -103,6 +103,7 @@ stopserver:
 
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	find $(OUTPUTDIR) -type f  -name '*.html' -exec ./imageCaption.pl '{}' ';'
 
 ssh_upload: publish
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)

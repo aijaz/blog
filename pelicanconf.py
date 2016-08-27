@@ -5,6 +5,9 @@ from __future__ import unicode_literals
 AUTHOR = 'Aijaz A. Ansari'
 SITENAME = 'The Joy Of Hack'
 SITEURL = ''
+CUSTOM_SITENAME = '<span class="titleL">The</span><span class="titleB">Joy</span><span class="titleL">Of</span><span class="titleB">Hack</span>'
+HIDE_SITENAME = True
+SITE_SUBNAME = 'For people who like to make things'
 
 PATH = 'content'
 
@@ -64,6 +67,7 @@ MENUITEMS = [
     ('About Me', '/about'),
     ('Categories', '/categories'),
     ('Tags', '/tags'),
+    ('Archives', '/archives'),
     ]
 
 
@@ -79,7 +83,6 @@ CATEGORIES_SAVE_AS = 'categories/index.html'
 TAGS_URL = 'tags/index.html'
 TAGS_SAVE_AS = 'tags/index.html'
 
-GOOGLE_ANALYTICS = 'UA-12537719-1'
 FAVICON = 'static/favicon.png'
 
 # via http://jhshi.me/2015/10/11/migrating-from-octopress-to-pelican/
