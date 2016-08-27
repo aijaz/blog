@@ -61,8 +61,8 @@ PLUGINS = ['summary',
            'liquid_tags.video',
            'liquid_tags.youtube', 
            'liquid_tags.vimeo',
-           'tag_cloud', 
            'liquid_tags.include_code']
+#           'tag_cloud', 
 MENUITEMS = [
     ('Blog', '/'),
     ('About Me', '/about'),
@@ -71,7 +71,7 @@ MENUITEMS = [
     ('Archives', '/archives'),
     ]
 
-DISPLAY_TAGS_ON_SIDEBAR = False
+
 
 # URL Settings
 
@@ -101,6 +101,7 @@ CUSTOM_CSS = 'static/custom.css'
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 TWITTER_USERNAME = '_aijaz_'
 TWITTER_WIDGET_ID = '567866007532752896'
+DISPLAY_TAGS_ON_SIDEBAR = True
 
 # Plugins
 
