@@ -51,6 +51,8 @@ h1 {
 }
 
 p, article blockquote, ul, ol {
+    font-size: 1.2em;
+    line-height: 1.7em;
     margin-bottom: 1.5em;
 }
 
@@ -110,6 +112,8 @@ a.nav {
 // .border-between > [class*='col-']:first-child:before {
 //  display: none;
 // }
+
+//via http://stackoverflow.com/a/34354632
 
 .grid--borderBetween > [class*='col-']:before,
 .grid--borderBetween > [class*='col-']:after {
