@@ -35,7 +35,10 @@ h1 {
     font-size: 1em;
 }
 
-
+#recentposts li {
+    font-size: 0.8em;
+    line-height: 1em;
+}
 
 .navbar {
     margin: 1em 0 0 0 ;
@@ -51,6 +54,8 @@ h1 {
 }
 
 p, article blockquote, ul, ol {
+    font-size: 1.2em;
+    line-height: 1.5em;
     margin-bottom: 1.5em;
 }
 

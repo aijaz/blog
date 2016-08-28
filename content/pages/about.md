@@ -3,6 +3,7 @@ Title: About Me
 Template: page
 Date: 2015-02-03 00:00
 save_as: about/index.html
+Summary: I enjoy making things. I'm an iOS and Python developer who teaches and mentors on the side. Fitness and photography enthusiast.
 ---
 
 <!-- ai l /images/aijaz.jpg /images/aijaz.jpg 235 256 Hello! -->
@@ -41,11 +42,11 @@ find any image that is not attributed, please email me and let me know.
 <a name="work"></a>
 # Work Experience
 
-## Software Developer, FastModel Sports (August 2015 - Present)
+## Software Developer, [FastModel Sports][] (August 2015 - Present)
 
-I just started working at FastModel as an iOS developer. I will be working on iOS apps for coaches and recruiters.
+I am an iOS developer at FastModel. I work on apps for coaches and recruiters. I'm currently developing our flagship app, FastRecruit, which helps college recruiters during the tournament seasons, when they're travelling to watch students play at various tournaments and camps. I am part of a small but amazing team of engineers, support staff, salespeople, and marketing staff and together we make something that we're proud of being associated with. The biggest compliment our company has ever gotten, in my opinion, is when customers say that our product allows them to get a normal night's sleep now, compared to the old way of staying up until 2 or 3 in the morning, just trying to figure out which games to attend.
 
-## Principal Engineer, Vaporstream (2012 - August 2015)
+## Principal Engineer, [Vaporstream][] (2012 - August 2015)
 
 I was the sole iOS developer of secure messaging and social networking
 apps.  When I left, Vaporstream was a small startup with 5 developers: 1
@@ -82,7 +83,7 @@ wrong. For example, it can determine if the problem is with messaging,
 talking to VaporBot or even connection to our cloud storage of images.  
 
 
-## Principal, Euclid Software, LLC. (2010 - Present)
+## Principal, [Euclid Software, LLC][]. (2010 - Present)
 
 Euclid Software is the company I started when I wanted to register as an iOS developer and submit my first app, [Qur'an Memorizer](http://quranmemorizer.com), to the App Store. Qur'an Memorizer has been my most popular app so far. Along with the free variants there have been more than 680,000 downloads worldwide. The sales, while not enough to live off, are enough to pay for my computers, books, and associated toys, so I can confidently say that this app (and the community I built around it) has been a resounding success. The most beloved features of this app are the photo-realistic interface, the page-turning affordances and (to my surprise) the bookmarking feature. 
 
@@ -92,7 +93,7 @@ Through Euclid I've also started a service called [EuclidTech](http://euclidte.c
 
 I'm a frequent speaker at CocoaHeads Chicago and gave a lightning talk on hashing and salting passwords at SecondConf in 2012. I was also a backup speaker at SecondConf 2013. 
 
-## Senior Developer, Citadel (2005 - 2012)
+## Senior Developer, [Citadel][] (2005 - 2012)
 
 At Citadel I wrote Perl code for the Global Middle and Back Office department. Our code ran exclusively on Linux and was responsible for obtaining data feeds from a variety of vendors, parsing them, normalizing them, and loading them into our internal databases. My clients were the traders and quants who would access the data to make trading decisions. I did not work in the High Frequency Trading group, so our code took minutes to run, as opposed to seconds. During my time there we ran about 1,500 jobs per day. I wrote an internal web app that would allow us to track job failures and then note what was done to resolve the problem. This was critical for becoming SAS-70 compliant, as well as for helping whoever was on call to address the issue without having to wake anyone else; they could simply read the notes from the last incident. I also wrote other web apps for monitoring Mortgage Remittance data feeds.  
 
@@ -106,10 +107,16 @@ At ENoor I started off running web hosting service, and then migrated to writing
 
 I also spent a decent amount of time over a three-year period writing software for Webvestor. This was a trading company started by a pair of traders at the Chicago Mercantile Exchange. I wrote an app in Visual C++ that would use the FIX API to post data from their local trading applications to the CME. Since they had a dedicated wired connection to the CME, any such app would have to be audited and certified by the Exchange. Working on this and getting the app certified was a milestone in my growth as a Software Developer. 
 
-## Lead Engineer, Motorola (1995 - 1999)
+## Lead Engineer, [Motorola][] (1995 - 1999)
 
 At Motorola I had the good fortune to work on a product during the last few years of its lifespan (The IS-41 Converter) as well as work on a product as it was being developed for the first time (The Visitor's Location Register, or VLR).  I started off with the IS-41 converter working on their User Interface team and then worked on authentication software required by the Department of Justice. When the VLR was announced I participated in the creation of Software Functional Specifications, Design Documentation and finally the C++ code itself.  
 
 I was responsible for the Call Processing code for two key features: Message Waiting Notification and Local Number Portability. I also wrote an internal tool called 'Cogent' that read in simple requirements for different kinds of Call State Models and generated the C++ code for the individual CSM subclasses. This became part of the build phase and eliminated the possibility of developer error introducing inconsistencies between subclasses. 
 
 Because the VLR application ran on a diskless board on Motorola's telecom switches, we needed a low-footprint in-memory database management system to handle records for the call state models of the people who were currently making phone calls. I was in charge of this 'dbmgmt' system, and implemented it using height-balanced binary trees in C++.  
+
+[FastModel Sports]: http://fastmodelsports.com
+[Vaporstream]: http://vaporstream.com
+[Euclid Software, LLC]: http://euclidsoftware.com
+[Citadel]: http://citadel.com/
+[Motorola]: http://motorola.com
