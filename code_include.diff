@@ -1,0 +1,25 @@
+diff --git a/better_code_samples b/better_code_samples
+--- a/better_code_samples
++++ b/better_code_samples
+@@ -1 +1 @@
+-Subproject commit 8ae86dcddb4f65d0e6b5f1afe84b6afdb4297668
++Subproject commit 8ae86dcddb4f65d0e6b5f1afe84b6afdb4297668-dirty
+diff --git a/category_order b/category_order
+--- a/category_order
++++ b/category_order
+@@ -1 +1 @@
+-Subproject commit 0f1a86e566cc38b2137ca66a107a08d4fa56a981
++Subproject commit 0f1a86e566cc38b2137ca66a107a08d4fa56a981-dirty
+diff --git a/liquid_tags/include_code.py b/liquid_tags/include_code.py
+index ac466e7..056b2a4 100644
+--- a/liquid_tags/include_code.py
++++ b/liquid_tags/include_code.py
+@@ -88,7 +88,7 @@ def include_code(preprocessor, tag, markup):
+     if not os.path.exists(code_path):
+         raise ValueError("File {0} could not be found".format(code_path))
+ 
+-    with open(code_path) as fh:
++    with open(code_path, mode='rb') as fh:
+         if lines:
+             code = fh.readlines()[first_line - 1: last_line]
+             code[-1] = code[-1].rstrip()
