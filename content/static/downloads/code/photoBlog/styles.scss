@@ -1,0 +1,50 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+// added for the photo layout
+header.condensed {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+h1.condensed {
+    display: inline;
+    font-size: 90%;
+}
+
+h2.condensed {
+   display: inline;
+   font-size: 80%;
+   margin-left: 1em;
+}
+
+div#main.photo {
+ border: 0;
+ }
+
+div#content.photo {
+ border: 0;
+ }
+
+div#photoExifDiv tr {
+  border-bottom: 1px dotted #ddd;
+}
+
+div#photoExifDiv tr th {
+   font-family: $sans;
+   padding-right: 2em;
+   border: 0;
+}
+
+div#photoExifDiv tr td {
+   border: 0;
+}
+
+
+div.photoThumbnail {
+ float: left;
+ margin-right: 1em;
+ margin-bottom: 0.5em;
+ }
