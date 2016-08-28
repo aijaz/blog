@@ -89,6 +89,7 @@ FAVICON = 'static/favicon.png'
 # via http://jhshi.me/2015/10/11/migrating-from-octopress-to-pelican/
 FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)'
 
+TYPOGRIFY = True
 
 
 # Settings specific to pelican-bootstrap3

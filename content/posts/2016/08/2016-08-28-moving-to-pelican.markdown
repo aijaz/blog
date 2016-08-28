@@ -10,7 +10,7 @@ tags:
 - Python
 ---
 
-Several times in the past few months I have tried to add a post to this blog. But I couldn't because of some obsure Ruby error whenever I tried to generate the blog using Octopress. There was so much friction in the simple act of adding a new post, that I finally decided enough was enough and moved the blog to Pelican.
+Several times in the past few months I have tried to add a post to this blog. But I couldn't because of some obscure Ruby error whenever I tried to generate the blog using Octopress. There was so much friction in the simple act of adding a new post, that I finally decided enough was enough and moved the blog to Pelican.
 
 <!-- more -->
 
