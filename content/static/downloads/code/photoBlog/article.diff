@@ -1,0 +1,13 @@
+@@ -16,7 +16,11 @@
+   </header>
+ {% endunless %}
+ {% if index %}
+-  <div class="entry-content">{{ content | excerpt }}</div>
++  <div class="entry-content">
++    {% if post.thumbnail %}
++    <div class="photoThumbnail"><a href="{{ root_url }}{{ post.url }}"><img border=0 alt="{{ post.title }}" width="{{ post.thumbnailWidth }} height=""{{ post.thumbnailHeight}}" src="{{ post.thumbnail }}" align="left"></a></div>
++    {% endif %}
++    {{ content | excerpt }}</div>
+   {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
+   {% if excerpted == 'true' %}
+     <footer>

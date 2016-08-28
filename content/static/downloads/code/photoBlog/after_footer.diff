@@ -1,0 +1,10 @@
+@@ -1,3 +1,9 @@
+ {% comment %}
+   Add content to be output at the bottom of each page. (You might use this for analytics scripts, for example)
+ {% endcomment %}
++ 
++{% if page.image %}
++<script type="text/javascript" src="/javascripts/retina.js"></script>
++{% else if index %}
++<script type="text/javascript" src="/javascripts/retina.js"></script>
++{% endif %}

@@ -1,0 +1,16 @@
+@@ -1,11 +1,14 @@
+ ---
+ layout: default
+ single: true
++sidebar: collapse
++no_header: true
++header: condensed
+ ---
+ 
+ <div>
+ <article class="hentry" role="article">
+-  {% include article.html %}
++  {% include photoFile.html %}
+   <footer>
+     <p class="meta">
+       {% include post/author.html %}
