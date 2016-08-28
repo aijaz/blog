@@ -13,7 +13,7 @@ designer behind the [Qur'an Memorizer](http://quranmemorizer.com)
 iOS app, and am currently working as an iOS developer at
 [FastModel](http://www.fastmodelsports.com).  I [teach iOS development on the weekends](http://euclidte.ch/) to children and adults in the community. I like to dabble in photography, woodworking, origami, and making tangible things with my hands. Oh, I've also
 written  a pretty nifty open-source job scheduler called
-[TaskForest](http://www.taskforest.com). For those who're interested, I've also put up 
+[TaskForest](http://www.taskforest.com). For those who are interested, I've also put up 
 a <a href="#work">somewhat detailed account of my work experience</a> towards the bottom of this page. 
 
 I'm a student of Wing Chun Kung Fu, having studied at the excellent
