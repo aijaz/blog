@@ -395,7 +395,7 @@ index c59b8f0..18375f3 100644
      </ul>
 diff --git a/pelican-bootstrap3/templates/letterpress.html b/pelican-bootstrap3/templates/letterpress.html
 new file mode 100644
-index 0000000..0f5105d
+index 0000000..11dddbd
 --- /dev/null
 +++ b/pelican-bootstrap3/templates/letterpress.html
 @@ -0,0 +1,116 @@
@@ -484,7 +484,7 @@ index 0000000..0f5105d
 +                </h4>
 +                {{ article.content }}
 +                {% if article.replay_url %}<p>
-+                    <a href="{{ article.replay_url }}">Game Replay Game</a>
++                    <a href="{{ article.replay_url }}">Game Replay URL</a>
 +                </p>{% endif %}
 +                <div class="panel">
 +                    <div class="panel-body">
