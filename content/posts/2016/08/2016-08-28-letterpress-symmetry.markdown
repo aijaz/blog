@@ -12,6 +12,6 @@ thumbnail: /images/letterpress/excels1.png
 replay_url: http://lpreplay.com/#615701873f7a24dac736c5c48fbc71fc
 ---
 
-This is the first in a series of posts where I share the final screen of Letterpress games. When I was showing my daughter this game, she mentioned that she liked it when games ended in pleasing patterns. So then I started to try to win (or lose) games with a symmetric pattern, if possible. 
+This is the first in a series of posts where I share the final screen of [Letterpress](http://www.letterpressapp.com/) games. When I was showing my daughter this game, she mentioned that she liked it when games ended in pleasing patterns. So then I started to try to win (or lose) games with a symmetric pattern, if possible. 
 
 Most of the patterns are symmetric about an axis (reflection). Some display rotational symmetry. Where possible, I will also include a link to the replay URL of the game. Here's my first one.

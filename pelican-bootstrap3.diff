@@ -22,7 +22,7 @@ index 4cb6a70..fbafe23 100644
              <!-- /.entry-content -->
              {% include 'includes/related-posts.html' %}
 diff --git a/pelican-bootstrap3/templates/article_list.html b/pelican-bootstrap3/templates/article_list.html
-index 2d3c8cd..6f1edb6 100644
+index 2d3c8cd..d9b3dd0 100644
 --- a/pelican-bootstrap3/templates/article_list.html
 +++ b/pelican-bootstrap3/templates/article_list.html
 @@ -3,16 +3,23 @@
@@ -39,9 +39,9 @@ index 2d3c8cd..6f1edb6 100644
 -                <div class="summary">{{ article.summary }}
 +                <div class="summary">
 +                    {% if article.thumbnail %}
-+                    <div class="ail"><img alt="{{ article.title }}" src="{{ article.thumbnail }}" {% if article.thumbnailWidth %}width="{{ article.thumbnailWidth }}"{% endif %} {% if article.thumbnailHeight %}height="{{ article.thumbnailHeight}}"{% endif %}></div>
++                    <div class="ail"><a href="{{ SITEURL }}/{{ article.url }}"><img border=0 alt="{{ article.title }}" src="{{ article.thumbnail }}" {% if article.thumbnailWidth %}width="{{ article.thumbnailWidth }}"{% endif %} {% if article.thumbnailHeight %}height="{{ article.thumbnailHeight}}"{% endif %}></a></div>
 +                    {% elif article.image %}
-+                    <div class="ail"><img alt="{{ article.title }}" src="{{ article.image }}"></div>
++                    <div class="ail"><a href="{{ SITEURL }}/{{ article.url }}"><img alt="{{ article.title }}" src="{{ article.image }}"></a></div>
 +                    {% endif %}
 +                    {{ article.summary }}
                      {% include 'includes/comment_count.html' %}
@@ -395,10 +395,10 @@ index c59b8f0..18375f3 100644
      </ul>
 diff --git a/pelican-bootstrap3/templates/letterpress.html b/pelican-bootstrap3/templates/letterpress.html
 new file mode 100644
-index 0000000..11dddbd
+index 0000000..945ddb7
 --- /dev/null
 +++ b/pelican-bootstrap3/templates/letterpress.html
-@@ -0,0 +1,116 @@
+@@ -0,0 +1,120 @@
 +{% extends "base.html" %}
 +{% block title %}{{ article.title|striptags }} - {{ SITENAME }}{% endblock %}
 +{% block html_lang %}{{ article.lang }}{% endblock %}
@@ -473,7 +473,7 @@ index 0000000..11dddbd
 +        <article>
 +            <div class="entry-content">
 +                <div class="photo-photo">
-+                    <img src="{{ article.image }}" alt="{{ article.title }}">
++                    <img src="{{ article.thumbnail }}" alt="{{ article.title }}">
 +                </div>
 +                <h4 class='photo-header'>
 +                    <a href="{{ SITEURL }}/{{ article.url }}"
@@ -486,6 +486,10 @@ index 0000000..11dddbd
 +                {% if article.replay_url %}<p>
 +                    <a href="{{ article.replay_url }}">Game Replay URL</a>
 +                </p>{% endif %}
++                <div class="photo-photo">
++                    <img src="{{ article.image }}" alt="{{ article.title }}">
++                </div>
++
 +                <div class="panel">
 +                    <div class="panel-body">
 +                        {% include "includes/letterpress_info.html" %}
