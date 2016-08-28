@@ -1,7 +1,7 @@
 ---
 Title: About Me
 Template: page
-Date: 2015-02-03 00:00
+Date: 2016-08-28 00:00
 save_as: about/index.html
 Summary: I enjoy making things. I'm an iOS and Python developer who teaches and mentors on the side. Fitness and photography enthusiast.
 ---
@@ -11,8 +11,7 @@ Summary: I enjoy making things. I'm an iOS and Python developer who teaches and 
 As a hacker by nature, I enjoy making things.  I'm the developer and 
 designer behind the [Qur'an Memorizer](http://quranmemorizer.com)
 iOS app, and am currently working as an iOS developer at
-[FastModel](http://www.fastmodelsports.com).  I [teach iOS development on the weekends](http://euclidte.ch/) to children and adults in the community. I also dabble in woodworking
-and origami and making tangible things with my hands. Oh, I've also
+[FastModel](http://www.fastmodelsports.com).  I [teach iOS development on the weekends](http://euclidte.ch/) to children and adults in the community. I like to dabble in photography, woodworking, origami, and making tangible things with my hands. Oh, I've also
 written  a pretty nifty open-source job scheduler called
 [TaskForest](http://www.taskforest.com). For those who're interested, I've also put up 
 a <a href="#work">somewhat detailed account of my work experience</a> towards the bottom of this page. 
@@ -21,9 +20,12 @@ I'm a student of Wing Chun Kung Fu, having studied at the excellent
 [Philip Nearing School of Wing Chun](http://wingchunchicago.com/).  I've
 also [made a Kung Fu wooden dummy](/2012/07/15/making-a-kung-fu-wooden-dummy/) (what a fun project!).  
 
+Finally, I'm also a fitness enthusiast, with a particular fondness for Tony Horton's P90X series. 
+
 You can find me here:
 
 * [This blog](http://www.aijazansari.com/)
+* [Instagram](http://instagram.com/aijaz_ansari)
 * [Twitter](http://twitter.com/_aijaz_)
 * Email - &lt;myfirstname&gt; at &lt;myfirstname&gt; dot net
 * [Linked In](http://www.linkedin.com/in/aijaz)
