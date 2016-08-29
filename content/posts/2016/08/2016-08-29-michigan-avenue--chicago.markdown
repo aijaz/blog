@@ -1,5 +1,4 @@
 ---
-status: draft
 template: photo
 title: "Michigan Avenue, Chicago"
 date: 2016-08-29 08:00
@@ -8,7 +7,7 @@ categories:
 - Photos
 author: Aijaz Ansari
 image: /images/photos/dbg/_JAZ4406.jpg
-description: A park by the Art Institute of Chicago
+description: The South Garden of the Art Institute of Chicago
 aperture: 22.0
 camera: NIKON D700
 copyright: Copyright 2010 Aijaz Ansari
@@ -36,4 +35,4 @@ thumbnailHeight: 256
 thumbnailWidth: 384
 ---
 
-A park by the Art Institute of Chicago
+If you walk too fast, you might miss them. Two gardens flank the Art Institute of Chicago, on Michigan Avenue. Now, we all know Michigan Avenue as a busy, bustling place, but these gardens are great places to stop. And think. Or just clear your head before merging back into the fast pace on the sidewalk. This is the South Garden, looking back out towards Michigan Ave.

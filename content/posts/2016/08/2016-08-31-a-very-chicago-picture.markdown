@@ -35,7 +35,7 @@ thumbnailHeight: 256
 thumbnailWidth: 384
 ---
 
-How many Chicago cliches can you find here?
+How many Chicago motifs can you find here?
 
 I see: 
 
