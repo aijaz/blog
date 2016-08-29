@@ -6,6 +6,7 @@ comments: false
 Category:
 - Photos
 image: /images/photos/arizona/P_JAZ4109.jpg
+page_image: /images/photos/arizona/P_JAZ4109_page.jpg
 aperture: 4.8
 camera: NIKON D700
 copyright: Copyright 2012 Aijaz Ansari

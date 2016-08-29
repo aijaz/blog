@@ -8,6 +8,7 @@ categories:
 - Photos
 author: Aijaz Ansari
 image: /images/photos/dbg/_JAZ4968.jpg
+page_image: /images/photos/dbg/_JAZ4968_page.jpg
 description: How many Chicago cliches can you find here?
 aperture: 5.0
 camera: NIKON D700

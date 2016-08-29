@@ -52,7 +52,7 @@ index 2d3c8cd..d9b3dd0 100644
              <hr/>
          {% endfor %}
 diff --git a/pelican-bootstrap3/templates/base.html b/pelican-bootstrap3/templates/base.html
-index 7c041d5..1f7032c 100644
+index 7c041d5..a25f753 100644
 --- a/pelican-bootstrap3/templates/base.html
 +++ b/pelican-bootstrap3/templates/base.html
 @@ -99,33 +99,41 @@
@@ -195,7 +195,7 @@ index 7c041d5..1f7032c 100644
 +        <!-- End Banner -->
 +
 +        <div class="row grid--borderBetween">
-+          <div class="col-sm-8">
++          <div class="col-sm-8 main_content">
 +            {% block breadcrumbs %}
 +            {% endblock %}
 +            {% block content %}
@@ -639,10 +639,10 @@ index 0000000..f6ecfa8
 +{% endblock %}
 diff --git a/pelican-bootstrap3/templates/photo.html b/pelican-bootstrap3/templates/photo.html
 new file mode 100644
-index 0000000..97df022
+index 0000000..dd01f70
 --- /dev/null
 +++ b/pelican-bootstrap3/templates/photo.html
-@@ -0,0 +1,113 @@
+@@ -0,0 +1,117 @@
 +{% extends "base.html" %}
 +{% block title %}{{ article.title|striptags }} - {{ SITENAME }}{% endblock %}
 +{% block html_lang %}{{ article.lang }}{% endblock %}
@@ -717,7 +717,11 @@ index 0000000..97df022
 +        <article>
 +            <div class="entry-content">
 +                <div class="photo-photo">
-+                    <img src="{{ article.image }}" alt="{{ article.title }}">
++                    {% if article.page_image %}
++                    <a href="{{ article.image }}"><img border=0 src="{{ article.page_image }}" alt="{{ article.title }}"></a>
++                    {% else %}
++                    <a href="{{ article.image }}"><img border=0 src="{{ article.image }}" alt="{{ article.title }}"></a>
++                    {% endif %}
 +                </div>
 +                <h4 class='photo-header'>
 +                    <a href="{{ SITEURL }}/{{ article.url }}"

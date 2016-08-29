@@ -6,6 +6,7 @@ comments: false
 Category:
 - Photos
 image: /images/photos/autumnOak/autumnOak_6208.jpg
+page_image: /images/photos/autumnOak/autumnOak_6208_page.jpg
 aperture: 1.8
 camera: NIKON D700
 copyright: Copyright 2010 Aijaz Ansari

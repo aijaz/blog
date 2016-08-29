@@ -6,6 +6,7 @@ comments: false
 Category:
 - Photos
 image: /images/photos/bean/P_JAZ3232.jpg
+page_image: /images/photos/bean/P_JAZ3232_page.jpg
 thumbnail: /images/photos/bean/P_JAZ3232_tn.jpg
 histogram: /images/photos/bean/P_JAZ3232_hist.png
 histogramWidth: 128

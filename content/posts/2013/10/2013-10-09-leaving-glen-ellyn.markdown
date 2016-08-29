@@ -6,6 +6,7 @@ comments: false
 Category:
 - Photos
 image: /images/2013/10/metra.jpg
+page_image: /images/2013/10/metra_page.jpg
 aperture: 5.6
 camera: X100S
 creator: Aijaz Ansari

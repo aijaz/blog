@@ -6,6 +6,7 @@ comments: false
 Category:
 - Computers
 image: /images/photos/MBA11/MBA11.png
+page_image: /images/photos/MBA11/MBA11_page.png
 creator: Aijaz Ansari
 histogram: /images/photos/MBA11/MBA11_hist.png
 histogramHeight: 50

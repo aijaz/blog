@@ -7,6 +7,7 @@ comments: false
 Category:
 - Photos
 image: /images/photos/VacEnd2014/AJAZ1030.jpg
+page_image: /images/photos/VacEnd2014/AJAZ1030_page.jpg
 description: Zipping through the streets of Bangalore in an auto rickshaw.
 aperture: 4.0
 camera: X-T1

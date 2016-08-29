@@ -7,6 +7,7 @@ Template: photo
 Category:
 - Photos
 image: /images/2015/09/explore.jpg
+page_image: /images/2015/09/explore_page.jpg
 aperture: 2.2
 camera: iPhone 6
 creator: Aijaz Ansari

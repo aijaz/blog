@@ -11,6 +11,7 @@ tags:
 - GrandCanyon
 - HorseshoeBend
 image: /images/photos/arizona/P_JAZ4129.jpg
+page_image: /images/photos/arizona/P_JAZ4129_page.jpg
 histogram: /images/photos/arizona/P_JAZ4129_hist.png
 histogramWidth: 128
 histogramHeight: 50

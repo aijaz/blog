@@ -7,6 +7,7 @@ categories:
 - Photos
 author: Aijaz Ansari
 image: /images/photos/dbg/_JAZ4406.jpg
+page_image: /images/photos/dbg/_JAZ4406_page.jpg
 description: The South Garden of the Art Institute of Chicago
 aperture: 22.0
 camera: NIKON D700
