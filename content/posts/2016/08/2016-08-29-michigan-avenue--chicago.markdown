@@ -36,4 +36,4 @@ thumbnailHeight: 256
 thumbnailWidth: 384
 ---
 
-If you walk too fast, you might miss them. Two gardens flank the Art Institute of Chicago, on Michigan Avenue. Now, we all know Michigan Avenue as a busy, bustling place, but these gardens are great places to stop. And think. Or just clear your head before merging back into the fast pace on the sidewalk. This is the South Garden, looking back out towards Michigan Ave.
+If you walk too fast, you might miss them. Two gardens flank the Art Institute of Chicago, on Michigan Avenue. Now, we all know Michigan Avenue as a busy, bustling street, but these gardens are great places to stop. And think. Or just clear your head before merging back into the fast pace of the sidewalk. This is the South Garden, looking back out towards Michigan Ave.
