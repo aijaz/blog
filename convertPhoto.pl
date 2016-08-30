@@ -41,6 +41,14 @@ If the --title option was specified, it will invoke generatePhotoPost.pl to save
 
 If -date is specified, it will be passed on to generatePhotoPost.pl
 
+=item 7
+
+Scale image@2x.jpg to 1468x? or (?x1468 if portrait) and save it as the page image image_page@2x.jpg
+
+=item 8
+
+Scale image@2x.jpg to 734x? or (?x734 if portrait) and save it as the page image image_page.jpg
+
 =back
 
 This script requires the ImageMagick set of tools.  For more information on ImageMagic, visit http://www.imagemagick.org/.
@@ -73,6 +81,8 @@ $realBase =~ s/\@2x//;
 my $regularImage = "$path$realBase$suffix";
 my $tn = "$path${realBase}_tn$suffix";
 my $tn2 = "$path${realBase}_tn\@2x$suffix";
+my $page_image = "$path${realBase}_page$suffix";
+my $page_image2 = "$path${realBase}_page\@2x$suffix";
 my $hist = "$path${realBase}_hist.png";
 
 # original dimensions should be 2040x1360 or 902x1356
@@ -86,10 +96,14 @@ doSys("convert $image -resize '50%' $regularImage");
 if ($width > $height) { 
     doSys("convert $image -resize  '384x256' $tn");
     doSys("convert $image -resize  '768x512' $tn2");
+    doSys("convert $image -resize  '734x734' $page_image");
+    doSys("convert $image -resize  '1468x1468' $page_image2");
 }
 else { 
     doSys("convert $image -resize  '256x384' $tn");
     doSys("convert $image -resize  '512x768' $tn2");
+    doSys("convert $image -resize  '734x734' $page_image");
+    doSys("convert $image -resize  '1468x1468' $page_image2");
 }
 doSys("convert $image -define histogram:unique-colors=false  histogram:$hist");
 doSys("mogrify -format png -fuzz 40% -fill \"#999999\" -opaque \"#000000\" -resize 128x50! $hist");
@@ -98,10 +112,10 @@ my $tags = join (" ", (map { "--tag '$_'"} @tags));
 
 if ($title) {
     if ($date) {
-        doSys("./generatePhotoPost.pl --image $regularImage --thumbnail $tn --title '$title' --description '$description' --date $date --histogram $hist $tags");
+        doSys("./generatePhotoPost.pl --image $regularImage --thumbnail $tn --page_image $page_image --title '$title' --description '$description' --date $date --histogram $hist $tags");
     }
     else { 
-        doSys("./generatePhotoPost.pl --image $regularImage --thumbnail $tn --title '$title' --description '$description' --histogram $hist $tags");
+        doSys("./generatePhotoPost.pl --image $regularImage --thumbnail $tn --page_image $page_image --title '$title' --description '$description' --histogram $hist $tags");
     }
 }
 

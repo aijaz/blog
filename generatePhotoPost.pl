@@ -5,7 +5,7 @@ use warnings;
 
 =head1 SYNOPSIS
 
- generatePhotoPost.pl --image i.jpg --thumbnail t.jpg --histogram h.jpg --title "Title" --description "Description" --tag Tag1 --tag Tag2 --date YYYYMMDDhhmm
+ generatePhotoPost.pl --image i.jpg --thumbnail t.jpg --page_image p.jpg --histogram h.jpg --title "Title" --description "Description" --tag Tag1 --tag Tag2 --date YYYYMMDDhhmm
 
  This script creates a directory, if necessary, based on the current
  date, or YYYYMMDDhhmm, if specified. 
@@ -38,6 +38,7 @@ my $title;
 my @tags;
 my $date;
 my $thumbnail;
+my $page_image;
 my $histogram;
 my $exif_h;
 my $description;
@@ -51,6 +52,7 @@ my $specifiedDate = undef;
 Getopt::Long::GetOptions(
     "image=s"     => \$image,
     "thumbnail=s" => \$thumbnail,
+    "page_image=s" => \$page_image,
     "histogram=s" => \$histogram,
     "title=s"     => \$title,
     "description=s"     => \$description,
@@ -107,7 +109,17 @@ if ($thumbnail) {
     $hash{thumbnail} = $thumbnailUrl;
     my $img_info         = `identify $thumbnail`;
     my @info_list        = split(/ /, $img_info);
-    ($hash{thumbnailWidth}, $hash{thumbnailHeight}) = $info_list[2] =~ /(\d+)x(\d+)/;
+    ($hash{thumbnail_width}, $hash{thumbnail_height}) = $info_list[2] =~ /(\d+)x(\d+)/;
+}
+
+# Get info for the page_image
+if ($page_image) {
+    my $page_imageUrl = $page_image;
+    $page_imageUrl =~ s/.*content//;
+    $hash{page_image} = $page_imageUrl;
+    my $img_info         = `identify $page_image`;
+    my @info_list        = split(/ /, $img_info);
+    ($hash{page_image_width}, $hash{page_image_height}) = $info_list[2] =~ /(\d+)x(\d+)/;
 }
 
 # Get info for the histogram
@@ -117,13 +129,13 @@ if ($histogram) {
     $hash{histogram} = $histogramUrl;
     my $img_info         = `identify $histogram`;
     my @info_list        = split(/ /, $img_info);
-    ($hash{histogramWidth}, $hash{histogramHeight}) = $info_list[2] =~ /(\d+)x(\d+)/;
+    ($hash{histogram_width}, $hash{histogram_height}) = $info_list[2] =~ /(\d+)x(\d+)/;
 }
 
 # Get info for the image
 my $img_info         = `identify $image`;
 my @info_list        = split(/ /, $img_info);
-($hash{photoWidth}, $hash{photoHeight}) = $info_list[2] =~ /(\d+)x(\d+)/;
+($hash{photo_width}, $hash{photo_height}) = $info_list[2] =~ /(\d+)x(\d+)/;
 
 
 my $tags = "";
@@ -145,7 +157,7 @@ print F join("\n",
              "title: \"$title\"",
              "date: $postDate",
              "comments: false",
-             "categories:",
+             "category:",
              "- Photos",
              "author: Aijaz Ansari",
              "image: $imageUrl",
@@ -157,20 +169,20 @@ print F join("\n",
 
 if ($exif->{ISO}) { $hash{iso} = $exif->{ISO}; }
 if ($exif->{Aperture}) { $hash{aperture} = $exif->{Aperture}; }
-if ($exif->{"ShutterSpeed"}) { $hash{shutterSpeed} = $exif->{"ShutterSpeed"}; }
-if ($exif->{"FocalLength"}) { $hash{focalLength} = $exif->{"FocalLength"}; }
-if ($exif->{"ScaleFactor35efl"}) { $hash{scaleFactor} = $exif->{"ScaleFactor35efl"}; }
+if ($exif->{"ShutterSpeed"}) { $hash{shutter_speed} = $exif->{"ShutterSpeed"}; }
+if ($exif->{"FocalLength"}) { $hash{focal_length} = $exif->{"FocalLength"}; }
+if ($exif->{"ScaleFactor35efl"}) { $hash{scale_factor} = $exif->{"ScaleFactor35efl"}; }
 if ($exif->{"Flash"}) { $hash{flash} = $exif->{"Flash"}; }
-if ($exif->{"ExposureCompensation"}) { $hash{expComp} = $exif->{"ExposureCompensation"}; }
+if ($exif->{"ExposureCompensation"}) { $hash{exp_comp} = $exif->{"ExposureCompensation"}; }
 if ($exif->{"Model"}) { $hash{camera} = $exif->{"Model"}; }
 if ($exif->{"LensID"}) { $hash{lens} = $exif->{"LensID"}; }
 elsif ($exif->{"LensInfo"}) { $hash{lens} = $exif->{"LensInfo"}; }
 elsif ($exif->{"LensModel"}) { $hash{lens} = $exif->{"LensModel"}; }
 elsif ($exif->{"Lens"}) { $hash{lens} = $exif->{"Lens"}; }
 if ($exif->{"Creator"}) { $hash{creator} = $exif->{"Creator"}; }
-if ($exif->{"DateTimeOriginal"}) { $hash{dateTaken} = $exif->{"DateTimeOriginal"}; }
-elsif ($exif->{"CreateDate"}) { $hash{dateTaken} = $exif->{"CreateDate"}; }
-elsif ($exif->{"DateCreated"}) { $hash{dateTaken} = $exif->{"DateCreated"}; }
+if ($exif->{"DateTimeOriginal"}) { $hash{date_taken} = $exif->{"DateTimeOriginal"}; }
+elsif ($exif->{"CreateDate"}) { $hash{date_taken} = $exif->{"CreateDate"}; }
+elsif ($exif->{"DateCreated"}) { $hash{date_taken} = $exif->{"DateCreated"}; }
 if ($exif->{"Copyright"}) { $hash{copyright} = $exif->{"Copyright"}; }
 elsif ($exif->{"CopyrightNotice"}) { $hash{copyright} = $exif->{"CopyrightNotice"}; }
 

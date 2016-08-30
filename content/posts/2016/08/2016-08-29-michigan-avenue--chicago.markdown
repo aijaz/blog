@@ -3,7 +3,7 @@ template: photo
 title: "Michigan Avenue, Chicago"
 date: 2016-08-29 08:00
 comments: false
-categories:
+category:
 - Photos
 author: Aijaz Ansari
 image: /images/photos/dbg/_JAZ4406.jpg

@@ -4,7 +4,7 @@ template: photo
 title: "A Very Chicago Picture"
 date: 2016-08-31 08:00
 comments: false
-categories:
+category:
 - Photos
 author: Aijaz Ansari
 image: /images/photos/dbg/_JAZ4968.jpg
