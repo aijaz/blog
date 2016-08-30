@@ -9,16 +9,18 @@ image: /images/photos/MBA11/MBA11.png
 page_image: /images/photos/MBA11/MBA11_page.png
 creator: Aijaz Ansari
 histogram: /images/photos/MBA11/MBA11_hist.png
-histogramHeight: 50
-histogramWidth: 128
+histogram_height: 50
+histogram_width: 128
 license: <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a>
-photoHeight: 384
-photoWidth: 683
+photo_height: 384
+photo_width: 683
 tags: 
 - Macs
 thumbnail: /images/photos/MBA11/MBA11_tn.png
-thumbnailHeight: 216
-thumbnailWidth: 384
+thumbnail_height: 216
+thumbnail_width: 384
+page_image_width: 734
+page_image_height: 413
 description: The SSD and CPU are fast and the machine seldom slows down when I have many apps open.
 ---
 

@@ -22,7 +22,7 @@ index 4cb6a70..fbafe23 100644
              <!-- /.entry-content -->
              {% include 'includes/related-posts.html' %}
 diff --git a/pelican-bootstrap3/templates/article_list.html b/pelican-bootstrap3/templates/article_list.html
-index 2d3c8cd..d9b3dd0 100644
+index 2d3c8cd..fe51b78 100644
 --- a/pelican-bootstrap3/templates/article_list.html
 +++ b/pelican-bootstrap3/templates/article_list.html
 @@ -3,16 +3,23 @@
@@ -39,7 +39,7 @@ index 2d3c8cd..d9b3dd0 100644
 -                <div class="summary">{{ article.summary }}
 +                <div class="summary">
 +                    {% if article.thumbnail %}
-+                    <div class="ail"><a href="{{ SITEURL }}/{{ article.url }}"><img border=0 alt="{{ article.title }}" src="{{ article.thumbnail }}" {% if article.thumbnailWidth %}width="{{ article.thumbnailWidth }}"{% endif %} {% if article.thumbnailHeight %}height="{{ article.thumbnailHeight}}"{% endif %}></a></div>
++                    <div class="ail"><a href="{{ SITEURL }}/{{ article.url }}"><img border=0 alt="{{ article.title }}" src="{{ article.thumbnail }}" {% if article.thumbnail_width %}width="{{ article.thumbnail_width }}"{% endif %} {% if article.thumbnail_height %}height="{{ article.thumbnail_height}}"{% endif %}></a></div>
 +                    {% elif article.image %}
 +                    <div class="ail"><a href="{{ SITEURL }}/{{ article.url }}"><img alt="{{ article.title }}" src="{{ article.image }}"></a></div>
 +                    {% endif %}
@@ -294,7 +294,7 @@ index 0000000..e0c93b5
 +</footer><!-- /.post-info -->
 diff --git a/pelican-bootstrap3/templates/includes/photo_info.html b/pelican-bootstrap3/templates/includes/photo_info.html
 new file mode 100644
-index 0000000..84f85b0
+index 0000000..3241eb7
 --- /dev/null
 +++ b/pelican-bootstrap3/templates/includes/photo_info.html
 @@ -0,0 +1,56 @@
@@ -302,13 +302,13 @@ index 0000000..84f85b0
 +    <div class="photo-info">
 +    {% if article.iso %}ISO {{ article.iso }} ::{% endif %}
 +    {% if article.aperture %}f/{{ article.aperture }} ::{% endif %}
-+    {% if article.shutterSpeed %}{{ article.shutterSpeed }}s ::{% endif %}
-+    {% if article.focalLength %}{{ article.focalLength }} ::{% endif %}
++    {% if article.shutter_speed %}{{ article.shutter_speed }}s ::{% endif %}
++    {% if article.focal_length %}{{ article.focal_length }} ::{% endif %}
 +    {% if article.flash %}{{ article.flash }}{% endif %}
-+    {% if article.expComp %} :: {{ article.expComp }}ev{% endif %}<br>
++    {% if article.exp_comp %} :: {{ article.exp_comp }}ev{% endif %}<br>
 +    {% if article.copyright %}{{ article.copyright }}<br>{% endif %}
 +    {% if article.license %}{{ article.license }}<br>{% endif  %}
-+    {% if article.camera and article.lens and article.dateTaken %}Taken with a {{ article.camera }} and {{ article.lens }} on {{ article.dateTaken }}.<br>{% endif %}
++    {% if article.camera and article.lens and article.date_taken %}Taken with a {{ article.camera }} and {{ article.lens }} on {{ article.date_taken }}.<br>{% endif %}
 +
 +    </div>
 +
@@ -639,7 +639,7 @@ index 0000000..f6ecfa8
 +{% endblock %}
 diff --git a/pelican-bootstrap3/templates/photo.html b/pelican-bootstrap3/templates/photo.html
 new file mode 100644
-index 0000000..dd01f70
+index 0000000..3725cbc
 --- /dev/null
 +++ b/pelican-bootstrap3/templates/photo.html
 @@ -0,0 +1,117 @@
@@ -718,7 +718,7 @@ index 0000000..dd01f70
 +            <div class="entry-content">
 +                <div class="photo-photo">
 +                    {% if article.page_image %}
-+                    <a href="{{ article.image }}"><img border=0 src="{{ article.page_image }}" alt="{{ article.title }}"></a>
++                    <a href="{{ article.image }}"><img border=0 src="{{ article.page_image }}" alt="{{ article.title }}"{% if article.page_image_width %} width="{{ article.page_image_width }}"{% endif %} {% if article.page_image_height %} height="{{ article.page_image_height }}"{% endif %}></a>
 +                    {% else %}
 +                    <a href="{{ article.image }}"><img border=0 src="{{ article.image }}" alt="{{ article.title }}"></a>
 +                    {% endif %}

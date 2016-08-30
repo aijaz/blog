@@ -11,27 +11,29 @@ page_image: /images/2015/09/explore_page.jpg
 aperture: 2.2
 camera: iPhone 6
 creator: Aijaz Ansari
-dateTaken: 2015:08:13 07:52:38
+date_taken: 2015:08:13 07:52:38
 flash: Off, Did not fire
-focalLength: 4.2 mm
+focal_length: 4.2 mm
 histogram: /images/2015/09/explore_hist.png
-histogramHeight: 50
-histogramWidth: 128
+histogram_height: 50
+histogram_width: 128
 iso: 32
 lens: "4.15mm f/2.2"
 license: <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a>
-photoHeight: 1224
-photoWidth: 1632
-scaleFactor: 7.0
-shutterSpeed: 1/150
+photo_height: 1224
+photo_width: 1632
+page_image_width: 734
+page_image_height: 551
+scale_factor: 7.0
+shutter_speed: 1/150
 tags: 
 - Fitness
 - Travel
 - Walking
 - Running
 thumbnail: /images/2015/09/explore_tn.jpg
-thumbnailHeight: 256
-thumbnailWidth: 341
+thumbnail_height: 256
+thumbnail_width: 341
 description: "I never used to like running. But now I've found that walking and running early in the morning is a great way to explore a new place."
 ---
 
