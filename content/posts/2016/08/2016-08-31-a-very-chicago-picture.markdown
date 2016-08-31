@@ -39,6 +39,8 @@ thumbnail_width: 384
 
 How many Chicago motifs can you find here?
 
+<!-- more -->
+
 I see: 
 
 - The CTA Bus with its classic 'cta' logo
