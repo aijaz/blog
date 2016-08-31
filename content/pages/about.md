@@ -3,6 +3,7 @@ Title: About Me
 Template: page
 Date: 2016-08-28 00:00
 save_as: about/index.html
+facebook_image: /images/aijaz.jpg
 Summary: I enjoy making things. I'm an iOS and Python developer who teaches and mentors on the side. Fitness and photography enthusiast.
 ---
 

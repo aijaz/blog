@@ -1,8 +1,24 @@
 diff --git a/pelican-bootstrap3/templates/article.html b/pelican-bootstrap3/templates/article.html
-index 4cb6a70..fbafe23 100644
+index 4cb6a70..4567b08 100644
 --- a/pelican-bootstrap3/templates/article.html
 +++ b/pelican-bootstrap3/templates/article.html
-@@ -78,14 +78,17 @@
+@@ -36,9 +36,12 @@
+         {% elif AUTHOR %}
+             <meta property="article:author" content="{{ AUTHOR }}" />
+         {% endif %}
+-        {% if article.og_image %}
+-            <meta property="og:image"
+-                  content="{{ SITEURL }}/{{ article.og_image }}"/>
++        {% if article.facebook_image %}
++            <meta property="og:image" content="{{ SITEURL }}{{ article.facebook_image }}">
++        {% elif article.page_image %}
++            <meta property="og:image" content="{{ SITEURL }}{{ article.page_image }}">
++        {% elif article.image %}
++            <meta property="og:image" content="{{ SITEURL }}{{ article.image }}">
+         {% elif OPEN_GRAPH_IMAGE %}
+             <meta property="og:image"
+                   content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
+@@ -78,14 +81,17 @@
                          {{ article.title }}
                      </a>
                  </h1>
@@ -410,10 +426,10 @@ index c59b8f0..18375f3 100644
      </ul>
 diff --git a/pelican-bootstrap3/templates/letterpress.html b/pelican-bootstrap3/templates/letterpress.html
 new file mode 100644
-index 0000000..945ddb7
+index 0000000..beea434
 --- /dev/null
 +++ b/pelican-bootstrap3/templates/letterpress.html
-@@ -0,0 +1,120 @@
+@@ -0,0 +1,123 @@
 +{% extends "base.html" %}
 +{% block title %}{{ article.title|striptags }} - {{ SITENAME }}{% endblock %}
 +{% block html_lang %}{{ article.lang }}{% endblock %}
@@ -452,9 +468,12 @@ index 0000000..945ddb7
 +        {% elif AUTHOR %}
 +            <meta property="article:author" content="{{ AUTHOR }}" />
 +        {% endif %}
-+        {% if article.og_image %}
-+            <meta property="og:image"
-+                  content="{{ SITEURL }}/{{ article.og_image }}"/>
++        {% if article.facebook_image %}
++            <meta property="og:image" content="{{ SITEURL }}/{{ article.facebook_image }}">
++        {% elif article.page_image %}
++            <meta property="og:image" content="{{ SITEURL }}/{{ article.page_image }}">
++        {% elif article.image %}
++            <meta property="og:image" content="{{ SITEURL }}/{{ article.image }}">
 +        {% elif OPEN_GRAPH_IMAGE %}
 +            <meta property="og:image"
 +                  content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
@@ -652,12 +671,32 @@ index 0000000..f6ecfa8
 +    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/shariff.min.js"></script>
 +{% endif %}
 +{% endblock %}
+diff --git a/pelican-bootstrap3/templates/page.html b/pelican-bootstrap3/templates/page.html
+index c4d35ee..20f5e2f 100644
+--- a/pelican-bootstrap3/templates/page.html
++++ b/pelican-bootstrap3/templates/page.html
+@@ -20,9 +20,12 @@
+     <meta property="og:title" content="{{ page.title|striptags|escape }}"/>
+     <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}"/>
+     <meta property="og:description" content="{{ page.summary|striptags|escape }}" />
+-    {% if page.og_image %}
+-        <meta property="og:image"
+-              content="{{ SITEURL }}/{{ page.og_image }}"/>
++    {% if page.facebook_image %}
++        <meta property="og:image" content="{{ SITEURL }}/{{ page.facebook_image }}">
++    {% elif page.page_image %}
++        <meta property="og:image" content="{{ SITEURL }}/{{ page.page_image }}">
++    {% elif page.image %}
++        <meta property="og:image" content="{{ SITEURL }}/{{ page.image }}">
+     {% elif OPEN_GRAPH_IMAGE %}
+         <meta property="og:image"
+               content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
 diff --git a/pelican-bootstrap3/templates/photo.html b/pelican-bootstrap3/templates/photo.html
 new file mode 100644
-index 0000000..3725cbc
+index 0000000..ad7910e
 --- /dev/null
 +++ b/pelican-bootstrap3/templates/photo.html
-@@ -0,0 +1,117 @@
+@@ -0,0 +1,120 @@
 +{% extends "base.html" %}
 +{% block title %}{{ article.title|striptags }} - {{ SITENAME }}{% endblock %}
 +{% block html_lang %}{{ article.lang }}{% endblock %}
@@ -696,9 +735,12 @@ index 0000000..3725cbc
 +        {% elif AUTHOR %}
 +            <meta property="article:author" content="{{ AUTHOR }}" />
 +        {% endif %}
-+        {% if article.og_image %}
-+            <meta property="og:image"
-+                  content="{{ SITEURL }}/{{ article.og_image }}"/>
++        {% if article.facebook_image %}
++            <meta property="og:image" content="{{ SITEURL }}/{{ article.facebook_image }}">
++        {% elif article.page_image %}
++            <meta property="og:image" content="{{ SITEURL }}/{{ article.page_image }}">
++        {% elif article.image %}
++            <meta property="og:image" content="{{ SITEURL }}/{{ article.image }}">
 +        {% elif OPEN_GRAPH_IMAGE %}
 +            <meta property="og:image"
 +                  content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
