@@ -1,5 +1,5 @@
 diff --git a/pelican-bootstrap3/templates/article.html b/pelican-bootstrap3/templates/article.html
-index 4cb6a70..4567b08 100644
+index 4cb6a70..ebd9ccd 100644
 --- a/pelican-bootstrap3/templates/article.html
 +++ b/pelican-bootstrap3/templates/article.html
 @@ -36,9 +36,12 @@
@@ -37,6 +37,14 @@ index 4cb6a70..4567b08 100644
              </div>
              <!-- /.entry-content -->
              {% include 'includes/related-posts.html' %}
+@@ -94,6 +100,7 @@
+             {% include 'includes/shariff.html' %}
+             {% include 'includes/comments.html' %}
+         </article>
++        {% include 'includes/article_timeline.html' %}
+     </section>
+ 
+ {% endblock %}
 diff --git a/pelican-bootstrap3/templates/article_list.html b/pelican-bootstrap3/templates/article_list.html
 index 2d3c8cd..5fc286d 100644
 --- a/pelican-bootstrap3/templates/article_list.html
@@ -426,10 +434,10 @@ index c59b8f0..18375f3 100644
      </ul>
 diff --git a/pelican-bootstrap3/templates/letterpress.html b/pelican-bootstrap3/templates/letterpress.html
 new file mode 100644
-index 0000000..beea434
+index 0000000..f915d76
 --- /dev/null
 +++ b/pelican-bootstrap3/templates/letterpress.html
-@@ -0,0 +1,123 @@
+@@ -0,0 +1,124 @@
 +{% extends "base.html" %}
 +{% block title %}{{ article.title|striptags }} - {{ SITENAME }}{% endblock %}
 +{% block html_lang %}{{ article.lang }}{% endblock %}
@@ -537,6 +545,7 @@ index 0000000..beea434
 +            {% include 'includes/shariff.html' %}
 +            {% include 'includes/comments.html' %}
 +        </article>
++        {% include 'includes/article_timeline.html' %}
 +    </section>
 +
 +{% endblock %}
@@ -555,10 +564,10 @@ index 0000000..beea434
 +{% endblock %}
 diff --git a/pelican-bootstrap3/templates/link.html b/pelican-bootstrap3/templates/link.html
 new file mode 100644
-index 0000000..f6ecfa8
+index 0000000..41a04d4
 --- /dev/null
 +++ b/pelican-bootstrap3/templates/link.html
-@@ -0,0 +1,112 @@
+@@ -0,0 +1,116 @@
 +{% extends "base.html" %}
 +{% block title %}{{ article.title|striptags }} - {{ SITENAME }}{% endblock %}
 +{% block html_lang %}{{ article.lang }}{% endblock %}
@@ -597,9 +606,12 @@ index 0000000..f6ecfa8
 +        {% elif AUTHOR %}
 +            <meta property="article:author" content="{{ AUTHOR }}" />
 +        {% endif %}
-+        {% if article.og_image %}
-+            <meta property="og:image"
-+                  content="{{ SITEURL }}/{{ article.og_image }}"/>
++        {% if article.facebook_image %}
++            <meta property="og:image" content="{{ SITEURL }}{{ article.facebook_image }}">
++        {% elif article.page_image %}
++            <meta property="og:image" content="{{ SITEURL }}{{ article.page_image }}">
++        {% elif article.image %}
++            <meta property="og:image" content="{{ SITEURL }}{{ article.image }}">
 +        {% elif OPEN_GRAPH_IMAGE %}
 +            <meta property="og:image"
 +                  content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
@@ -655,6 +667,7 @@ index 0000000..f6ecfa8
 +            {% include 'includes/shariff.html' %}
 +            {% include 'includes/comments.html' %}
 +        </article>
++        {% include 'includes/article_timeline.html' %}
 +    </section>
 +
 +{% endblock %}
@@ -693,10 +706,10 @@ index c4d35ee..20f5e2f 100644
                content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
 diff --git a/pelican-bootstrap3/templates/photo.html b/pelican-bootstrap3/templates/photo.html
 new file mode 100644
-index 0000000..ad7910e
+index 0000000..ac6d335
 --- /dev/null
 +++ b/pelican-bootstrap3/templates/photo.html
-@@ -0,0 +1,120 @@
+@@ -0,0 +1,121 @@
 +{% extends "base.html" %}
 +{% block title %}{{ article.title|striptags }} - {{ SITENAME }}{% endblock %}
 +{% block html_lang %}{{ article.lang }}{% endblock %}
@@ -801,6 +814,7 @@ index 0000000..ad7910e
 +            {% include 'includes/shariff.html' %}
 +            {% include 'includes/comments.html' %}
 +        </article>
++        {% include 'includes/article_timeline.html' %}
 +    </section>
 +
 +{% endblock %}

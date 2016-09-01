@@ -305,3 +305,20 @@ div.qe {
     display: block;
 }
 
+ul.article_timeline {
+    list-style-type: none;
+    list-style: none;
+}
+
+ul.article_timeline li {
+    display: inline-block;
+    font-size: 0.75 em;
+}
+
+ul.article_timeline li.previous_article {
+    float: left;
+}
+
+ul.article_timeline li.next_article {
+    float: right;
+}
