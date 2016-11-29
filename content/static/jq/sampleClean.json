@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Aang", 
+    "sex": "M", 
+    "born": -12,
+    "died": 153,
+    "bending": ["Air", "Water", "Earth", "Fire", "Energy"],
+    "identity": {
+      "nationality": "Southern Air Temple",
+      "ethnicity": "Air Nomad"
+    },
+    "spouse": "Katara",
+    "children": [
+      { "sex": "M", "name":  "Bumi" }, { "sex": "F", "name":  "Kya"}, { "sex": "M", "name":  "Tenzin"}
+    ]
+  }
+  ,{
+    "name": "Katara", 
+    "sex": "F", 
+    "born": 85,
+    "died": null,
+    "bending": ["Water", "Blood"],
+    "identity": {
+      "nationality": "Southern Water Tribe",
+      "ethnicity": "Water Tribe"
+    },
+    "spouse": "Aang",
+    "children": [
+      { "sex": "M", "name":  "Bumi" }, { "sex": "F", "name":  "Kya"}, { "sex": "M", "name":  "Tenzin"}
+    ]
+  }
+  ,{
+    "name": "Sokka", 
+    "sex": "M", 
+    "born": 84,
+    "died": 164,
+    "bending": [],
+    "identity": {
+      "nationality": "Southern Water Tribe",
+      "ethnicity": "Water Tribe"
+    },
+    "spouse": null,
+    "children": []
+  }
+  ,{
+    "name": "Toph Beifong", 
+    "sex": "F", 
+    "born": 88,
+    "died": null,
+    "bending": ["Earth", "Metal"],
+    "identity": {
+      "nationality": "Gaoling, Earth Kingdom",
+      "ethnicity": "Earth Kingdom"
+    },
+    "spouse": null,
+    "children": [
+      { "sex": "F", "name":  "Lin Beifong" }, { "sex": "F", "name":  "Suyin Beifong"}
+    ]
+  }
+  ,{
+    "name": "Iroh", 
+    "sex": "M", 
+    "born": null,
+    "died": null,
+    "bending": ["Fire", "Energy"],
+    "identity": {
+      "nationality": "Fire Nation Capital, Fire Nation",
+      "ethnicity": "Fire Nation"
+    },
+    "spouse": null,
+    "children": [
+      { "sex": "M", "name":  "Lu Ten" }
+    ]
+  }
+  ,{
+    "name": "Zuko", 
+    "sex": "M", 
+    "born": 83,
+    "died": null,
+    "bending": ["Fire", "Energy"],
+    "identity": {
+      "nationality": "Fire Nation Capital, Fire Nation",
+      "ethnicity": "Fire Nation"
+    },
+    "spouse": null,
+    "children": [
+      { "sex": "F", "name":  "Izumi"}
+    ]
+  }
+  ,{
+    "name": "Kya", 
+    "sex": "F", 
+    "born": null,
+    "died": null,
+    "bending": ["Water"],
+    "identity": {
+      "nationality": "Southern Water Tribe",
+      "ethnicity": "Water Tribe, Air Nomad"
+    },
+    "spouse": null,
+    "children": []
+  }
+  ,{
+    "name": "Bumi", 
+    "sex": "M", 
+    "born": null,
+    "died": null,
+    "bending": ["Air"],
+    "identity": {
+      "nationality": "United Republic",
+      "ethnicity": "Water Tribe, Air Nomad"
+    },
+    "spouse": null,
+    "children": []
+  }
+  ,{
+    "name": "Tenzin", 
+    "sex": "M", 
+    "born": null,
+    "died": null,
+    "bending": ["Air"],
+    "identity": {
+      "nationality": "Republic City, United Republic",
+      "ethnicity": "Water Tribe, Air Nomad"
+    },
+    "spouse": null,
+    "children": [{ "sex": "F", "name": "Jinora"}, { "sex": "F", "name": "Ikki"}, { "sex": "M", "name": "Meelo"}, { "sex": "M", "name": "Rohan"}]
+  }
+  ,{
+    "name": "Lin Beifong", 
+    "sex": "F", 
+    "born": 120,
+    "died": null,
+    "bending": ["Earth", "Metal"],
+    "identity": {
+      "nationality": "Republic City, United Republic",
+      "ethnicity": "Earth Kingdom"
+    },
+    "spouse": null,
+    "children": []
+  }
+  ,{
+    "name": "Suyin Beifong", 
+    "sex": "F", 
+    "born": 126,
+    "died": null,
+    "bending": ["Earth", "Metal"],
+    "identity": {
+      "nationality": "Republic City, United Republic",
+      "ethnicity": "Earth Kingdom"
+    },
+    "spouse": null,
+    "children": [ { "sex": "M", "name": "Bataar Jr."}, { "sex": "F", "name": "Opal"}, { "sex": "M", "name": "Wei"}, { "sex": "M", "name": "Wing"}, { "sex": "M", "name": "Huan"}]
+  }
+  
+
+]

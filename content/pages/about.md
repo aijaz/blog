@@ -3,11 +3,11 @@ Title: About Me
 Template: page
 Date: 2016-08-28 00:00
 save_as: about/index.html
-facebook_image: /images/aijaz.jpg
+facebook_image: /images/aijaz4.jpg
 Summary: I enjoy making things. I'm an iOS and Python developer who teaches and mentors on the side. Fitness and photography enthusiast.
 ---
 
-<!-- ai l /images/aijaz.jpg /images/aijaz.jpg 235 256 Hello! -->
+<!-- ai l /images/aijaz4.jpg /images/aijaz4.jpg 256 256 Hello! -->
 
 As a hacker by nature, I enjoy making things.  I'm the developer and 
 designer behind the [Qur'an Memorizer](http://quranmemorizer.com)

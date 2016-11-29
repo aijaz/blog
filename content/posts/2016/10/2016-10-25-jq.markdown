@@ -1,0 +1,43 @@
+---
+title: "Examining JSON Data With jq"
+date: 2016-10-25 20:30
+category:
+- Computers
+tags:
+- jq
+- JSON
+- API
+- Debugging
+---
+
+Earlier tonight I spoke at NSCoder Chicago about how to use [jq](https://stedolan.github.io/jq/) to examine JSON data. This post contains links and information that I would like to share with the attendees.
+
+<!-- more -->
+
+First of all, I created sample JSON data that contains information about characters from the [Avatar](https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender) television series. The data is an array of objects, where each object looks like this: 
+
+```json
+  {
+    "name": "Aang", 
+    "sex": "M", 
+    "born": -12,
+    "died": 153,
+    "bending": ["Air", "Water", "Earth", "Fire", "Energy"],
+    "identity": {
+      "nationality": "Southern Air Temple",
+      "ethnicity": "Air Nomad"
+    },
+    "spouse": "Katara",
+    "children": [
+      { "sex": "M", "name":  "Bumi" }, 
+      { "sex": "F", "name":  "Kya"}, 
+      { "sex": "M", "name":  "Tenzin"}
+    ]
+  }
+```
+
+- The full sample  JSON file can be found [here](/static/jq/sample.json). 
+- A pretty-printed version of the sample JSON can be found [here](/static/jq/sampleClean.json). 
+- A PDF file of the slides can be found [here](/static/jq/jq.pdf).
+- The slides can also be found on [SpeakerDeck](https://speakerdeck.com/aijaz_ansari/examining-json-with-jq). 
+- jq can be found [here](https://stedolan.github.io/jq/).
