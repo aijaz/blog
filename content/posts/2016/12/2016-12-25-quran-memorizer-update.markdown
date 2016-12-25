@@ -5,7 +5,7 @@ category:
 - Computers
 tags:
 - QuranMemorizer
-- QMUgrade
+- QMUpgrade
 - Programming
 - iOS
 ---
@@ -24,7 +24,7 @@ My coding style has changed a lot over the last few years, along with my adoptio
 
 My strategy for the the update is as follows: start with the core 'business' logic first, and add the user interface later. Aim for 100% coverage of code in the test cases. I don't know if that's possible, but we'll see in the next few weeks. 
 
-One of the first issues I ran into is a consequence of my decision to use two sqlite3 databases, 1 for the domain-level data, and the other for user data (bookmarks, notes, preferences, etc). Over the past few years I've started using [FMDBMigrationManager][] along with [FMDB][] to handle the migration of database versions. By default, FMDBMigrationManager looks for sql files in the default bundle and applies them in order. But now, with two databases, I need to partition the sql files so that the two database schemas can be migrated independently. So I needed to create two new bundles, one for the main database, and one for the preference database. 
+One of the first issues I ran into is a consequence of my decision to use two sqlite3 databases, one for the domain-level data, and the other for user data (bookmarks, notes, preferences, etc). Over the past few years I've started using [FMDBMigrationManager][] along with [FMDB][] to handle the migration of database versions. By default, FMDBMigrationManager looks for sql files in the default bundle and applies them in order. But now, with two databases, I need to partition the sql files so that the two database schemas can be migrated independently. So I needed to create two new bundles, one for the main database, and one for the preference database. 
 
 To do this I created two folders named `qmSql.bundle` and `prefsSql.bundle`. Each folder has its own set of sql files. Each folder also has its own `Info.plist` file. Here's the one for `qmSql.bundle`:
 
@@ -59,7 +59,7 @@ If anyone knows why using the `CFBundleIdentifier` didn't work, please let me kn
 Well, that's it for now. I'll keep posting notes on the rewrite at this blog. 
 
 [qm]: http://quranmemorizer.com/
-[qmu]: http://aijaz.net/tags/qmupgrade.html
+[qmu]: http://aijaz.net/tag/qmupgrade.html
 [Specta]: https://github.com/specta/specta
 [Expecta]: https://github.com/specta/expecta/
 [nullability]: https://developer.apple.com/swift/blog/?id=25
