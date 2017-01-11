@@ -211,7 +211,7 @@ Any time after `body` is initialized, we can break into LLDB and invoke `jq` on 
 
 As Apple's engineers pointed out at this year's WWDC, another way to import the Python file, on a per-project basis, is to insert a breakpoint in `main`. Then to that breakpoint add an action that imports the Python file.
 
-<!-- ai c /images/2017/main.png /images/2016/main.png 582 460 Importing a Python file from a breakpoint in main -->
+<!-- ai c /images/2017/main.png /images/2017/main.png 582 460 Importing a Python file from a breakpoint in main -->
 
 
 [jq]: http://aijazansari.com/2016/10/25/jq/index.html
