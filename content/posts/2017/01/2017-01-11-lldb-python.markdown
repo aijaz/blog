@@ -213,6 +213,18 @@ As Apple's engineers pointed out at this year's WWDC, another way to import the 
 
 <!-- ai c /images/2017/main.png /images/2017/main.png 582 460 Importing a Python file from a breakpoint in main -->
 
+## Links
+
+- [jq][jq]
+- [LLDB][lldb]
+- [Python in LLDB][lldbPython]
+- [LLDB Python API][pythonAPI]
+- [Sample Python Scripts][repo]
+- [Template file][template]
+- [JSON][json]
+- [`jq.py`][jqpy]
+- [FastModel Sports][fm]
+
 
 [jq]: http://aijazansari.com/2016/10/25/jq/index.html
 [lldb]: http://lldb.llvm.org/index.html
