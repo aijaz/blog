@@ -20,7 +20,7 @@ For this rewrite of [Qur'an Memorizer][qm] I'm using Auto Layout. This is the fi
 
 <!-- more -->
 
-This app is about as skeuomorphic. Its goal is to present one or two pages exactly as they would appear in the actual book. So the app has to decide whether to display two pages side by side, or just a single page. Auto Layout by itself isn't sufficient for this. I found the hint I needed in [session 233 of the 2016 WWDC (Making Apps Adaptive, part 2)][s233] (also available at [ASCIIwwdc][s233a]).
+This app is about as skeuomorphic as it gets. Its goal is to present one or two pages exactly as they would appear in the actual book. So the app has to decide whether to display two pages side by side, or just a single page. Auto Layout by itself isn't sufficient for this. I found the hint I needed in [session 233 of the 2016 WWDC (Making Apps Adaptive, part 2)][s233] (also available at [ASCIIwwdc][s233a]).
 
 I set up my constraints, and made IBOutlets to a couple of key constraints. Then, in `viewWillTransitionToSize:withTransitionCoordinator:` I reset all my constraints' constants and set a variable instructing that a page layout recomputation was due. 
 
