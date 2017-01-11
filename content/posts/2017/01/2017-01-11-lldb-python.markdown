@@ -215,13 +215,13 @@ As Apple's engineers pointed out at this year's WWDC, another way to import the 
 
 ## Links
 
+- [JSON][json]
 - [jq][jq]
 - [LLDB][lldb]
 - [Python in LLDB][lldbPython]
 - [LLDB Python API][pythonAPI]
 - [Sample Python Scripts][repo]
 - [Template file][template]
-- [JSON][json]
 - [`jq.py`][jqpy]
 - [FastModel Sports][fm]
 
