@@ -13,7 +13,7 @@ tags:
 
 Many iOS apps today are clients of some sort. They request data from a remote server. Typically this data is served over HTTP (with SSL) and formatted as [JSON][json]. At [FastModel Sports][fm] our iOS app is constantly requesting large amounts of JSON data. While debugging the app I inevitably have to compare what I'm displaying in my views to what the server sent me. 
 
-This meant saving the server response into an NSString, printing it out to the console with NSLog, copying that output, switching to Terminal, pasting that output into a file and then running [`jq`][jq] on that file. That's a lot of steps. In this post I'll show you how to do all of that directly from the LLD command prompt. 
+This meant saving the server response into an NSString, printing it out to the console with NSLog, copying that output, switching to Terminal, pasting that output into a file and then running [`jq`][jq] on that file. That's a lot of steps. In this post I'll show you how to do all of that directly from the LLDB command prompt. 
 
 <!-- more -->
 
