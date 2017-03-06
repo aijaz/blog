@@ -12,7 +12,7 @@ Summary: I enjoy making things. I'm an iOS and Python developer who teaches and 
 As a hacker by nature, I enjoy making things.  I'm the developer and 
 designer behind the [Qur'an Memorizer](http://quranmemorizer.com)
 iOS app, and am currently working as an iOS developer at
-[FastModel](http://www.fastmodelsports.com).  I [teach iOS development on the weekends](http://euclidte.ch/) to children and adults in the community. I like to dabble in photography, woodworking, origami, and making tangible things with my hands. Oh, I've also
+[FastModel](http://www.fastmodelsports.com).  I [teach iOS development on the weekends](http://euclidte.ch/) to children and adults in the community. I host [Peer Lab Chicago](http://peerlabchicago.com), which is a forum for developers to help other developers. I like to dabble in photography, woodworking, origami, and making tangible things with my hands. Oh, I've also
 written  a pretty nifty open-source job scheduler called
 [TaskForest](http://www.taskforest.com). For those who are interested, I've also put up 
 a <a href="#work">somewhat detailed account of my work experience</a> towards the bottom of this page. 
@@ -31,6 +31,8 @@ You can find me here:
 * Email - &lt;myfirstname&gt; at &lt;myfirstname&gt; dot net
 * [Linked In](http://www.linkedin.com/in/aijaz)
 * [GitHub](http://github.com/aijaz)
+
+One last thing about me: I enjoy discussing the technical merits and limitations of app or business ideas my friends and acquaintances have. If you have an idea that you would like to bounce off of someone, I'm almost always available for a chat over a cup of coffee. But I almost never sign NDAs. I believe that great ideas are [not really that rare](https://blog.hartleybrody.com/wont-sign-nda/) and that they are [multipliers of execution](https://sivers.org/multiply). I think we can still have productive conversations without talking about the secrets that you don't want to share without an NDA.
 
 ## Licenses
 
