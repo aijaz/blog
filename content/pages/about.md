@@ -44,13 +44,13 @@ Those photographs not taken by me are attributed accordingly.  If you
 find any image that is not attributed, please email me and let me know.
 
 <a name="talks"></a>
-# Talks I've Given
+# Talks I&#8217;ve Given
 
 - [Beyond Breakpoints - Advanced Debugging in XCode](http://cocoaconf.com/chicago-2017/sessions/Beyond-Breakpoints) - [CocoaConf Chicago](http://cocoaconf.com/chicago-2017/home) 
 - [Exploring JSON with jq](https://www.slideshare.net/AijazAnsari2/exploring-json-with-jq?qid=645544be-d9d0-4949-82e8-be9fef26c59d&v=&b=&from_search=1) - NSCoder Chicago
 - [Flask First-Timer](https://www.slideshare.net/AijazAnsari2/flask-firsttimer) - The [ChiPy Web SIG](https://www.meetup.com/_ChiPy_/events/232572677/)
-- [The Web That Was - The Promise and Decline of `mod_perl`](https://speakerdeck.com/aijazansari) - A local Ruby Developers' Meetup. 
 - [Now What?](https://www.slideshare.net/AijazAnsari2/now-what-72865145) - SnowMobile Conference, 2013
+- [The Web That Was - The Promise and Decline of `mod_perl`](https://speakerdeck.com/aijazansari) - A local Ruby Developers' Meetup. 
 - [Protecting Your Clients' Privacy](https://www.slideshare.net/AijazAnsari2/protecting-your-clients-privacy) - A 5-minute blitz talk at SecondConf 2012
 
 <a name="work"></a>
