@@ -12,11 +12,11 @@ tags:
 - Speaking
 ---
 
-Last week I attended [CocoaConf Chicago][ccc17] for the 6th year in a row. In this post I would like to share with you how I prepared as a [Speaker](#speaker), and what I learned as an [Attendee](#attendee). 
+Last week I attended [CocoaConf Chicago][ccc17] for the 6th year in a row. In this post I would like to share with you how I prepared as a [speaker](#speaker), and what I learned as an [attendee](#attendee). 
 
 <!-- more -->
 
-<!-- ai c /images/2017/04/aijaz800.jpg /images/2017/04/aijaz800.jpg 800 533 My CocoaConf Chicago Talk (https://www.flickr.com/photos/cocoaconf/34089423592/in/photostream/) -->
+<!-- ai c /images/2017/04/aijaz800.jpg /images/2017/04/aijaz800.jpg 800 533 My CocoaConf Chicago Talk (CocoaConf PhotoStream - https://www.flickr.com/photos/cocoaconf/34089423592/in/photostream/) -->
 
 ## <a name="speaker"></a>How I Prepared as a Speaker
 
@@ -52,7 +52,7 @@ That's when I decided the only foolproof thing to do was to keep the display mir
 
 #### Remembering to set up properly 
 
-Whenever I practiced my talk I realized that I had forgotten to complete at least one crucial set-up step. Maybe I didn't `git checkout` the correct starting commit of the code. Maybe I forgot to turn off `malloc` logging so I could talk about why we should turn it on. Every time I practiced I forgot something different. Soon I realized I needed a **Pre-Talk Checklist**.  This helped me a great deal. I wrote my checklist on a little piece of paper that I placed next to my laptop. My checklist looked something like this:
+Whenever I practiced my talk I realized that I had forgotten to complete at least one crucial set-up step. Maybe I didn't `git checkout` the correct starting commit of the code. Maybe I forgot to turn off `malloc` logging so I could talk about why we should turn it on. Every time I practiced I forgot something different. Soon I realized I needed a *Pre-Talk Checklist*.  This helped me a great deal. I wrote my checklist on a little piece of paper that I placed next to my laptop. My checklist looked something like this:
 
 ```
 * git reset --hard demoBranch
@@ -110,9 +110,11 @@ It's that second one that's most intriguing to me. In a complex application a fu
 
 The more I think about it, the less _scandalous_ Jeff's proposal appears. The M in MVC doesn't necessarily refer to classes that model entities. Most definitions say that the Model is the Domain Data. Keeping that in mind, is it really that odd to use a result set as a Model? Perhaps the takeaway from all of this is: Use the right tool for the job. If it makes sense to use a domain object as a model, do it. If it makes more sense to use a result set rather than an expensive object, do that. I don't think we need to commit to either of the methodologies for a hundred percent of use cases. 
 
-## <a name="thanks"></a> Thanks For a Great Conference
+## <a name="thanks"></a> Until Next Time
 
-I would like to thank the Klein Family for providing us this forum in which to learn. But the conference wouldn't be what it is without the the people who give it its character: the other attendees (here I include the speakers). I would like to thank everyone who attended, everyone with whom I shared a conversation, a smile, a laugh, a hug. Thank you for making this conference what it is: something to look forward to every year. 
+Like all good conferences, CocoaConf has left me thinking long after the last session ended. These kinds of conferences serve a different purpose than, for example, WWDC. At conferences like CocoaConf we get to see how others use Apple's frameworks, and how they write their code. That is the real benefit to me, that I can approach someone who for years has been doing something that I'm thinking of doing, or that I have just started. And I can ask her, "Hey. How did you solve that problem?" So if you ever get the opportunity to attend conferences like this one, I strongly recommend it.
+
+I would like to thank the Klein family for providing us this forum in which to learn. But the conference wouldn't be what it is without the the people who give it its character: the other attendees (including the speakers). I would like to thank everyone who attended, everyone with whom I shared a conversation, a smile, a laugh, a hug. Thank you for making this conference what it is: something to look forward to every year. 
 
 [mvc]: http://cocoaconf.com/chicago-2017/sessions/Remove-the-M-from-MVC
 [jd]: http://cocoaconf.com/chicago-2017/sessions/Using-Small-Protocols-to-Vend-App-Wide-Dependencies-in-Swift
