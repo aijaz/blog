@@ -57,9 +57,32 @@ find any image that is not attributed, please email me and let me know.
 <a name="work"></a>
 # Work Experience
 
-## Software Developer, [FastModel Sports][] (August 2015 - Present)
+## iOS Lead, [FastModel Sports][] (August 2015 - Present)
 
-I am an iOS developer at FastModel. I work on apps for professional basketball coaches and recruiters. I'm currently developing our flagship app, FastRecruit, which helps college recruiters during the tournament seasons, when they're travelling to watch students play at various tournaments and camps. I am part of a small but amazing team of engineers, support staff, salespeople, and marketing staff and together we make something that we're proud of being associated with. The biggest compliment our company has ever gotten, in my opinion, is when customers say that our product allows them to get a normal night's sleep now, compared to the old way of staying up until 2 or 3 in the morning, just trying to figure out which games to attend.
+I am an iOS developer at FastModel. I work on apps for professional basketball coaches and recruiters. I'm currently developing our flagship app, FastRecruit, which helps college recruiters during the tournament seasons, when they're traveling to watch students play at various tournaments and camps. I am part of a small but amazing team of engineers, support staff, salespeople, and marketing staff and together we make something that we're proud of being associated with. The biggest compliment our company has ever gotten, in my opinion, is when customers say that our product allows them to get a normal night's sleep now, compared to the old way of staying up until 2 or 3 in the morning, just trying to figure out which games to attend.
+
+Key technologies that I've worked on during my time at FastModel are: 
+
+- API Design
+- JSOG parsing (JSON with cyclical references)
+- Apple Watch Apps
+- REST clients using AFNetworking
+- Custom JSOG HTTP Request and Response Serializers
+- The iOS Keychain
+- Data Persistence using SQLite3 and Core Data
+- Saving HTTP requests during network outages
+- Using Text Kit display and manage text
+- Integrating Maps and Driving Directions
+- Integration of Google Places API
+- Customizing LLDB to third-party integrate debugging tools into XCode
+
+Talks given during my time at FastModel: 
+
+- [Beyond Breakpoints - Advanced Debugging in XCode](https://360idev.com/sessions/advanced-debugging-xcode-extending-lldb/) - [360|iDev](https://360idev.com) 
+- [Beyond Breakpoints - Advanced Debugging in XCode](http://cocoaconf.com/chicago-2017/sessions/Beyond-Breakpoints) - [CocoaConf Chicago](http://cocoaconf.com/chicago-2017/home) 
+- [Exploring JSON with jq](https://www.slideshare.net/AijazAnsari2/exploring-json-with-jq?qid=645544be-d9d0-4949-82e8-be9fef26c59d&v=&b=&from_search=1) - NSCoder Chicago
+- [Flask First-Timer](https://www.slideshare.net/AijazAnsari2/flask-firsttimer) - The [ChiPy Web SIG](https://www.meetup.com/_ChiPy_/events/232572677/)
+
 
 ## Principal Engineer, [Vaporstream][] (2012 - August 2015)
 
@@ -67,7 +90,7 @@ I was the sole iOS developer of secure messaging and social networking
 apps.  When I left, Vaporstream was a small startup with 5 developers: 1
 each for iOS, Android, and the server as well a QA and a DevOps
 engineer. As a senior engineer, I participated in requirements gathering,
-release planning, API design and prototyping for feasability
+release planning, API design and prototyping for feasibility
 determination. I've got one patent application under my name. I know
 that's not much, but I'm pretty proud of it. Representing Vaporstream, I
 spoke at the Snow-Mobile conference in Madison, WI in 2012, advising
@@ -114,7 +137,7 @@ At Citadel I wrote Perl code for the Global Middle and Back Office department. O
 
 Citadel is where I learned how to work on fast-moving projects where requirements could change with little or no notice (due to external and market factors). I also learned the importance of the '3 AM test': My code would have to make sense to the on-call person who may be reading it for the first time at 3:00 am, having been woken up because, say, opening prices for London are not available. This is not the place for overly clever code, because if a sleepy coworker cannot understand it and modify it, he or she would be calling you up to fix it yourself.
 
-Most of our programs would write to one or more Sybase databases. At Citadel I became very proficient with SQL as well as managing and mantaining database connections in code. 
+Most of our programs would write to one or more Sybase databases. At Citadel I became very proficient with SQL as well as managing and maintaining database connections in code. 
 
 ## President, ENoor Creations (1998 - 2005)
 
