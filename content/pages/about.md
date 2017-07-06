@@ -59,7 +59,7 @@ find any image that is not attributed, please email me and let me know.
 
 ## Software Developer, [FastModel Sports][] (August 2015 - Present)
 
-I am an iOS developer at FastModel. I work on apps for coaches and recruiters. I'm currently developing our flagship app, FastRecruit, which helps college recruiters during the tournament seasons, when they're travelling to watch students play at various tournaments and camps. I am part of a small but amazing team of engineers, support staff, salespeople, and marketing staff and together we make something that we're proud of being associated with. The biggest compliment our company has ever gotten, in my opinion, is when customers say that our product allows them to get a normal night's sleep now, compared to the old way of staying up until 2 or 3 in the morning, just trying to figure out which games to attend.
+I am an iOS developer at FastModel. I work on apps for professional basketball coaches and recruiters. I'm currently developing our flagship app, FastRecruit, which helps college recruiters during the tournament seasons, when they're travelling to watch students play at various tournaments and camps. I am part of a small but amazing team of engineers, support staff, salespeople, and marketing staff and together we make something that we're proud of being associated with. The biggest compliment our company has ever gotten, in my opinion, is when customers say that our product allows them to get a normal night's sleep now, compared to the old way of staying up until 2 or 3 in the morning, just trying to figure out which games to attend.
 
 ## Principal Engineer, [Vaporstream][] (2012 - August 2015)
 
