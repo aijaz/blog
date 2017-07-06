@@ -66,6 +66,7 @@ Key technologies that I've worked on during my time at FastModel are:
 - API Design
 - JSOG parsing (JSON with cyclical references)
 - Apple Watch Apps
+- 3D Touch on newer iPhone models
 - REST clients using AFNetworking
 - Custom JSOG HTTP Request and Response Serializers
 - The iOS Keychain
