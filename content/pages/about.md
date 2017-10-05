@@ -59,13 +59,16 @@ find any image that is not attributed, please email me and let me know.
 
 ## iOS Lead, [FastModel Sports][] (August 2015 - Present)
 
-I am an iOS developer at FastModel. I work on apps for professional basketball coaches and recruiters. I'm currently developing our flagship app, FastRecruit, which helps college recruiters during the tournament seasons, when they're traveling to watch students play at various tournaments and camps. I am part of a small but amazing team of engineers, support staff, salespeople, and marketing staff and together we make something that we're proud of being associated with. The biggest compliment our company has ever gotten, in my opinion, is when customers say that our product allows them to get a normal night's sleep now, compared to the old way of staying up until 2 or 3 in the morning, just trying to figure out which games to attend.
+I am an iOS developer at FastModel. I work on apps for professional basketball coaches and recruiters. I'm currently developing our flagship app, FastRecruit, which helps college recruiters during the tournament seasons, when they're traveling to watch students play at various tournaments and camps. I also occasionally function as a triage coordinator during the tournament season when we're making changes with an accelerated schedule. I make sure that testers are testing the appropriate hot-fixes, and gather data from the various parties and stakeholders in order to decide when to push changes to Production.
+
+I am part of a small but amazing team of engineers, support staff, salespeople, and marketing staff and together we make something that we're proud of being associated with. The biggest compliment our company has ever gotten, in my opinion, is when customers say that our product allows them to get a normal night's sleep now, compared to the old way of staying up until 2 or 3 in the morning, just trying to figure out which games to attend.
 
 Key technologies that I've worked on during my time at FastModel are: 
 
 - API Design
 - JSOG parsing (JSON with cyclical references)
 - Apple Watch Apps
+- Continuous Integration with [fastlane][] and Jenkins
 - 3D Touch on newer iPhone models
 - REST clients using AFNetworking
 - Custom JSOG HTTP Request and Response Serializers
@@ -142,7 +145,8 @@ Most of our programs would write to one or more Sybase databases. At Citadel I b
 
 ## President, ENoor Creations (1998 - 2005)
 
-At ENoor I started off running web hosting service, and then migrated to writing web apps for clients in Apache/mod_perl. During the 7 years that ENoor was operating I focused on various industries, including Law Enforcement, Automobile Sales, Telecom, Printing, and Non-Profits. One of my most interesting projects was customizing an SMTP server for a client, to implement their authentication scheme. I wound up writing authentication code in C for the ```qmail-smtp``` mail server.  ENoor is also where I developed [TaskForest](http://taskforest.com), an open source job scheduler, to manage my own machines. 
+At ENoor I started off running web hosting service, and then migrated to writing web apps for clients in Apache/mod_perl. During the 7 years that ENoor was operating I focused on various industries, including Law Enforcement, Automobile Sales, Telecom, Printing, and Non-Profits. One of my most interesting projects was customizing an SMTP server for a client, to implement their authentication scheme. I wound up writing authentication code in C for 
+the `qmail-smtp` mail server.  ENoor is also where I developed [TaskForest](http://taskforest.com), an open source job scheduler, to manage my own machines. 
 
 I also spent a decent amount of time over a three-year period writing software for Webvestor. This was a trading company started by a pair of traders at the Chicago Mercantile Exchange. I wrote an app in Visual C++ that would use the FIX API to post data from their local trading applications to the CME. Since they had a dedicated wired connection to the CME, any such app would have to be audited and certified by the Exchange. Working on this and getting the app certified was a milestone in my growth as a Software Developer. 
 
@@ -159,3 +163,4 @@ Because the VLR application ran on a diskless board on Motorola's telecom switch
 [Euclid Software, LLC]: http://euclidsoftware.com
 [Citadel]: http://citadel.com/
 [Motorola]: http://motorola.com
+[fastlane]: https://fastlane.tools
