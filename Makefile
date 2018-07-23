@@ -12,10 +12,10 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=aijazansari.com
+SSH_HOST=aijaz.net
 SSH_PORT=22
 SSH_USER=root
-SSH_TARGET_DIR=/home/pelican/output
+SSH_TARGET_DIR=/home/aijaz/blog
 
 S3_BUCKET=my_s3_bucket
 

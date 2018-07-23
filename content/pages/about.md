@@ -57,13 +57,13 @@ find any image that is not attributed, please email me and let me know.
 <a name="work"></a>
 # Work Experience
 
-## iOS Lead, [FastModel Sports][] (August 2015 - Present)
+## iOS Lead, [FastModel Sports][] (August 2015 - January 2018)
 
-I am an iOS developer at FastModel. I work on apps for professional basketball coaches and recruiters. I'm currently developing our flagship app, FastRecruit, which helps college recruiters during the tournament seasons, when they're traveling to watch students play at various tournaments and camps. I also occasionally function as a triage coordinator during the tournament season when we're making changes with an accelerated schedule. I make sure that testers are testing the appropriate hot-fixes, and gather data from the various parties and stakeholders in order to decide when to push changes to Production.
+I was an iOS developer at FastModel. I worked on apps for professional basketball coaches and recruiters. I developed our flagship app, FastRecruit, which helps college recruiters during the tournament seasons, when they're traveling to watch students play at various tournaments and camps. I also occasionally functioned as a triage coordinator during the tournament season when we were making changes with an accelerated schedule. I made sure that testers wee testing the appropriate hot-fixes, and gathered data from the various parties and stakeholders in order to decide when to push changes to Production.
 
-I am part of a small but amazing team of engineers, support staff, salespeople, and marketing staff and together we make something that we're proud of being associated with. The biggest compliment our company has ever gotten, in my opinion, is when customers say that our product allows them to get a normal night's sleep now, compared to the old way of staying up until 2 or 3 in the morning, just trying to figure out which games to attend.
+I was part of a small but amazing team of engineers, support staff, salespeople, and marketing staff and together we made something that we're proud of being associated with. The biggest compliment we've ever gotten, in my opinion, is when customers said that our product allows them to get a normal night's sleep now, compared to the old way of staying up until 2 or 3 in the morning, just trying to figure out which games to attend.
 
-Key technologies that I've worked on during my time at FastModel are: 
+Key technologies that I worked on during my time at FastModel are: 
 
 - API Design
 - JSOG parsing (JSON with cyclical references)
