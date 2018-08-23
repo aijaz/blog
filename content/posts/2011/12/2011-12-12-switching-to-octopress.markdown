@@ -100,8 +100,8 @@ I decided to optimize the site and get a high score from
 compression of html files, and turned on KeepAlive.  
 
 I also had to change my site redirections.  Originally, I was
-redirecting [aijazansari.com](http://aijazansari.com/) to 
-[www.aijazansari.com](http://www.aijazansari.com/).  However, I noticed
+redirecting aijazansari.com to 
+www.aijazansari.com.  However, I noticed
 that my site was not being displayed correctly on Windows Internet
 Explorer Version 8.  As [this page](https://github.com/imathis/octopress/issues/89) shows, 
 it's probably due to

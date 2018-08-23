@@ -18,7 +18,7 @@ Here are the slides and links from my recent Blitz Talk on password security at 
 **Update:** I have just posted [some followup discussions in a new blog post](/2012/09/24/more-on-passwords/).
 
 <!-- more -->
-First, [here are my slides](http://aijazansari.com/downloads/ProtectingYourClientsDataBlitzTalkStaged.pdf).  I've printed every build stage as a
+First, [here are my slides](https://aijaz.net/downloads/ProtectingYourClientsDataBlitzTalkStaged.pdf).  I've printed every build stage as a
 separate slide, so there are more than the 20 slides I had in the original
 presentation.
 

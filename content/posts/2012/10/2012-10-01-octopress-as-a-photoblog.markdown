@@ -193,5 +193,5 @@ Although this post shows you how to make an Octopress-powered photoblog, it's re
 5. [ImageMagick](http://www.imagemagick.org/)
 6. [Retina.js](http://retinajs.com/)
 7. [A sample Octopress photoBlog](http://testphoto.aijazansari.com/)
-8. [A photo page on this blog](http://aijazansari.com/2012/08/31/horseshoe-bend/)
+8. [A photo page on this blog](https://aijaz.net/2012/08/31/horseshoe-bend/)
 9. [The photoBlog script repository](https://github.com/aijaz/photoBlog)

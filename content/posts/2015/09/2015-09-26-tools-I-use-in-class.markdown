@@ -49,7 +49,7 @@ _This is the 26th of my [30 days][] posts._
 
 [30 days]: /2015/08/31/30-days/
 [webcam]: http://www.amazon.com/gp/product/B004YW7WCY
-[class]: http://aijazansari.com/2015/09/18/giving-back/
+[class]: https://aijaz.net/2015/09/18/giving-back/
 [mousepose]: http://boinx.com/mousepose/overview/
 [screenflow]: http://www.telestream.net/screenflow/overview.htm
 [zoom]: http://zoom.us/

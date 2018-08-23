@@ -36,7 +36,7 @@ We start off by importing required modules and creating a parser to parse comman
 # http://llvm.org/svn/llvm-project/lldb/trunk/examples/python/cmdtemplate.py
 # 
 # For a blog post describing this, visit 
-# http://aijazansari.com/2017/01/11/lldb-python/
+# https://aijaz.net/2017/01/11/lldb-python/
 #----------------------------------------------------------------------
 
 import lldb
@@ -226,7 +226,7 @@ As Apple's engineers pointed out at this year's WWDC, another way to import the 
 - [FastModel Sports][fm]
 
 
-[jq]: http://aijazansari.com/2016/10/25/jq/index.html
+[jq]: https://aijaz.net/2016/10/25/jq/index.html
 [lldb]: http://lldb.llvm.org/index.html
 [lldbPython]: http://lldb.llvm.org/python-reference.html
 [pythonAPI]: http://lldb.llvm.org/python_reference/index.html

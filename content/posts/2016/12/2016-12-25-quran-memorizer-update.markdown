@@ -59,7 +59,7 @@ If anyone knows why using the `CFBundleIdentifier` didn't work, please let me kn
 Well, that's it for now. I'll keep posting notes on the rewrite at this blog. 
 
 [qm]: http://quranmemorizer.com/
-[qmu]: http://aijaz.net/tag/qmupgrade.html
+[qmu]: https://aijaz.net/tag/qmupgrade.html
 [Specta]: https://github.com/specta/specta
 [Expecta]: https://github.com/specta/expecta/
 [nullability]: https://developer.apple.com/swift/blog/?id=25
