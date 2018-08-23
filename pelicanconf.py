@@ -52,7 +52,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 SUMMARY_MAX_LENGTH = None
-STATIC_PATHS = ['images', 'wp', 'static']
+STATIC_PATHS = ['images', 'wp', 'static', 'zf']
 PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['summary', 
            'md-metayaml', 

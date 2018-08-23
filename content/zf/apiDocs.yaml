@@ -1,0 +1,1835 @@
+openapi: 3.0.0
+info:
+  title: Zaina Foundation API
+  description: >
+    - 1 High-level Architecture
+        - 1.1 Components
+            - 1.1.1 Servers
+                - 1.1.1.1 There must be a web server
+                - 1.1.1.2 There must be an application server
+                - 1.1.1.3 There must be a database server with the [following schema](https://aijaz.net/zf/db.txt)
+                - 1.1.1.4 There must be an asset-hosting content server
+                - 1.1.1.5 Two or more of these servers may be on a single machine
+            - 1.1.2 Clients
+                - 1.1.2.1 There must be a web client
+                - 1.1.2.2 There must be an Android client
+                - 1.1.2.3 There must be an iOS client
+            - 1.1.3 API
+                - 1.1.3.1 All communication between client and server will take
+                  place via a REST API accessed over HTTPS
+                - 1.1.3.2 HTTP (non-SSL) must not be supported
+    - 2 Roles
+        - 2.1 A user of the app must have exactly one of the following roles
+            - 2.1.1 User (parent or child)
+                - 2.1.1.1 A user can add a post to their feed and read posts that
+                  other users have added
+                - 2.1.1.2 A user can add a profile picture to their profile
+            - 2.1.2 Moderator
+                - 2.1.2.1 Every feed has one or more moderators.
+                - 2.1.2.2 A moderator may be assigned to more than one feed
+                - 2.1.2.3 A moderator can read all posts on a feed to which they’re
+                  assigned
+                - 2.1.2.4 A moderator may choose to hide a post if they deem it
+                  inappropriate
+                - 2.1.2.5 Hidden posts are visible by moderators, but not by users
+                - 2.1.2.6 A moderator can ‘unhide’ a post that was previously hidden
+            - 2.1.3 Admin
+            - 2.1.4 Admins can view all feeds
+            - 2.1.5 Admins can assign one or more moderators to a feed
+            - 2.1.6 Admins can create new feeds
+        - 2.2 Multiple roles
+            - 2.2.1 If a person needs to have multiple roles (for example, if a
+              moderator is also a parent), then that person must have two
+              accounts, each with a different email address and a different
+              role.
+    - 3 Organizations
+        - 3.1 An organization is the combination of an adopting family, one or
+          more moderators, and one or more adoptees (children).
+        - 3.2 Feeds
+            - 3.2.1 Every organization has exactly one feed
+            - 3.2.2 A feed is a list of posts sorted by time of creation
+            - 3.2.3 Posts
+                - 3.2.3.1 A post contains a text string
+                - 3.2.3.2 A post may be ‘favorited’ (faved) or ‘liked’ by a user
+                - 3.2.3.3 A post may be ‘unfaved’ or ‘unliked’ by a user
+                - 3.2.3.4 A user may edit a post they created
+                - 3.2.3.5 A user may delete a post they created
+            - 3.2.4 Assets
+                - 3.2.4.1 A post may have 1 or more assets
+                - 3.2.4.2 An asset is an image or video
+                - 3.2.4.3 Each asset may have a caption
+                - 3.2.4.4 A user may edit the caption of an asset that’s attached
+                  to a post they created
+            - 3.2.5 Visibility
+                - 3.2.5.1 A moderator may hide a post they deem inappropriate
+                - 3.2.5.2 A moderator may unhide a post that was previously hidden
+                - 3.2.5.3 Hidden posts are visible by moderators, but not by users
+            - 3.2.6 Multiple feeds
+                - 3.2.6.1 Each user (parent or child) will have exactly one feed of
+                  which they’re a member
+                - 3.2.6.2 Each moderator may be a member of multiple feeds (one for
+                  each organization of which they’re a moderator)
+    - 4 API
+        - 4.1 The API document is the authoritative reference on the API that
+          the web server supports
+    - 5 Web Client
+        - 5.1 Architecture
+            - 5.1.1 The web client must communicate with the server using the API
+              defined in this document
+            - 5.1.2 The preferred technology for the website is React JS
+            - 5.1.3 Session Management
+                - 5.1.3.1 Cookies will never be returned by the server, and should
+                  not be expected by the client
+                      This is to prevent CSRF attacks
+                - 5.1.3.2 The website may store the session token in `localstorage`
+                  so that deep linking works
+            - 5.1.4 Linking
+                - 5.1.4.1 The website should allow users to send links to each other
+                - 5.1.4.2 Posts will have urls of the type: /post/{postID}
+                - 5.1.4.3 Assets will have urls of the type:
+                  /asset/{postID}/{assetID}
+                - 5.1.4.4 If the receiver of the url is already logged in and has
+                  access to the post referenced by {postID} they should be
+                  able to view the post of asset immediately
+            - 5.1.5 Javascript is a requirement for the website to work
+            - 5.1.6 The site should be reasonably responsive, and should be
+              usable on the following form factors
+                - 5.1.6.1 Desktop
+                - 5.1.6.2 Tablet
+                - 5.1.6.3 Mobile
+        - 5.2 Modes of usage
+            - 5.2.1 Users
+                - 5.2.1.1 Log-in screen
+                - 5.2.1.2 Feed browsing screen
+                    - 5.2.1.2.1 Each post should show the contents of the post as
+                      well as details of how many ‘faves’ it has received,
+                      and who faved the post.
+                    - 5.2.1.2.2 A user should be able to reply to a post from within
+                      the feed browsing screen
+                - 5.2.1.3 Post detail screen
+                    - 5.2.1.3.1 If a post is very large, or has many assets, it may
+                      appear truncated in the feed. Clicking on a link
+                      labeled ‘More’ should take the user to the feed
+                      detail screen
+                    - 5.2.1.3.2 A user should be able to reply to a post from within
+                      the post detail screen
+                - 5.2.1.4 Post creation screen
+                    - 5.2.1.4.1 The user should be able to create a post containing
+                      just a text string
+                    - 5.2.1.4.2 The user who created the post may edit the text
+                      content of a post at a later date
+                        - 5.2.1.4.2.1 A user who has not created the post may not edit
+                          the text content
+                        - 5.2.1.4.2.2 If a post has been edited, all users should be
+                          able to see the edit history
+                    - 5.2.1.4.3 The user should be able to add assets to the post
+                        - 5.2.1.4.3.1 Each asset should be either an image or a video
+                        - 5.2.1.4.3.2 Each asset may optionally have a caption
+                          associated with it
+                        - 5.2.1.4.3.3 A user may be able to fave an asset
+                        - 5.2.1.4.3.4 The user who created the post may edit the
+                          caption at a later date
+                            - 5.2.1.4.3.4.1 A user who has not created the post may not
+                              edit the caption
+                            - 5.2.1.4.3.4.2 If a caption has been edited, all users
+                              should be able to see the edit history
+                            - 5.2.1.4.3.4.3 A user may be able to reply to a caption with
+                              text
+                        - 5.2.1.4.3.5 The user may delete an asset a later date
+                    - 5.2.1.4.4 The user may delete the post at a later date
+                    - 5.2.1.4.5 A user may be able reply to a post with text
+            - 5.2.2 Moderator
+                - 5.2.2.1 Log-in screen
+                - 5.2.2.2 Feed selection screen
+                    - 5.2.2.2.1 Since a moderator has access to multiple feeds, they
+                      will have to select a feed before they can start
+                      browsing
+                - 5.2.2.3 Feed browsing screen - as above plus:
+                    - 5.2.2.3.1 A moderator should be able to hide or unhide a post
+                      from the feed browsing screen
+                    - 5.2.2.3.2 There should be a clear indicator displayed if a post
+                      is marked hidden
+                - 5.2.2.4 Post detail screen - as above
+                - 5.2.2.5 A moderator may not create a post, fave a post, reply to
+                  post, or reply to a caption, or fave an asset.
+            - 5.2.3 Admin
+                - 5.2.3.1 Log-in screen
+                - 5.2.3.2 Organization listing screen
+                - 5.2.3.3 Organization creation screen
+                - 5.2.3.4 Person listing screen
+                - 5.2.3.5 Person creation screen
+                - 5.2.3.6 Feed membership screen
+        - 5.3 Layout Wireframes TBD
+            - 5.3.1 The websites should support template-based design using
+              something like [Jinja 2](http://jinja.pocoo.org/docs/2.10/)
+              (preferred)
+    - 6 Backend Architecture
+        - 6.1 Hosting
+            - 6.1.1 The system should be hosted on Amazon Elastic Beanstalk or
+              Digital Ocean
+        - 6.2 Security
+            - 6.2.1 Encryption at rest
+                - 6.2.1.1 The database must be hosted on an encrypted file system.
+                - 6.2.1.2 Assets must be stored on an encrypted file system
+            - 6.2.2 Encryption at transit
+                - 6.2.2.1 All web server access must be across HTTPS (SSL)
+                - 6.2.2.2 HTTP must not be supported
+            - 6.2.3 Authentication
+                - 6.2.3.1 Passwords must not be stored in clear text anywhere
+                - 6.2.3.2 Passwords must be hashed with `bcrypt` and a `log_rounds`
+                  value of 10 or greater
+                - 6.2.3.3 Passwords must never be written to any log at any time
+                - 6.2.3.4 The system must support a way for the admin to request
+                  that the password be rehashed with a larger value of
+                  `log_rounds` at the next login
+                    - 6.2.3.4.1 The system administrator will manually update the
+                      `GlobalSettings` table to specify the desired value
+                      for `log_rounds` for every user.
+            - 6.2.4 Cookies
+                - 6.2.4.1 Cookies should not be used at all
+        - 6.3 Storing Assets
+            - 6.3.1 Images and Videos should not be accessible directly via HTTP
+              or HTTPS. They should only be accessible via the API as
+              described
+        - 6.4 Database Schema
+            - 6.4.1 The database should have [this schema](https://aijaz.net/zf/db.txt)
+        - 6.5 Emails
+            - 6.5.1 Emails should be sent using a service like MailGun
+        - 6.6 Backups
+            - 6.6.1 A complete database and asset backup should be performed at a
+              fixed time every day
+            - 6.6.2 At no point should the database backup be stored unencrypted.
+              See [Encrypted Postgres Backups](https://www.imagescape.com/blog/2015/12/18/encrypted-postgres-backups/) for an example on how to do this.
+            - 6.6.3 After completion, the backup should be copied via scp to a
+              remote server
+            - 6.6.4 There should be a documented process describing how to
+              restore from backup
+            - 6.6.5 There should be a documented process describing how to deploy
+              a copy of the system in case the primary hosting servers
+              crash irrecoverably. 
+    - 7 iOS Client
+        - 7.1 Language
+            - 7.1.1 The iOS client should be written in Swift
+            - 7.1.2 The minimum iOS version should be iOS 12
+            - 7.1.3 ARC must be used in all code
+        - 7.2 Persistence
+            - 7.2.1 Data
+                - 7.2.1.1 Core Data should not be used
+                - 7.2.1.2 Data should be stored locally using sqlite3
+                - 7.2.1.3 Data access should be via
+                  [FMDB](https://github.com/ccgus/fmdb)
+                - 7.2.1.4 The sqlite3 database should be encrypted using
+                  [SQLCipher](https://www.zetetic.net/sqlcipher/)
+                - 7.2.1.5 The database should support migration via
+                  [FMDBMigrationManager](https://github.com/layerhq/FMDBMigrationManager)
+            - 7.2.2 Passwords
+                - 7.2.2.1 Passwords should not be stored in the database
+                - 7.2.2.2 Passwords should be stored in the system keychain
+                    - 7.2.2.2.1 Nothing else should be stored in the system keychain
+                - 7.2.2.3 The app should allow the user to store their credentials
+                  in iCloud Keychain (See videos from WWDC 2018 for
+                  directions)
+        - 7.3 Logging
+            - 7.3.1 The system should support logging via
+              [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack)
+            - 7.3.2 The default logging level should be Info
+            - 7.3.3 The following should be logged at each level:
+                - 7.3.3.1 `DDLogLevelError`
+                    - 7.3.3.1.1 Errors that prevent the user from performing a task:
+                        - 7.3.3.1.1.1 Login failure
+                            - 7.3.3.1.1.1.1 Include email address used
+                            - 7.3.3.1.1.1.2 Do not include password
+                        - 7.3.3.1.1.2 Network failure
+                            - 7.3.3.1.1.2.1 Any 400 or higher HTTP status code
+                            - 7.3.3.1.1.2.2 DNS failure
+                            - 7.3.3.1.1.2.3 Connection failure
+                            - 7.3.3.1.1.2.4 Include any detail available, including text
+                              from server
+                        - 7.3.3.1.1.3 Certificate pinning failure
+                        - 7.3.3.1.1.4 No space on disk
+                        - 7.3.3.1.1.5 Insufficient permissions for Camera or Microphone
+                - 7.3.3.2 `DDLogLevelWarn`
+                    - 7.3.3.2.1 Anything that could become lead to an error if not
+                      addressed
+                        - 7.3.3.2.1.1 Free disk space on device is less than 250Mb
+                - 7.3.3.3 `DDLogLevelInfo`
+                    - 7.3.3.3.1 When the app becomes active, the following should be
+                      logged:
+                        - 7.3.3.3.1.1 Device information
+                        - 7.3.3.3.1.2 iOS version
+                        - 7.3.3.3.1.3 Free disk space
+                        - 7.3.3.3.1.4 Bundle version number
+                    - 7.3.3.3.2 The URL of every API end point request, as well as
+                      the resulting HTTP status code and time taken, using
+                      [AlamofireNetworkActivityLogger](https://github.com/konkab/AlamofireNetworkActivityLogger)
+                    - 7.3.3.3.3 The name of every UIViewController when
+                      `viewDidAppear` is invoked
+                - 7.3.3.4 `DDLogLevelDebug`
+                    - 7.3.3.4.1 The bodies of all API requests
+                        - 7.3.3.4.1.1 Passwords should not be logged
+                - 7.3.3.5 `DDLogLevelVerbose`
+                    - 7.3.3.5.1 The bodies of all API responses
+                        - 7.3.3.5.1.1 Session tokens should not be logged
+                        - 7.3.3.5.1.2 Image or Video asset bodies should not be logged
+            - 7.3.4 The system should allow the user to change the logging level
+              from within the settings screen
+            - 7.3.5 Log files
+                - 7.3.5.1 Logs should be written to a file
+                - 7.3.5.2 Log files must be rotated every 24 hours
+                - 7.3.5.3 A maximum of 7 log files should be stored
+                - 7.3.5.4 The system should allow the user to send an email to
+                  support
+                    - 7.3.5.4.1 All existing log files should be concatenated into
+                      one and attached to the email
+        - 7.4 Screens
+            - 7.4.1 Screen wireframes TBD
+            - 7.4.2 All views should use AutoLayout
+            - 7.4.3 All views should use Safe Area Offsets so that the app may be
+              used on an iPhone X
+            - 7.4.4 The app must run on any iPhone and iPad capable of running
+              iOS 12
+            - 7.4.5 The app should support iOS multitasking on the iPad
+            - 7.4.6 The app should support portrait orientation on all devices
+            - 7.4.7 The app should support landscape orientation for [regular width size classes](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/)
+        - 7.5 Notifications
+            - 7.5.1 The user should be able to opt into notifications
+            - 7.5.2 Notifications should sent to everyone in the organization
+              whenever content is added or modified
+                - 7.5.2.1 This includes liking items
+                - 7.5.2.2 Notifications should not be sent if an item in ‘unliked’
+                - 7.5.2.3 Notifications should not be sent to the user who
+                  initiated the action that caused the notification to be
+                  sent.
+                - 7.5.2.4 Notifications should not be sent to moderators
+                - 7.5.2.5 Notifications need not have actions associated with them
+                  in the initial version
+        - 7.6 Testing
+            - 7.6.1 The developers should include automated tests that test the
+              major functionality of the system
+            - 7.6.2 At the very least every requirement in this document should
+              have an associated test
+                - 7.6.2.1 Exceptions to this requirement will be made on a per-case
+                  basis
+                    - 7.6.2.1.1 These will likely be limited to things that are hard
+                      to test, like notifications
+        - 7.7 Security
+            - 7.7.1 Certificate Pinning
+                - 7.7.1.1 Zaina Foundation will provide the developers with a
+                  certificate that should be pinned in the app
+                - 7.7.1.2 The developers should provide a way for the certificate
+                  to be updated in a new version of the app before the
+                  certificate expires
+        - 7.8 Deployment
+            - 7.8.1 Deployment to testers will be done via TestFlight
+    - 8 The following are our preferences, not requirements
+        - 8.1 The database should be PostgreSQL
+        - 8.2 The backend should be written in Python, using Flask
+        - 8.3 The iOS client should use storyboards
+        - 8.4 The iOS client should use the AlamoFire networking library
+        - 8.5 The iOS client should support the [1Password App Extension](https://github.com/agilebits/onepassword-app-extension)
+  version: 1.0.0
+servers:
+  - url: https://api.example.com/v1
+    description: Optional server description, e.g. Main (production) server
+  - url: https://staging-api.example.com
+    description: Optional server description, e.g. Internal staging server for testing
+tags:
+  - name: Session
+    description: Authorization-related endpoints
+  - name: PasswordReset
+    description: Forgot-password functionality
+  - name: UpdatePassword
+    description: Forgot-password functionality
+  - name: Profile
+    description: User's profile
+  - name: Feed
+    description: Feed-related endpoints
+  - name: Post
+    description: Post-related endpoints
+  - name: Asset
+    description: Asset-related endpoints
+  - name: PostFave
+    description: Fave a post
+  - name: AssetFave
+    description: Fave an asset
+  - name: CommentFave
+    description: Fave a comment
+  - name: PostComment
+    description: Add a comment to a post
+  - name: AssetComment
+    description: Add a comment to an asset
+  - name: Picture
+    description: Picture-related endpoints
+  - name: Hide
+    description: Hide a post
+  - name: Feeds
+    description: Global access to feeds for admins
+  - name: People
+    description: Admin access to manage people
+  - name: Membership
+    description: Admin access to manage organization membership
+security:
+  - bearerAuth: []
+
+paths:
+
+  /session:
+    post: # No bearer auth here
+      security: []   # No security
+      tags:
+        - Session
+      summary: Login to the system
+      requestBody:
+        description: Log in with an email and password
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthCredentials'
+      responses:
+        '201': # Created
+          description: >
+            A successful login returns all the information
+            needed to carry on without immediately making 
+            a second request.
+          content:
+            application/json:
+              schema: 
+                $ref: '#/components/schemas/SessionToken'
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentials'
+    delete: 
+      tags:
+        - Session
+      summary: Logout
+      responses:
+        '204': # No Content
+          description: >
+            A DELETE to /session will always return 204, 
+            whether the user is logged in or not.
+
+  ## #######################################################
+  
+  /passwordReset:
+    post: # No bearer auth here
+      security: []   # No security
+      description: >
+        The backend will send an email with a link to 
+        reset the password. When the user clicks on the
+        link, they will be taken to a web page where 
+        they will be prompted  to enter the new
+        password.
+      tags:
+        - PasswordReset
+      summary: Request a password reset
+      requestBody:
+        description: The email address of the user 
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ForgotCredentials'
+      responses:
+        '204': # No Content
+          description: An email was sent with a link to /resetPassword/{token}
+
+  ## #######################################################
+  
+  /passwordReset/{token}:
+    get: # No bearer auth here
+      security: []   # No security
+      tags:
+        - PasswordReset
+      summary: This is the link that's sent in an email
+      parameters:
+        - in: path
+          name: token
+          required: true
+          schema: 
+            type: string
+            example: 66f4eda8-38df-4e83-9e12-d207c649e387
+          description: The token 
+      responses:
+        '204': # No Content
+          description: An email was sent with the proper link
+        '400': # Bad request
+          description: The token is likely incorrect
+
+  ## #######################################################
+  
+  /updatePassword:
+    post: # No bearer auth here
+      security: []   # No security
+      tags:
+        - UpdatePassword
+      summary: Update the user's password
+      requestBody: 
+        description: Update the password
+        required: true
+        content:
+          application/json:
+            schema:
+              properties: 
+                token: 
+                  type: string
+                  example: 66f4eda8-38df-4e83-9e12-d207c649e387
+                  description: The token that was in the email 
+                newPassword: 
+                  type: string
+                  example: hunter2
+                  description: The new password
+      responses:
+        '204': # No Content
+          description: An email was sent with the proper link
+        '400': # Bad request
+          description: The token is likely incorrect or has expired
+
+  ## #######################################################
+    
+  /profile:
+    get:
+      tags: 
+        - Profile
+      summary: Get profile information for the logged-in user
+      description: >
+        Even though we get the profile information when the 
+        user logs in, sometimes we may want to refresh that
+        data. One scenario when we would do this is when 
+        the organization membership changes. In cases like 
+        this we would need to refresh that data. This could
+        be triggered by some sort of 'Refresh' button.
+      responses: 
+        '200': # OK
+          description: An up-to-date SessionToken
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SessionToken'
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentials'
+
+  ## #######################################################
+  
+  /admin/feeds:
+    post: 
+      tags: 
+        - Feeds
+      summary: Create a new feed (organization) 
+      description: >
+        An organization is the combination of an adopting 
+        family and one or more adoptees (children). 
+        A feed is synonymous to an organization. Each 
+        organization has a feed, and each feed is 
+        associated with just one organization. 
+        
+        - A normal user can access just their feed. 
+
+        - A moderator can read all the feeds assigned to them.
+
+        - An admin can read all feeds across the system.
+
+
+        When a new feed is created, there will be no members
+        present. The client will have to add members in subsequent
+        requests. 
+
+      requestBody: 
+        description: The name of the organization
+        required: true
+        content:
+          application/json:
+            schema:
+              properties: 
+                organizationName: 
+                  type: string
+                  example: Ansari Family
+      responses: 
+        '200': #OK
+          description: Return the newly-created feed with an empty list of members
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Feed'
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentials'
+
+    get: 
+      tags:
+        - Feeds
+      summary: Get a list of feeds
+      description: >
+        An organization is the combination of an adopting 
+        family and one or more adoptees (children). 
+        A feed is synonymous to an organization. Each 
+        organization has a feed, and each feed is 
+        associated with just one organization. 
+
+        - A normal user can access just their feed. 
+
+        - A moderator can read all the feeds assigned to them.
+
+        - An admin can read all feeds across the system.
+      responses:
+        '200': # OK
+          description: >
+            A list of feeds this user can access.
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Feeds'
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentials'
+
+  ## #######################################################
+  
+  /admin/feeds/{feedID}:
+    delete: 
+      tags: 
+        - Feeds
+      summary: Delete an organization (feed)
+      description: >
+        An admin may delete an organization
+      parameters: 
+        - in: path
+          name: feedID
+          required: true
+          schema: 
+            type: integer
+            example: 1
+          description: >
+            The ID of the feed to be deleted
+      responses: 
+        '204': # No Content
+          description: The feed was deleted successfully
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentials'
+
+  ## #######################################################
+
+  
+  /feed/{feedID}/{preposition}/{postID}:
+    get: 
+      tags:
+        - Feed
+      summary: Retrieve posts from a feed
+      description: >
+        If there are a large number of posts in a feed, a 
+        call to this endpoint may not return all posts. The 
+        server will determine how many posts to return, based
+        on server load and other factors. 
+
+
+        It is assumed that the client will store post information
+        locally, and use the ID of the newest (or oldest, if 
+        navigating backwards) post already saved as a point from 
+        where to start the retrieval. 
+
+
+        With each list of posts, the server will include a value
+        named `more`. If this value is true, then there are more 
+        posts to be retrieved, and the client may request more 
+        using a new postID. If this value is false, then there 
+        are no more posts to be retrieved, and the client does 
+        not need to request more posts. 
+
+
+        The server will also return the preposition and postID that
+        were passed in with the request. This can be used by the 
+        client to help with tracking requests without preserving 
+        state.
+
+
+        The server does not make any guarantee about the completion 
+        of the result set except for the following:
+
+
+        - If the client starts with a `preposition` of `after` and a 
+          `postID` of `0` and keeps requesting more using the largest 
+          postID returned from the previous call, it will eventually
+          get all of the posts with no gaps. The client will know this
+          because the value of `more` will be `false`.
+
+        
+        PostIDs are shared between all organizations. This means that 
+        there will only be one post with an ID of, say, 5. This also 
+        means that even if a client has retrieved all posts for an 
+        organization, there is no guarantee that the IDs for those 
+        posts will be continuous. There will almost certainly be gaps.
+
+
+        For example, organization 1 may have posts 1, 2, 4, and 6. 
+        Organization 2 may have posts 3, 5, and 7. 
+
+
+        The server guarantees that a post with ID `n` was created earlier
+        in time than a post with ID `n+1`. 
+
+      parameters:
+        - in: path
+          name: feedID
+          required: true
+          schema: 
+            type: integer
+            example: 1
+          description: >
+            The feed ID. A feed ID of 0 is considered special, 
+            and is used to denote the users default (and only)
+            feed. This is what parents will use. Admins and 
+            moderators will use different feed IDs, depending
+            on which feed they want to monitor.
+        - in: path
+          name: preposition
+          required: true
+          schema: 
+            type: string
+            enum: [after, before]
+            example: after
+          description: >
+            If the user is scrolling or paging in the direction
+            of newer posts, the 'after' preposition is used. The
+            postID in that case will be the maximum postID that 
+            the client has already received and stored locally. 
+            Conversely, when scrolling towards older posts, the 
+            'before' preposition is used with the minimum postID
+            that the client has already received and stored 
+            locally. 
+        - in: path
+          name: postID
+          required: true
+          schema: 
+            type: integer
+            example: 1
+          description: >
+            The maximum or minimum post ID as defined above.
+      responses:
+        '200': # OK
+          description: An array of posts
+          content: 
+            application/json:
+              schema:
+                type: object
+                required: [posts, prepostion, postID]
+                properties: 
+                  posts:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Post'
+                  more: 
+                    type: boolean
+                    example: false
+                  preposition: 
+                    type: string
+                    enum: [before, after]
+                    example: after
+                  postID: 
+                    type: integer
+                    example: 1
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentials'
+
+  ## #######################################################
+
+  /post:
+    post:
+      tags: 
+        - Post
+      summary: Create a new post
+      description: >
+        The only thing required to created a new post is 
+        the text of the post. Assets will be added later,
+        if required.
+      requestBody: 
+        description: The post text
+        required: true
+        content:
+          application/json:
+            schema:
+              properties: 
+                postText:
+                  type: string
+                  example: I played cricket today.
+      responses: 
+        '200': # OK
+          description: The post that was created
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Post'
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentials'
+
+  ## #######################################################
+
+  /post/{postID}:
+    get: 
+      tags: 
+        - Post
+      summary: Get data related to a particular post.
+      description: >
+        A post is defined as text and a collection of assets. 
+        As such, a post is relatively small in size. The
+        assets are usually a lot bigger (images and videos).
+        A post does not contain the assets themselves, but 
+        rather the URLs to the assets. 
+      parameters:
+        - in: path
+          name: postID
+          required: true
+          schema: 
+            type: integer
+            example: 1
+          description: The ID of the post to be retrieved. 
+      responses: 
+        '200': # OK
+          description: The requested post. 
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Post'
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+        '404': # Not Found
+          description: The post could not be found
+
+    patch: 
+      tags: 
+        - Post
+      summary: Edit post text
+      description: >
+        The user can update a post's text. The user cannot 
+        update assets. Individual assets can be deleted.
+      parameters:
+        - in: path
+          name: postID
+          required: true
+          schema: 
+            type: integer
+            example: 1
+          description: The ID of the post to be edited.
+      requestBody:
+        description: The new text of the post.
+        required: true
+        content:
+          application/json:
+            schema:
+              properties: 
+                postText: 
+                  type: string
+                  example: I played cricket today.
+              required: 
+                - postText
+      responses: 
+        '200': # OK
+          description: The updated post
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Post'
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+        '404': # Not Found
+          description: The post could not be found
+
+    delete: 
+      tags: 
+        - Post
+      summary: Delete a post
+      description: >
+        Only the author of a post may delete a post. Even a moderator
+        may not delete a post. A moderator may only hide a post. Once
+        a post is hidden, only a moderator may unhide it.
+      parameters:
+        - in: path
+          name: postID
+          required: true
+          schema: 
+            type: integer
+            example: 2
+          description: The ID of the post to be deleted.
+      responses: 
+        '204': # No Content
+          description: Post deleted successfully
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+        '404': # Not Found
+          description: The post could not be found.
+
+
+  ## #######################################################
+
+  /postFave/{postID}:
+    post: 
+      tags: 
+        - PostFave
+      summary: Fave (like) a post.
+      description: >
+        Moderators or admins may not fave or 
+        unfave any post. 
+      parameters:
+        - in: path
+          name: postID
+          required: true
+          schema: 
+            type: integer
+            example: 2
+          description: The ID of the post to be faved.
+      responses: 
+        '204': # No Content
+          description: The post was faved successfully.
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+          
+    delete: 
+      tags: 
+        - PostFave
+      summary: Remove a fave (like) from a post.
+      description: >
+        Moderators or admins may not fave or 
+        unfave any post. 
+      parameters:
+        - in: path
+          name: postID
+          required: true
+          schema: 
+            type: integer
+            example: 5
+          description: The ID of the post to be unfaved.
+      responses: 
+        '204': # No Content
+          description: The post was unfaved successfully.
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+
+  ## #######################################################
+
+  /moderator/hide/{postID}:
+    post: 
+      tags: 
+        - Hide
+      summary: Hide a post from all non-moderators
+      description: >
+        Sometimes a moderator may deem a post to be inappropriate
+        and want to prevent the post from being viewed from all
+        non-moderators. This does not delete the post, so the 
+        moderators may 'unhide' the post later if necessary. The 
+        post may not be edited when it's hidden.
+
+
+        A moderator may not delete a post. Only the post's author
+        may delete a post. 
+      parameters:
+        - in: path
+          name: postID
+          required: true
+          schema: 
+            type: integer
+            example: 2
+          description: The postID
+      responses: 
+        '204': # No Content
+          description: No Content
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+          
+    delete: 
+      tags: 
+        - Hide
+      summary: Unhide a post
+      description: >
+        Sometimes a moderator may deem a post to be inappropriate
+        and want to prevent the post from being viewed from all
+        non-moderators. This does not delete the post, so the 
+        moderators may 'unhide' the post later if necessary. The 
+        post may not be edited when it's hidden.
+
+
+        A moderator may not delete a post. Only the post's author
+        may delete a post. 
+      parameters:
+        - in: path
+          name: postID
+          required: true
+          schema: 
+            type: integer
+            example: 5
+          description: The postID
+      responses: 
+        '204': # No Content
+          description: No Content
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+
+  ## #######################################################
+  
+  /postComment:
+    post: 
+      tags: 
+        - PostComment
+      summary: Add a comment to existing post
+      description: >
+        Add a comment to an existing post
+      requestBody:
+        description: The comment data
+        required: true
+        content:
+          application/json:
+            schema:
+              properties: 
+                postID: 
+                  type: integer
+                  example: 1
+                commentText: 
+                  type: string
+                  example: Cool!
+              required: 
+                - commentText
+                - postID
+      responses: 
+        '201': # Created
+          description: Added comment
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Post'
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+        '404': # Not Found
+          description: The post could not be found
+
+  ## #######################################################
+  
+  /postComment/{commentID}:
+    patch: 
+      tags: 
+        - PostComment
+      summary: Edit post comment text
+      description: >
+        The user can update a post comment's text.
+      parameters:
+        - in: path
+          name: commentID
+          required: true
+          schema: 
+            type: integer
+            example: 1
+          description: The ID of the comment to be edited.
+      requestBody:
+        description: The new text of the comment.
+        required: true
+        content:
+          application/json:
+            schema:
+              properties: 
+                postText: 
+                  type: string
+                  example: I played cricket today.
+              required: 
+                - postText
+      responses: 
+        '200': # OK
+          description: The updated comment
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+        '404': # Not Found
+          description: The post could not be found
+
+
+  ## #######################################################
+
+  /asset/{postID}:
+    post: 
+      tags: 
+        - Asset
+      summary: Add asset to existing post
+      description: >
+        The only user-generated content that a post contains 
+        is its text. An asset is an attachment to a post. 
+        Assets may be images or videos. Images may be in JPEG, 
+        GIF, or PNG formats, and videos must be in the .mp4 
+        format. Assets may have captions associated with them. 
+
+
+        Even though a client may gather post and asset data 
+        before prompting the user to 'post' the request, the
+        software should create a post first, and then add one
+        or more assets to that post, if necessary. The captions 
+        are added separately later.
+      parameters: 
+        - in: path
+          name: postID
+          required: true
+          schema: 
+            type: integer
+            example: 5
+          description: The postID
+      requestBody:
+        description: The asset data
+        required: true
+        content:
+          image/png: 
+            schema:
+              type: string
+              format: binary
+          image/jpg: 
+            schema:
+              type: string
+              format: binary
+          image/gif: 
+            schema:
+              type: string
+              format: binary
+          video/mp4: 
+            schema:
+              type: string
+              format: binary
+      responses: 
+        '201': # Created
+          description: Updated post
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Asset'
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+        '404': # Not Found
+          description: The post could not be found
+
+  ## #######################################################
+
+  /asset/{assetID}:
+    get: 
+      tags: 
+        - Asset
+      summary: View an asset
+      description: >
+        This endpoint will return content with the appropriate
+        content-type
+      parameters:
+        - in: path
+          name: assetID
+          required: true
+          schema: 
+            type: integer
+            example: 8
+          description: The assetID
+      responses: 
+        '200': # OK
+          description: Asset delivered successfully
+          content: 
+            image/*: 
+              schema: 
+                type: string
+                format: binary
+            video/mp4: 
+              schema: 
+                type: string
+                format: binary
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+        '404': # Not Found
+          description: The asset could not be found
+    patch:
+      tags: 
+        - Asset
+      summary: Set the caption of an asset
+      description: >
+        The caption of an asset can only be set after the asset
+        itself has been created. 
+      parameters:
+        - in: path
+          name: assetID
+          required: true
+          schema: 
+            type: integer
+            example: 8
+          description: The assetID
+      requestBody: 
+        description: The text of the caption
+        required: true
+        content: 
+          application/json: 
+            schema: 
+              type: object
+              properties: 
+                caption: 
+                  type: string
+                  example: This is me playing cricket
+              required: [caption]
+      responses: 
+        '204': # No Content
+          description: Caption updated successfully
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+
+    delete:
+      tags:
+        - Asset
+      summary: Delete an asset
+      description: >
+        Only the author of the post may delete an asset. A 
+        moderator may not delete an asset. A moderator may 
+        hide a post. 
+      parameters:
+        - in: path
+          name: assetID
+          required: true
+          schema: 
+            type: integer
+            example: 8
+          description: The assetID
+      responses: 
+        '204': # OK
+          description: Asset deleted successfully
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+        '404': # Not Found
+          description: The asset could not be found
+
+  ## #######################################################
+
+  /assetFave/{assetID}:
+    post: 
+      tags: 
+        - AssetFave
+      summary: Fave (like) an asset.
+      description: >
+        Moderators or admins may not fave or 
+        unfave any asset. 
+      parameters:
+        - in: path
+          name: assetID
+          required: true
+          schema: 
+            type: integer
+            example: 2
+          description: The ID of the asset to be faved.
+      responses: 
+        '204': # No Content
+          description: The asset was faved successfully.
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+          
+    delete: 
+      tags: 
+        - AssetFave
+      summary: Remove a fave (like) from an asset.
+      description: >
+        Moderators or admins may not fave or 
+        unfave any asset. 
+      parameters:
+        - in: path
+          name: assetID
+          required: true
+          schema: 
+            type: integer
+            example: 2
+          description: The ID of the asset to be faved.
+      responses: 
+        '204': # No Content
+          description: The asset was unfaved successfully.
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+
+  ## #######################################################
+  
+  /assetComment:
+    post: 
+      tags: 
+        - AssetComment
+      summary: Add a comment to existing asset
+      description: >
+        Add a comment to an existing asset
+      requestBody:
+        description: The comment data
+        required: true
+        content:
+          application/json:
+            schema:
+              properties: 
+                assetID: 
+                  type: integer
+                  example: 2
+                commentText: 
+                  type: string
+                  example: Cool!
+              required: 
+                - commentText
+      responses: 
+        '201': # Created
+          description: Added comment
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Asset'
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+        '404': # Not Found
+          description: The post could not be found
+                - commentText
+
+  ## #######################################################
+
+  /assetComment/{commentID}:
+    patch: 
+      tags: 
+        - AssetComment
+      summary: Edit post comment text
+      description: >
+        The user can update a post comment's text.
+      parameters:
+        - in: path
+          name: commentID
+          required: true
+          schema: 
+            type: integer
+            example: 1
+          description: The ID of the comment to be edited.
+      requestBody:
+        description: The new text of the comment.
+        required: true
+        content:
+          application/json:
+            schema:
+              properties: 
+                postText: 
+                  type: string
+                  example: I played cricket today.
+              required: 
+                - postText
+      responses: 
+        '200': # OK
+          description: The updated comment
+          content: 
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+        '404': # Not Found
+          description: The post could not be found
+
+  ## #######################################################
+
+  /commentFave/{commentID}:
+    post: 
+      tags: 
+        - CommentFave
+      summary: Fave (like) a comment.
+      description: >
+        Moderators or admins may not fave or 
+        unfave any comment.
+      parameters:
+        - in: path
+          name: commentID
+          required: true
+          schema: 
+            type: integer
+            example: 2
+          description: The ID of the comment to be faved.
+      responses: 
+        '204': # No Content
+          description: The comment was faved successfully.
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+          
+    delete: 
+      tags: 
+        - CommentFave
+      summary: Remove a fave (like) from a comment.
+      description: >
+        Moderators or admins may not fave or 
+        unfave any comment. 
+      parameters:
+        - in: path
+          name: commentID
+          required: true
+          schema: 
+            type: integer
+            example: 2
+          description: The ID of the comment to be faved.
+      responses: 
+        '204': # No Content
+          description: The comment was unfaved successfully.
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+
+  ## #######################################################
+
+
+  /picture: 
+    post:
+      tags: 
+        - Picture
+      summary: Update my own picture
+      description: >
+        A user may update their profile picture
+      requestBody:
+        description: Body
+        required: true
+        content:
+          image/png: 
+            schema:
+              type: string
+              format: binary
+          image/jpg: 
+            schema:
+              type: string
+              format: binary
+          image/gif: 
+            schema:
+              type: string
+              format: binary
+      responses: 
+        '204': # No Content
+          description: Updated picture
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+        '404': # Not Found
+          description: The post could not be found
+
+    delete:
+      tags: 
+        - Picture
+      summary: Delete my own picture
+      responses: 
+        '204': # No Content
+          description: Deleted picture
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+        '404': # Not Found
+          description: The post could not be found
+
+
+  ## #######################################################
+
+  /picture/{personID}:
+    get: 
+      tags: 
+        - Picture
+      summary: View a person's picture
+      description: >
+        Since there's only one profile picture per person, 
+        no identifying information is needed other than 
+        the personID.
+      parameters:
+        - in: path
+          name: personID
+          required: true
+          schema: 
+            type: integer
+            example: 2
+          description: The personID
+      responses: 
+        '200': # OK
+          description: Picture delivered successfully
+          content: 
+            image/*: 
+              schema: 
+                type: string
+                format: binary
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentialsOrPost'
+        '404': # Not Found
+          description: The asset could not be found
+
+
+  ## #######################################################
+
+  /admin/people: 
+    post: 
+      tags: 
+        - People
+      summary: Add a new person to the system
+      description: >
+        After a person is added to system, they can be 
+        added to an organization.
+      requestBody:
+        description: Body
+        required: true
+        content:
+          application/json:
+            schema:
+              allOf: 
+                - $ref: '#/components/schemas/PersonRole'
+                - type: object
+                  properties: 
+                    personName: 
+                      type: string
+      responses: 
+        '200': # OK
+          description: Returns the new personID
+          content: 
+            application/json:
+              schema: 
+                $ref: '#/components/schemas/Person'
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentials'
+          
+    get: 
+      tags: 
+        - People
+      summary: List all people in the system
+      description: >
+        The admin can list all people in the system regardless
+        of whether or not they belong to any organization.
+      responses: 
+        '200': #OK
+          description: List of people in no particular order
+          content: 
+            application/json:
+              schema: 
+                type: array
+                items:
+                  $ref: '#/components/schemas/Person'
+
+  ## #######################################################
+  
+  /admin/people/{personID}:
+    delete: 
+      tags: 
+        - People
+      summary: Delete a person record
+      description: >
+        An admin may delete a person record. 
+      parameters: 
+        - in: path
+          name: personID
+          required: true
+          schema: 
+            type: integer
+            example: 1
+          description: >
+            The ID of the person whose record is to be deleted
+      responses: 
+        '204': # No Content
+          description: The record was deleted successfully
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentials'
+
+
+  ## #######################################################
+
+  /admin/membership:
+    post: 
+      tags: 
+        - Membership
+      summary: Manage membership for a person
+      description: >
+        After a person is added to system, they can be 
+        added to an organization.
+      requestBody: 
+        description: Body
+        required: true
+        content: 
+          application/json:
+            schema: 
+              type: object
+              required: [personID, feeds]
+              properties: 
+                personID: 
+                  type: string
+                  example: 1
+                feeds: 
+                  type: array
+                  description: A list of feeds that the person belongs to.
+                  items: 
+                    type: integer
+                    format: feedID
+      responses:
+        '204': # No Content
+          description: Success
+        '403': # Forbidden - Invalid credentials
+          $ref: '#/components/responses/InvalidCredentials'
+
+
+## #######################################################
+## #######################################################
+## #######################################################
+
+components:
+
+  securitySchemes:
+    bearerAuth:            # arbitrary name for the security scheme
+      type: http
+      scheme: bearer
+      bearerFormat: SessionToken    # optional, arbitrary value for documentation purposes
+
+
+  ## #######################################################
+  ## #######################################################
+
+
+  responses:
+
+      UnauthorizedError:
+        description: Access token is missing or invalid  
+
+      InvalidCredentials:
+        description: >
+          The email/password combination is incorrect, or the 
+          bearer token is incorrect or expired.
+
+      InvalidCredentialsOrPost:
+        description: >
+          Either the bearer token is incorrect or expired, or 
+          the user doesn't have access to this post.
+
+
+  ## #######################################################
+  ## #######################################################
+
+
+  schemas:
+    AuthCredentials:
+      properties:
+        email:
+          type: string
+          example: me@example.com
+        password:
+          type: string
+          example: hunter2
+      required:  
+        - email
+        - password    
+
+    ## #######################################################
+
+    ForgotCredentials:
+      properties:
+        email:
+          type: string
+          example: me@example.com
+      required:  
+        - email
+
+    ## #######################################################
+
+    Feed:
+      type: object
+      required: [feedID, organizationName, organizationMembers]
+      properties: 
+        feedID: 
+          type: integer
+          example: 1
+        organizationName: 
+          type: string
+          example: Ansari Family
+        organizationMembers: 
+          type: array
+          items: 
+            properties: 
+              personID: 
+                type: integer
+                format: personID
+                example: 2
+              name: 
+                type: string
+                format: personName
+                example: Aijaz Ansari
+
+    ## #######################################################
+
+    Feeds:
+      type: object
+      properties: 
+        feeds: 
+          type: array
+          items:
+            $ref: '#/components/schemas/Feed'
+
+
+    ## #######################################################
+
+    PersonRole: 
+      type: object
+      required: [role]
+      properties: 
+        role: 
+          type: string
+          enum: 
+            - admin
+            - moderator
+            - user
+          example: user
+        
+
+    ## #######################################################
+  
+    Comment:
+      type: object
+      properties: 
+        commentID: 
+          type: integer
+          example: 3
+        personID: 
+          type: integer
+          example: 2
+        text: 
+          type: string
+          example: Cool!
+        editHistory: 
+          type: array
+          items: 
+            properties: 
+              timePosted: 
+                type: integer
+                example: 1530490855
+              caption: 
+                type: string
+                example: This is me playing football
+        faves: 
+          type: array
+          items: 
+            type: integer
+            format: personID
+            example: 4
+
+    ## #######################################################
+
+    SessionToken:
+      allOf: 
+        - $ref: '#/components/schemas/Feeds'
+        - $ref: '#/components/schemas/PersonRole'
+        - type: object
+          properties: 
+            token: 
+              type: string
+              example: f4d93b11-efda-4b75-9ecd-2306104ff771
+            personID: 
+              type: integer
+              example: 4
+            name: 
+              type: string
+              example: Aijaz Ansari
+          required: 
+            - token
+            - personID
+            - name
+            - feeds
+            - role
+
+
+    ## #######################################################
+
+    Person:
+      allOf: 
+        - $ref: '#/components/schemas/PersonRole'
+        - type: object
+          properties: 
+            personID: 
+              type: integer
+              example: 2
+            name: 
+              type: string
+              example: Aijaz Ansari
+            email: 
+              type: string
+              example: user@example.com
+
+
+    ## #######################################################
+
+    Post: 
+      type: object
+      required: [postID, personID, timePosted, text, editHistory, faves, assets, comments]
+      properties: 
+        postID: 
+          type: integer
+          example: 7
+        personID: 
+          type: integer
+          example: 1
+        timePosted: 
+          type: integer # epoch
+          example: 1530490850
+        hidden: 
+          type: boolean
+          example: false
+        text: 
+          type: string
+          example: I played football today
+        editHistory: 
+          type: array
+          items: 
+            properties: 
+              timePosted: 
+                type: integer
+                example: 1530490855
+              text: 
+                type: string
+                example: I played cricket today
+        moderationHistory: 
+          type: array
+          items: 
+            properties: 
+              time: 
+                type: integer
+                example: 1530490855
+              action: 
+                type: string
+                example: hidden
+                enum: [hidden, unhidden]
+        faves: 
+          type: array
+          items: 
+            type: integer
+            format: personID
+            example: 4
+        comments: 
+          type: array
+          items: 
+            $ref: '#/components/schemas/Comment'
+        assets: 
+          type: array
+          items:
+            $ref: '#/components/schemas/Asset'
+
+    ## #######################################################
+
+    Asset:
+      type: object
+      required: [assetID, type, url]
+      properties: 
+        assetID: 
+          type: integer
+          example: 7
+        type:
+          type: string
+          enum: [image, video]
+          example: image
+        url: 
+          type: string
+          example: https://zainafoundation/asset/2/7
+        caption: 
+          type: string
+          example: This is my cricket bat
+        editHistory: 
+          type: array
+          items: 
+            properties: 
+              timePosted: 
+                type: integer
+                example: 1530490855
+              caption: 
+                type: string
+                example: This is me playing football
+        faves: 
+          type: array
+          items: 
+            type: integer
+            format: personID
+            example: 4
+        comments: 
+          type: array
+          items: 
+            $ref: '#/components/schemas/Comment'
+
+
+
+
+
+
