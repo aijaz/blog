@@ -10,9 +10,9 @@ Summary: I enjoy making things. I'm an iOS and Python developer who teaches and 
 <!-- ai l /images/aijaz4.jpg /images/aijaz4.jpg 256 256 Hello! -->
 
 As a hacker by nature, I enjoy making things.  I'm the developer and 
-designer behind the [Qur'an Memorizer](http://quranmemorizer.com)
+designer behind the [Qur'an Memorizer](https://quranmemorizer.com)
 iOS app, and am currently working as an iOS developer at
-[FastModel](http://www.fastmodelsports.com).  I [teach iOS development on the weekends](http://euclidte.ch/) to children and adults in the community. I host [Peer Lab Chicago](http://peerlabchicago.com), which is a forum for developers to help other developers. I like to dabble in photography, woodworking, origami, and making tangible things with my hands. Oh, I've also
+[Gogo Business Aviation](https://business.gogoair.com/).   I like to dabble in photography, woodworking, origami, and making tangible things with my hands. Oh, I've also
 written  a pretty nifty open-source job scheduler called
 [TaskForest](http://www.taskforest.com). For those who are interested, I've also put up 
 a <a href="#work">somewhat detailed account of my work experience</a> towards the bottom of this page. 
@@ -56,6 +56,10 @@ find any image that is not attributed, please email me and let me know.
 
 <a name="work"></a>
 # Work Experience
+
+## Lead Developer, [Gogo Business Aviation][BA] (January 2018 - Present)
+
+At Gogo Business Aviation my team and I are responsible for creating iOS and Android apps for customers to whom we provide internet and phone access on their private jets. 
 
 ## iOS Lead, [FastModel Sports][] (August 2015 - January 2018)
 
@@ -164,3 +168,4 @@ Because the VLR application ran on a diskless board on Motorola's telecom switch
 [Citadel]: http://citadel.com/
 [Motorola]: http://motorola.com
 [fastlane]: https://fastlane.tools
+[BA]: https://business.gogoair.com
