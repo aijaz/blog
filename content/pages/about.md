@@ -103,7 +103,7 @@ Key technologies that I worked on during my time at FastModel are:
 
 Talks given during my time at FastModel: 
 
-- _Beyond Breakpoints - Advanced Debugging in XCode (2017)_]_ - [360|iDev](https://360idev.com) 
+- _Beyond Breakpoints - Advanced Debugging in XCode (2017)_] - [360|iDev](https://360idev.com) 
 - _Beyond Breakpoints - Advanced Debugging in XCode_ - [CocoaConf Chicago](http://cocoaconf.com/chicago-2017/home) 
 - [Exploring JSON with jq](https://www.slideshare.net/AijazAnsari2/exploring-json-with-jq?qid=645544be-d9d0-4949-82e8-be9fef26c59d&v=&b=&from_search=1) - NSCoder Chicago
 - [Flask First-Timer](https://www.slideshare.net/AijazAnsari2/flask-firsttimer) - The [ChiPy Web SIG](https://www.meetup.com/_ChiPy_/events/232572677/)
