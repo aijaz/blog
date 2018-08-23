@@ -12,7 +12,7 @@ Summary: I enjoy making things. I'm an iOS and Python developer who teaches and 
 As a hacker by nature, I enjoy making things.  I'm the developer and 
 designer behind the [Qur'an Memorizer](https://quranmemorizer.com)
 iOS app, and am currently working as an iOS developer at
-[Gogo Business Aviation](https://business.gogoair.com/).   I like to dabble in photography, woodworking, origami, and making tangible things with my hands. Oh, I've also
+[Gogo Business Aviation](https://business.gogoair.com/). Outside my day job, I'm most excited about working with [Zaina Foundation][zf] where I'm responsible for the technology that connects foster parents in the US with children they sponsor in orphanages in India.  I like to dabble in photography, woodworking, origami, and making tangible things with my hands. Oh, I've also
 written  a pretty nifty open-source job scheduler called
 [TaskForest](http://www.taskforest.com). For those who are interested, I've also put up 
 a <a href="#work">somewhat detailed account of my work experience</a> towards the bottom of this page. 
@@ -47,7 +47,8 @@ find any image that is not attributed, please email me and let me know.
 # Talks I&#8217;ve Given
 
 - [Beyond Breakpoints - Advanced Debugging in XCode (2017 and 2018)](https://360idev.com/sessions/advanced-debugging-xcode-extending-lldb/) - [360|iDev](https://360idev.com) 
-- [Beyond Breakpoints - Advanced Debugging in XCode](http://cocoaconf.com/chicago-2017/sessions/Beyond-Breakpoints) - [CocoaConf Chicago](http://cocoaconf.com/chicago-2017/home) 
+- _How Learning to Ski Made me a Better Developer_ - iOS Dev Camp Colorado Springs
+- _The Coordinator: Improving the MVC Architecture_ - A remote presentation given at the inaugural CocoaHeads meet-up at the new flagship Apple Store on Michigan Ave. in Chicago.- [Beyond Breakpoints - Advanced Debugging in XCode](http://cocoaconf.com/chicago-2017/sessions/Beyond-Breakpoints) - [CocoaConf Chicago](http://cocoaconf.com/chicago-2017/home) 
 - [Exploring JSON with jq](https://www.slideshare.net/AijazAnsari2/exploring-json-with-jq?qid=645544be-d9d0-4949-82e8-be9fef26c59d&v=&b=&from_search=1) - NSCoder Chicago
 - [Flask First-Timer](https://www.slideshare.net/AijazAnsari2/flask-firsttimer) - The [ChiPy Web SIG](https://www.meetup.com/_ChiPy_/events/232572677/)
 - [Now What?](https://www.slideshare.net/AijazAnsari2/now-what-72865145) - SnowMobile Conference, 2013
@@ -68,6 +69,13 @@ Within Gogo I'm part of three very beneficial meet-ups:
 - _The Gogo Book Club_, where we study a new book every few months. We're currently learning Functional Programming with Clojure
 - _Gogo Toast and Talk_, the Gogo chapter of [Toastmasters](https://toastmasters.org)
 - _Tech Lead Presentations_, where we present new technologies and things we've learned to other groups within the firm. 
+
+Talks given during my time at FastModel: 
+
+- [Beyond Breakpoints - Advanced Debugging in XCode (2018)](https://360idev.com/sessions/advanced-debugging-xcode-extending-lldb/) - [360|iDev](https://360idev.com) 
+- _How Learning to Ski Made me a Better Developer_ - iOS Dev Camp Colorado Springs
+- _The Coordinator: Improving the MVC Architecture_ - A remote presentation given at the inaugural CocoaHeads meet-up at the new flagship Apple Store on Michigan Ave. in Chicago.
+
 
 ## iOS Lead, [FastModel Sports][] (August 2015 - January 2018)
 
@@ -94,7 +102,7 @@ Key technologies that I worked on during my time at FastModel are:
 
 Talks given during my time at FastModel: 
 
-- [Beyond Breakpoints - Advanced Debugging in XCode](https://360idev.com/sessions/advanced-debugging-xcode-extending-lldb/) - [360|iDev](https://360idev.com) 
+- [Beyond Breakpoints - Advanced Debugging in XCode (2017)](https://360idev.com/sessions/advanced-debugging-xcode-extending-lldb/) - [360|iDev](https://360idev.com) 
 - [Beyond Breakpoints - Advanced Debugging in XCode](http://cocoaconf.com/chicago-2017/sessions/Beyond-Breakpoints) - [CocoaConf Chicago](http://cocoaconf.com/chicago-2017/home) 
 - [Exploring JSON with jq](https://www.slideshare.net/AijazAnsari2/exploring-json-with-jq?qid=645544be-d9d0-4949-82e8-be9fef26c59d&v=&b=&from_search=1) - NSCoder Chicago
 - [Flask First-Timer](https://www.slideshare.net/AijazAnsari2/flask-firsttimer) - The [ChiPy Web SIG](https://www.meetup.com/_ChiPy_/events/232572677/)
@@ -177,3 +185,4 @@ Because the VLR application ran on a diskless board on Motorola's telecom switch
 [Motorola]: http://motorola.com
 [fastlane]: https://fastlane.tools
 [BA]: https://business.gogoair.com
+[zf]: https://zainafoundation.org
