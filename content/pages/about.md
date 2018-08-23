@@ -46,9 +46,10 @@ find any image that is not attributed, please email me and let me know.
 <a name="talks"></a>
 # Talks I&#8217;ve Given
 
-- [Beyond Breakpoints - Advanced Debugging in XCode (2017 and 2018)](https://360idev.com/sessions/advanced-debugging-xcode-extending-lldb/) - [360|iDev](https://360idev.com) 
+- _Beyond Breakpoints - Advanced Debugging in XCode (2017 and 2018)_ - [360|iDev](https://360idev.com) 
 - _How Learning to Ski Made me a Better Developer_ - iOS Dev Camp Colorado Springs
-- _The Coordinator: Improving the MVC Architecture_ - A remote presentation given at the inaugural CocoaHeads meet-up at the new flagship Apple Store on Michigan Ave. in Chicago.- [Beyond Breakpoints - Advanced Debugging in XCode](http://cocoaconf.com/chicago-2017/sessions/Beyond-Breakpoints) - [CocoaConf Chicago](http://cocoaconf.com/chicago-2017/home) 
+- _The Coordinator: Improving the MVC Architecture_ - A remote presentation given at the inaugural CocoaHeads meet-up at the new flagship Apple Store on Michigan Ave. in Chicago.
+- _Beyond Breakpoints - Advanced Debugging in XCode_ - [CocoaConf Chicago](http://cocoaconf.com/chicago-2017/home) 
 - [Exploring JSON with jq](https://www.slideshare.net/AijazAnsari2/exploring-json-with-jq?qid=645544be-d9d0-4949-82e8-be9fef26c59d&v=&b=&from_search=1) - NSCoder Chicago
 - [Flask First-Timer](https://www.slideshare.net/AijazAnsari2/flask-firsttimer) - The [ChiPy Web SIG](https://www.meetup.com/_ChiPy_/events/232572677/)
 - [Now What?](https://www.slideshare.net/AijazAnsari2/now-what-72865145) - SnowMobile Conference, 2013
@@ -72,7 +73,7 @@ Within Gogo I'm part of three very beneficial meet-ups:
 
 Talks given during my time at FastModel: 
 
-- [Beyond Breakpoints - Advanced Debugging in XCode (2018)](https://360idev.com/sessions/advanced-debugging-xcode-extending-lldb/) - [360|iDev](https://360idev.com) 
+- _Beyond Breakpoints - Advanced Debugging in XCode (2018)_ - [360|iDev](https://360idev.com) 
 - _How Learning to Ski Made me a Better Developer_ - iOS Dev Camp Colorado Springs
 - _The Coordinator: Improving the MVC Architecture_ - A remote presentation given at the inaugural CocoaHeads meet-up at the new flagship Apple Store on Michigan Ave. in Chicago.
 
@@ -102,8 +103,8 @@ Key technologies that I worked on during my time at FastModel are:
 
 Talks given during my time at FastModel: 
 
-- [Beyond Breakpoints - Advanced Debugging in XCode (2017)](https://360idev.com/sessions/advanced-debugging-xcode-extending-lldb/) - [360|iDev](https://360idev.com) 
-- [Beyond Breakpoints - Advanced Debugging in XCode](http://cocoaconf.com/chicago-2017/sessions/Beyond-Breakpoints) - [CocoaConf Chicago](http://cocoaconf.com/chicago-2017/home) 
+- _Beyond Breakpoints - Advanced Debugging in XCode (2017)_]_ - [360|iDev](https://360idev.com) 
+- _Beyond Breakpoints - Advanced Debugging in XCode_ - [CocoaConf Chicago](http://cocoaconf.com/chicago-2017/home) 
 - [Exploring JSON with jq](https://www.slideshare.net/AijazAnsari2/exploring-json-with-jq?qid=645544be-d9d0-4949-82e8-be9fef26c59d&v=&b=&from_search=1) - NSCoder Chicago
 - [Flask First-Timer](https://www.slideshare.net/AijazAnsari2/flask-firsttimer) - The [ChiPy Web SIG](https://www.meetup.com/_ChiPy_/events/232572677/)
 
