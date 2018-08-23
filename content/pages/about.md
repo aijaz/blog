@@ -46,12 +46,12 @@ find any image that is not attributed, please email me and let me know.
 <a name="talks"></a>
 # Talks I&#8217;ve Given
 
-- [Beyond Breakpoints - Advanced Debugging in XCode](https://360idev.com/sessions/advanced-debugging-xcode-extending-lldb/) - [360|iDev](https://360idev.com) 
+- [Beyond Breakpoints - Advanced Debugging in XCode (2017 and 2018)](https://360idev.com/sessions/advanced-debugging-xcode-extending-lldb/) - [360|iDev](https://360idev.com) 
 - [Beyond Breakpoints - Advanced Debugging in XCode](http://cocoaconf.com/chicago-2017/sessions/Beyond-Breakpoints) - [CocoaConf Chicago](http://cocoaconf.com/chicago-2017/home) 
 - [Exploring JSON with jq](https://www.slideshare.net/AijazAnsari2/exploring-json-with-jq?qid=645544be-d9d0-4949-82e8-be9fef26c59d&v=&b=&from_search=1) - NSCoder Chicago
 - [Flask First-Timer](https://www.slideshare.net/AijazAnsari2/flask-firsttimer) - The [ChiPy Web SIG](https://www.meetup.com/_ChiPy_/events/232572677/)
 - [Now What?](https://www.slideshare.net/AijazAnsari2/now-what-72865145) - SnowMobile Conference, 2013
-- [The Web That Was - The Promise and Decline of `mod_perl`](https://speakerdeck.com/aijazansari) - A local Ruby Developers' Meetup. 
+- [The Web That Was - The Promise and Decline of `mod_perl`](https://speakerdeck.com/aijazansari) - A local Ruby Developers' Meet-up. 
 - [Protecting Your Clients' Privacy](https://www.slideshare.net/AijazAnsari2/protecting-your-clients-privacy) - A 5-minute blitz talk at SecondConf 2012
 
 <a name="work"></a>
@@ -59,7 +59,15 @@ find any image that is not attributed, please email me and let me know.
 
 ## Lead Developer, [Gogo Business Aviation][BA] (January 2018 - Present)
 
-At Gogo Business Aviation my team and I are responsible for creating iOS and Android apps for customers to whom we provide internet and phone access on their private jets. 
+Gogo Business Aviation provides Internet access and phone service to pilots and passengers of private jets. At Gogo I lead a team that develops iOS and Android mobile apps to provide these services to our customers. In my new role as team lead I no longer spend all of my time writing code. I participate in planning meetings with the rest of the firm, where I represent the team as we make commitments for each quarter. I also conduct internal training sessions to familiarize Customer Support and Sales with our new releases. 
+
+I've recently introduced formal code inspections within our team. These are more interactive than what we normally think of as code reviews associated with pull requests. The participatory aspect of these code inspections help members of the team become familiar with each other's code more actively than single-person code reviews. 
+
+Within Gogo I'm part of three very beneficial meet-ups: 
+
+- _The Gogo Book Club_, where we study a new book every few months. We're currently learning Functional Programming with Clojure
+- _Gogo Toast and Talk_, the Gogo chapter of [Toastmasters](https://toastmasters.org)
+- _Tech Lead Presentations_, where we present new technologies and things we've learned to other groups within the firm. 
 
 ## iOS Lead, [FastModel Sports][] (August 2015 - January 2018)
 
