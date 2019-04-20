@@ -1,22 +1,9 @@
----
 title: "Viewing OmniGraffle Files in XCode"
 date: 2015-02-17 20:12
 comments: false
-Category:
-- Computers
-tags:
-- XCode
-- OmniGraffle
-- Automator
-- Coding
-- Design
-- AppleScript
-- Services
-- Hazel
-- Diagrams
-- iOS
 description: In this post I show you how to add OmniGraffle files into an XCode project and have the generated PDFs update automatically.
----
+Category: Computers
+Tags: XCode, OmniGraffle, Automator, Coding, Design, AppleScript, Services, Hazel, Diagrams, iOS
 
 When I work on complex iOS apps, I like to diagram the complex relationships between classes and subsystems in [OmniGraffle](https://www.omnigroup.com/omnigraffle). In this post I'll show you how to add OmniGraffle files to XCode, view them from within XCode and keep them updated automatically. 
 

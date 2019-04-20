@@ -1,13 +1,8 @@
----
 title: "Switching To Octopress"
 date: 2011-12-12 08:19
 comments: false
 Category: Computers
-tags: 
- - Octopress
- - WordPress
- - Analytics
----
+Tags: Octopress, WordPress, Analytics
 
 Over this past weekend I switched my blog over from WordPress to
 Octopress.  In this post I write about why I did it, what exactly I did

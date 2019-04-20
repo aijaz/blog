@@ -1,17 +1,9 @@
----
 title: "Examining a Picture"
 date: 2015-09-28 21:50
 comments: false
-Category:
-- Photography
-tags:
-- Inspection
-- CocoaConf
-- Yosemite
-- Composition
-- RuleOfThirds
 description: "A few minutes ago I zoomed in on a photograph that I had taken in April. I saw details that fundamentally changed my understanding of whats going on in the picture."
----
+Category: Photography
+Tags: Inspection, CocoaConf, Yosemite, Composition, RuleOfThirds
 
 A few minutes ago I zoomed in on a photograph that I had taken in April. I saw details that fundamentally changed my understanding of what's going on in the picture. It's funny how often that happens.
 

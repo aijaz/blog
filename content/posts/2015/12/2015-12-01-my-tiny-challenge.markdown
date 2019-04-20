@@ -1,14 +1,8 @@
----
 title: "My Tiny Challenge"
 date: 2015-12-01 23:59
-category:
-- 30days
-tags:
-- 30days
-- Fitness
-- Stretching
 description: "Another 30Days Challenge"
----
+Category: 30days
+Tags: 30days, Fitness, Stretching
 
 Well, it's happened. I decided to join [@jaimeejaimee][] and [@bradheintz][] in another [30 days challenge][tc]. This month's challenge isn't about writing. It's about playing the long game and changing my body. A little background, first: 
 

@@ -1,17 +1,9 @@
----
 comments: false
 date: '2010-07-20 08:20:06'
 slug: in-search-of-a-good-alarm-clock-app
 title: In Search Of A Good Alarm Clock App
-Category:
-- Reviews
-tags:
-- Alarm
-- Android
-- Apps
-- Evo
-- iPhone
----
+Category: Reviews
+Tags: Alarm, Android, Apps, Evo, iPhone
 
 <!-- ai l /wp/mobitobi.jpg /wp/mobitobi.jpg 167 266 -->
 When I recently switched from

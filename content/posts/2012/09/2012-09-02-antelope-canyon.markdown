@@ -1,10 +1,7 @@
----
 Template: photo
 title: "Antelope Canyon"
 date: 2012-09-02 11:30
 comments: false
-Category:
-- Photos
 image: /images/photos/arizona/P_JAZ4109.jpg
 page_image: /images/photos/arizona/P_JAZ4109_page.jpg
 aperture: 4.8
@@ -26,14 +23,12 @@ page_image_width: 488
 page_image_height: 734
 scale_factor: 1.0
 shutter_speed: 0.4
-tags: 
-- Arizona
-- AntelopeCanyon
 thumbnail: /images/photos/arizona/P_JAZ4109_tn.jpg
 thumbnail_height: 384
 thumbnail_width: 255
 description: The Lower Antelope Canyon in Page, Arizona is a place of breathtaking beauty.
----
+Category: Photos
+Tags: Arizona, AntelopeCanyon
 
 The Lower Antelope Canyon in Page, Arizona is a place of breathtaking
 beauty.  Located in Navajo country, it's best viewed at around noon when

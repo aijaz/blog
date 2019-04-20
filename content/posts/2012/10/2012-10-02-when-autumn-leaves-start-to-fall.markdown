@@ -1,10 +1,7 @@
----
 Template: photo
 title: "When Autumn Leaves Start to Fall"
 date: 2012-10-02 09:00
 comments: false
-Category:
-- Photos
 image: /images/photos/autumnOak/autumnOak_6208.jpg
 page_image: /images/photos/autumnOak/autumnOak_6208_page.jpg
 aperture: 1.8
@@ -26,13 +23,12 @@ page_image_width: 734
 page_image_height: 488
 scale_factor: 1.0
 shutter_speed: 1/6400
-tags: 
-- Autumn
 thumbnail: /images/photos/autumnOak/autumnOak_6208_tn.jpg
 thumbnail_height: 256
 thumbnail_width: 384
 description: This is an Oak tree that I planted in my front yard about five years ago.
----
+Category: Photos
+Tags: Autumn
 
 This is an Oak tree that I planted in my front yard about five
 years ago.  I'm glad it's survived all the storms we've had since then. I

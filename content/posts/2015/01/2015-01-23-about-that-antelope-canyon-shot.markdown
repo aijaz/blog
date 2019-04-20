@@ -1,15 +1,9 @@
----
 title: "About That Antelope Canyon Shot"
 date: 2015-01-23 20:00
 comments: false
-Category:
-- Photography
-tags:
-- Arizona
-- Antelope Canyon
-- Twitter
 description: A little background about how I came to take a rather nice photograph of a couple by mistake.
----
+Category: Photography
+Tags: Arizona, Antelope Canyon, Twitter
 
 One of the best portraits I've taken is a picture that I took quite by accident as I was calibrating my camera for a future shot. This is the story behind that picture. If you know the subjects, please have them get in touch with me, so that I may give them this photograph.
 

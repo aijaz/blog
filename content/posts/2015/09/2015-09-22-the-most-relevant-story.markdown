@@ -1,15 +1,9 @@
----
 title: "The Most Relevant Story"
 date: 2015-09-22 21:10
 comments: false
-Category:
-- Opinion
-tags:
-- HansAnderson
-- Stories
-- Satire
 description: "If there were one story I would want to make sure I share with my children it would be _The Emperor's New Clothes_."
----
+Category: Opinion
+Tags: HansAnderson, Stories, Satire
 
 As I child I read a lot of European stories like those from the Brothers Grimm or Hans Christian Andersen. As I've grown older I've come to realize that if there were one story I would want to make sure I share with my children it would be "The Emperor's New Clothes."
 

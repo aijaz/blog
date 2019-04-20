@@ -1,16 +1,9 @@
----
 comments: false
 date: '2010-03-12 23:01:04'
 slug: boycott-frommers
 title: Don't Submit Photos To Frommer's Contests
-Category:
-- Photography
-tags:
-- Copyright
-- Frommers
-- Legal
-- Licensing
----
+Category: Photography
+Tags: Copyright, Frommers, Legal, Licensing
 
 I'm not a professional photographer.  I'm merely an student of  the art and
 science of photography.  Sometimes I think of submitting my pictures to

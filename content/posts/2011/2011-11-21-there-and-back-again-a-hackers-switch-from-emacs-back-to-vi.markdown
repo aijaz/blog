@@ -1,17 +1,9 @@
----
 comments: false
 date: '2011-11-21 14:55:49'
 slug: there-and-back-again-a-hackers-switch-from-emacs-back-to-vi
 title: There and Back Again - A Hacker's Switch from Emacs Back to Vi
-Category:
-- Computers
-tags:
-- Editors
-- Emacs
-- Stallman
-- VI
-- Vim
----
+Category: Computers
+Tags: Editors, Emacs, Stallman, VI, Vim
 
 When I first learned how to exist on UNIX, in 1988, I used
 [vi](http://en.wikipedia.org/wiki/Vi) as my primary editor. During the next

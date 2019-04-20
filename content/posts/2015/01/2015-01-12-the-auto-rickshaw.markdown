@@ -1,11 +1,8 @@
----
 Template: photo
 published: true
 title: "The Auto Rickshaw"
 date: 2015-01-12 11:10
 comments: false
-Category:
-- Photos
 image: /images/photos/VacEnd2014/AJAZ1030.jpg
 page_image: /images/photos/VacEnd2014/AJAZ1030_page.jpg
 description: Zipping through the streets of Bangalore in an auto rickshaw.
@@ -27,13 +24,10 @@ photo_height: 1632
 photo_width: 2448
 scale_factor: 1.5
 shutter_speed: 1/20
-tags: 
-- VacEnd2014
-- Transportation
-- Bangalore
 thumbnail: /images/photos/VacEnd2014/AJAZ1030_tn.jpg
 thumbnail_height: 256
 thumbnail_width: 384
----
+Category: Photos
+Tags: VacEnd2014, Transportation, Bangalore
 
 Zipping through the streets of Bangalore in an auto rickshaw.

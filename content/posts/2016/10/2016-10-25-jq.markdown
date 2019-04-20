@@ -1,14 +1,7 @@
----
 title: "Examining JSON Data With jq"
 date: 2016-10-25 20:30
-category:
-- Computers
-tags:
-- jq
-- JSON
-- API
-- Debugging
----
+Category: Computers
+Tags: jq, JSON, API, Debugging
 
 Earlier tonight I spoke at NSCoder Chicago about how to use [jq](https://stedolan.github.io/jq/) to examine JSON data. This post contains links and information that I would like to share with the attendees.
 

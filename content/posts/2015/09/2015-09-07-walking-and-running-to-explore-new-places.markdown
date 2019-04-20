@@ -1,11 +1,8 @@
----
 published: true
 title: "Walking and Running to Explore New Places"
 date: 2015-09-07 12:12
 comments: false
 Template: photo
-Category:
-- Photos
 image: /images/2015/09/explore.jpg
 page_image: /images/2015/09/explore_page.jpg
 aperture: 2.2
@@ -26,16 +23,12 @@ page_image_width: 734
 page_image_height: 551
 scale_factor: 7.0
 shutter_speed: 1/150
-tags: 
-- Fitness
-- Travel
-- Walking
-- Running
 thumbnail: /images/2015/09/explore_tn.jpg
 thumbnail_height: 256
 thumbnail_width: 341
 description: "I never used to like running. But now I've found that walking and running early in the morning is a great way to explore a new place."
----
+Category: Photos
+Tags: Fitness, Travel, Walking, Running
 
 I've hated running for ever. I first tried running for exercise by the shore of the Indian Ocean when I was fourteen. Didn't get very far. Did get a bad case of shin splints. Over the next couple of decades I tried again a few times, but never really got into it. Every time I tried the result was the same: it was painful, frustrating, and just not _fun_. I tried focusing on [mechanics][], but it was making running just that: mechanical.
 

@@ -1,20 +1,8 @@
----
 title: "External Flashes with the Fuji X100S"
 date: 2014-02-01 18:15
 comments: false
-Category:
-- Photography
-tags:
-- Fuji
-- X100S
-- Nikon
-- SB800
-- Flash
-- Remote
-- Strobist
-- David Hobby
-description: How to use a couple of Nikon SB-800s as external flashes for the Fuji X100S camera.
----
+Category: Photography
+Tags: Fuji, X100S, Nikon, SB800, Flash, Remote, Strobist, David Hobby, description: How to use a couple of Nikon SB-800s as external flashes for the Fuji X100S camera.
 
 As an amateur photographer I've found it hard to find information on how to use external flashes with the Fuji X100S camera.  In this post I'll show what I did to get it to work and how I used a Fuji with two external Nikon SB-800 flashes. 
 

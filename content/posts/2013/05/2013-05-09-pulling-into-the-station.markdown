@@ -1,10 +1,7 @@
----
 Template: photo
 title: "Pulling into the Station"
 date: 2013-05-09 17:30
 comments: false
-Category:
-- Photos
 image: /images/2013/05/09/metra.jpg
 page_image: /images/2013/05/09/metra_page.jpg
 aperture: 2.0
@@ -25,15 +22,12 @@ page_image_width: 734
 page_image_height: 414
 scale_factor: 3.2
 shutter_speed: 1/20
-tags: 
-- Chicago
-- Trains
-- Commute
 thumbnail: /images/2013/05/09/metra_tn.jpg
 thumbnail_height: 216
 thumbnail_width: 384
 description: Taken by my new Fuji X100S
----
+Category: Photos
+Tags: Chicago, Trains, Commute
 
 
 This photo was taken in 'stealth' mode: shooting from the hip, no audio,

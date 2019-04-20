@@ -1,15 +1,9 @@
----
 comments: false
 date: '2010-04-03 12:00:00'
 slug: firefox-search-shortcut
 title: Firefox Search Shortcut
-Category:
-- Computers
-tags:
-- Efficiency
-- Firefox
-- Productivity
----
+Category: Computers
+Tags: Efficiency, Firefox, Productivity
 
 Wow.  This cool Firefox feature has been around since 2005, but I just found
 out about it a few months ago!  I swear I haven't been living in a cave all

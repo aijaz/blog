@@ -1,16 +1,9 @@
----
 comments: false
 date: '2010-04-18 22:46:03'
 slug: backing-up-data-with-rsync
 title: Backing Up Data With rsync
-Category:
-- Computers
-tags:
-- Backups
-- linux
-- Macs
-- rsync
----
+Category: Computers
+Tags: Backups, linux, Macs, rsync
 
 <!-- ai l /wp/20081224-IMG_4891-Edit.jpg /wp/20081224-IMG_4891-Edit-285x190.jpg 285 190 At the Agra Fort, on the way to the Public Hall -->
 

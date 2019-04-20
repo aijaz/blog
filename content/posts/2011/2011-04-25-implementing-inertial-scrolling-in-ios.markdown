@@ -1,14 +1,9 @@
----
 comments: false
 date: '2011-04-25 21:36:25'
 slug: implementing-inertial-scrolling-in-ios
 title: Implementing Inertial Scrolling in iOS
-Category:
-- Computers
-tags:
-- iOS
-- Scrolling
----
+Category: Computers
+Tags: iOS, Scrolling
 
 I hadn't really given much thought to how the iPhone handles scrolling until I
 recently had to implement it myself. I needed to add vertical scrolling to a

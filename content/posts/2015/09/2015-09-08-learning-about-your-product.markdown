@@ -1,14 +1,9 @@
----
 title: "Learning About Your Product"
 date: 2015-09-08 12:00
 comments: false
-Category:
-- Computers
-tags:
-- Careers
-- Development
 description: "When I started a new job I needed to learn about the app I was taking over. So I asked a salesperson to try to sell it to me."
----
+Category: Computers
+Tags: Careers, Development
 
 Today's post will be short and sweet. I want to share something that worked for me really well when I recently started my new job. There are a few existing iOS products for which I will have to become the primary developer. I needed to come up to speed on these products quickly. I started of the way we developers normally do: read internal documentation, examine the `Main.storyboard` file, look at the `AppDelegate.m` file. But then I got a good idea. I asked the salespeople to demo the product to me, as if I were a prospective customer. 
 

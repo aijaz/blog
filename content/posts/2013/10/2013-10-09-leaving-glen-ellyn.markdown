@@ -1,10 +1,7 @@
----
 Template: photo
 title: "Leaving Glen Ellyn"
 date: 2013-10-09 08:35
 comments: false
-Category:
-- Photos
 image: /images/2013/10/metra.jpg
 page_image: /images/2013/10/metra_page.jpg
 aperture: 5.6
@@ -24,15 +21,11 @@ photo_height: 1380
 photo_width: 2448
 scale_factor: 3.2
 shutter_speed: 1/250
-tags: 
-- Chicago
-- Trains
-- Commute
-- Sunset
 thumbnail: /images/2013/10/metra_tn.jpg
 thumbnail_height: 216
 thumbnail_width: 384
 description: The Metra leaving Glen Ellyn as daylight comes to an end
----
+Category: Photos
+Tags: Chicago, Trains, Commute, Sunset
 
 I like how the rays of the sun reflected off the train.  I only had a second to take this picture as there was a crowd of commuters right behind me. 

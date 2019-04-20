@@ -1,14 +1,9 @@
----
 comments: false
 date: '2011-12-05 17:00:58'
 slug: understanding-your-cameras-histogram
 title: Understanding Your Camera's Histogram
-Category:
-- Photography
-tags:
-- Exposure
-- Histogram
----
+Category: Photography
+Tags: Exposure, Histogram
 
 In a [previous blog post](/2011/11/30/what-is-a-histogram/) we learned what a histogram is.  In today’s post we’ll see
 how to use histograms to help take properly-exposed photographs.  If you

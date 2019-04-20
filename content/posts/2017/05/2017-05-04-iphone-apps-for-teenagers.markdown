@@ -1,17 +1,8 @@
----
 title: "iPhone Apps for Teenagers"
 date: 2017-05-04 20:00
 Status: draft
-category:
-- Computers
-tags:
-- iOS
-- iPhone
-- Apps
-- Kids
-- Teenagers
-- Recommendations
----
+Category: Computers
+Tags: iOS, iPhone, Apps, Kids, Teenagers, Recommendations
 
 My brother-in-law asked me for recommendations for iPhone apps. His 16-year-old daughter just got her first iPhone, and he wants to know what I would recommend. Here is a quick list.
 

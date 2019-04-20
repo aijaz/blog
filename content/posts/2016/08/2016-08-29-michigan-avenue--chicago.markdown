@@ -1,10 +1,7 @@
----
 template: photo
 title: "Michigan Avenue, Chicago"
 date: 2016-08-29 08:00
 comments: false
-category:
-- Photos
 author: Aijaz Ansari
 image: /images/photos/dbg/_JAZ4406.jpg
 page_image: /images/photos/dbg/_JAZ4406_page.jpg
@@ -28,14 +25,10 @@ scale_factor: 1.0
 page_image_width: 734
 page_image_height: 488
 shutter_speed: 1/13
-tags: 
-- MichiganAve
-- Chicago
-- Autumn
-- SchoolBus
 thumbnail: /images/photos/dbg/_JAZ4406_tn.jpg
 thumbnail_height: 256
 thumbnail_width: 384
----
+Category: Photos
+Tags: MichiganAve, Chicago, Autumn, SchoolBus
 
 If you walk too fast, you might miss them. Two gardens flank the Art Institute of Chicago, on Michigan Avenue. Now, we all know Michigan Avenue as a busy, bustling street, but these gardens are great places to stop. And think. Or just clear your head before merging back into the fast pace of the sidewalk. This is the South Garden, looking back out towards Michigan Ave.

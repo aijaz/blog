@@ -1,16 +1,9 @@
----
 title: "Lessons Learned While Hiking"
 date: 2015-09-15 22:30
 comments: false
-Category:
-- Camping
-tags:
-- Hiking
-- Kids
-- Character
-- Campfire
 description: "In 2009 I took my kids hiking in Wisconsin. It was a character builder for all of us."
----
+Category: Camping
+Tags: Hiking, Kids, Character, Campfire
 
 Today's post is a quick story. In 2009 I took my kids hiking in Wisconsin. It was the first time the kids had gone on a long hike. I assured my wife that we'd be fine and we left after their regular Saturday activities. It was a character builder for all of us.
 

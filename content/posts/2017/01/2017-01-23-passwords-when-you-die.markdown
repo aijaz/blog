@@ -1,15 +1,7 @@
----
 title: "What Happens to your Passwords when you Die"
 date: 2017-01-23 15:00
-category:
-- Computers
-tags:
-- Passwords
-- Security
-- EstatePlanning
-- Attorneys
-- PasswordManagers
----
+Category: Computers
+Tags: Passwords, Security, EstatePlanning, Attorneys, PasswordManagers
 
 *This is a guest article I wrote for the newsletter of a friend of mine who's an Estate Planner.*
 

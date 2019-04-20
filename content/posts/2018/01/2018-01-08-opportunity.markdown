@@ -1,13 +1,7 @@
----
 title: "Opportunity"
 date: 2018-01-08 20:40
-category:
-- Personal
-tags:
-- Career
-- Gogo
-- Colorado
----
+Category: Personal
+Tags: Career, Gogo, Colorado
 
 Sometimes the train called _Opportunity_ slows down just enough to let you hop on—if you want—before speeding away. I hopped on. 
 

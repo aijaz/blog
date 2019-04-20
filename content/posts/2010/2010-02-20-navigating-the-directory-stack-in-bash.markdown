@@ -1,17 +1,9 @@
----
 comments: false
 date: '2010-02-20 17:40:22'
 slug: navigating-the-directory-stack-in-bash
 title: Navigating the Directory Stack in 'bash'
-Category:
-- Computers
-tags:
-- bash
-- Code
-- My Software
-- Productivity
-- Shell
----
+Category: Computers
+Tags: bash, Code, My Software, Productivity, Shell
 
 If you're like me, you spend a lot of time jumping from project to project in
 a Linux shell.  I find that I have to switch back and forth between

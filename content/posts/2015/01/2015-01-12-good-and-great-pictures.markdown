@@ -1,15 +1,9 @@
----
 title: "The Difference Between a Good Picture and a Great Picture"
 date: 2015-01-12 17:00
 comments: false
-Category:
-- Photography
-tags:
-- Fuji
-- X-T1
-- Composition
 description: I took two pictures of a scene in Bombay. The subtle differences between the first and second changed it from a good picture to a great picture.
----
+Category: Photography
+Tags: Fuji, X-T1, Composition
 
 Travelling often gives you the opportunity to take unusual pictures of street scenes. In this post I describe three pictures I took of the same scene, and how a small change in the third (completely out of my control) changed the picture from a good one to a great one.
 

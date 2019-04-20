@@ -1,15 +1,9 @@
----
 comments: false
 date: '2010-04-02 12:10:50'
 slug: taskforest-write-up-at-sourceforge
 title: TaskForest Write-up at SourceForge
-Category:
-- Computers
-tags:
-- My Software
-- SourceForge
-- TaskForest
----
+Category: Computers
+Tags: My Software, SourceForge, TaskForest
 
 <!-- ai l /wp/TaskForestLogo.gif /wp/TaskForestLogo.gif 154 74 TaskForest Logo -->
 SourceForge.net has a blog in which they feature a

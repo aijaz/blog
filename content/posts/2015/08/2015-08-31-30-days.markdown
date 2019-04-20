@@ -1,13 +1,9 @@
----
 title: "30 Days"
 date: 2015-08-31 19:26
 comments: false
-Category:
-- 30days
-tags:
-- 30days
 description: "Inspired by @jaimeejaimee and reminded by @bradheintz, I too will start a #30days writing experiment tomorrow. Let's give it a shot."
----
+Category: 30days
+Tags: 30days
 
 Inspired by [@jaimeejaimee][] and reminded by [@bradheintz][], I too will start a #30days writing experiment tomorrow. Let's give it a shot.
 

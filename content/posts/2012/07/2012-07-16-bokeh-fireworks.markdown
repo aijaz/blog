@@ -1,13 +1,8 @@
----
 title: "Bokeh Fireworks"
 date: 2012-07-16 10:00
 comments: false
-Category:
-- Photography
-tags:
-- Bokeh
-- Fireworks
----
+Category: Photography
+Tags: Bokeh, Fireworks
 
 I attended the Glendale Heights SummerFest fireworks display last night.
 As the fireworks started I tried to take a video of them on my iPhone.  I

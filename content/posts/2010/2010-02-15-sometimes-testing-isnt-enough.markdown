@@ -1,23 +1,9 @@
----
 comments: false
 date: '2010-02-15 01:41:07'
 slug: sometimes-testing-isnt-enough
 title: Sometimes Testing Isn't Enough
-Category:
-- Computers
-tags:
-- Apple
-- Buzz
-- Google
-- iPad
-- My Software
-- Privacy
-- Services
-- SMS
-- Testing
-- Usability
-- Virgin Mobile
----
+Category: Computers
+Tags: Apple, Buzz, Google, iPad, My Software, Privacy, Services, SMS, Testing, Usability, Virgin Mobile
 
 <!-- ai l /wp/IMG_7679.jpg /wp/IMG_7679-170x170.jpg 170 170 A bee.  Buzzing.  -->
 

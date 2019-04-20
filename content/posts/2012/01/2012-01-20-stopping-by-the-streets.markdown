@@ -1,17 +1,9 @@
----
 comments: false
 date: '2012-01-20 18:50:58'
 slug: stopping-by-the-streets
 title: Stopping by the Streets on a Snowy Evening
-Category:
-- Photography
-tags:
-- Chicago
-- Poetry
-- Frost
-- Snow
-- Photos
----
+Category: Photography
+Tags: Chicago, Poetry, Frost, Snow, Photos
 
 
 <!-- ai l /images/201201/ChiSnow2.jpg /images/201201/ChiSnowS2.jpg 240 320 LaSalle St. -->

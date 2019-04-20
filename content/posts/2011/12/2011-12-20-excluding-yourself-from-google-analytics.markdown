@@ -1,12 +1,8 @@
----
 title: "Excluding Yourself From Google Analytics"
 date: 2011-12-20 17:56
 comments: false
 Category: Computers
-tags: 
- - Octopress
- - Analytics
----
+Tags: Octopress, Analytics
 
 In [my last post](/2011/12/12/switching-to-octopress/) I wrote that I followed some instructions to 
 exclude myself from Google Analytics' reports on my Octopress blog.  There was an error in the 

@@ -1,14 +1,9 @@
----
 comments: false
 date: '2010-02-04 22:20:37'
 slug: what-is-an-f-stop
 title: What Is An F-Stop?
-Category:
-- Photography
-tags:
-- Cameras
-- Lenses
----
+Category: Photography
+Tags: Cameras, Lenses
 
 In a [previous article](http://www.aijazansari.com/2010/01/23/how-camera-lenses-work/) we looked at how lenses work.  We learned about the focal
 length.  Today we'll focus on camera lenses and what the term _f-stop_ means.

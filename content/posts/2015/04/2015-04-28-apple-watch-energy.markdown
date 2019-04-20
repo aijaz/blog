@@ -1,15 +1,9 @@
----
 title: "Diary of Apple Watch Energy Consumption"
 date: 2015-04-28 12:00
 comments: false
-Category:
-- Computers
-tags:
-- AppleWatch
-- Battery
-- Energy
 description: Notes on how the my settings changed the Apple Watch energy consumption. 
----
+Category: Computers
+Tags: AppleWatch, Battery, Energy
 
 These are notes that I took while trying to find the optimal Apple Watch settings that maximize my battery life. 
 

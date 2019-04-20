@@ -1,17 +1,9 @@
----
 title: "More on Passwords"
 date: 2012-09-24 06:00
 comments: false
-Category:
-- Computers
-tags: 
-- Security
-- Passwords
-- bcrypt
-- Hashes
-- SecondConf
 description: There were some great discussions and questions following my recent Blitz Talk at SecondConf. I summarize them in this post.
----
+Category: Computers
+Tags: Security, Passwords, bcrypt, Hashes, SecondConf
 
 After my [recent Blitz Talk at SecondConf](/2012/09/22/protecting-your-users-privacy/) I had
 some great conversations with fellow attendees in the meal lines and around the beverage

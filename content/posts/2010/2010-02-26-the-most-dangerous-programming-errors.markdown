@@ -1,15 +1,9 @@
----
 comments: false
 date: '2010-02-26 09:00:10'
 slug: the-most-dangerous-programming-errors
 title: The Most Dangerous Programming Errors
-Category:
-- Computers
-tags:
-- Bugs
-- Programming
-- Security
----
+Category: Computers
+Tags: Bugs, Programming, Security
 
 <!-- ai l /wp/Mac-00117-IMG_6318_2.jpg /wp/Mac-00117-IMG_6318_2-285x190.jpg 285 190 Streams at the Great Smoky Mountains -->
 

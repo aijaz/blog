@@ -1,17 +1,9 @@
----
 comments: false
 date: '2010-01-26 22:46:17'
 slug: why-text-editors-matter
 title: Why Text Editors Matter
-Category:
-- Computers
-tags:
-- Editors
-- Efficiency
-- Emacs
-- Productivity
-- VI
----
+Category: Computers
+Tags: Editors, Efficiency, Emacs, Productivity, VI
 
 As of this past weekend it's been fifteen years since I started my career as a
 software developer.  With the exception of a few months here and there, I've

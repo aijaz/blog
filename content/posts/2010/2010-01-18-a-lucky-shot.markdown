@@ -1,13 +1,9 @@
----
 author: Aijaz Ansari
 date: '2010-01-18 17:02:15'
 slug: a-lucky-shot
 title: A Lucky Shot
-category:
-- Photos
-tags:
-- Masjid
----
+Category: Photos
+Tags: Masjid
 
 <!-- ai c /wp/IMG_8619_SMALL.jpg /wp/IMG_8619_SMALL-440x293.jpg 440 293 A Lucky Shot -->
 

@@ -1,16 +1,9 @@
----
 comments: false
 date: '2010-03-05 23:26:47'
 slug: adding-a-grid-to-your-websites
 title: Adding A Grid To Your Websites
-Category:
-- Computers
-tags:
-- Design
-- Grids
-- Testing
-- Web
----
+Category: Computers
+Tags: Design, Grids, Testing, Web
 
 <!-- ai l /wp/20100305-_JAZ1036-Edit.jpg /wp/20100305-_JAZ1036-Edit-189x285.jpg 189 285 190 S. La Salle St. - Downtown Chicago -->
 

@@ -1,14 +1,8 @@
----
 title: "A List of iOS URL Schemes"
 date: 2013-07-16 08:35
 comments: false
-Category:
-- Computers
-tags:
-- iOS
-- urls
-- urlSchemes
----
+Category: Computers
+Tags: iOS, urls, urlSchemes
 
 A handy wiki page that lists URL schemes being used by iOS apps is no
 longer being mantained.  I

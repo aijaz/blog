@@ -1,23 +1,8 @@
----
 title: "Not as expected"
 date: 2012-07-01 00:35
 comments: false
-Category:
-- Computers
-tags:
-- Editors
-- Emacs
-- Stallman
-- VI
-- Vim
-- Data
-- Facebook
-- Google
-- Networks
-- Privacy
-- Relationships
-- Twitter
----
+Category: Computers
+Tags: Editors, Emacs, Stallman, VI, Vim, Data, Facebook, Google, Networks, Privacy, Relationships, Twitter
 
 Over the past year I have written about
 [moving over to Google+](https://aijaz.net/2011/07/09/taking-back-my-relationships/)

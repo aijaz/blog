@@ -1,14 +1,9 @@
----
 comments: false
 date: '2010-02-24 01:10:33'
 slug: the-tautline-hitch-knot
 title: The Tautline Hitch Knot
-Category:
-- Knots
-tags:
-- Hitches
-- Knots
----
+Category: Knots
+Tags: Hitches, Knots
 
 <!-- ai l /wp/JAZ0650_TautlineHitch-2.jpg /wp/JAZ0650_TautlineHitch-2-189x285.jpg 189 285 The Tautline Hitch -->
 

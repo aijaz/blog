@@ -1,15 +1,9 @@
----
 comments: false
 date: '2010-09-19 20:26:11'
 slug: hello-world-on-the-iphone
 title: '"Hello, World" on the iPhone'
-Category:
-- Computers
-tags:
-- iOS
-- iPad
-- iPhone
----
+Category: Computers
+Tags: iOS, iPad, iPhone
 
 <!-- ai l /wp/iPhoneHelloWorld.jpg /wp/iPhoneHelloWorld-233x285.jpg 233 285 Hello World on the iPhone -->
 Yesterday I started learning how to write applications for the iPad and the

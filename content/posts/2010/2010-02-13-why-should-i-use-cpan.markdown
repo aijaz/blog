@@ -1,16 +1,9 @@
----
 comments: false
 date: '2010-02-13 19:01:08'
 slug: why-should-i-use-cpan
 title: Why Should I Use CPAN?
-Category:
-- Computers
-tags:
-- CPAN
-- Perl
-- TaskForest
-- Testing
----
+Category: Computers
+Tags: CPAN, Perl, TaskForest, Testing
 
 I came across some comments made about an open source program that I had
 written in perl.  The user was complaining about how he couldn't get it to

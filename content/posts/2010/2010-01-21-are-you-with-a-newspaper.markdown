@@ -1,15 +1,9 @@
----
 comments: false
 date: '2010-01-21 21:47:34'
 slug: are-you-with-a-newspaper
 title: '"Are You With A Newspaper?"'
-Category:
-- Photos
-tags:
-- Birds
-- Corniche
-- Food
----
+Category: Photos
+Tags: Birds, Corniche, Food
 
 <!-- ai l /wp/IMG_8664_SMALL.jpg /wp/IMG_8664_SMALL-285x189.jpg 285 189 This man had brought a bagful of bread to feed the birds -->
 <!-- more -->

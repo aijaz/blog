@@ -1,16 +1,8 @@
----
 title: "One-legged Medicine Ball Burpees"
 date: 2012-01-10 07:00
 comments: false
-Category:
-- Fitness
-tags:
-- P90X2
-- Burpees
-- Core
-- Balance
-- Pushups
----
+Category: Fitness
+Tags: P90X2, Burpees, Core, Balance, Pushups
 
 After only being able to do a single one-legged medicine ball burpee last week, I was able to do 12 last night.  Here's the trick:
 

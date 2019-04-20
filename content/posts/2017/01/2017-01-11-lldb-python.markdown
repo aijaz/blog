@@ -1,15 +1,7 @@
----
 title: "Running External Commands in LLDB via Python"
 date: 2017-01-11 08:00
-category:
-- Computers
-tags:
-- LLDB
-- Python
-- JQ
-- iOS
-- JSON
----
+Category: Computers
+Tags: LLDB, Python, JQ, iOS, JSON
 
 Many iOS apps today are clients of some sort. They request data from a remote server. Typically this data is served over HTTP (with SSL) and formatted as [JSON][json]. At [FastModel Sports][fm] our iOS app is constantly requesting large amounts of JSON data. While debugging the app I inevitably have to compare what I'm displaying in my views to what the server sent me. 
 

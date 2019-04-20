@@ -1,14 +1,8 @@
----
 title: "The Case of the Leaking Space Suit"
 date: 2013-09-13 17:45
 comments: false
-Category:
-- Science
-tags:
-- Space
-- ISS
-- LucaParmitano
----
+Category: Science
+Tags: Space, ISS, LucaParmitano
 
 Imagine, for a minute, that you're an astronaut.  On the ISS.  Conducting a space walk.  There you are, outside your vehicle, and you realize your spacesuit is leaking.  You could drown.  In outer space.
 

@@ -1,14 +1,9 @@
----
 title: "Thanks for the memories, CocoaConf"
 date: 2015-04-26 21:00
 comments: false
-Category:
-- Computers
-tags:
-- CocoaConf
-- Yosemite
 description: "Thanks to everyone involved for making Yosemite by CocoaConf such a wonderful event."
----
+Category: Computers
+Tags: CocoaConf, Yosemite
 
 <!-- l /images/2015/04/VernalFallsBW@2x.jpg Vernal Falls at Yosemite National Park -->
 

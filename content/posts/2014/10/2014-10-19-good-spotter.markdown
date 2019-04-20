@@ -1,15 +1,10 @@
----
 published: true
 title: "The Importance of Having a Good Spotter"
 date: 2014-10-19 22:52
 comments: false
-Category:
-- Fitness
-tags:
-- Lifting
-- Weights
 description: "In weightlifting, and in life, having a good spotter is very important."
----
+Category: Fitness
+Tags: Lifting, Weights
 
 When working with something dangerous, you must always ask yourself, "If the
 forces that are maintaining the current equilibrium give way, what's the worst

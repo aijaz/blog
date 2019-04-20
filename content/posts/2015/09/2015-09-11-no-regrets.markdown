@@ -1,16 +1,9 @@
----
 title: "No Regrets"
 date: 2015-09-11 10:00
 comments: false
-Category:
-- Opinion
-tags:
-- Philosophy
-- Psychology
-- Regret
-- SMBC
 description: "In this post I jot down a few thoughts on the concept of regret."
----
+Category: Opinion
+Tags: Philosophy, Psychology, Regret, SMBC
 
 This has been eating at me for the last 28 years. I'd like to start talking about it today. It's what I call the American mantra of "I have no regrets." In this post I'll lay out my initial thoughts so that I can, over time, flesh them out and come up with a well-written essay.
 

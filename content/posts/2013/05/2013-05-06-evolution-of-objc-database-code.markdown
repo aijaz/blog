@@ -1,18 +1,8 @@
----
 title: "Evolution of Objective C Database Code"
 date: 2013-05-06 23:02
 comments: false
-Category:
-- Computers
-tags:
-- ObjectiveC
-- ARC
-- FMDB
-- SQLite3
-- SQL
-- QuranMemorizer
-- Literals
----
+Category: Computers
+Tags: ObjectiveC, ARC, FMDB, SQLite3, SQL, QuranMemorizer, Literals
 
 ## First
 

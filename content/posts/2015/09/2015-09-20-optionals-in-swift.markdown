@@ -1,16 +1,9 @@
----
 title: "Optionals In Swift"
 date: 2015-09-20 22:30
 comments: false
-Category:
-- Computers
-tags:
-- Swift
-- Optionals
-- iOS
-- Teaching
 description: "I'd like to share with you the way I teach optionals in Swift."
----
+Category: Computers
+Tags: Swift, Optionals, iOS, Teaching
 
 I'd like to share with you the way I teach optionals in Swift. I'm pretty sure I'm not the first person who thought of this method, but since I haven't seen anyone else write this up, I've taken it upon myself to do so.
 

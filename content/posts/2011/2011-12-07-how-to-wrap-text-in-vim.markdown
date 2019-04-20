@@ -1,15 +1,9 @@
----
 comments: false
 date: '2011-12-07 07:00:01'
 slug: how-to-wrap-text-in-vim
 title: How To Wrap Text In Vim
-Category:
-- Computers
-tags:
-- Editors
-- Vim
-- Wrap
----
+Category: Computers
+Tags: Editors, Vim, Wrap
 
 [Another in my [series of posts on Vim](/2011/11/21/there-and-back-again-a-hackers-switch-from-emacs-back-to-vi/)]
 

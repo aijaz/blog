@@ -1,21 +1,9 @@
----
 comments: false
 date: '2010-04-10 14:55:15'
 slug: google-now-considers-website-speed-in-its-ranking
 title: Google Now Considers Website Speed In Its Ranking
-Category:
-- Computers
-tags:
-- Apache
-- Firebug
-- Firefox
-- Google
-- HTTP
-- SEO
-- TaskForest
-- Websites
-- YUI
----
+Category: Computers
+Tags: Apache, Firebug, Firefox, Google, HTTP, SEO, TaskForest, Websites, YUI
 
 [Google reported yesterday](http://googlewebmastercentral.blogspot.com/2010/04/using-site-speed-in-web-search-ranking.html) that their search engine will
 now include a website's speed in the list of factors it uses to decide how

@@ -1,13 +1,9 @@
----
 title: "30 Days Later"
 date: 2015-10-01 18:00
 comments: false
-Category:
-- 30days
-tags:
-- 30days
 description: "For the first time ever I wrote a blog post every day for a month. Here's what I learned."
----
+Category: 30days
+Tags: 30days
 
 Well, that was fun. For the first time ever I wrote a blog post every day for a month. Here's what I learned:
 

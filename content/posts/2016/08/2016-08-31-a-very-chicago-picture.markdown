@@ -1,10 +1,7 @@
----
 template: photo
 title: "A Very Chicago Picture"
 date: 2016-08-31 06:55
 comments: false
-category:
-- Photos
 author: Aijaz Ansari
 image: /images/photos/dbg/_JAZ4968.jpg
 page_image: /images/photos/dbg/_JAZ4968_page.jpg
@@ -28,14 +25,11 @@ page_image_width: 734
 page_image_height: 488
 scale_factor: 1.0
 shutter_speed: 1/13
-tags: 
-- City
-- Chicago
-- CTA
 thumbnail: /images/photos/dbg/_JAZ4968_tn.jpg
 thumbnail_height: 256
 thumbnail_width: 384
----
+Category: Photos
+Tags: City, Chicago, CTA
 
 How many Chicago motifs can you find here?
 

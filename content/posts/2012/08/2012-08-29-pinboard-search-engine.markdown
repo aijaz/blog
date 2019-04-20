@@ -1,16 +1,8 @@
----
 title: "How to Make a Pinboard Search Engine Shortcut"
 date: 2012-08-29 08:36
 comments: false
-Category:
-- Computers
-tags:
-- Pinboard
-- Chrome
-- Browsers
-- Productivity
-- Efficiency
----
+Category: Computers
+Tags: Pinboard, Chrome, Browsers, Productivity, Efficiency
 
 <!-- ai l /images/pinboardSearch/hero.png /images/pinboardSearch/hero.png 340 139 Pinboard as a Search Engine -->
 

@@ -1,27 +1,10 @@
----
 comments: false
 date: '2010-03-31 12:57:48'
 slug: performance-cost-of-using-wordpress
 title: The Performance Cost of Using WordPress
-Category:
-- Computers
-tags:
-- Apache
-- Caching
-- DNS
-- Efficiency
-- Etag
-- HTTP
-- Metrics
-- Programming
-- Safari Web Browser
-- Spiders
-- TaskForest
-- Testing
-- Websites
-- WordPress
 description: "I've come to the conclusion that, at least for TaskForest, WordPress would cause more problems than it would solve."
----
+Category: Computers
+Tags: Apache, Caching, DNS, Efficiency, Etag, HTTP, Metrics, Programming, Safari Web Browser, Spiders, TaskForest, Testing, Websites, WordPress
 
 Happy with my experience with a custom WordPress installation for this blog, I
 decided to try using the blogging platform for the

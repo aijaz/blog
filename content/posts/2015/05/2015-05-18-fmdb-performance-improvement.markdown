@@ -1,17 +1,9 @@
----
 title: "Performance Improvement with FMDB"
 date: 2015-05-17 23:20
 comments: false
-Category:
-- Computers
-tags:
-- FMDB
-- SQL
-- Transactions
-- iOS
-- Databases
 description: In this post I show you how a simple change in how I wrote my SQL took my execution time from 21 seconds down to 0.12 seconds.
----
+Category: Computers
+Tags: FMDB, SQL, Transactions, iOS, Databases
 
 <!-- c /images/2015/05/view@2x.jpg Looking out at Hyderabad -->
 

@@ -1,24 +1,9 @@
----
 comments: false
 date: '2010-03-08 21:08:33'
 slug: sometimes-text-files-are-better-than-databases
 title: Sometimes Text Files Are Better Than Databases
-Category:
-- Computers
-tags:
-- Data
-- Database
-- Diff
-- Editors
-- GUI
-- Persistence
-- Programming
-- RDBMS
-- Representation
-- SSH
-- TaskForest
-- Text
----
+Category: Computers
+Tags: Data, Database, Diff, Editors, GUI, Persistence, Programming, RDBMS, Representation, SSH, TaskForest, Text
 
 <!-- ai l /wp/File.png /wp/File.png 108 136 A File -->
 

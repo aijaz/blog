@@ -1,15 +1,9 @@
----
 comments: false
 date: '2010-01-23 11:27:46'
 slug: how-camera-lenses-work
 title: How Camera Lenses Work
-Category:
-- Photography
-tags:
-- Cameras
-- Lenses
-- Optics
----
+Category: Photography
+Tags: Cameras, Lenses, Optics
 
 This is the first in a series of blog entries on photography.  Today we look
 at one of the most critical parts of any camera - the lens.

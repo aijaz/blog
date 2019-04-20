@@ -1,21 +1,9 @@
----
 title: "Switching from being a consumer to a creator"
 date: 2015-04-24 18:00
 comments: false
-Category:
-- Computers
-tags:
-- SocialMedia
-- Twitter
-- CocoaConf
-- Yosemite
-- Rands
-- MichaelLopp
-- AndyIhnatko
-- SerenityCaldwell
-- Writing
 description: Lectures at the Yosemite by CocoaConf conference challenge my relationship with Twitter.
----
+Category: Computers
+Tags: SocialMedia, Twitter, CocoaConf, Yosemite, Rands, MichaelLopp, AndyIhnatko, SerenityCaldwell, Writing
 
 Three talks at the [Yosemite by CocoaConf][] conference made me think about my relationship with Twitter and convinced me to switch from being a consumer of social media to a creator and a writer. 
 

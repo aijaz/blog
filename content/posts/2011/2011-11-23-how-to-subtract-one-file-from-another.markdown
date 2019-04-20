@@ -1,15 +1,9 @@
----
 comments: false
 date: '2011-11-23 14:45:26'
 slug: how-to-subtract-one-file-from-another
 title: How To Subtract One File From Another
-Category:
-- Computers
-tags:
-- bash
-- grep
-- Text
----
+Category: Computers
+Tags: bash, grep, Text
 
 Let's say you have two text files, FileA and FileB.  You want a file that has
 all the lines of FileA that are_ not_ in FileB.  How do you do that?

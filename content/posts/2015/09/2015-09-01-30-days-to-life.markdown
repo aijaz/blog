@@ -1,15 +1,9 @@
----
 title: "30 Days to Life"
 date: 2015-09-01 09:26
 comments: false
-Category:
-- Opinion
-tags:
-- habits
-- Islam
-- Ramadan
 description: "In the first of my #30days posts I compare its goals to those of the month of Ramadan."
----
+Category: Opinion
+Tags: habits, Islam, Ramadan
 
 As I started planning what to write about for my [30 days][] posts, I realized that this isn't the first time I've been exhorted to try something for 30 days. In fact, I've been doing this every year for about 30 years.
 

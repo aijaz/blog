@@ -1,13 +1,8 @@
----
 title: "How to Customize your Octopress Theme"
 date: 2012-08-27 01:18
 comments: false
-Category:
-- Computers
-tags:
-- Octopress
-- User Interface
----
+Category: Computers
+Tags: Octopress, User Interface
 
 <!-- ai l /images/theme/version0.png /images/theme/version0T.png 384 216 A Sample Octopress Site (click to enlarge) -->
 

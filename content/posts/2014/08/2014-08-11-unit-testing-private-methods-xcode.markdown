@@ -1,18 +1,10 @@
----
 published: true
 title: "Unit Testing Private Methods with XCode"
 date: 2014-08-11 22:00
 comments: false
-Category:
-- Computers
-tags:
-- iOS
-- XCode
-- ObjectiveC
-- Testing
-- TDD
 description: "This post illustrates what I did to test a private method using XCode 5."
----
+Category: Computers
+Tags: iOS, XCode, ObjectiveC, Testing, TDD
 
 
 Now that I'm starting a new iOS development project, I'm trying to have close-to-complete test coverage of critical parts of my code. I'm using XCTest pretty extensively, and found that I needed to test a rather complicated private method that is critical to my app's user experience. This post shows you how I did it.

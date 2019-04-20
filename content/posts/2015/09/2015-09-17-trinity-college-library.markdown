@@ -1,16 +1,9 @@
----
 title: "The Library"
 date: 2015-09-17 22:30
 comments: false
-Category:
-- Photos
-tags:
-- Ireland
-- TrinityCollege
-- Library
-- Travel
 description: "The Library of the Trinity College Dublin is one of the most beautiful places to visit in Ireland."
----
+Category: Photos
+Tags: Ireland, TrinityCollege, Library, Travel
 
 One of the most beautiful places I visited during my recent trip to Dublin, Ireland was the Trinity College Library. The long, two-storey high grand hall with stacks on each side was breathtaking. The smell of old books filled the air.
 

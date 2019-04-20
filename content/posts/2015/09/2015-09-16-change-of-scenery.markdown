@@ -1,14 +1,9 @@
----
 title: "A Change of Scenery"
 date: 2015-09-16 18:30
 comments: false
-Category:
-- Photography
-tags:
-- Walking
-- StreetPhotography
 description: "Once you start exploring new streets you'll start noticing new things again."
----
+Category: Photography
+Tags: Walking, StreetPhotography
 
 I had been taking the same path to work for the past ten years. Sure, there were minor variations - I could turn this way a block earlier, go that way a block later - but essentially the walk was the same. I started recognizing the people I'd see on the street (and secretly naming them in my head), the doors on buildings, and even the various imperfections on walls and on sidewalks. I am an amateur photographer and, in a word, I was bored. On a typical walk to and from work, I could look at anything and feel I knew every visual facet of it. Leisurely photo walks were always different, but were few and far between. And then, I moved to a new job.
 

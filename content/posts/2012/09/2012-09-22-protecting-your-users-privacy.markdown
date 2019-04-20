@@ -1,17 +1,9 @@
----
 title: "Protecting Your Users' Privacy"
 date: 2012-09-22 07:43
 comments: false
-Category:
-- Computers
-tags: 
-- Security
-- Passwords
-- bcrypt
-- Hashes
-- SecondConf
 description: Here are the slides and links from my recent Blitz Talk on password security at SecondConf.
----
+Category: Computers
+Tags: Security, Passwords, bcrypt, Hashes, SecondConf
 
 Here are the slides and links from my recent Blitz Talk on password security at SecondConf.
 

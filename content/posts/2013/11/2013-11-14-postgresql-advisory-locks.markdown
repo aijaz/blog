@@ -1,17 +1,9 @@
----
 title: "PostgreSQL Advisory Locks"
 date: 2013-11-14 09:15
 comments: false
-Category:
-- Computers
-tags:
-- PostgreSQL
-- Databases
-- Concurrency
-- TaskForest
-- Locks
 description: Advisory Locks in PostgreSQL can prevent concurrent instances of jobs.  But they may not be the ideal tool. 
----
+Category: Computers
+Tags: PostgreSQL, Databases, Concurrency, TaskForest, Locks
 
 [A recent post](http://hashrocket.com/blog/posts/advisory-locks-in-postgres) by
 [Derek Parker](http://hashrocket.com/blog/rocketeers/derek-parker) introduced me to 

@@ -1,19 +1,9 @@
----
 comments: false
 date: '2011-07-09 18:59:15'
 slug: taking-back-my-relationships
 title: Taking Back My Relationships
-Category:
-- Computers
-tags:
-- Data
-- Facebook
-- Google
-- Networks
-- Privacy
-- Relationships
-- Twitter
----
+Category: Computers
+Tags: Data, Facebook, Google, Networks, Privacy, Relationships, Twitter
 
 I'm trying to formulate a sensible strategy to overhaul my net presence. The
 rough plan so far:

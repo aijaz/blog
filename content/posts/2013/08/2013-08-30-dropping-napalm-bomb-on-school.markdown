@@ -1,12 +1,8 @@
----
 title: "Dropping a Napalm Bomb on a School"
 date: 2013-08-30 11:11
 comments: false
-Category:
-- Opinion
-tags:
-- Syria
----
+Category: Opinion
+Tags: Syria
 
 A Syrian fighter jet apparently [dropped a napalm bomb on a school playground](http://www.bbc.co.uk/news/world-23892594). 
 Tragically, just another day in Syria. It's images and scenes like this

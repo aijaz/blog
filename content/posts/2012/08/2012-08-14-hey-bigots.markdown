@@ -1,14 +1,8 @@
----
 title: "Hey Bigots!"
 date: 2012-08-14 04:55
 comments: false
-Category:
-- Editorial
-tags:
-- Bigotry
-- Violence
-- Islamophobia
----
+Category: Editorial
+Tags: Bigotry, Violence, Islamophobia
 
 What follows was originally posted by me on my Facebook wall.  Since the
 message resonated with many people I'm moving it here so it can live on

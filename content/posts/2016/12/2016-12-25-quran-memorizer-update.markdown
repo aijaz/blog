@@ -1,14 +1,7 @@
----
 title: "Updating an Aging App"
 date: 2016-12-25 11:30
-category:
-- Computers
-tags:
-- QuranMemorizer
-- QMUpgrade
-- Programming
-- iOS
----
+Category: Computers
+Tags: QuranMemorizer, QMUpgrade, Programming, iOS
 
 It's been more than three years, but I'm finally updating my most popular app, [Qur'an Memorizer][qm]. This is the first in a series of blog posts tagged with [QMUpgrade][qmu], where I'll write about the issues I faced updating an aging app. 
 

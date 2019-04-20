@@ -1,17 +1,9 @@
----
 title: "It's time to boycott the NFL"
 date: 2015-09-03 11:30
 comments: false
-Category:
-- Editorial
-tags:
-- sports
-- football
-- cte
-- NFL
-- suicide
 description: "We can watch them literally kill each other for our entertainment. Or we can choose not to."
----
+Category: Editorial
+Tags: sports, football, cte, NFL, suicide
 
 We can watch football players literally kill each other for our entertainment. Or we can choose not to. It's time to boycott the NFL.
 

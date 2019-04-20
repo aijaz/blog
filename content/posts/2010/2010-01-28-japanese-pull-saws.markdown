@@ -1,15 +1,9 @@
----
 comments: false
 date: '2010-01-28 19:07:54'
 slug: japanese-pull-saws
 title: Japanese Pull Saws
-Category:
-- Woodworking
-tags:
-- Hand Tools
-- Saws
-- Tools
----
+Category: Woodworking
+Tags: Hand Tools, Saws, Tools
 
 When I first started dabbling in woodworking at the age of 15, the only tool I
 used to cut wood was an old, rusted woodsaw.  Every cut would start straight

@@ -1,15 +1,8 @@
----
 title: "Shell Tricks - Extracting A Column From A Text File"
 date: 2012-01-04 21:25
 comments: false
-Category:
-- Computers
-tags:
-- UNIX
-- Text
-- cut
-- nl
----
+Category: Computers
+Tags: UNIX, Text, cut, nl
 
 There have been times when I've had to extract a particular column from a
 tab-separated or comma-separated file.  The best way to do this is to use the

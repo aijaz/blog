@@ -1,14 +1,9 @@
----
 comments: false
 date: '2010-01-30 22:00:05'
 slug: dryer-lint-fire-starters
 title: Dryer Lint Fire Starters
-Category:
-- Camping
-tags:
-- Campfires
-- Fire
----
+Category: Camping
+Tags: Campfires, Fire
 
 One of my favorite activities in spring, summer and even early autumn is
 sitting outdoors by a campfire.  For safety reasons, outside my home I can't

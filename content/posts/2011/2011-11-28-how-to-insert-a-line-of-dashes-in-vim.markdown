@@ -1,16 +1,9 @@
----
 comments: false
 date: '2011-11-28 23:02:08'
 slug: how-to-insert-a-line-of-dashes-in-vim
 title: How To Insert A Line Of Dashes In Vim
-Category:
-- Computers
-tags:
-- Coding
-- Editors
-- Productivity
-- Vim
----
+Category: Computers
+Tags: Coding, Editors, Productivity, Vim
 
 [Another in my [series of posts on Vim](/2011/11/21/there-and-back-again-a-hackers-switch-from-emacs-back-to-vi/)]
 

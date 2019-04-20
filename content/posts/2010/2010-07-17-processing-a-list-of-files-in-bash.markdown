@@ -1,15 +1,9 @@
----
 comments: false
 date: '2010-07-17 00:21:53'
 slug: processing-a-list-of-files-in-bash
 title: Processing A List Of Files In bash
-Category:
-- Computers
-tags:
-- bash
-- Productivity
-- Shell
----
+Category: Computers
+Tags: bash, Productivity, Shell
 
 When you're working in Unix or Linux or even Mac OS X, there are often times
 when you need to apply the same command to a list of files.  In this post I'll

@@ -1,15 +1,9 @@
----
 title: "Changing Jobs and Keeping Friends"
 date: 2015-09-02 11:49
 comments: false
-Category:
-- Opinion
-tags:
-- work
-- careers
-- interviews
 description: ""
----
+Category: Opinion
+Tags: work, careers, interviews
 
 It can be difficult to leave a job and start working at a new place, especially if you like where you work right now. 
 

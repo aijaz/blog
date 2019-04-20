@@ -1,16 +1,7 @@
----
 title: "CocoaConf: How I Prepared, & What I Learned"
 date: 2017-04-30 20:00
-category:
-- Computers
-tags:
-- CocoaConf
-- Debugging
-- XCode
-- LLDB
-- Python
-- Speaking
----
+Category: Computers
+Tags: CocoaConf, Debugging, XCode, LLDB, Python, Speaking
 
 Last week I attended [CocoaConf Chicago][ccc17] for the 6th year in a row. In this post I would like to share with you how I prepared as a [speaker](#speaker), and what I learned as an [attendee](#attendee). 
 

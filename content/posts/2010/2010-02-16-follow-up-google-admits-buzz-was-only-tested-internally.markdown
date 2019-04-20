@@ -1,15 +1,9 @@
----
 comments: false
 date: '2010-02-16 22:29:50'
 slug: follow-up-google-admits-buzz-was-only-tested-internally
 title: 'Follow up: Google Admits Buzz Was Only Tested Internally'
-Category:
-- Computers
-tags:
-- Buzz
-- Google
-- Testing
----
+Category: Computers
+Tags: Buzz, Google, Testing
 
 In [yesterday's article](/2010/02/15/sometimes-testing-isnt-enough/) about Google Buzz, I guessed that "the problem was that
 the population for whom the system was designed wasn’t necessarily the only

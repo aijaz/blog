@@ -1,15 +1,9 @@
----
 title: "Learn These Things Before You Need To Know Them"
 date: 2015-09-29 21:50
 comments: false
-Category:
-- DIY
-tags:
-- Plungers
-- Flats
-- Sewing
 description: "In today's post I would like to list four things that you should know how to do, before you have to do them."
----
+Category: DIY
+Tags: Plungers, Flats, Sewing
 
 A few weeks ago, when my older two boys were getting ready to go off to college I was reminded of something I read online: Buy a toilet plunger before you __need__ a toilet plunger. In today's post I would like to list four things that you should know how to do, before you have to do them.
 

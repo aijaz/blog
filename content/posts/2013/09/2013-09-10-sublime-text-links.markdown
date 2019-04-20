@@ -1,15 +1,8 @@
----
 title: "Links from my Sublime Text Talk"
 date: 2013-09-10 18:18
 comments: false
-Category:
-- Computers
-tags:
-- Editors
-- SublimeText
-- Talks
-- Productivity
----
+Category: Computers
+Tags: Editors, SublimeText, Talks, Productivity
 
 At today's CocoaHeads meeting I gave a little demo of 
 [Sublime Text 3](http://sublimetext.com).  

@@ -1,17 +1,9 @@
----
 author: Aijaz Ansari
 date: '2009-12-24 04:05:21'
 slug: what-to-do-when-your-mac-is-temporarily-disabled
 title: What To Do When Your Mac Is Temporarily Disabled
-category:
-- Computers
-tags:
-- Apple
-- Backups
-- Computers
-- Macs
-- Service
----
+Category: Computers
+Tags: Apple, Backups, Computers, Macs, Service
 
 <!-- ai l /wp/sad_mac1.png /wp/sad_mac1-170x170.png 170 170 Sad Mac -->
 

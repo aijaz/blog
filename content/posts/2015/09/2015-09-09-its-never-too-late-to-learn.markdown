@@ -1,14 +1,9 @@
----
 title: "It's Never Too Late to Learn"
 date: 2015-09-09 22:00
 comments: false
-Category:
-- Opinion
-tags:
-- Learning
-- Rubiks Cube
 description: "It's never too late to learn"
----
+Category: Opinion
+Tags: Learning, Rubiks Cube
 
 I was pre-teen in the early 1980s. The 1980s was the decade of the Rubik's Cube. It was everywhere. I was in India at the time, and people over there were as nuts about it as people in Europe and the US. Kids all over the world were experiencing the thrill of solving it. But not I. I had a book that described how to solve the cube, but it did a really poor job of describing the seemingly arbitrary algorithms required. Even though I could solve a single side by myself, I couldn't solve the entire cube without having the book open in front of me, following its complex directions. 
 

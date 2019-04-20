@@ -1,15 +1,8 @@
----
 title: "Shapeshifting DIY Robots"
 date: 2015-12-01 18:00
-category:
-- Computers
-tags:
-- Apple
-- Tinkering
-- Making
-- Room3
 description: "I had the most awesome dream last night, and it got me thinking..."
----
+Category: Computers
+Tags: Apple, Tinkering, Making, Room3
 
 Last night, right before going to bed, I decided to play [The Room 3][room]. It's a beautiful game with elaborate puzzles. I was completely lost in the world of intricate models and mind-bending transformations. Later that night I had the most awesome dream:
 

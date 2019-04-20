@@ -1,18 +1,9 @@
----
 title: "The Mighty Bowline Knot"
 date: 2015-09-06 12:00
 comments: false
-Category:
-- Knots
-tags:
-- Bowline
-- Safety
-- Knots
-- Safety
-- Boating
-- Camping
 description: "The bowline knot is one of the five most important knots everyone should know."
----
+Category: Knots
+Tags: Bowline, Safety, Knots, Safety, Boating, Camping
 
 Humans have been using rope as a tool for thousands of years, even before we started recording history.  Knots and rope-tying is one of the few technologies that have persisted essentially unchanged in all of the known human history.  This is the second in a series of posts about the most important knots. The bowline knot is certainly in the top two or three.
 

@@ -1,21 +1,9 @@
----
 comments: false
 date: '2010-04-01 23:02:41'
 slug: communicating-during-a-crisis
 title: Communicating During A Crisis
-Category:
-- Computers
-tags:
-- Communication
-- Crisis
-- Delegation
-- DNS
-- Honesty
-- iPhone
-- Leadership
-- Management
-- Pogue
----
+Category: Computers
+Tags: Communication, Crisis, Delegation, DNS, Honesty, iPhone, Leadership, Management, Pogue
 
 A few day ago the data center where I used to host my name servers lost its
 connection to the Internet for a very long time (almost 36 hours).   Whatever

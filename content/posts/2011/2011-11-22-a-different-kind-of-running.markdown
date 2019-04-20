@@ -1,13 +1,9 @@
----
 comments: false
 date: '2011-11-22 15:33:02'
 slug: a-different-kind-of-running
 title: A Different Kind Of Running
-Category:
-- Fitness
-tags:
-- Running
----
+Category: Fitness
+Tags: Running
 
 I don't like running unless I'm running towards something or away from
 something.  But I do run often because of the health benefits. I've always

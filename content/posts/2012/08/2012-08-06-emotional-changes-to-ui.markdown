@@ -1,17 +1,8 @@
----
 title: "Emotional Changes To The User Interface"
 date: 2012-08-09 01:11
 comments: false
-Category:
-- Computers
-tags:
-- iOS
-- Apps
-- Development
-- User Interface
-- Testing
-- Scrabble
----
+Category: Computers
+Tags: iOS, Apps, Development, User Interface, Testing, Scrabble
 
 <!-- ai l /images/scrabble/hero.png /images/scrabble/heroSmall.png 320 480 Scrabble for iPhone -->
 

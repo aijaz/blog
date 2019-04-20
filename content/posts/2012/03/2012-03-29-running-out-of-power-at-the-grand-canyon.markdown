@@ -1,15 +1,8 @@
----
 title: "Running Out Of Power At The Grand Canyon"
 date: 2012-03-29 17:41
 comments: false
-Category:
-- Photography
-tags:
-- Cameras
-- Battery
-- Backups
-- Flash
----
+Category: Photography
+Tags: Cameras, Battery, Backups, Flash
 
 I'm currently in the last 48 hours of my first ever visit to the Grand
 Canyon in Arizona.  Just hours before setting out to see the Canyon for

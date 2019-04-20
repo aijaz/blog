@@ -1,19 +1,8 @@
----
 title: "How to Delete Multiple Versions of an App in HockeyApp"
 date: 2013-06-06 09:30
 comments: false
-Category:
-- Computers
-tags:
-- UNIX
-- bash
-- zsh
-- Shell
-- Productivity
-- HockeyApp
-- REST
-- WebServices
----
+Category: Computers
+Tags: UNIX, bash, zsh, Shell, Productivity, HockeyApp, REST, WebServices
 
 I recently needed to issue several dozen HTTP DELETE REST API calls of the
 form http://www.example.com/blah/n where n was a sequential version

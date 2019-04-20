@@ -1,15 +1,9 @@
----
 title: "Who's Your Child?"
 date: 2015-09-25 22:10
 comments: false
-Category:
-- Opinion
-tags:
-- Family
-- Children
-- Identity
 description: "Eventually it's their call. They get to define me."
----
+Category: Opinion
+Tags: Family, Children, Identity
 
 If you're a parent, you've either been through this, or will soon: At some point you stop being known by the neighbors by your own name, and start being identified by your kids' names. You become "Adam's Dad" or "Sarah's Mom." 
 

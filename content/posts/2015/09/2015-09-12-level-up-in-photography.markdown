@@ -1,16 +1,9 @@
----
 title: "Level Up In Photography"
 date: 2015-09-12 17:30
 comments: false
-Category:
-- Photography
-tags:
-- Lighting
-- Flash
-- Strobist
-- DavidHobby
 description: ""
----
+Category: Photography
+Tags: Lighting, Flash, Strobist, DavidHobby
 
 Remember what I said a few days ago about fitness? ["Just show up"][showUp]? Today is such a day with this blog for me. I'm tired, I have a headache and I would rather not write. But I've shown up, with the idea that a small, helpful blog post is better than nothing. So, here goes. I'm gonna talk about taking better pictures.
 

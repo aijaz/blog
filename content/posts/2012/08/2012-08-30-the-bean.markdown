@@ -1,10 +1,7 @@
----
 Template: photo
 title: "The Bean"
 date: 2012-08-30 22:54
 comments: false
-Category:
-- Photos
 image: /images/photos/bean/P_JAZ3232.jpg
 page_image: /images/photos/bean/P_JAZ3232_page.jpg
 thumbnail: /images/photos/bean/P_JAZ3232_tn.jpg
@@ -23,10 +20,6 @@ flash: No Flash
 license: <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a>
 date_taken: 2012:03:20 05:38:36
 lens: "AF-S VR Zoom-Nikkor 24-120mm f/3.5-5.6G IF-ED"
-tags:
-- Chicago
-- CloudGate
-- TheBean
 photo_width: 768
 photo_height: 511
 page_image_width: 734
@@ -34,7 +27,8 @@ page_image_height: 488
 thumbnail_width: 384
 thumbnail_height: 256
 description: Cloud Gate - fondly known as The Bean.
----
+Category: Photos
+Tags: Chicago, CloudGate, TheBean
 
 "Cloud Gate" - fondly known as The Bean. Millennium Park, Chicago. Looking
 East, half an hour before a sunrise that was hidden behind

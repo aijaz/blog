@@ -1,13 +1,9 @@
----
 comments: false
 date: '2011-11-30 20:16:45'
 slug: what-is-a-histogram
 title: What Is A Histogram?
-Category:
-- Photography
-tags:
-- Histogram
----
+Category: Photography
+Tags: Histogram
 
 A key aspect of good photography is exposure - the amount of light that enters
 the lens.  One of the most useful tools a digital cameras has to help you

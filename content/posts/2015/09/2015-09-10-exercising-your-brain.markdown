@@ -1,17 +1,9 @@
----
 title: "Exercising Your Brain"
 date: 2015-09-10 08:00
 comments: false
-Category:
-- Science
-tags:
-- Learning
-- Apps
-- Brain
-- Fitness
-- Exercise
 description: "Turns out those apps that claim to improve your brain don't really work. What does is physical exercise."
----
+Category: Science
+Tags: Learning, Apps, Brain, Fitness, Exercise
 
 We've all heard or seen the ads making claims like, "Download our scientific app and play our brain games! They'll improve your memory and actually improve your brain power over time." I'd often thought about downloading one of those apps and trying it out. Wouldn't hurt right? Wrong. It would hurt your pocketbook, but wouldn't help your brain at all, according to Johns Hopkins Professor of Neuroscience David Linden.  What _would_ help is exercise, he tells Terry Gross, of NPR's "Fresh Air".
 

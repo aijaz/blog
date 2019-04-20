@@ -1,15 +1,8 @@
----
 title: "Installing mod_perl 2.0"
 date: 2012-07-14 20:24
 comments: false
-Category:
-- Computers
-tags:
-- Apache
-- mod_perl
-- Perl
-- linux
----
+Category: Computers
+Tags: Apache, mod_perl, Perl, linux
 
 I recently needed to upgrade one of my machines to mod_perl 2.0.  I
 encountered many problems on the way, and would like to share with you

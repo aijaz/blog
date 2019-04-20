@@ -1,16 +1,9 @@
----
 title: "The Best Time to Die"
 date: 2015-09-14 19:30
 comments: false
-Category:
-- Opinion
-tags:
-- Philosophy
-- Life
-- Death
-- Living
 description: "The only certainty in life is that it has an end."
----
+Category: Opinion
+Tags: Philosophy, Life, Death, Living
 
 The only certainty in life is that it has an end. I've been trained to think of death as a sad, morbid topic. But lately I've come to realize that embracing the inevitable can have a markedly positive effect on my life. 
 

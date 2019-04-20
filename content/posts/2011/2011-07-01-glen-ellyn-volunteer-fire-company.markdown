@@ -1,14 +1,9 @@
----
 comments: false
 date: '2011-07-01 19:50:31'
 slug: glen-ellyn-volunteer-fire-company
 title: Glen Ellyn Volunteer Fire Company
-Category:
-- Photography
-tags:
-- Community
-- Society
----
+Category: Photography
+Tags: Community, Society
 
 <!-- ai c /wp/GlenEllynVolFireDept.jpg /wp/GlenEllynVolFireDept-440x440.jpg 440 440 Glen Ellyn Volunteer Fire Company -->
 

@@ -1,18 +1,7 @@
----
 title: "Rotation and Adaptive Layouts"
 date: 2016-12-27 22:15
-category:
-- Computers
-tags:
-- QuranMemorizer
-- QMUpgrade
-- Programming
-- MultiTasking
-- iPad
-- AutoLayout
-- AdaptiveLayout
-- iOS
----
+Category: Computers
+Tags: QuranMemorizer, QMUpgrade, Programming, MultiTasking, iPad, AutoLayout, AdaptiveLayout, iOS
 
 *Another in a series of posts documenting my process of updating an aging app.*
 

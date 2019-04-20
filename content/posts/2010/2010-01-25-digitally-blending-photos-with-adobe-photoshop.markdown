@@ -1,16 +1,9 @@
----
 comments: false
 date: '2010-01-25 20:41:48'
 slug: digitally-blending-photos-with-adobe-photoshop
 title: Digitally Blending Photos With Adobe Photoshop
-Category:
-- Photography
-tags:
-- Blending
-- HDR
-- Photoshop
-- PostProcessing
----
+Category: Photography
+Tags: Blending, HDR, Photoshop, PostProcessing
 
 I'm interested in tinkering with [High Dynamic Range](http://en.wikipedia.org/wiki/High_dynamic_range_imaging) photography,
 but before I get [Photomatix, the software that's recommended most often](http://www.hdrsoft.com/), I thought I'd try out a technique that's a

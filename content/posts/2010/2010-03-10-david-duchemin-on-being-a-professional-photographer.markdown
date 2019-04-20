@@ -1,13 +1,9 @@
----
 comments: false
 date: '2010-03-10 07:44:48'
 slug: david-duchemin-on-being-a-professional-photographer
 title: David duChemin On Being A Professional Photographer
-Category:
-- Photography
-tags:
-- Blogs
----
+Category: Photography
+Tags: Blogs
 
 I recently discovered David duChemin's blog.  I'd like to share a couple of
 his posts with you.  In

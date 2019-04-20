@@ -1,13 +1,9 @@
----
 comments: false
 date: '2010-02-06 23:40:25'
 slug: camera-clock-correction-after-the-fact
 title: Camera Clock Correction After The Fact
-Category:
-- Photography
-tags:
-- EXIF
----
+Category: Photography
+Tags: EXIF
 
 I had this dilemma a few days ago: I had taken almost 4,000 pictures during a
 vacation 12 months ago. The vacation was in Asia (two continents over), and

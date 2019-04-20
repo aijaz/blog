@@ -1,15 +1,9 @@
----
 title: "Giving Back"
 date: 2015-09-18 22:30
 comments: false
-Category:
-- Computers
-tags:
-- Teaching
-- Community
-- Gratitude
 description: "You have your unique gifts. How do you use them to help others?"
----
+Category: Computers
+Tags: Teaching, Community, Gratitude
 
 Different people have different gifts. Some excel at their profession, others are talented at various arts, while yet others are blessed with strength or wealth. Once you know what your gift is, it's time to consider using it to help others.
 

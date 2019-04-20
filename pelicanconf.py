@@ -53,15 +53,16 @@ ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 SUMMARY_MAX_LENGTH = None
 STATIC_PATHS = ['images', 'wp', 'static', 'zf']
-PLUGIN_PATHS = ['../pelican-plugins']
+PLUGIN_PATHS = ['../pluginsNew/pelican-plugins']
 PLUGINS = ['summary', 
-           'md-metayaml', 
-           'category_order',
-           'liquid_tags.img', 
-           'liquid_tags.video',
-           'liquid_tags.youtube', 
-           'liquid_tags.vimeo',
-           'liquid_tags.include_code']
+           # 'pelican-md-metayaml', 
+            'category_order',
+           # 'liquid_tags.img', 
+           # 'liquid_tags.video',
+           # 'liquid_tags.youtube', 
+           # 'liquid_tags.vimeo',
+           # 'liquid_tags.include_code'
+           ]
 #           'tag_cloud', 
 MENUITEMS = [
     ('Blog', '/'),
@@ -71,6 +72,10 @@ MENUITEMS = [
     ('Archives', '/archives'),
     ]
 
+# via https://github.com/getpelican/pelican/issues/1157
+# skip zf html files
+# These are the only html files around
+READERS = {'html': None}
 
 
 # URL Settings

@@ -1,15 +1,9 @@
----
 comments: false
 date: '2011-12-02 09:00:52'
 slug: how-to-quickly-delete-words-while-in-insert-mode-in-vim
 title: How To Quickly Delete Words While In Insert Mode In Vim
-Category:
-- Computers
-tags:
-- Editors
-- Productivity
-- Vim
----
+Category: Computers
+Tags: Editors, Productivity, Vim
 
 [Another in my [series of posts on Vim](/2011/11/21/there-and-back-again-a-hackers-switch-from-emacs-back-to-vi/)]
 

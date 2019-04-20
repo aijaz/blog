@@ -1,15 +1,8 @@
----
 title: "Making a Kung Fu Wooden Dummy"
 date: 2012-07-15 23:30
 comments: false
-Category:
-- Woodworking
-tags:
-- KungFu
-- WingChun
-- WoodenDummy
-- DIY
----
+Category: Woodworking
+Tags: KungFu, WingChun, WoodenDummy, DIY
 
 <!-- ai l /images/201207/dummy/new2T.jpg /images/201207/dummy/new2TS.jpg 292 512 Wing Chun Wooden Dummy -->
 
