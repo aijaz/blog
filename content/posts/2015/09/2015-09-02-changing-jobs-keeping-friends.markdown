@@ -1,7 +1,7 @@
-title: "Changing Jobs and Keeping Friends"
+title: Changing Jobs and Keeping Friends
 date: 2015-09-02 11:49
 comments: false
-description: ""
+description: 
 Category: Opinion
 Tags: work, careers, interviews
 

@@ -1,6 +1,6 @@
-title: "Shapeshifting DIY Robots"
+title: Shapeshifting DIY Robots
 date: 2015-12-01 18:00
-description: "I had the most awesome dream last night, and it got me thinking..."
+description: I had the most awesome dream last night, and it got me thinking...
 Category: Computers
 Tags: Apple, Tinkering, Making, Room3
 

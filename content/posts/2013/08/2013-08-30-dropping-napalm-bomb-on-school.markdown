@@ -1,4 +1,4 @@
-title: "Dropping a Napalm Bomb on a School"
+title: Dropping a Napalm Bomb on a School
 date: 2013-08-30 11:11
 comments: false
 Category: Opinion

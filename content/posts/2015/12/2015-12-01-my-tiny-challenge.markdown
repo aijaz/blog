@@ -1,6 +1,6 @@
-title: "My Tiny Challenge"
+title: My Tiny Challenge
 date: 2015-12-01 23:59
-description: "Another 30Days Challenge"
+description: Another 30Days Challenge
 Category: 30days
 Tags: 30days, Fitness, Stretching
 

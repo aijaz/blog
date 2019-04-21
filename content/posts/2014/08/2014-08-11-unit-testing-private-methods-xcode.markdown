@@ -1,8 +1,8 @@
 published: true
-title: "Unit Testing Private Methods with XCode"
+title: Unit Testing Private Methods with XCode
 date: 2014-08-11 22:00
 comments: false
-description: "This post illustrates what I did to test a private method using XCode 5."
+description: This post illustrates what I did to test a private method using XCode 5.
 Category: Computers
 Tags: iOS, XCode, ObjectiveC, Testing, TDD
 

@@ -1,7 +1,7 @@
-title: "A Change of Scenery"
+title: A Change of Scenery
 date: 2015-09-16 18:30
 comments: false
-description: "Once you start exploring new streets you'll start noticing new things again."
+description: Once you start exploring new streets you'll start noticing new things again.
 Category: Photography
 Tags: Walking, StreetPhotography
 

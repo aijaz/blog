@@ -1,7 +1,7 @@
-title: "Tipu Sultan and James Joyce"
+title: Tipu Sultan and James Joyce
 date: 2015-09-23 17:50
 comments: false
-description: "I was surprised to learn of the connection between a house that James Joyce visited (and wrote about) and Tipu Sultan, the ruler of Mysore."
+description: I was surprised to learn of the connection between a house that James Joyce visited (and wrote about) and Tipu Sultan, the ruler of Mysore.
 Category: History
 Tags: DublinDoors, TipuSultan, JamesJoyce, Wellington, Wellesley, Napoleon, RobertEmmet, Patriot, War, India, England, Hyderabad, Ireland
 

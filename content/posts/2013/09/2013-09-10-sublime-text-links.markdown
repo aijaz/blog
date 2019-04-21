@@ -1,4 +1,4 @@
-title: "Links from my Sublime Text Talk"
+title: Links from my Sublime Text Talk
 date: 2013-09-10 18:18
 comments: false
 Category: Computers

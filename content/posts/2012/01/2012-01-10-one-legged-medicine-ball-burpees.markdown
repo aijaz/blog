@@ -1,4 +1,4 @@
-title: "One-legged Medicine Ball Burpees"
+title: One-legged Medicine Ball Burpees
 date: 2012-01-10 07:00
 comments: false
 Category: Fitness

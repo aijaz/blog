@@ -1,7 +1,7 @@
-title: "Backing Up your iPhone to an External Drive"
+title: Backing Up your iPhone to an External Drive
 date: 2015-09-24 22:10
 comments: false
-description: "This short post shows you how to back up your iPhone to an external drive."
+description: This short post shows you how to back up your iPhone to an external drive.
 Category: Computers
 Tags: iPhone, Backups
 

@@ -1,4 +1,4 @@
-title: "Don't Give Up"
+title: Don't Give Up
 date: 2015-09-30 18:40
 comments: false
 Category: Fitness

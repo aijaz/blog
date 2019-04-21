@@ -1,4 +1,4 @@
-title: "Code Coverage Without Pod Files"
+title: Code Coverage Without Pod Files
 date: 2016-12-25 23:50
 Category: Computers
 Tags: QuranMemorizer, QMUpgrade, Programming, iOS

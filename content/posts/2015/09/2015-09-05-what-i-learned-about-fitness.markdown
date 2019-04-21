@@ -1,7 +1,7 @@
-title: "What I've Learned About Fitness"
+title: What I've Learned About Fitness
 date: 2015-09-05 14:00
 comments: false
-description: "I've been working out regularly since I was 16 years old. But it's only in the last ten years that I've really learned how to do it right (for me)."
+description: I've been working out regularly since I was 16 years old. But it's only in the last ten years that I've really learned how to do it right (for me).
 Category: Fitness
 Tags: Fitness, Exercise, Personal Training, Nutrition, Advice
 

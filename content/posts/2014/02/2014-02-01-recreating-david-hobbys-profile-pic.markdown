@@ -1,4 +1,4 @@
-title: "Recreating David Hobby's Profile Picture"
+title: Recreating David Hobby's Profile Picture
 date: 2014-02-01 20:55
 comments: false
 Category: Photography

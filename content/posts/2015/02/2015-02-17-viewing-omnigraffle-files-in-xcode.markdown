@@ -1,4 +1,4 @@
-title: "Viewing OmniGraffle Files in XCode"
+title: Viewing OmniGraffle Files in XCode
 date: 2015-02-17 20:12
 comments: false
 description: In this post I show you how to add OmniGraffle files into an XCode project and have the generated PDFs update automatically.

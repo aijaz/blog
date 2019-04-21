@@ -1,7 +1,7 @@
-title: "Exercising Your Brain"
+title: Exercising Your Brain
 date: 2015-09-10 08:00
 comments: false
-description: "Turns out those apps that claim to improve your brain don't really work. What does is physical exercise."
+description: Turns out those apps that claim to improve your brain don't really work. What does is physical exercise.
 Category: Science
 Tags: Learning, Apps, Brain, Fitness, Exercise
 

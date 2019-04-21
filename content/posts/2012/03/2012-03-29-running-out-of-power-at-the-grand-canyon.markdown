@@ -1,4 +1,4 @@
-title: "Running Out Of Power At The Grand Canyon"
+title: Running Out Of Power At The Grand Canyon
 date: 2012-03-29 17:41
 comments: false
 Category: Photography

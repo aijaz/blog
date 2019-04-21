@@ -1,7 +1,7 @@
-title: "Who Wrote This?"
+title: Who Wrote This?
 date: 2015-09-19 23:17
 comments: false
-description: "Is it ever a bad idea to sign your name on good code that you write?"
+description: Is it ever a bad idea to sign your name on good code that you write?
 Category: Computers
 Tags: Programming, Comments
 

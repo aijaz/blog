@@ -1,4 +1,4 @@
-title: "Moving to Pelican"
+title: Moving to Pelican
 date: 2016-08-28 00:30
 Category: Computers
 Tags: Octopress, Pelican, Ruby, Python

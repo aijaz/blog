@@ -1,4 +1,4 @@
-title: "Switching To Octopress"
+title: Switching To Octopress
 date: 2011-12-12 08:19
 comments: false
 Category: Computers

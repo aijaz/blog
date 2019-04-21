@@ -1,4 +1,4 @@
-title: "About That Antelope Canyon Shot"
+title: About That Antelope Canyon Shot
 date: 2015-01-23 20:00
 comments: false
 description: A little background about how I came to take a rather nice photograph of a couple by mistake.

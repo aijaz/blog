@@ -1,6 +1,6 @@
 Template: photo
 published: true
-title: "The Auto Rickshaw"
+title: The Auto Rickshaw
 date: 2015-01-12 11:10
 comments: false
 image: /images/photos/VacEnd2014/AJAZ1030.jpg

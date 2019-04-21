@@ -1,4 +1,4 @@
-title: "More on Passwords"
+title: More on Passwords
 date: 2012-09-24 06:00
 comments: false
 description: There were some great discussions and questions following my recent Blitz Talk at SecondConf. I summarize them in this post.

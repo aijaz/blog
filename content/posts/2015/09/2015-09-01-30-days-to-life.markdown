@@ -1,7 +1,7 @@
-title: "30 Days to Life"
+title: 30 Days to Life
 date: 2015-09-01 09:26
 comments: false
-description: "In the first of my #30days posts I compare its goals to those of the month of Ramadan."
+description: In the first of my #30days posts I compare its goals to those of the month of Ramadan.
 Category: Opinion
 Tags: habits, Islam, Ramadan
 

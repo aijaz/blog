@@ -1,4 +1,4 @@
-title: "How to Delete Multiple Versions of an App in HockeyApp"
+title: How to Delete Multiple Versions of an App in HockeyApp
 date: 2013-06-06 09:30
 comments: false
 Category: Computers

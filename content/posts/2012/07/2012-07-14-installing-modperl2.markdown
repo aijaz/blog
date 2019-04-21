@@ -1,4 +1,4 @@
-title: "Installing mod_perl 2.0"
+title: Installing mod_perl 2.0
 date: 2012-07-14 20:24
 comments: false
 Category: Computers

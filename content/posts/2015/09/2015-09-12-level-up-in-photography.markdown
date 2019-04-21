@@ -1,7 +1,7 @@
-title: "Level Up In Photography"
+title: Level Up In Photography
 date: 2015-09-12 17:30
 comments: false
-description: ""
+description: 
 Category: Photography
 Tags: Lighting, Flash, Strobist, DavidHobby
 

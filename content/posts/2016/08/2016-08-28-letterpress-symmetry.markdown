@@ -1,4 +1,4 @@
-title: "Letterpress Symmetry"
+title: Letterpress Symmetry
 date: 2016-08-28 14:35
 Template: letterpress
 image: /images/letterpress/excels2.png

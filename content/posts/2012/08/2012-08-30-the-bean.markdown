@@ -1,5 +1,5 @@
 Template: photo
-title: "The Bean"
+title: The Bean
 date: 2012-08-30 22:54
 comments: false
 image: /images/photos/bean/P_JAZ3232.jpg

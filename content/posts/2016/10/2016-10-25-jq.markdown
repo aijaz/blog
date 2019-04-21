@@ -1,4 +1,4 @@
-title: "Examining JSON Data With jq"
+title: Examining JSON Data With jq
 date: 2016-10-25 20:30
 Category: Computers
 Tags: jq, JSON, API, Debugging

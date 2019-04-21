@@ -1,7 +1,7 @@
-title: "All This For One Shot"
+title: All This For One Shot
 date: 2015-09-21 21:10
 comments: false
-description: "Fourteen days in India. Traveling with a tripod. Used it for only one shot. Totally worth it."
+description: Fourteen days in India. Traveling with a tripod. Used it for only one shot. Totally worth it.
 Category: Photography
 Tags: HDR, Tripod
 

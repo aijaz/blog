@@ -1,4 +1,4 @@
-title: "PostgreSQL Advisory Locks"
+title: PostgreSQL Advisory Locks
 date: 2013-11-14 09:15
 comments: false
 description: Advisory Locks in PostgreSQL can prevent concurrent instances of jobs.  But they may not be the ideal tool. 

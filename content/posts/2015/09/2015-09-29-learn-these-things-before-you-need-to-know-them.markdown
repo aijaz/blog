@@ -1,7 +1,7 @@
-title: "Learn These Things Before You Need To Know Them"
+title: Learn These Things Before You Need To Know Them
 date: 2015-09-29 21:50
 comments: false
-description: "In today's post I would like to list four things that you should know how to do, before you have to do them."
+description: In today's post I would like to list four things that you should know how to do, before you have to do them.
 Category: DIY
 Tags: Plungers, Flats, Sewing
 

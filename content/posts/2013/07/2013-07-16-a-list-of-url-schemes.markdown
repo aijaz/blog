@@ -1,4 +1,4 @@
-title: "A List of iOS URL Schemes"
+title: A List of iOS URL Schemes
 date: 2013-07-16 08:35
 comments: false
 Category: Computers

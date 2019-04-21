@@ -1,4 +1,4 @@
-title: "CocoaConf: How I Prepared, & What I Learned"
+title: CocoaConf: How I Prepared, & What I Learned
 date: 2017-04-30 20:00
 Category: Computers
 Tags: CocoaConf, Debugging, XCode, LLDB, Python, Speaking

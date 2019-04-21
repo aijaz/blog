@@ -1,7 +1,7 @@
-title: "30 Days Later"
+title: 30 Days Later
 date: 2015-10-01 18:00
 comments: false
-description: "For the first time ever I wrote a blog post every day for a month. Here's what I learned."
+description: For the first time ever I wrote a blog post every day for a month. Here's what I learned.
 Category: 30days
 Tags: 30days
 

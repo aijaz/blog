@@ -1,7 +1,7 @@
-title: "It's Never Too Late to Learn"
+title: It's Never Too Late to Learn
 date: 2015-09-09 22:00
 comments: false
-description: "It's never too late to learn"
+description: It's never too late to learn
 Category: Opinion
 Tags: Learning, Rubiks Cube
 

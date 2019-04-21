@@ -1,5 +1,5 @@
 template: photo
-title: "A Very Chicago Picture"
+title: A Very Chicago Picture
 date: 2016-08-31 06:55
 comments: false
 author: Aijaz Ansari

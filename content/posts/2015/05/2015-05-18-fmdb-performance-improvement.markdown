@@ -1,4 +1,4 @@
-title: "Performance Improvement with FMDB"
+title: Performance Improvement with FMDB
 date: 2015-05-17 23:20
 comments: false
 description: In this post I show you how a simple change in how I wrote my SQL took my execution time from 21 seconds down to 0.12 seconds.

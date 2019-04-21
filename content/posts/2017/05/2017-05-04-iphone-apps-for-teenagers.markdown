@@ -1,4 +1,4 @@
-title: "iPhone Apps for Teenagers"
+title: iPhone Apps for Teenagers
 date: 2017-05-04 20:00
 Status: draft
 Category: Computers

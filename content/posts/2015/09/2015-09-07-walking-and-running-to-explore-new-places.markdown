@@ -1,5 +1,5 @@
 published: true
-title: "Walking and Running to Explore New Places"
+title: Walking and Running to Explore New Places
 date: 2015-09-07 12:12
 comments: false
 Template: photo
@@ -26,7 +26,7 @@ shutter_speed: 1/150
 thumbnail: /images/2015/09/explore_tn.jpg
 thumbnail_height: 256
 thumbnail_width: 341
-description: "I never used to like running. But now I've found that walking and running early in the morning is a great way to explore a new place."
+description: I never used to like running. But now I've found that walking and running early in the morning is a great way to explore a new place.
 Category: Photos
 Tags: Fitness, Travel, Walking, Running
 

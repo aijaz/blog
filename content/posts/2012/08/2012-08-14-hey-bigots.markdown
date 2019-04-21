@@ -1,4 +1,4 @@
-title: "Hey Bigots!"
+title: Hey Bigots!
 date: 2012-08-14 04:55
 comments: false
 Category: Editorial

@@ -1,4 +1,4 @@
-title: "Diary of Apple Watch Energy Consumption"
+title: Diary of Apple Watch Energy Consumption
 date: 2015-04-28 12:00
 comments: false
 description: Notes on how the my settings changed the Apple Watch energy consumption. 

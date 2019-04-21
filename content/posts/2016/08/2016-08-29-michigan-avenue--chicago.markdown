@@ -1,5 +1,5 @@
 template: photo
-title: "Michigan Avenue, Chicago"
+title: Michigan Avenue, Chicago
 date: 2016-08-29 08:00
 comments: false
 author: Aijaz Ansari

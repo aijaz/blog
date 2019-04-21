@@ -1,4 +1,4 @@
-title: "YO"
+title: YO
 date: 2016-09-07 00:00
 Template: letterpress
 status: draft

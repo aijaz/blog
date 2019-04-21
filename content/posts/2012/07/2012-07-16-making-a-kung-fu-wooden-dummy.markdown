@@ -1,4 +1,4 @@
-title: "Making a Kung Fu Wooden Dummy"
+title: Making a Kung Fu Wooden Dummy
 date: 2012-07-15 23:30
 comments: false
 Category: Woodworking

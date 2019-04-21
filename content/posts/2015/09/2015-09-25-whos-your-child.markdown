@@ -1,7 +1,7 @@
-title: "Who's Your Child?"
+title: Who's Your Child?
 date: 2015-09-25 22:10
 comments: false
-description: "Eventually it's their call. They get to define me."
+description: Eventually it's their call. They get to define me.
 Category: Opinion
 Tags: Family, Children, Identity
 

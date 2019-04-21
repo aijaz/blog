@@ -1,7 +1,7 @@
-title: "How Not to Recruit"
+title: How Not to Recruit
 date: 2015-09-04 08:00
 comments: false
-description: "Someone asked me if I wanted to work for them this morning. But they did a really poor job doing it."
+description: Someone asked me if I wanted to work for them this morning. But they did a really poor job doing it.
 Category: Opinion
 Tags: advice, careers, recruiting, communication
 

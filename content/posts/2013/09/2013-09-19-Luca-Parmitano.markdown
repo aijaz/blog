@@ -1,4 +1,4 @@
-title: "The Case of the Leaking Space Suit"
+title: The Case of the Leaking Space Suit
 date: 2013-09-13 17:45
 comments: false
 Category: Science

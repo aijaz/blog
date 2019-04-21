@@ -1,5 +1,5 @@
 Template: photo
-title: "Horseshoe Bend"
+title: Horseshoe Bend
 date: 2012-08-31 17:51
 comments: false
 thumbnail: /images/photos/arizona/P_JAZ4129_tn.jpg

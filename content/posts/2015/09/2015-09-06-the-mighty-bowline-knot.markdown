@@ -1,7 +1,7 @@
-title: "The Mighty Bowline Knot"
+title: The Mighty Bowline Knot
 date: 2015-09-06 12:00
 comments: false
-description: "The bowline knot is one of the five most important knots everyone should know."
+description: The bowline knot is one of the five most important knots everyone should know.
 Category: Knots
 Tags: Bowline, Safety, Knots, Safety, Boating, Camping
 

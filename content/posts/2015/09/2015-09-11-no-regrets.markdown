@@ -1,7 +1,7 @@
-title: "No Regrets"
+title: No Regrets
 date: 2015-09-11 10:00
 comments: false
-description: "In this post I jot down a few thoughts on the concept of regret."
+description: In this post I jot down a few thoughts on the concept of regret.
 Category: Opinion
 Tags: Philosophy, Psychology, Regret, SMBC
 

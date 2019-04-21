@@ -1,7 +1,7 @@
-title: "Learning About Your Product"
+title: Learning About Your Product
 date: 2015-09-08 12:00
 comments: false
-description: "When I started a new job I needed to learn about the app I was taking over. So I asked a salesperson to try to sell it to me."
+description: When I started a new job I needed to learn about the app I was taking over. So I asked a salesperson to try to sell it to me.
 Category: Computers
 Tags: Careers, Development
 

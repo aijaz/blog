@@ -1,7 +1,7 @@
-title: "Examining a Picture"
+title: Examining a Picture
 date: 2015-09-28 21:50
 comments: false
-description: "A few minutes ago I zoomed in on a photograph that I had taken in April. I saw details that fundamentally changed my understanding of whats going on in the picture."
+description: A few minutes ago I zoomed in on a photograph that I had taken in April. I saw details that fundamentally changed my understanding of whats going on in the picture.
 Category: Photography
 Tags: Inspection, CocoaConf, Yosemite, Composition, RuleOfThirds
 

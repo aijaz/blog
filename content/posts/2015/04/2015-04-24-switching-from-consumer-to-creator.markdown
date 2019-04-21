@@ -1,4 +1,4 @@
-title: "Switching from being a consumer to a creator"
+title: Switching from being a consumer to a creator
 date: 2015-04-24 18:00
 comments: false
 description: Lectures at the Yosemite by CocoaConf conference challenge my relationship with Twitter.

@@ -1,7 +1,7 @@
-title: "The Most Relevant Story"
+title: The Most Relevant Story
 date: 2015-09-22 21:10
 comments: false
-description: "If there were one story I would want to make sure I share with my children it would be _The Emperor's New Clothes_."
+description: If there were one story I would want to make sure I share with my children it would be _The Emperor's New Clothes_.
 Category: Opinion
 Tags: HansAnderson, Stories, Satire
 

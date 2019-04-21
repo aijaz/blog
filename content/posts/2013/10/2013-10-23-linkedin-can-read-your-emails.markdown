@@ -1,4 +1,4 @@
-title: "LinkedIn Can Read Your Emails"
+title: LinkedIn Can Read Your Emails
 date: 2013-10-23 21:44
 comments: false
 Category: Computers

@@ -1,6 +1,6 @@
-title: "Asking for Allah's help for the people of Gaza"
+title: Asking for Allah's help for the people of Gaza
 date: 2014-08-02 11:00
-description: "As Muslims we know we're supposed to materially help those in need as well as pray (make du'aa) for them, but sometimes it gets difficult to find a balance between action and prayer. This article, based on notes from various lectures I attended during Ramadan, attempts to help people like me find that balance."
+description: As Muslims we know we're supposed to materially help those in need as well as pray (make du'aa) for them, but sometimes it gets difficult to find a balance between action and prayer. This article, based on notes from various lectures I attended during Ramadan, attempts to help people like me find that balance.
 Category: Opinion
 Tags: Palestine, Gaza, Islam, Duaa, Sabr, Shukr, Tawakkul, Israel
 

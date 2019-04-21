@@ -1,7 +1,7 @@
-title: "Using Octopress as a Photo Blog"
+title: Using Octopress as a Photo Blog
 date: 2012-10-01 22:00
 comments: false
-description: "In this post I illustrate how I modified the default Octopress theme and added a type of layout that highlights a single photograph."
+description: In this post I illustrate how I modified the default Octopress theme and added a type of layout that highlights a single photograph.
 Category: Computers
 Tags: Octopress, Photography
 

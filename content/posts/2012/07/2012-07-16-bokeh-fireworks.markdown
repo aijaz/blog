@@ -1,4 +1,4 @@
-title: "Bokeh Fireworks"
+title: Bokeh Fireworks
 date: 2012-07-16 10:00
 comments: false
 Category: Photography

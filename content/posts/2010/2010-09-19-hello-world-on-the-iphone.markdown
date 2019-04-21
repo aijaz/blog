@@ -1,7 +1,7 @@
 comments: false
 date: '2010-09-19 20:26:11'
 slug: hello-world-on-the-iphone
-title: '"Hello, World" on the iPhone'
+title: 'Hello, World on the iPhone'
 Category: Computers
 Tags: iOS, iPad, iPhone
 

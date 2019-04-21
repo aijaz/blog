@@ -1,5 +1,5 @@
 Template: photo
-title: "Pulling into the Station"
+title: Pulling into the Station
 date: 2013-05-09 17:30
 comments: false
 image: /images/2013/05/09/metra.jpg

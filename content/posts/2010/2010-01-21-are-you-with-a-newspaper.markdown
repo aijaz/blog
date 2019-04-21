@@ -1,7 +1,7 @@
 comments: false
 date: '2010-01-21 21:47:34'
 slug: are-you-with-a-newspaper
-title: '"Are You With A Newspaper?"'
+title: 'Are You With A Newspaper?'
 Category: Photos
 Tags: Birds, Corniche, Food
 

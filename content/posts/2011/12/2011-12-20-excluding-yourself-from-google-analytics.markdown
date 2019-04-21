@@ -1,4 +1,4 @@
-title: "Excluding Yourself From Google Analytics"
+title: Excluding Yourself From Google Analytics
 date: 2011-12-20 17:56
 comments: false
 Category: Computers

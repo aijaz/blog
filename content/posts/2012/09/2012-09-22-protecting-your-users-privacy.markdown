@@ -1,4 +1,4 @@
-title: "Protecting Your Users' Privacy"
+title: Protecting Your Users' Privacy
 date: 2012-09-22 07:43
 comments: false
 description: Here are the slides and links from my recent Blitz Talk on password security at SecondConf.

@@ -1,4 +1,4 @@
-title: "Opportunity"
+title: Opportunity
 date: 2018-01-08 20:40
 Category: Personal
 Tags: Career, Gogo, Colorado

@@ -1,7 +1,7 @@
-title: "Thanks for the memories, CocoaConf"
+title: Thanks for the memories, CocoaConf
 date: 2015-04-26 21:00
 comments: false
-description: "Thanks to everyone involved for making Yosemite by CocoaConf such a wonderful event."
+description: Thanks to everyone involved for making Yosemite by CocoaConf such a wonderful event.
 Category: Computers
 Tags: CocoaConf, Yosemite
 

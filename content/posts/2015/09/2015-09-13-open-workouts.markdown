@@ -1,7 +1,7 @@
-title: "Open Workouts"
+title: Open Workouts
 date: 2015-09-13 17:30
 comments: false
-description: "This is one of my favorite things about the Workout App on the Apple Watch"
+description: This is one of my favorite things about the Workout App on the Apple Watch
 Category: Fitness
 Tags: AppleWatch, Exercise
 

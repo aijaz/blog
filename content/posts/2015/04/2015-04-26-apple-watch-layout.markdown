@@ -1,4 +1,4 @@
-title: "The layout of my Apple Watch Apps"
+title: The layout of my Apple Watch Apps
 date: 2015-04-26 15:33
 comments: false
 description: The layout of the apps on my Apple Watch.

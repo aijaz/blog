@@ -1,4 +1,4 @@
-title: "Emotional Changes To The User Interface"
+title: Emotional Changes To The User Interface
 date: 2012-08-09 01:11
 comments: false
 Category: Computers

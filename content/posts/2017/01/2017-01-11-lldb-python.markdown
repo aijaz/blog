@@ -1,4 +1,4 @@
-title: "Running External Commands in LLDB via Python"
+title: Running External Commands in LLDB via Python
 date: 2017-01-11 08:00
 Category: Computers
 Tags: LLDB, Python, JQ, iOS, JSON

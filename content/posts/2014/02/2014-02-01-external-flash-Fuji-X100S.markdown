@@ -1,4 +1,4 @@
-title: "External Flashes with the Fuji X100S"
+title: External Flashes with the Fuji X100S
 date: 2014-02-01 18:15
 comments: false
 Category: Photography

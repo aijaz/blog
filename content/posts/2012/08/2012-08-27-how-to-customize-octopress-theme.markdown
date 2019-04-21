@@ -1,4 +1,4 @@
-title: "How to Customize your Octopress Theme"
+title: How to Customize your Octopress Theme
 date: 2012-08-27 01:18
 comments: false
 Category: Computers

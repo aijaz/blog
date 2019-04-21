@@ -1,4 +1,4 @@
-title: "Goodbye, Twitter (Updated)"
+title: Goodbye, Twitter (Updated)
 date: 2017-12-06 17:16
 Category: Opinion
 Tags: Twitter

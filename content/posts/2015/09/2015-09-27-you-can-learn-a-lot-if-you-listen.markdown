@@ -1,7 +1,7 @@
-title: "You Can Learn A Lot If You Listen"
+title: You Can Learn A Lot If You Listen
 date: 2015-09-27 23:50
 comments: false
-description: "Theres no line at that place. This other place here is packed with locals. It must have better food."
+description: Theres no line at that place. This other place here is packed with locals. It must have better food.
 Category: Opinion
 Tags: Travel, StreetSmarts
 

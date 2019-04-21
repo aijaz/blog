@@ -1,4 +1,4 @@
-title: "How to Make a Pinboard Search Engine Shortcut"
+title: How to Make a Pinboard Search Engine Shortcut
 date: 2012-08-29 08:36
 comments: false
 Category: Computers

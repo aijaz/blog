@@ -1,7 +1,7 @@
-title: "Tools I Use in Class"
+title: Tools I Use in Class
 date: 2015-09-26 16:30
 comments: false
-description: "I'd like to share with you the various tools that I've found work well for my iOS class. I'll show you what I use for video, displaying keyboard shortcuts, slides, and class notes."
+description: I'd like to share with you the various tools that I've found work well for my iOS class. I'll show you what I use for video, displaying keyboard shortcuts, slides, and class notes.
 Category: Computers
 Tags: Teaching, Tools, LiveStreaming, Zoom, ScreenFlow, Webcam
 

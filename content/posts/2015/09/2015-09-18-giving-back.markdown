@@ -1,7 +1,7 @@
-title: "Giving Back"
+title: Giving Back
 date: 2015-09-18 22:30
 comments: false
-description: "You have your unique gifts. How do you use them to help others?"
+description: You have your unique gifts. How do you use them to help others?
 Category: Computers
 Tags: Teaching, Community, Gratitude
 

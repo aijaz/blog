@@ -1,4 +1,4 @@
-title: "The Difference Between a Good Picture and a Great Picture"
+title: The Difference Between a Good Picture and a Great Picture
 date: 2015-01-12 17:00
 comments: false
 description: I took two pictures of a scene in Bombay. The subtle differences between the first and second changed it from a good picture to a great picture.

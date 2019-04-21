@@ -1,7 +1,7 @@
-title: "The Library"
+title: The Library
 date: 2015-09-17 22:30
 comments: false
-description: "The Library of the Trinity College Dublin is one of the most beautiful places to visit in Ireland."
+description: The Library of the Trinity College Dublin is one of the most beautiful places to visit in Ireland.
 Category: Photos
 Tags: Ireland, TrinityCollege, Library, Travel
 

@@ -1,5 +1,5 @@
 Template: photo
-title: "Antelope Canyon"
+title: Antelope Canyon
 date: 2012-09-02 11:30
 comments: false
 image: /images/photos/arizona/P_JAZ4109.jpg

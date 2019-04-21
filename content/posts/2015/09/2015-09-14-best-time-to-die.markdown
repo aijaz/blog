@@ -1,7 +1,7 @@
-title: "The Best Time to Die"
+title: The Best Time to Die
 date: 2015-09-14 19:30
 comments: false
-description: "The only certainty in life is that it has an end."
+description: The only certainty in life is that it has an end.
 Category: Opinion
 Tags: Philosophy, Life, Death, Living
 

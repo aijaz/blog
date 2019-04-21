@@ -1,4 +1,4 @@
-title: "Updating an Aging App"
+title: Updating an Aging App
 date: 2016-12-25 11:30
 Category: Computers
 Tags: QuranMemorizer, QMUpgrade, Programming, iOS
