@@ -1,5 +1,5 @@
 title: Finding gaps in time intervals in SQL
-date: 2018-01-08 20:40
+date: 2019-11-27 23:00
 Category: Computers
 Tags: SQL, WindowFunctions
 
