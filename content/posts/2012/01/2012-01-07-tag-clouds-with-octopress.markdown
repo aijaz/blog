@@ -1,6 +1,5 @@
 title: Tag Clouds With Octopress
 date: 2012-01-07 06:00
-comments: false
 Category: Computers
 Tags: Octopress, Tags, Blogs, Ruby, Perl, My Code, GitHub
 

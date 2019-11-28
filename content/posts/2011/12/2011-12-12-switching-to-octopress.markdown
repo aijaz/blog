@@ -1,6 +1,5 @@
 title: Switching To Octopress
 date: 2011-12-12 08:19
-comments: false
 Category: Computers
 Tags: Octopress, WordPress, Analytics
 
@@ -48,9 +47,9 @@ blog 'just right' and what changes I would like to make in the future.
 
 Octopress has a nice shorthand for specifying images:
 
-~~~~{.HTML}
+```
 {% img [class names] /path/to/image [width] [height] [title text [alt text]] %}
-~~~~
+```
 
 Using the proper class names one can have the image float left or right
 or otherwise set its alignment.  However, I like having captions under
@@ -66,22 +65,22 @@ with another solution.
 
 To get this to work I created my own markup that would be inserted into
 the markdown text as an HTML comment.  Markdown would preserve the HTML
-comment, and it would show up in the HTML file after ```rake generate```
-was called.  I wrote a small shell script call ```generate``` that calls ```rake generate``` and then invokes the perl script ```imageCaption.pl``` on every generated html file:
+comment, and it would show up in the HTML file after `rake generate`
+was called.  I wrote a small shell script call `generate` that calls `rake generate` and then invokes the perl script `imageCaption.pl` on every generated html file:
 
 {% include_code octopress/generate lang:bash %} 
 
-And, here's ```imageCaption.pl```.  It searches for the markup and
+And, here's `imageCaption.pl`.  It searches for the markup and
 replaces it with the appropriate HTML.
 
 {% include_code octopress/imageCaption.pl lang:perl %} 
 
 In order to tie this all together, I had to define the css classes for
-the various 'ai...' classes.  I added the following code to ```sass/custom/_styles.scss```:
+the various 'ai...' classes.  I added the following code to `sass/custom/_styles.scss`:
 
 {% include_code octopress/_styles.scss lang:scss %} 
 
-Note that I added ```max-width:100%``` for all the divs and images -
+Note that I added `max-width:100%` for all the divs and images -
 this ensures that the images won't get cropped when the page is
 displayed on a smaller, mobile display. 
 
@@ -102,7 +101,7 @@ Explorer Version 8.  As [this page](https://github.com/imathis/octopress/issues/
 it's probably due to
 poorly-implemented restrictions to prevent cross-site scripting.  I
 changed the redirections to be the other way around, and then the site
-worked fine on IE8.  I've included the relevant part of my ```httpd.conf``` 
+worked fine on IE8.  I've included the relevant part of my `httpd.conf` 
 file below: 
 
 {% include_code octopress/httpd.conf lang:apacheconf %}
@@ -119,7 +118,7 @@ and set up Analytics to ignore the cookie that only I would have set.
 
 ### Can't Forget The FavIcon
 
-Finally, I overwrote the default ```favicon.png``` with my own version.
+Finally, I overwrote the default `favicon.png` with my own version.
 It was the fininshing touch to get the blog 'just right' (for now).
 
 ### Plans For The Future

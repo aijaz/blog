@@ -1,6 +1,5 @@
 title: Shell Tricks - Extracting A Column From A Text File
 date: 2012-01-04 21:25
-comments: false
 Category: Computers
 Tags: UNIX, Text, cut, nl
 
