@@ -478,7 +478,7 @@ SELECT * FROM T_WINDOW;
 db=> 
 ```
 
-We're almost done. Note that once again `the_lag` in the first row is NULL. This is because there's no previous row. That's okay, because we only care about rows where `the_lag` is greater than zero (and not null)[^1]. So we can finish up by adding a `WHERE` clause to only show rows with a non-zero lag. We also need to clean up our results a bit. If you noticed, the second row shows us a two-minute lag that _ended_ at 10:02, the `start_dt`. So we need to modify the matching rows to show a time span that starts at `start_dt` - `the_lag` and ends at `start_dt`:
+We're almost done. Note that once again `the_lag` in the first row is NULL. This is because there's no previous row. That's okay, because we only care about rows where `the_lag` is greater than zero (and not null). So we can finish up by adding a `WHERE` clause to only show rows with a non-zero lag. We also need to clean up our results a bit. If you noticed, the second row shows us a two-minute lag that _ended_ at 10:02, the `start_dt`. So we need to modify the matching rows to show a time span that starts at `start_dt` - `the_lag` and ends at `start_dt`:
 
 ```sql
 db=> WITH T_SIGNUP AS (
@@ -582,7 +582,9 @@ WITH T_SIGNUP AS (
 ) 
 -- get the lag from each row
 -- specifically, get this row's start date - the previous row's end date
--- if the lag is null use the start date of the current row (for the first row in the series)
+-- if the lag is null use the start date of the current row (for the
+-- first row in the series). This causes the first lag to be 00:00:00
+-- COALESCE(a, b) returns a if a is not NULL and returns b if a is NULL.
 , T_WINDOW AS (
     SELECT 
          TS.start_dt
@@ -610,7 +612,7 @@ db=> SELECT * FROM find_gaps_for_event(1);
 db=> 
 ```
 
-I hope you've found this explanation helpful. If you have any questions about it, please feel free to ask me on Twitter, where you can find me as [@__aijaz__][twitter].
+I hope you've found this explanation helpful. If you have any questions about it, please feel free to ask me on [Twitter][twitter], where you can find me as @\_aijaz\_.
 
 ## References
 
@@ -620,12 +622,13 @@ I hope you've found this explanation helpful. If you have any questions about it
 - [Another tweet from Julia Evans' about window functions][b0rk2]
 - [PostgresQL documentation of Common Table Expressions][cte]
 
-[^1]: If you really care about this, you can replace `lag(...) over(...)` by `COALESCE(LAG(...) OVER (...), TS.start_dt)` so that for this one row that column will have a value of `00:00:00`. That way you're not relying on the comparison to `NULL` to have the row excluded. I have chosen to do this in my function. `COALESCE(a, b)` returns `a` if `a` is not `NULL` and returns `b` if `a` is `NULL`.
+
 
 [w1]: https://www.postgresql.org/docs/12/tutorial-window.html
 [w2]: https://academy.vertabelo.com/blog/sql-window-functions-examples/
 [b0rk]: https://twitter.com/b0rk/status/1180483982288457728?lang=en
 [b0rk2]: https://twitter.com/b0rk/status/1193952307941171201
 [cte]: https://www.postgresql.org/docs/12/queries-with.html
+[twitter]: http://twitter.com/_aijaz_
 
 
