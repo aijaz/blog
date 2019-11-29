@@ -322,3 +322,7 @@ ul.article_timeline li.previous_article {
 ul.article_timeline li.next_article {
     float: right;
 }
+
+code {
+    font-size: 0.75em !important;
+}

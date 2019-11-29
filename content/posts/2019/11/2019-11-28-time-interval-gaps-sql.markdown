@@ -532,8 +532,9 @@ db=>
 And that's it! That's exactly the data we were looking for. It's a long SQL statement, but I hope that the way I broke it down helps you understand it. All that's left to do is to make it into a reusable function so that we don't have to hard-code any values in our SQL, and so that we don't have to include this long SQL into our client code:
 
 ```sql
-db=> CREATE OR REPLACE FUNCTION find_gaps_for_event(p_event_id INT) RETURNS TABLE (start_dt TIMESTAMP WITH TIME ZONE
-         , end_dt TIMESTAMP WITH TIME ZONE) AS
+db=> CREATE OR REPLACE FUNCTION find_gaps_for_event(p_event_id INT) 
+     RETURNS TABLE (start_dt TIMESTAMP WITH TIME ZONE
+                  , end_dt TIMESTAMP WITH TIME ZONE) AS
 $$
 DECLARE
 
