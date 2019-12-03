@@ -1,0 +1,56 @@
+<footer class="post-info">
+    <div class="photo-info">
+    {% if article.iso %}ISO {{ article.iso }} ::{% endif %}
+    {% if article.aperture %}f/{{ article.aperture }} ::{% endif %}
+    {% if article.shutter_speed %}{{ article.shutter_speed }}s ::{% endif %}
+    {% if article.focal_length %}{{ article.focal_length }} ::{% endif %}
+    {% if article.flash %}{{ article.flash }}{% endif %}
+    {% if article.exp_comp %} :: {{ article.exp_comp }}ev{% endif %}<br>
+    {% if article.copyright %}{{ article.copyright }}<br>{% endif %}
+    {% if article.license %}{{ article.license }}<br>{% endif  %}
+    {% if article.camera and article.lens and article.date_taken %}Taken with a {{ article.camera }} and {{ article.lens }} on {{ article.date_taken }}.<br>{% endif %}
+
+    </div>
+
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }}</time>
+    </span>
+    {% if SHOW_DATE_MODIFIED %}
+        {% if article.modified %}
+            <span class="label label-default">Modified</span>
+            <span class="modified">
+                <i class="fa fa-calendar"></i><time datetime="{{ article.modified.isoformat() }}"> {{ article.locale_modified }}</time>
+            </span>
+        {% endif %}
+    {% endif %}
+
+    {% if SHOW_SERIES %}
+        {% if article.series %}
+            <span class="label label-default">Series</span>
+            Part {{ article.series.index}} of {{ article.series.name }}
+        {% endif %}
+    {% endif %}
+
+    {% if SHOW_ARTICLE_AUTHOR %}
+        {% if article.author %}
+            <span class="label label-default">By</span>
+            <a href="{{ SITEURL }}/{{ article.author.url }}"><i class="fa fa-user"></i> {{ article.author }}</a>
+        {% endif %}
+    {% endif %}
+
+    {% if SHOW_ARTICLE_CATEGORY %}
+        <span class="label label-default">Category</span>
+        <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+    {% endif %}
+
+    {% if PDF_PROCESSOR %}
+        <span class="label label-default">
+            <a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">PDF</a>
+        </span>
+    {% endif %}
+
+    {% include 'includes/taglist.html' %}
+    {% import 'includes/translations.html' as translations with context %}
+    {{ translations.translations_for(article) }}
+</footer><!-- /.post-info -->

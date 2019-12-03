@@ -13,79 +13,80 @@ Given the tables `event` and `signup` I want to create a function called `find_g
 
 ## Final Result
 
-```sql
-db=> CREATE TABLE event (
-      id SERIAL UNIQUE PRIMARY KEY NOT NULL
-    , name VARCHAR (256) NOT NULL
-    , start_dt TIMESTAMP WITH TIME ZONE NOT NULL
-    , end_dt TIMESTAMP WITH TIME ZONE NOT NULL
-);
-
-db=> CREATE TABLE signup (
-      id SERIAL UNIQUE PRIMARY KEY NOT NULL
-    , event_id INT NOT NULL REFERENCES event(id)
-    , person VARCHAR(8)
-    , start_dt TIMESTAMP WITH TIME ZONE NOT NULL
-    , end_dt TIMESTAMP WITH TIME ZONE NOT NULL
-);
-
-db=> INSERT INTO event (name, start_dt, end_dt) 
-     VALUES ('E1'
-           , '2019-11-28 10:00MST'
-           , '2019-11-28 10:15MST');
-
- INSERT INTO signup (event_id, person, start_dt, end_dt) 
-     VALUES (1
-           , 'Ali'
-           , '2019-11-28 10:02MST'
-           , '2019-11-28 10:10MST');
-
- INSERT INTO signup (event_id, person, start_dt, end_dt) 
-     VALUES (1
-           , 'Bob'
-           , '2019-11-28 10:03MST'
-           , '2019-11-28 10:08MST');
-
- INSERT INTO signup (event_id, person, start_dt, end_dt) 
-     VALUES (1
-           , 'Carol'
-           , '2019-11-28 10:11MST'
-           , '2019-11-28 10:13MST');
-
- INSERT INTO signup (event_id, person, start_dt, end_dt) 
-     VALUES (1
-           , 'Dave'
-           , '2019-11-28 10:13MST'
-           , '2019-11-28 10:14MST');
-
-db=> SELECT * FROM event;
- id | name |        start_dt        |         end_dt         
-----+------+------------------------+------------------------
-  1 | E1   | 2019-11-28 10:00:00-07 | 2019-11-28 10:15:00-07
-(1 row)
-
- id | event_id | person |        start_dt        |         end_dt         
-----+----------+--------+------------------------+------------------------
-  8 |        1 | Ali    | 2019-11-28 10:02:00-07 | 2019-11-28 10:10:00-07
-  9 |        1 | Bob    | 2019-11-28 10:03:00-07 | 2019-11-28 10:08:00-07
- 10 |        1 | Carol  | 2019-11-28 10:11:00-07 | 2019-11-28 10:13:00-07
- 11 |        1 | Dave   | 2019-11-28 10:13:00-07 | 2019-11-28 10:14:00-07
-(4 rows)
-
-db=> SELECT * FROM find_gaps_for_event(1);
- id |        start_dt        |         end_dt         
-----+------------------------+------------------------
-  1 | 2019-11-28 10:00:00-07 | 2019-11-28 10:02:00-07
-  1 | 2019-11-28 10:10:00-07 | 2019-11-28 10:11:00-07
-  1 | 2019-11-28 10:14:00-07 | 2019-11-28 10:15:00-07
-(3 rows)
-
-db=> 
-```
+    :::sql
+    db=> CREATE TABLE event (
+          id SERIAL UNIQUE PRIMARY KEY NOT NULL
+        , name VARCHAR (256) NOT NULL
+        , start_dt TIMESTAMP WITH TIME ZONE NOT NULL
+        , end_dt TIMESTAMP WITH TIME ZONE NOT NULL
+    );
+    
+    db=> CREATE TABLE signup (
+          id SERIAL UNIQUE PRIMARY KEY NOT NULL
+        , event_id INT NOT NULL REFERENCES event(id)
+        , person VARCHAR(8)
+        , start_dt TIMESTAMP WITH TIME ZONE NOT NULL
+        , end_dt TIMESTAMP WITH TIME ZONE NOT NULL
+    );
+    
+    db=> INSERT INTO event (name, start_dt, end_dt) 
+         VALUES ('E1'
+               , '2019-11-28 10:00MST'
+               , '2019-11-28 10:15MST');
+    
+     INSERT INTO signup (event_id, person, start_dt, end_dt) 
+         VALUES (1
+               , 'Ali'
+               , '2019-11-28 10:02MST'
+               , '2019-11-28 10:10MST');
+    
+     INSERT INTO signup (event_id, person, start_dt, end_dt) 
+         VALUES (1
+               , 'Bob'
+               , '2019-11-28 10:03MST'
+               , '2019-11-28 10:08MST');
+    
+     INSERT INTO signup (event_id, person, start_dt, end_dt) 
+         VALUES (1
+               , 'Carol'
+               , '2019-11-28 10:11MST'
+               , '2019-11-28 10:13MST');
+    
+     INSERT INTO signup (event_id, person, start_dt, end_dt) 
+         VALUES (1
+               , 'Dave'
+               , '2019-11-28 10:13MST'
+               , '2019-11-28 10:14MST');
+    
+    db=> SELECT * FROM event;
+     id | name |        start_dt        |         end_dt         
+    ----+------+------------------------+------------------------
+      1 | E1   | 2019-11-28 10:00:00-07 | 2019-11-28 10:15:00-07
+    (1 row)
+    
+     id | event_id | person |        start_dt        |         end_dt         
+    ----+----------+--------+------------------------+------------------------
+      8 |        1 | Ali    | 2019-11-28 10:02:00-07 | 2019-11-28 10:10:00-07
+      9 |        1 | Bob    | 2019-11-28 10:03:00-07 | 2019-11-28 10:08:00-07
+     10 |        1 | Carol  | 2019-11-28 10:11:00-07 | 2019-11-28 10:13:00-07
+     11 |        1 | Dave   | 2019-11-28 10:13:00-07 | 2019-11-28 10:14:00-07
+    (4 rows)
+    
+    db=> SELECT * FROM find_gaps_for_event(1);
+     id |        start_dt        |         end_dt         
+    ----+------------------------+------------------------
+      1 | 2019-11-28 10:00:00-07 | 2019-11-28 10:02:00-07
+      1 | 2019-11-28 10:10:00-07 | 2019-11-28 10:11:00-07
+      1 | 2019-11-28 10:14:00-07 | 2019-11-28 10:15:00-07
+    (3 rows)
+    
+    db=> 
 
 Here is a graphical representation of this data: 
 
-<!-- ai c /images/2019/SQLTimeSpanGap.png /images/2019/SQLTimeSpanGap.png 641 121 A graphical representation of the data. -->
+<!-- img SQLGap png 1 Gaps in time spans, illustrated -->
+
+[^1]: (AijazCC)
 
 ## Constructing the Solution
 
@@ -620,7 +621,7 @@ I hope you've found this explanation helpful. If you have any questions about it
 - [PostgreSQL documentation of window functions][w1]
 - [Vertabelo documentation of window functions][w2]
 - [Julia Evans' tweet of window functions][b0rk]
-- [Another tweet from Julia Evans' about window functions][b0rk2]
+- [Another tweet from Julia Evans about window functions][b0rk2]
 - [PostgresQL documentation of Common Table Expressions][cte]
 
 

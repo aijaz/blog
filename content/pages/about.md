@@ -7,15 +7,17 @@ facebook_image: /images/aijaz4.jpg
 Summary: I enjoy making things. I'm an iOS and Python developer who teaches and mentors on the side. Fitness and photography enthusiast.
 ---
 
-<!-- ai l /images/aijaz4.jpg /images/aijaz4.jpg 256 256 Hello! -->
+<!-- il Aijaz jpg 1 Hello! -->
 
-As a hacker by nature, I enjoy making things.  I'm the developer and 
+[^1]: (AijazCC)
+
+
+As a hacker by nature, I enjoy making things. My name is Aijaz Ansari and I'm the developer and 
 designer behind the [Qur'an Memorizer](https://quranmemorizer.com)
-iOS app, and am currently working as an iOS developer at
-[Gogo Business Aviation](https://business.gogoair.com/). Outside my day job, I'm most excited about working with [Zaina Foundation][zf] where I'm responsible for the technology that connects foster parents in the US with children they sponsor in orphanages in India.  I like to dabble in photography, woodworking, origami, and making tangible things with my hands. Oh, I've also
-written  a pretty nifty open-source job scheduler called
-[TaskForest](http://www.taskforest.com). For those who are interested, I've also put up 
-a <a href="#work">somewhat detailed account of my work experience</a> towards the bottom of this page. 
+iOS app, and am currently working as a Mobile Lead at
+[Gogo Business Aviation](https://business.gogoair.com/). 
+
+I'm also a community organizer and volunteer as head of security at my local mosque. In that capacity I also manage two additional blogs: [MasjidDefense](https://masjiddefense.com) and [The Reluctant Gun Owner](https://thereluctantgunowner.com).
 
 I'm a student of Wing Chun Kung Fu, having studied at the excellent
 [Philip Nearing School of Wing Chun](http://wingchunchicago.com/).  I've

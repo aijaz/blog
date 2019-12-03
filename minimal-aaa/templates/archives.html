@@ -1,0 +1,78 @@
+{% extends "baseIndex.html" %}
+{% block title %}Archives - {{ SITENAME }}{% endblock %}
+{% block breadcrumbs %}
+    {% if DISPLAY_BREADCRUMBS %}
+    <ol class="breadcrumb">
+        <li><a href="{{ SITEURL }}" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
+        <li class="active">Archives</li>
+    </ol>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+<section id="content">
+
+
+
+
+
+
+
+
+
+<div class="pure-g indexSection">
+  <div class="pure-u-md-1-3 pure-u-1">
+    <div class="indexColThin indexHalf">
+      <h1 class="page-header">Blog Archive</h1>
+    </div>
+  </div>
+  <div class="pure-u-md-2-3 pure-u-1">
+
+{% for article in dates %}
+  
+    <div class="indexColThin indexHalf">
+      <h2 class="article"><a href="{{ SITEURL }}/{{ article.url }}"><i class="fa fa-external-link"></i> {{ article.title }}</a></h2>
+      <div>{{ article.locale_date }}</div>
+      <p>
+                          {% if article.link %}
+                            <div class="summary"><a href="{{ article.link }}">{{ article.summary }}</a></div>
+                          {% elif article.sum %}
+                            <div class="summary"><a href="{{ SITEURL }}/{{ article.url }}"><p>{{ article.sum }} <i>more...</i></p></a></div>
+                          {% else %}
+                            <div class="summary"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.summary}}</a></div>
+                                <a href="{{ SITEURL }}/{{ article.url }}"><i>more...</i></a>
+                          {% endif %}
+     </p>
+
+
+
+
+                    
+
+
+
+    </div>
+{% endfor %}
+
+  </div>
+</div>
+
+
+
+</section>
+
+
+
+<div class="pure-g indexSection">
+  <div class="pure-u-md-1-3 pure-u-1">
+    <div class="indexCol indexHalf">
+    </div>
+  </div>
+  
+  <div class="pure-u-md-2-3 pure-u-1">
+    <div class="indexCol indexHalf">
+    </div>
+  </div>
+</div>
+
+{% endblock %}

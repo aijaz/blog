@@ -2,16 +2,25 @@
 
 use strict;
 use warnings;
+use Getopt::Long;
 
-# The file that was specified on the command line
-#
-my $file = shift;
+my $file = "";
+my $publish = 0;
+&Getopt::Long::GetOptions (
+            "file=s"   => \$file,      # string
+            "publish"  => \$publish)   # flag
+or die("Error in command line arguments\n");
 
+my $CDNURL = "";
+if ($publish) {
+    $CDNURL = 'https://d6lhccxzavsvw.cloudfront.net';
+}
 # Read all lines from the file into a list named 'lines'
 #
 open (I, $file) || die;
 my @lines = <I>;
 close I;
+
 
 # Scan each line for our special markup: 
 # a comment that starts with ai and then has upto 6
@@ -20,12 +29,25 @@ close I;
 # For each such line, call makeDiv on the components and 
 # replace the markup with the output of that function
 #
-foreach my $line (@lines) { 
-    # i imageURL caption
-    $line =~ s^<!-- ([lcr])\s+(\S+)\s+(.*?)\s*-->^makeSimpleImageDiv($2, $3, $1)^ge;
+if ($file =~ /2009/ || $file =~ /201[012345678]/) {
+    foreach my $line (@lines) { 
+        $line =~ s^<!-- ([lcr])\s+(\S+)\s+(.*?)\s*-->^makeSimpleImageDiv($2, $3, $1)^ge;
 
-    $line =~ s^<!-- ai\s+(\S+)\s+(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(.*?)\s*-->^makeDiv($1, $2, $3, $4, $5, $6)^ge;
-    $line =~ s#<!-- photo\s+\^([^\^]+)\^\s+(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(.*?)\s*-->#makePhoto($1, $2, $3, $4, $5, $6)#ge;
+        $line =~ s^<!-- ai\s+(\S+)\s+(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(.*?)\s*-->^makeDiv($1, $2, $3, $4, $5, $6)^ge;
+        $line =~ s#<!-- photo\s+\^([^\^]+)\^\s+(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(.*?)\s*-->#makePhoto($1, $2, $3, $4, $5, $6)#ge;
+    }
+}
+else {
+    foreach my $line (@lines) { 
+        # i imageURL caption
+        # $line =~ s^<!-- ([lcr])\s+(\S+)\s+(.*?)\s*-->^makeSimpleImageDiv($2, $3, $1)^ge;
+        # $line =~ s^<!-- ai\s+(\S+)\s+(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(.*?)\s*-->^makeDiv($1, $2, $3, $4, $5, $6)^ge;
+        # $line =~ s#<!-- photo\s+\^([^\^]+)\^\s+(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(.*?)\s*-->#makePhoto($1, $2, $3, $4, $5, $6)#ge;
+        $line =~ s^<!--\s*img\s+(\S+)\s+(\S+)\s+(\S+)\s+(.*?)\s*-->^makeResponsiveDiv($1, $2, $3, $4)^ge;
+        $line =~ s^<!--\s*il\s+(\S+)\s+(\S+)\s+(\S+)\s+(.*?)\s*-->^makeResponsiveLeftDiv($1, $2, $3, $4)^ge;
+        $line =~ s^<!--\s*yt\s+(\S+)\s+(.*?)\s*-->^makeResponsiveYTDiv($1, $2, $3, $4)^ge;
+        $line =~ s[\(\s*AijazCC\s*\)][&copy; 2019 <a xmlns:cc="http://creativecommons.org/ns#" href="https://aijaz.net" property="cc:attributionName" rel="cc:attributionURL">Aijaz Ansari</a>, and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>]ig;
+    }
 }
 
 # Save the possibly modified contents of the 'lines' array
@@ -45,6 +67,161 @@ sub getSizeOfImage {
     #print STDERR "SIZE OF IMAGE: $image is $w x $h\n";
 
     return ($w, $h);
+}
+
+sub makeResponsiveYTDiv {
+    my ($vid, $caption) = @_;
+
+    $caption =~ s/[^a-zA-Z0-9 \*\+\,\.\:\-\;\!\[\]\(\)\&]//g;
+
+    return qq[
+        <div class="respImg">
+            <div class="video-container">
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/$vid" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            $caption
+        </div>
+];
+
+}
+sub makeResponsiveDiv {
+
+    # The enclosing div should be this much bigger
+    # than the image.  This accounts for the white margin
+    # that octopress puts around the image
+    #
+    my $width_inc = 20;
+
+    # The 6 components in our markup are
+    # dir:      The directory that the images are stored in
+    # ext:      The extension of the image
+    # footnote: The number of the footnote to be used for
+    #           credit
+    # caption:  This is used as the alt tag of the image, 
+    #           and the caption that's displayed under it.
+    #           This field may be blank, but don't do that 
+    #           because really, that's the whole point of 
+    #           this exercise.
+    #
+
+
+    my ($dir, $ext, $footnote, $caption) = @_;
+
+    $caption =~ s/[^a-zA-Z0-9 \*\+\,\.\:\-\;\!\[\]\(\)\&]//g;
+    
+    # make resized images if necessary
+    # the images need to have the following widths: 
+    # 1x:  320px,  480px,  640px,  714px
+    # 2x:  640px,  960px, 1280px, 1428px
+    # 3x:  960px, 1440px, 1920px, 2142px
+    # 4x: 1280px, 1920px, 2560px, 2856px
+    my @requiredWidths = (320, 480, 640, 714, 960, 1280, 1428, 1440, 1920, 2142, 2560, 2856);
+
+    $dir = "static/images/$dir";
+
+    foreach my $width (@requiredWidths) {
+        my $fileName = "content/$dir/gen/$width.$ext";
+        next if -e $fileName;
+        if (! -d "content/$dir/gen") { `mkdir "content/$dir/gen"`; }
+        my $widthIfGreater = $width.">";
+        my $command = "convert content/$dir/original.$ext -resize '$widthIfGreater' $fileName";
+        `$command`;
+        `mkdir -p output/$dir/gen`;
+        `cp $fileName output/$dir/gen/$width.$ext`;
+        print ("Generated $fileName\n");
+    }
+
+    my @srcSets = map { "$CDNURL/$dir/gen/$_.$ext ${_}w" } @requiredWidths;
+    my $srcSetString = join (",\n         ", @srcSets);
+    my $sizes = qq[(max-width: 320px) 320px, 
+         (max-width: 480px) 480px, 
+         (max-width: 640px) 640px, 
+         714px];
+    my $imageStr = qq[
+<img class="pure-img" 
+     src="$CDNURL/$dir/gen/320.$ext" 
+     alt="$caption" 
+     srcset="
+         $srcSetString
+     " 
+     sizes="
+         $sizes  
+     "
+     >
+];
+
+    my $footNoteString = qq[<sup id="fnref:$footnote"><a class="footnote-ref" href="#fn:$footnote">$footnote</a></sup>];
+    return qq[<div class="respImg"><div class="pure-img">$imageStr</div>$caption&nbsp;$footNoteString</div>];
+}
+
+sub makeResponsiveLeftDiv {
+
+    # The enclosing div should be this much bigger
+    # than the image.  This accounts for the white margin
+    # that octopress puts around the image
+    #
+    my $width_inc = 20;
+
+    # The 6 components in our markup are
+    # dir:      The directory that the images are stored in
+    # ext:      The extension of the image
+    # footnote: The number of the footnote to be used for
+    #           credit
+    # caption:  This is used as the alt tag of the image, 
+    #           and the caption that's displayed under it.
+    #           This field may be blank, but don't do that 
+    #           because really, that's the whole point of 
+    #           this exercise.
+    #
+
+
+    my ($dir, $ext, $footnote, $caption) = @_;
+
+    $caption =~ s/[^a-zA-Z0-9 \*\+\,\.\:\-\;\!\[\]\(\)\&]//g;
+    
+    # make resized images if necessary
+    # the images need to have the following widths: 
+    # 1x:  320px,  480px,  640px,  714px
+    # 2x:  640px,  960px, 1280px, 1428px
+    # 3x:  960px, 1440px, 1920px, 2142px
+    # 4x: 1280px, 1920px, 2560px, 2856px
+    my @requiredWidths = (320, 480, 640, 714, 960, 1280, 1428, 1440, 1920, 2142, 2560, 2856);
+
+    $dir = "static/images/$dir";
+
+    foreach my $width (@requiredWidths) {
+        my $fileName = "content/$dir/gen/$width.$ext";
+        next if -e $fileName;
+        if (! -d "content/$dir/gen") { `mkdir "content/$dir/gen"`; }
+        my $widthIfGreater = $width.">";
+        my $command = "convert content/$dir/original.$ext -resize '$widthIfGreater' $fileName";
+        `$command`;
+        `mkdir -p output/$dir/gen`;
+        `cp $fileName output/$dir/gen/$width.$ext`;
+        print ("Generated $fileName\n");
+    }
+
+    my @srcSets = map { "$CDNURL/$dir/gen/$_.$ext ${_}w" } @requiredWidths;
+    my $srcSetString = join (",\n         ", @srcSets);
+    my $sizes = qq[(max-width: 320px) 320px, 
+         (max-width: 480px) 480px, 
+         (max-width: 640px) 640px, 
+         714px];
+    my $imageStr = qq[
+<img width=160 height=160 align=left style="margin-right: 1em" 
+     src="$CDNURL/$dir/gen/320.$ext" 
+     alt="$caption" 
+     srcset="
+         $srcSetString
+     " 
+     sizes="
+         $sizes  
+     "
+     >
+];
+
+    my $footNoteString = qq[];
+    return qq[<div class="pure-img">$imageStr</div>];
 }
 
 sub makeSimpleImageDiv {

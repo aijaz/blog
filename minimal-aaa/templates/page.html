@@ -1,0 +1,108 @@
+{% extends "baseIndex.html" %}
+{% block title %}{{ page.title }} - {{ SITENAME }}{% endblock %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+{% block meta %}
+    {% if page.author %}
+        <meta name="author" content="{{ page.author }}" />
+    {% else %}
+        <meta name="author" content="{{ AUTHOR }}" />
+    {% endif %}
+    {% if page.summary %}
+        <meta name="description" content="{{ page.summary|striptags|escape }}" />
+    {% endif %}
+{% endblock %}
+{% block opengraph %}
+    {% if OPEN_GRAPH_FB_APP_ID %}
+        <meta property="fb:app_id" content="{{ OPEN_GRAPH_FB_APP_ID }}"/>
+    {% endif %}
+    <meta property="og:site_name" content="{{ SITENAME }}" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="{{ page.title|striptags|escape }}"/>
+    <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}"/>
+    <meta property="og:description" content="{{ page.summary|striptags|escape }}" />
+    {% if page.facebook_image %}
+        <meta property="og:image" content="{{ SITEURL }}/{{ page.facebook_image }}">
+    {% elif page.page_image %}
+        <meta property="og:image" content="{{ SITEURL }}/{{ page.page_image }}">
+    {% elif page.image %}
+        <meta property="og:image" content="{{ SITEURL }}/{{ page.image }}">
+    {% elif OPEN_GRAPH_IMAGE %}
+        <meta property="og:image"
+              content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
+    {% endif %}
+{% endblock %}
+
+{% block canonical_rel %}
+<link rel="canonical" href="{{ SITEURL }}/{{ page.url }}">
+{% endblock %}
+
+{% block breadcrumbs %}
+    {% if DISPLAY_BREADCRUMBS %}
+    <ol class="breadcrumb">
+        <li><a href="{{ SITEURL }}" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
+	  {% if page.url %}
+        <li class="active">{{ page.title }}</li>
+	  {% endif %}
+    </ol>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+
+
+<div class="pure-g indexSection">
+  <div class="pure-u-md-1-3 pure-u-1">
+    <div class="indexCol indexHalf">
+            <header class="page-header articleHeader">
+                    <a href="{{ SITEURL }}/{{ page.url }}"
+                       rel="bookmark"
+                       title="Permalink to {{ page.title|striptags }}">
+                        <h2 class="articleTitle">{{ page.title }}</h2>
+                    </a>
+            </header>
+            {% if page.video %}
+            <div class="video-container">
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/{{ page.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            {% endif %}
+            {% if page.video2 %}
+            <div class="video-container">
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/{{ page.video2 }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            {% endif %}
+
+    </div>
+  </div>
+  
+  <div class="pure-u-md-2-3 pure-u-1">
+    <div class="indexCol indexHalf">
+        {% import 'includes/translations.html' as translations with context %}
+        {{ translations.translations_for(page) }}
+        {% if PDF_PROCESSOR %}
+            <a href="{{ SITEURL }}/pdf/{{ page.slug }}.pdf">
+                get the pdf
+            </a>
+        {% endif %}
+            <div class="entry-content">
+                <section id="content">
+                  {{ page.content }}
+                </section>
+            </div>
+    </div>
+  </div>
+</div>
+
+<div class="pure-g indexSection">
+  <div class="pure-u-md-1-3 pure-u-1">
+    <div class="indexCol indexHalf">
+    </div>
+  </div>
+  
+  <div class="pure-u-md-2-3 pure-u-1">
+    <div class="indexCol indexHalf">
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

@@ -2,75 +2,61 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Aijaz A. Ansari'
-SITENAME = 'The Joy Of Hack'
+AUTHOR = 'Aijaz Ansari'
+SITENAME = 'The Joy of Hack'
 SITEURL = ''
-CUSTOM_SITENAME = '<span class="titleL">The</span><span class="titleB">Joy</span><span class="titleL">Of</span><span class="titleB">Hack</span>'
-HIDE_SITENAME = True
-SITE_SUBNAME = 'For people who like to make things'
+CDNURL = ''
+THEME = './minimal-aaa'
+
+JINJA_ENVIRONMENT = { "extensions" : [ "jinja2.ext.i18n"] }
+PLUGINS = [ "i18n_subsites" , "gzip_cacheSDFSDSF"]
+PLUGIN_PATHS = [ "../pelican-plugins" ]
 
 PATH = 'content'
 
-TIMEZONE = 'America/Chicago'
+TIMEZONE = 'America/Denver'
 
 DEFAULT_LANG = 'en'
 
-# Feed generation is usually not desired when developing
-#FEED_ALL_ATOM = None
-#CATEGORY_FEED_ATOM = None
-#TRANSLATION_FEED_ATOM = None
-#AUTHOR_FEED_ATOM = None
-#AUTHOR_FEED_RSS = None
 
+# Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('Flask', 'http://flask.pocoo.org/'),
-         ('TaskForest', 'http://taskforest.com/'),
-         )
+LINKS = ()
 
 # Social widget
-SOCIAL = (('Twitter', 'https://twitter.com/_aijaz_'),
-          ('Instagram', 'https://instagram.com/aijaz_ansari'),
-          ('LinkedIn', 'http://www.linkedin.com/in/aijaz'),
-          ('GitHub', 'http://github.com/aijaz')
-          )
+SOCIAL = ()
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 500
+# DISQUS_SITENAME = "masjiddefense"
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-THEME = '../pelican-bootstrap3'
-
-
-# Standard Pelican Settings
-# 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 SUMMARY_MAX_LENGTH = None
-STATIC_PATHS = ['images', 'wp', 'static', 'zf']
-PLUGIN_PATHS = ['../pluginsNew/pelican-plugins']
-PLUGINS = ['summary', 
-           # 'pelican-md-metayaml', 
-            'category_order',
-           #'liquid_tags.img', 
-           #'liquid_tags.video',
-           #'liquid_tags.youtube', 
-           #'liquid_tags.vimeo',
-           #'liquid_tags.include_code'
+STATIC_PATHS = ['images', 'wp', 'static', 'zf',]
+PLUGIN_PATHS = ['../pelican-plugins']
+PLUGINS = ['summary'
+           #'md-metayaml', 
+           #'category_order',
+           # , 'liquid_tags.img'
+           # , 'liquid_tags.video'
+           # , 'liquid_tags.youtube'
+           # , 'liquid_tags.vimeo'
+            # , 'liquid_tags.include_code'
            ]
 #           'tag_cloud', 
 MENUITEMS = [
     ('Blog', '/'),
-    ('About Me', '/about'),
-    ('Categories', '/categories'),
-    ('Tags', '/tags'),
-    ('Archives', '/archives'),
     ]
 
 # via https://github.com/getpelican/pelican/issues/1157
@@ -90,13 +76,15 @@ CATEGORIES_SAVE_AS = 'categories/index.html'
 TAGS_URL = 'tags/index.html'
 TAGS_SAVE_AS = 'tags/index.html'
 
-FAVICON = 'static/favicon.png'
+PAGE_SAVE_AS = '{slug}/index.html'
 
 # via http://jhshi.me/2015/10/11/migrating-from-octopress-to-pelican/
 FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)'
 
 TYPOGRIFY = True
 
+#ARTICLE_ORDER_BY = 'sortorder'
+# PAGE_ORDER_BY = 'sortorder'
 
 # Settings specific to pelican-bootstrap3
 # 
@@ -105,24 +93,15 @@ SHOW_ARTICLE_CATEGORY = True
 SHOW_DATE_MODIFIED = True
 PYGMENTS_STYLE = 'default'
 CUSTOM_CSS = 'static/custom.css'
-DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
-#TWITTER_USERNAME = '_aijaz_'
-#TWITTER_WIDGET_ID = '567866007532752896'
-DISPLAY_TAGS_ON_SIDEBAR = True
 
 # Plugins
 
 ## summary
 SUMMARY_END_MARKER = '<!-- more -->'
+#SUMMARY_MAX_LENGTH = 20
 
 ## category_order
 # CATEGORIES_ORDER_BY = 'size-rev'
 # TAGS_ORDER_BY = 'size-rev'
-
-# tags
-TAG_CLOUD_STEPS = 6
-TAG_CLOUD_MAX_ITEMS = 200
-TAG_CLOUD_SORTING = 'random'
-
-# for liquid
 CODE_DIR = 'static/downloads/code'
+
