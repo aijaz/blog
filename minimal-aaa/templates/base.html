@@ -15,13 +15,13 @@
 
     {# Favicons are a touchy subject. For reasoning for the following code, see: http://stackoverflow.com/a/23851464/872397 #}
     {% if FAVICON %}
-    <link href="{{ SITEURL }}/{{ FAVICON }}" rel="icon">
+    <link href="{{ CDNURL }}/{{ FAVICON }}" rel="icon">
     {% endif %}
     {% if FAVICON_IE %}
-    <!--[if IE]><link rel="shortcut icon" href="{{ SITEURL }}/{{ FAVICON_IE }}"><![endif]-->
+    <!--[if IE]><link rel="shortcut icon" href="{{ CDNURL }}/{{ FAVICON_IE }}"><![endif]-->
     {% endif %}
     {% if TOUCHICON %}
-    <link rel="apple-touch-icon" href="{{ SITEURL }}/{{ TOUCHICON }}">
+    <link rel="apple-touch-icon" href="{{ CDNURL }}/{{ TOUCHICON }}">
     {% endif %}
 
     {% block canonical_rel %}{% endblock %}
@@ -51,11 +51,11 @@
               title="{{ SITENAME }} {{ category }} ATOM Feed"/>
     {% endif %}
 
-    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/pygments/{{ PYGMENTS_STYLE|default('native') }}.css" rel="stylesheet">
+    <link href="{{ CDNURL }}/{{ THEME_STATIC_DIR }}/css/pygments/{{ PYGMENTS_STYLE|default('native') }}.css" rel="stylesheet">
 
     <!-- <link href="{{ CDNURL }}/static/styles.css" rel="stylesheet"> -->
     <!-- AAA TMP <link href="{{ SITEURL }}/static/styles.css" rel="stylesheet"> -->
-    <link href="/static/styles.css" rel="stylesheet">
+    <link href="{{ CDNURL }}/static/styles.css" rel="stylesheet">
 
 <link rel="apple-touch-icon" sizes="57x57" href="{{ CDNURL }}/static/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="{{ CDNURL }}/static/favicon/apple-icon-60x60.png">
