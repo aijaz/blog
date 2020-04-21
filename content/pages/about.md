@@ -13,8 +13,8 @@ Summary: I enjoy making things. I'm an iOS and Python developer who teaches and 
 
 
 As a hacker by nature, I enjoy making things. My name is Aijaz Ansari and I'm the developer and 
-designer behind the [Qur'an Memorizer](https://quranmemorizer.com)
-iOS app, and am currently working as a Mobile Lead at
+designer behind the [Qur'an Memorizer](https://quranmemorizer.com) and [QuranReflect](https://apps.apple.com/us/app/quranreflect/id1444969758?mt=8)
+iOS apps, and am currently working as a Mobile Lead at
 [Gogo Business Aviation](https://business.gogoair.com/). 
 
 I'm also a community organizer and volunteer as head of security at my local mosque. In that capacity I also manage two additional blogs: [MasjidDefense](https://masjiddefense.com) and [The Reluctant Gun Owner](https://thereluctantgunowner.com).
