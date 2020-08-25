@@ -28,26 +28,30 @@ Finally, I'm also a fitness enthusiast, with a particular fondness for Tony Hort
 You can find me here:
 
 * [This blog](http://www.aijazansari.com/)
-* [Instagram](http://instagram.com/aijaz_ansari)
-* [Twitter](http://twitter.com/_aijaz_)
-* Email - &lt;myfirstname&gt; at &lt;myfirstname&gt; dot net
-* [Linked In](http://www.linkedin.com/in/aijaz)
 * [GitHub](http://github.com/aijaz)
+* [Twitter](http://twitter.com/_aijaz_)
+* [LinkedIn](http://www.linkedin.com/in/aijaz)
+* Email - &lt;myfirstname&gt; at &lt;myfirstname&gt; dot net
+* [Instagram](http://instagram.com/aijaz_ansari)
 
 One last thing about me: I enjoy discussing the technical merits and limitations of app or business ideas my friends and acquaintances have. If you have an idea that you would like to bounce off of someone, I'm almost always available for a chat over a cup of coffee. But I almost never sign NDAs. I believe that great ideas are [not really that rare](https://blog.hartleybrody.com/wont-sign-nda/) and that they are [multipliers of execution](https://sivers.org/multiply). I think we can still have productive conversations without talking about the secrets that you don't want to share without an NDA.
 
 ## Licenses
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a>
 
 Almost all photographs found on this blog were taken by me and are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.
 
 Those photographs not taken by me are attributed accordingly.  If you
 find any image that is not attributed, please email me and let me know.
 
+
 <a name="talks"></a>
 # Talks I&#8217;ve Given
 
+- _Regretrospective_ [360|iDev](https://360idev.com) 2020
+- _VoiceOver for the Skeumorphic App_ [360|iDev](https://360idev.com) 2020
+- _Intermediate Git_ [360|iDev](https://360idev.com) 2019
 - _Beyond Breakpoints - Advanced Debugging in XCode (2017 and 2018)_ - [360|iDev](https://360idev.com) 
 - _How Learning to Ski Made me a Better Developer_ - iOS Dev Camp Colorado Springs
 - _The Coordinator: Improving the MVC Architecture_ - A remote presentation given at the inaugural CocoaHeads meet-up at the new flagship Apple Store on Michigan Ave. in Chicago.
@@ -57,6 +61,22 @@ find any image that is not attributed, please email me and let me know.
 - [Now What?](https://www.slideshare.net/AijazAnsari2/now-what-72865145) - SnowMobile Conference, 2013
 - [The Web That Was - The Promise and Decline of `mod_perl`](https://speakerdeck.com/aijazansari) - A local Ruby Developers' Meet-up. 
 - [Protecting Your Clients' Privacy](https://www.slideshare.net/AijazAnsari2/protecting-your-clients-privacy) - A 5-minute blitz talk at SecondConf 2012
+
+<a name="service"></a>
+# Community Service
+
+- **Teacher**, Denver North Islamic Center
+    + Weekend school teacher to 10- and 11-year-old boys
+    + Teach camping and survival skills to older youth
+    + Coordinate annual camping trips in the Rocky Mountains
+- **Board Member**, [MYPI](https://mypi.org/)
+    + [Teach programming to youth of color](https://mypi.org/programming-classes)
+    + [Recruit companies to sponsor our training programs](https://mypi.org/training-sponsors)
+- **Director of Security**, Denver North Islamic Center
+    + Manage physical and online security 
+    + Train security staff to handle lethal and non-lethal weapons
+    + Work with local law enforcement on security for events
+    + Write [iOS](https://github.com/aijaz/masjidSignin) and [web](https://github.com/aijaz/qrCodeSigninServer) software to handle registration and contact tracing
 
 <a name="work"></a>
 # Work Experience
@@ -73,8 +93,11 @@ Within Gogo I'm part of three very beneficial meet-ups:
 - _Gogo Toast and Talk_, the Gogo chapter of [Toastmasters](https://toastmasters.org)
 - _Tech Lead Presentations_, where we present new technologies and things we've learned to other groups within the firm. 
 
-Talks given during my time at FastModel: 
+Talks given during my time at Gogo: 
 
+- _Regretrospective_ [360|iDev](https://360idev.com) 2020
+- _VoiceOver for the Skeumorphic App_ [360|iDev](https://360idev.com) 2020
+- _Intermediate Git_ [360|iDev](https://360idev.com) 2019
 - _Beyond Breakpoints - Advanced Debugging in XCode (2018)_ - [360|iDev](https://360idev.com) 
 - _How Learning to Ski Made me a Better Developer_ - iOS Dev Camp Colorado Springs
 - _The Coordinator: Improving the MVC Architecture_ - A remote presentation given at the inaugural CocoaHeads meet-up at the new flagship Apple Store on Michigan Ave. in Chicago.
@@ -122,7 +145,7 @@ determination. I've got one patent application under my name. I know
 that's not much, but I'm pretty proud of it. Representing Vaporstream, I
 spoke at the Snow-Mobile conference in Madison, WI in 2012, advising
 mobile developers on what to do after they ship their app. I also became
-a mentor at [MobileMakers Chicago](http://http://www.mobilemakers.co/). By
+a mentor at [MobileMakers Chicago](http://mobilemakersedu.org). By
 the time I left Vaporstream I had mentored 7 cohorts of students (14
 students in all) and continue to mentor some of them after they started
 their careers as iOS developers.
