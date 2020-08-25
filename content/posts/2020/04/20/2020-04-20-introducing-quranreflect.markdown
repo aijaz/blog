@@ -1,4 +1,4 @@
-title: Introducing QuranReflect
+title: QuranReflect
 date: 2020-04-20 18:00
 Category: iOS
 Tags: QuranReflect
