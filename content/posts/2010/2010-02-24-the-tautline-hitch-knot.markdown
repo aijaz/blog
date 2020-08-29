@@ -25,8 +25,8 @@ net or a tent guy line to a stake, you know difficult it is to tie the knot at
 just the right place to keep the line tight.  It doesn't help when the line
 sags every so often and needs to be retightened.
 
-<iframe width="480" height="360" src="http://www.youtube.com/embed/m8NkEp7Cxsw" frameborder="0" allowfullscreen></iframe>
-  
+<iframe width="480" height="360" src="https://www.youtube.com/embed/m8NkEp7Cxsw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 The tautline hitch knot is perfect for this application.  It makes a loop in
 the rope and the position of the knot affects length of the loop.  The more
 you move the knot towards the opposite end of the rope, the tighter the line
