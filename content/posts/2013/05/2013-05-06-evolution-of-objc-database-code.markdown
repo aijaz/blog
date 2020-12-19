@@ -6,7 +6,7 @@ Tags: ObjectiveC, ARC, FMDB, SQLite3, SQL, QuranMemorizer, Literals
 
 ## First
 
-One of the features of [Qur'an Memorizer](http://quranmemorizer.com), my
+One of the features of [Qur'an Memorizer](http://quranmem.com), my
 first iOS app, is the ability to highlight a verse (ayah) when it's
 tapped.  To do this I access a database of verse x and y locations and
 retrieve the 4 coordinates I need to draw the resulting polygon.

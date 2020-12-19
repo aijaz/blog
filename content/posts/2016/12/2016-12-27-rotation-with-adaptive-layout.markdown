@@ -63,6 +63,6 @@ If you'd like to see the prototype code in action, have a look here:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uBv2zlbBR4E" frameborder="0" allowfullscreen></iframe>
 
 
-[qm]: http://quranmemorizer.com/
+[qm]: http://quranmem.com/
 [s233]: https://developer.apple.com/videos/play/wwdc2016/233/
 [s233a]: http://asciiwwdc.com/2016/sessions/233
