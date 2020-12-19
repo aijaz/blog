@@ -13,7 +13,7 @@ Summary: I enjoy making things. I'm an iOS and Python developer who teaches and 
 
 
 As a hacker by nature, I enjoy making things. My name is Aijaz Ansari and I'm the developer and 
-designer behind the [Qur'an Memorizer](https://quranmemorizer.com) and [QuranReflect](https://apps.apple.com/us/app/quranreflect/id1444969758?mt=8)
+designer behind the [Qur'an Memorizer](https://quranmem.com) and [QuranReflect](https://apps.apple.com/us/app/quranreflect/id1444969758?mt=8)
 iOS apps, and am currently working as a Mobile Lead at
 [Gogo Business Aviation](https://business.gogoair.com/). 
 
@@ -173,7 +173,7 @@ talking to VaporBot or even connection to our cloud storage of images.
 
 ## Principal, [Euclid Software, LLC][]. (2010 - Present)
 
-Euclid Software is the company I started when I wanted to register as an iOS developer and submit my first app, [Qur'an Memorizer](http://quranmemorizer.com), to the App Store. Qur'an Memorizer has been my most popular app so far. Along with the free variants there have been more than 840,000 downloads worldwide. The sales, while not enough to live off, are enough to pay for my computers, books, and associated toys, so I can confidently say that this app (and the community I built around it) has been a resounding success. The most beloved features of this app are the photo-realistic interface, the page-turning affordances and (to my surprise) the bookmarking feature. 
+Euclid Software is the company I started when I wanted to register as an iOS developer and submit my first app, [Qur'an Memorizer](http://quranmem.com), to the App Store. Qur'an Memorizer has been my most popular app so far. Along with the free variants there have been more than 840,000 downloads worldwide. The sales, while not enough to live off, are enough to pay for my computers, books, and associated toys, so I can confidently say that this app (and the community I built around it) has been a resounding success. The most beloved features of this app are the photo-realistic interface, the page-turning affordances and (to my surprise) the bookmarking feature. 
 
 I've also started working on a promising new app called [Pix2Doc](http://pix2doc.com). We're still in a public beta stage before we fine tune our app and announce our services to the public. Every so often I'll publish apps for clients. They have asked that I not name the apps that I've worked on, and those apps are almost as complex as the apps I work on at Vaporstream.
 
