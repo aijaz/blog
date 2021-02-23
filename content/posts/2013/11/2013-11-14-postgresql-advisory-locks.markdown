@@ -39,8 +39,8 @@ For these reasons I think one should only use advisory locks to prevent concurre
 such programs this is a very convenient and effective approach.  For anything even moderately complex I would 
 recommend either implementing this in your code or using an external job scheduling system.  To implement it within
 your code you could use locks on semaphore files.  If you're using 
-[TaskForest](http://www.taskforest.com), the job scheduling system I wrote, you can use
-[tokens](http://www.taskforest.com/docs/tokens.html) easily and effectively to prevent concurrency.
+[TaskForest](http://www.taskforest.aijaz.net), the job scheduling system I wrote, you can use
+[tokens](http://www.taskforest.aijaz.net/docs/tokens.html) easily and effectively to prevent concurrency.
 
 My thanks to Parker for introducing me to advisory locks.  If you have any comments or questions on 
 anything I wrote here you can find me on Twitter, where I'm [@\_aijaz\_](http://twitter.com/_aijaz_).

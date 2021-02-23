@@ -29,7 +29,7 @@ to be a promising search result on Google, only to find the site very sluggish
 once I click through Google's recommendation.  So, like it or not, you and I
 will now have to make sure we at least consider our sites' rendering speeds.
 
-As I had mentioned in a [earlier post](/2010/03/31/performance-cost-of-using-wordpress/), I recently changed the taskforest.com
+As I had mentioned in a [earlier post](/2010/03/31/performance-cost-of-using-wordpress/), I recently changed the taskforest.aijaz.net
 website to static HTML from a template-based system.   After reading Google's
 blog entry, I installed [Firebug](http://getfirebug.com/) on Firefox, as well
 as two different page performance measuring tools:
@@ -71,7 +71,7 @@ Previously, the relevant lines in my ```httpd.conf``` file looked like this:
 
 ~~~~{.apacheconf}
 <VirtualHost 216.139.227.47>
- ServerName www.taskforest.com
+ ServerName www.taskforest.aijaz.net
  DocumentRoot ".../taskforest/htdocs/website"
 </VirtualHost>
 ~~~~
@@ -80,7 +80,7 @@ After installing the two new modules, my httpd.conf file looked like this:
 
 ~~~~{.apacheconf}
 <VirtualHost 216.139.228.44>
- ServerName www.taskforest.com
+ ServerName www.taskforest.aijaz.net
  DocumentRoot ".../taskforest/htdocs/website"  
  FileEtag None  
 
@@ -123,8 +123,8 @@ After installing the two new modules, my httpd.conf file looked like this:
 </VirtualHost>
 
 <VirtualHost 216.139.228.44>
- ServerName taskforest.com
- RedirectMatch (.*) http://www.taskforest.com$1
+ ServerName taskforest.aijaz.net
+ RedirectMatch (.*) http://www.taskforest.aijaz.net$1
 </VirtualHost>  
 ~~~~    
 

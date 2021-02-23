@@ -24,7 +24,7 @@ often than not, a dedicated, graphical editor is needed to model the complex
 relationships.
 <!-- more -->
 
-Several years ago, when I wrote [TaskForest](http://www.taskforest.com/), one
+Several years ago, when I wrote [TaskForest](http://www.taskforest.aijaz.net/), one
 of the initial design requirements was that it be easily configurable with
 just a shell prompt and one's favorite text editor. Many of the servers I
 cared for for schools and non-profits were old boxes which I administered by

@@ -192,7 +192,7 @@ Most of our programs would write to one or more Sybase databases. At Citadel I b
 ## President, ENoor Creations (1998 - 2005)
 
 At ENoor I started off running web hosting service, and then migrated to writing web apps for clients in Apache/mod_perl. During the 7 years that ENoor was operating I focused on various industries, including Law Enforcement, Automobile Sales, Telecom, Printing, and Non-Profits. One of my most interesting projects was customizing an SMTP server for a client, to implement their authentication scheme. I wound up writing authentication code in C for 
-the `qmail-smtp` mail server.  ENoor is also where I developed [TaskForest](http://taskforest.com), an open source job scheduler, to manage my own machines. 
+the `qmail-smtp` mail server.  ENoor is also where I developed [TaskForest](http://taskforest.aijaz.net), an open source job scheduler, to manage my own machines. 
 
 I also spent a decent amount of time over a three-year period writing software for Webvestor. This was a trading company started by a pair of traders at the Chicago Mercantile Exchange. I wrote an app in Visual C++ that would use the FIX API to post data from their local trading applications to the CME. Since they had a dedicated wired connection to the CME, any such app would have to be audited and certified by the Exchange. Working on this and getting the app certified was a milestone in my growth as a Software Developer. 
 

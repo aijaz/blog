@@ -8,7 +8,7 @@ Tags: Apache, Caching, DNS, Efficiency, Etag, HTTP, Metrics, Programming, Safari
 
 Happy with my experience with a custom WordPress installation for this blog, I
 decided to try using the blogging platform for the
-[TaskForest](http://www.taskforest.com/) website.  The two main reasons were
+[TaskForest](http://www.taskforest.aijaz.net/) website.  The two main reasons were
 the ease of creating RSS feeds and the ability for users to comment on posts
 or articles.  After a few days of tinkering around, I've come to the
 conclusion that, at least for TaskForest, WordPress would cause more problems
@@ -19,7 +19,7 @@ than it would solve. Here's how I came to that conclusion:
 
 The first step in trying out WordPress was to set up a new domain just for
 testing out the WordPress installation.  This way, I wouldn't affect the
-taskforest.com domain during my experiments.  I happen to run my own name
+taskforest.aijaz.net domain during my experiments.  I happen to run my own name
 servers using Daniel Bernstein's [_tinydns_](http://cr.yp.to/djbdns.html), so
 I decided to create a new domain called _tf.enoor.com_, a subdomain of my
 defunct company's domain.  Since I use bluehost.com's WordPress hosting
@@ -49,20 +49,20 @@ TaskForest ships with its own web server to support
 [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer)
 interface.  As part of the included website is all the documentation for the
 system. Just like the code, this documentation is under source control, and
-it's also used to populate the taskforest.com website.  This way, I can ensure
-that both the taskforest.com website and a user's local install have the most
+it's also used to populate the taskforest.aijaz.net website.  This way, I can ensure
+that both the taskforest.aijaz.net website and a user's local install have the most
 up-to-date docs, as long as the user is running the latest version of the
 software.  What this also means is that I have a few dozen webpages that need
 to be transfered to WordPress before the new site can go live.  I was already
 resigned to the fact that the URLs of these pages would be different - the
-current site has URLs that look like _http://www.taskforest.com/about.html_,
+current site has URLs that look like _http://www.taskforest.aijaz.net/about.html_,
 but the default WordPress installation would use URLs that look like
-_http://www.taskforest.com/about/_.  It's not a huge deal, but I prefer my
+_http://www.taskforest.aijaz.net/about/_.  It's not a huge deal, but I prefer my
 way.
 
 The bigger issue is that when a new version of the software is released, the
 pages change.  The current build process ensures that the client website and
-the taskforest.com website stay in sync.  Now if I use WordPress, I don't want
+the taskforest.aijaz.net website stay in sync.  Now if I use WordPress, I don't want
 to manually edit the pages using the WP admin site.  I need to install a new
 plugin that handles inclusion of files.  So, I installed the WP Include
 plugin.  I'd have to change my build process, but I could get it to work.
@@ -76,7 +76,7 @@ didn't have anything enabled that I didn't need.  Still, the site was
 noticeably slower than the existing site, and that's with only one non-blank
 page and zero blog posts.  I thought that maybe the problem was that the
 bluehost.com shared server was too slow.  I just happened to have an unused
-server in the same data center that hosts taskforest.com.  The same kind of
+server in the same data center that hosts taskforest.aijaz.net.  The same kind of
 server as well. It took the better part of the morning, but I installed PHP,
 mysql and WordPress on that server.  In installed PHP as a static module
 within Apache, for optimal performance.  Even then, on a pristine machine
