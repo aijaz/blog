@@ -8,9 +8,9 @@ SITEURL = ''
 CDNURL = ''
 THEME = './minimal-aaa'
 
-JINJA_ENVIRONMENT = { "extensions" : [ "jinja2.ext.i18n"] }
-PLUGINS = [ "i18n_subsites" , "gzip_cacheSDFSDSF"]
-PLUGIN_PATHS = [ "../pelican-plugins" ]
+JINJA_ENVIRONMENT = {"extensions": ["jinja2.ext.i18n"]}
+# PLUGINS = ["i18n_subsites", "gzip_cacheSDFSDSF"]
+# PLUGIN_PATHS = ["../pelican-plugins"]
 
 PATH = 'content'
 
@@ -46,13 +46,13 @@ SUMMARY_MAX_LENGTH = None
 STATIC_PATHS = ['images', 'wp', 'static', 'zf',]
 PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['summary'
-           #'md-metayaml', 
-           #'category_order',
+           # 'md-metayaml',
+           # 'category_order',
            # , 'liquid_tags.img'
            # , 'liquid_tags.video'
            # , 'liquid_tags.youtube'
            # , 'liquid_tags.vimeo'
-            # , 'liquid_tags.include_code'
+           # , 'liquid_tags.include_code'
            ]
 #           'tag_cloud', 
 MENUITEMS = [
@@ -83,7 +83,7 @@ FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)'
 
 TYPOGRIFY = True
 
-#ARTICLE_ORDER_BY = 'sortorder'
+# ARTICLE_ORDER_BY = 'sortorder'
 # PAGE_ORDER_BY = 'sortorder'
 
 # Settings specific to pelican-bootstrap3
@@ -96,11 +96,11 @@ CUSTOM_CSS = 'static/custom.css'
 
 # Plugins
 
-## summary
+# summary
 SUMMARY_END_MARKER = '<!-- more -->'
-#SUMMARY_MAX_LENGTH = 20
+# SUMMARY_MAX_LENGTH = 20
 
-## category_order
+# category_order
 # CATEGORIES_ORDER_BY = 'size-rev'
 # TAGS_ORDER_BY = 'size-rev'
 CODE_DIR = 'static/downloads/code'

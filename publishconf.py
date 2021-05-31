@@ -22,14 +22,14 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+# DISQUS_SITENAME = ""
+# GOOGLE_ANALYTICS = ""
 
 # SSH_USER = 'root'
 # SSH_HOST = 'thereluctantgunowner.com'
 # SSH_TARGET_DIR = '/var/www/html'
 
-PLUGINS = [ "i18n_subsites" , "summary"]
-PLUGIN_PATHS = [ "../pelican-plugins" ]
+PLUGINS = ["i18n_subsites", "summary"]
+PLUGIN_PATHS = ["../pelican-plugins"]
 
 # SUMMARY_END_MARKER = '<!-- more -->'
