@@ -33,3 +33,6 @@ PLUGINS = ["i18n_subsites", "summary"]
 PLUGIN_PATHS = ["../pelican-plugins"]
 
 # SUMMARY_END_MARKER = '<!-- more -->'
+
+LOAD_CONTENT_CACHE = True
+CHECK_MODIFIED_METHOD = 'mtime'

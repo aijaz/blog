@@ -105,3 +105,5 @@ SUMMARY_END_MARKER = '<!-- more -->'
 # TAGS_ORDER_BY = 'size-rev'
 CODE_DIR = 'static/downloads/code'
 
+LOAD_CONTENT_CACHE = True
+CHECK_MODIFIED_METHOD = 'mtime'
