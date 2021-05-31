@@ -73,12 +73,19 @@ imageCaption:
 	find $(OUTPUTDIR) -type f  -name '*.html' -exec ./imageCaption.pl '{}' ';'
 
 publish:
+	date
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	date
 	find $(OUTPUTDIR) -type f  -name '*.html' -exec ./imageCaption.pl --publish --file='{}' ';'
+	date
 	yuicompressor output/static/styles.css -o /tmp/styles.css
+	date
 	/bin/cp /tmp/styles.css output/static/styles.css
-	find $(OUTPUTDIR) -type f -not -name '*.gz' -not -name '*.gif' -not -name '*.jpg' -not -name '*.png' -not -name '.DS_Store' -exec zopfli {} \;
+	date
+	find $(OUTPUTDIR) -type f -not -name '*.gz' -not -name '*.gif' -not -name '*.jpg' -not -name '*.png' -not -name '.DS_Store' -exec ./compressFile.sh {} \;
+	date
 	rsync --delete --exclude ".DS_Store" -pthrvz -c output/ root@aijaz.net:/home/aijaz/blog
+	date
 
 rsync_upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --cvs-exclude --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
