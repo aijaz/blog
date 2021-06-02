@@ -2,7 +2,8 @@ title: Don't Give Up
 date: 2015-09-30 18:40
 comments: false
 Category: Fitness
-Tags: Pull-ups, P90X, Perseverance, TonyHorton, description: "Mastering something can take time. In my case, it took me about 18 months to get to the point where I could do a set of 10 Lever Pull-ups."
+Tags: Pull-ups, P90X, Perseverance, TonyHorton
+description: "Mastering something can take time. In my case, it took me about 18 months to get to the point where I could do a set of 10 Lever Pull-ups."
 
 Mastering something can take time. In my case, it took me about 18 months to get to the point where I could do a set of 10 Lever Pull-ups.  
 

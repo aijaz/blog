@@ -72,23 +72,31 @@ endif
 imageCaption:
 	find $(OUTPUTDIR) -type f  -name '*.html' -exec ./imageCaption.pl '{}' ';'
 
-publish:
-	date
+publishGenerate:
+	echo "make publishGenerate"
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
-	date
+
+publishFromScratch:
+	make publishGenerate
+	make postGenerate
+	touch publishDone.txt
+	make rsync
+
+postGenerate:
+	echo "make postGenerate"
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	find $(OUTPUTDIR) -type f  -name '*.html' -exec ./imageCaption.pl --publish --file='{}' ';'
-	date
 	yuicompressor output/static/styles.css -o /tmp/styles.css
-	date
 	/bin/cp /tmp/styles.css output/static/styles.css
-	date
 	find $(OUTPUTDIR) -type f -not -name '*.gz' -not -name '*.gif' -not -name '*.jpg' -not -name '*.png' -not -name '.DS_Store' -exec ./compressFile.sh {} \;
-	date
-	rsync --delete --exclude ".DS_Store" -pthrvz -c output/ root@aijaz.net:/home/aijaz/blog
-	date
 
-rsync_upload: publish
-	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --cvs-exclude --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
+publishUpdate:
+	echo "make publishUpdate"
+	find $(INPUTDIR) -type f -name '*.markdown' -newer publishDone.txt -exec ./generateFile.sh {} .markdown \;
+	touch publishDone.txt
+	make rsync
 
+rsync:
+	rsync --delete --exclude ".DS_Store" -pqthrvz -c output/ root@aijaz.net:/home/aijaz/blog
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish ssh_upload rsync_upload

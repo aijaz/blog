@@ -202,7 +202,7 @@ At Motorola I had the good fortune to work on a product during the last few year
 
 I was responsible for the Call Processing code for two key features: Message Waiting Notification and Local Number Portability. I also wrote an internal tool called 'Cogent' that read in simple requirements for different kinds of Call State Models and generated the C++ code for the individual CSM subclasses. This became part of the build phase and eliminated the possibility of developer error introducing inconsistencies between subclasses. 
 
-Because the VLR application ran on a diskless board on Motorola's telecom switches, we needed a low-footprint in-memory database management system to handle records for the call state models of the people who were currently making phone calls. I was in charge of this 'dbmgmt' system, and implemented it using height-balanced binary trees in C++.  
+Because the VLR application ran on a diskless board on Motorola's telecom switches, we needed a low-footprint in-memory database management system to handle records for the call state models of the people who were currently making phone calls. I was in charge of this 'dbmgmt' system, and implemented it using height-balanced binary trees in C++. 2
 
 [FastModel Sports]: http://fastmodelsports.com
 [Vaporstream]: http://vaporstream.com

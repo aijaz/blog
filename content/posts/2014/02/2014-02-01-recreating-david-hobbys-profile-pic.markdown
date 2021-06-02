@@ -2,7 +2,8 @@ title: Recreating David Hobby's Profile Picture
 date: 2014-02-01 20:55
 comments: false
 Category: Photography
-Tags: Fuji, X100S, Nikon, SB800, Flash, Remote, Strobist, David Hobby, Practice, Ethics, description: I used a Fuji X100S and a couple of Nikon SB-800s to recreate David Hobby's profile picture.
+Tags: Fuji, X100S, Nikon, SB800, Flash, Remote, Strobist, David Hobby, Practice, Ethics
+description: I used a Fuji X100S and a couple of Nikon SB-800s to recreate David Hobby's profile picture.
 
 When you're a beginner learning a new skill, it's okay to try to recreate the Masters' works as practice (in private).  With that in mind, when I was [learning to use external flashes with the Fuji X100S](/2014/02/01/external-flash-Fuji-X100S) I gave myself the task of recreating [David Hobby](https://twitter.com/strobist)'s iconic profile picture. I asked David for his permission to blog about it and he graciously granted it. There are serious ethical issues involved with publishing this sort of practice work.  To jump directly to that discussion, [go here](#ethics).
 

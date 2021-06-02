@@ -2,7 +2,8 @@ title: LinkedIn Can Read Your Emails
 date: 2013-10-23 21:44
 comments: false
 Category: Computers
-Tags: Security, LinkedIn, MITM, description: Linked In is asking users to install Man-in-the-middle code, to their own detriment.
+Tags: Security, LinkedIn, MITM
+description: Linked In is asking users to install Man-in-the-middle code, to their own detriment.
 
 The stupidity of this is mind-boggling.  Essentially, LinkedIn is asking you to insert a man-in-the-middle IMAP server that parses ALL your email and modifies the body so as to 'enhance mobile email, giving professionals the information they need to be brilliant with people.' The following tweet from [Justin Miller](http://twitter.com/incanus77) first brought this to my attention:
 
