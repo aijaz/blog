@@ -92,7 +92,7 @@ postGenerate:
 
 publishUpdate:
 	echo "make publishUpdate"
-	find $(INPUTDIR) -type f -name '*.markdown' -newer publishDone.txt -exec ./generateFile.sh {} .markdown \;
+	find $(INPUTDIR) -type f -name '*.markdown' -newer publishDone.txt -exec ./generateFile.sh {} .markdown 	\;
 	touch publishDone.txt
 	make rsync
 

@@ -65,6 +65,10 @@ find any image that is not attributed, please email me and let me know.
 <a name="service"></a>
 # Community Service
 
+- **Teacher**, Colorado Association of Black Professional Engineers and Scientists ([CABPES](https://cabpes.org))
+    + Teach Computer Science and Software Development to High School Students
+    + Teach the students to write the popular Wordle game using Python
+    + Show the students how to use VoiceOver so that their game can be played by Blind and Visually Impaired players
 - **Teacher**, Denver North Islamic Center
     + Weekend school teacher to 10- and 11-year-old boys
     + Teach camping and survival skills to older youth
