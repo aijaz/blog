@@ -85,13 +85,13 @@ publishGenerate:
 publishOnServer:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	find $(OUTPUTDIR) -type f  -name '*.html' -exec ./imageCaption.pl --publish --file='{}' ';'
-	yuicompressor output/static/styles.css -o /tmp/styles.css
+	yui-compressor output/static/styles.css -o /tmp/styles.css
 	/bin/cp /tmp/styles.css output/static/styles.css
-	# Now everything is saved in output in the repo
-	# Now rsync all files and only recompress the saved ones
+# Now everything is saved in output in the repo
+# Now rsync all files and only recompress the saved ones
 	rsync --delete --exclude ".DS_Store" -pqthrv -c output output_stage
 	cd output_stage
-	for f in `find output -type f -not -name '*.gz' -not -name '*.gif' -not -name '*.jpg' -not -name '*.png' -not -name '.DS_Store' `; do [ "$f" -nt "$f.gz" ] && zopfli $f; done
+	./compressFile.sh
 # 	rsync --delete --exclude ".DS_Store" -pqthrvz -c output_stage/ aijaz@aijaz.net:/home/aijaz/blog
 
 # postGenerate:
