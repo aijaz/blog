@@ -15,7 +15,6 @@ if [ $LOCAL = $REMOTE ]; then
 elif [ $LOCAL = $BASE ]; then
     echo "Need to pull"
     git pull
-    cd site
     source venv/bin/activate
     make publishOnServer
 elif [ $REMOTE = $BASE ]; then
