@@ -11,6 +11,7 @@ REMOTE=$(git rev-parse "$UPSTREAM")
 BASE=$(git merge-base @ "$UPSTREAM")
 
 if [ $LOCAL = $REMOTE ]; then
+    echo "Nothing to do"
     exit 0
 elif [ $LOCAL = $BASE ]; then
     echo "Need to pull"

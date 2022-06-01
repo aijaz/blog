@@ -76,11 +76,11 @@ publishGenerate:
 	echo "make publishGenerate"
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-publishFromScratch:
-	make publishGenerate
-	make postGenerate
-	touch publishDone.txt
-	make rsync
+# publishFromScratch:
+# 	make publishGenerate
+# 	make postGenerate
+# 	touch publishDone.txt
+# 	make rsync
 
 publishOnServer:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
@@ -109,6 +109,6 @@ publishOnServer:
 # 	make rsync
 
 rsync:
-	rsync --delete --exclude ".DS_Store" -pqthrvz -c output/ root@aijaz.net:/home/aijaz/blog
+	rsync --delete --exclude ".DS_Store" -pqthrvz -c output/ aijaz@aijaz.net:/home/aijaz/blog
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish ssh_upload rsync_upload
