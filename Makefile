@@ -89,22 +89,24 @@ publishOnServer:
 	/bin/cp /tmp/styles.css output/static/styles.css
 	# Now everything is saved in output in the repo
 	# Now rsync all files and only recompress the saved ones
-	rsync --delete --exclude ".DS_Store" -pqthrvz -c output /home/aijaz/blog
+	rsync --delete --exclude ".DS_Store" -pqthrv -c output output_stage
+	cd output_stage
 	for f in `find output -type f -not -name '*.gz' -not -name '*.gif' -not -name '*.jpg' -not -name '*.png' -not -name '.DS_Store' `; do [ "$f" -nt "$f.gz" ] && zopfli $f; done
+# 	rsync --delete --exclude ".DS_Store" -pqthrvz -c output_stage/ aijaz@aijaz.net:/home/aijaz/blog
 
-postGenerate:
-	echo "make postGenerate"
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
-	find $(OUTPUTDIR) -type f  -name '*.html' -exec ./imageCaption.pl --publish --file='{}' ';'
-	yuicompressor output/static/styles.css -o /tmp/styles.css
-	/bin/cp /tmp/styles.css output/static/styles.css
-	find $(OUTPUTDIR) -type f -not -name '*.gz' -not -name '*.gif' -not -name '*.jpg' -not -name '*.png' -not -name '.DS_Store' -exec ./compressFile.sh {} \;
+# postGenerate:
+# 	echo "make postGenerate"
+# 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+# 	find $(OUTPUTDIR) -type f  -name '*.html' -exec ./imageCaption.pl --publish --file='{}' ';'
+# 	yuicompressor output/static/styles.css -o /tmp/styles.css
+# 	/bin/cp /tmp/styles.css output/static/styles.css
+# 	find $(OUTPUTDIR) -type f -not -name '*.gz' -not -name '*.gif' -not -name '*.jpg' -not -name '*.png' -not -name '.DS_Store' -exec ./compressFile.sh {} \;
 
-publishUpdate:
-	echo "make publishUpdate"
-	find $(INPUTDIR) -type f -name '*.markdown' -newer publishDone.txt -exec ./generateFile.sh {} .markdown 	\;
-	touch publishDone.txt
-	make rsync
+# publishUpdate:
+# 	echo "make publishUpdate"
+# 	find $(INPUTDIR) -type f -name '*.markdown' -newer publishDone.txt -exec ./generateFile.sh {} .markdown 	\;
+# 	touch publishDone.txt
+# 	make rsync
 
 rsync:
 	rsync --delete --exclude ".DS_Store" -pqthrvz -c output/ root@aijaz.net:/home/aijaz/blog

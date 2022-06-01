@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/aijaz/repo/blog
+cd /home/aijaz/blog
 
 
 # via https://stackoverflow.com/a/3278427/7221535

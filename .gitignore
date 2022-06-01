@@ -4,3 +4,4 @@ output
 venv
 .DS_Store
 publishDone.txt
+output_stage
