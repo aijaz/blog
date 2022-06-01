@@ -31,9 +31,13 @@ close I;
 #
 if ($file =~ /2009/ || $file =~ /201[012345678]/) {
     foreach my $line (@lines) { 
+        # 30 or so
         $line =~ s^<!-- ([lcr])\s+(\S+)\s+(.*?)\s*-->^makeSimpleImageDiv($2, $3, $1)^ge;
 
+        # 109
         $line =~ s^<!-- ai\s+(\S+)\s+(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(.*?)\s*-->^makeDiv($1, $2, $3, $4, $5, $6)^ge;
+
+        # not used
         $line =~ s#<!-- photo\s+\^([^\^]+)\^\s+(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(.*?)\s*-->#makePhoto($1, $2, $3, $4, $5, $6)#ge;
     }
 }
@@ -43,9 +47,16 @@ else {
         # $line =~ s^<!-- ([lcr])\s+(\S+)\s+(.*?)\s*-->^makeSimpleImageDiv($2, $3, $1)^ge;
         # $line =~ s^<!-- ai\s+(\S+)\s+(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(.*?)\s*-->^makeDiv($1, $2, $3, $4, $5, $6)^ge;
         # $line =~ s#<!-- photo\s+\^([^\^]+)\^\s+(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(.*?)\s*-->#makePhoto($1, $2, $3, $4, $5, $6)#ge;
+        # 1
         $line =~ s^<!--\s*img\s+(\S+)\s+(\S+)\s+(\S+)\s+(.*?)\s*-->^makeResponsiveDiv($1, $2, $3, $4)^ge;
+
+        # 1 (about)
         $line =~ s^<!--\s*il\s+(\S+)\s+(\S+)\s+(\S+)\s+(.*?)\s*-->^makeResponsiveLeftDiv($1, $2, $3, $4)^ge;
+
+        # 0
         $line =~ s^<!--\s*yt\s+(\S+)\s+(.*?)\s*-->^makeResponsiveYTDiv($1, $2, $3, $4)^ge;
+
+        # 3 or so
         $line =~ s[\(\s*AijazCC\s*\)][&copy; 2019 <a xmlns:cc="http://creativecommons.org/ns#" href="https://aijaz.net" property="cc:attributionName" rel="cc:attributionURL">Aijaz Ansari</a>, and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>]ig;
     }
 }

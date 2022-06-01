@@ -3,3 +3,4 @@ output
 *.pid
 venv
 .DS_Store
+publishDone.txt
