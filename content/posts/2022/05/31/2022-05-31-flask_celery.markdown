@@ -391,7 +391,7 @@ You can retrieve a list of all tasks by visiting http://localhost:8000/flask/tas
 
 ## Summary
 
-I hope you found reading this illustration of using Flask, Celery, and Docker as beneficial as I did
+I hope you found reading this illustration of using Flask, Celery, and Docker as beneficial as I did while
 writing it. If you have any questions about anything in this post, please feel free to contact me 
 on [Twitter](https://twitter.com/_aijaz_).
 
