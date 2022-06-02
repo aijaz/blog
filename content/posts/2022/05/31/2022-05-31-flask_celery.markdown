@@ -3,7 +3,7 @@ date: 2022-05-31 08:00
 Category: Computers
 Tags: Web, Python, Flask, Celery, Docker
 
-I've been working on an app that requires users to upload data to a server, where the data is used to create machine learning models. The process to create a model takes a lot of time (as much as 3 minutes). I don't want to have an HTTP request open for 3 minutes while the model is being created. I would rather the server accept the request, send back a response immediately, and queue the task for processing. Then the user can poll the server to see if their model is ready. I realized that Celery is the perfect tool for me. In this post I write about how I set up Celery and Flask and share sample code.
+I've been working on an app that requires users to upload data to a server, where the data is used to create machine learning models. The process to create a model takes a lot of time (as much as 3 minutes). I don't want to have an HTTP request open for 3 minutes while the model is being created. I would rather the server accept the request, send back a response immediately, and queue the task for processing. Then the user can poll the server to see if their model is ready. I realized that Celery is the perfect tool for this. In this post I write about how I set up Celery and Flask and share sample code.
 
 <!-- more -->
 
