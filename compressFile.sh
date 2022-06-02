@@ -3,9 +3,7 @@
 
 set -e
 
-cd output_stage
-
-for FILE in `find output -type f -not -name '*.gz' -not -name '*.gif' -not -name '*.jpg' -not -name '*.png' -not -name '.DS_Store' `; do
+for FILE in `find output_stage -type f -not -name '*.gz' -not -name '*.gif' -not -name '*.jpg' -not -name '*.png' -not -name '.DS_Store' `; do
   GZFILE=${FILE}.gz
 
   echo $FILE
