@@ -2,6 +2,7 @@
 
 cd /home/aijaz/blog
 
+git fetch
 
 # via https://stackoverflow.com/a/3278427/7221535
 
