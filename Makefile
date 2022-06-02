@@ -89,9 +89,9 @@ publishOnServer:
 	/bin/cp /tmp/styles.css output/static/styles.css
 # Now everything is saved in output in the repo
 # Now rsync all files and only recompress the saved ones
-	rsync --delete --exclude ".DS_Store" -pqthrv -c output/ output_stage
+	rsync  --exclude ".DS_Store" -pqhrv -c output/ output_stage
 	./compressFile.sh
-#	rsync --delete --exclude ".DS_Store" -pqthrvz -c output_stage/ aijaz@aijaz.net:/home/aijaz/blog
+	rsync  --exclude ".DS_Store" -pqhrv -c output_stage/ aijaz@aijaz.net:/home/aijaz/blog
 
 # postGenerate:
 # 	echo "make postGenerate"
