@@ -1,0 +1,16 @@
+title: Cat
+date: 2022-06-02 23:00
+Category: Photos
+Tags: Cat 
+
+<!—- img Cat1 jpg 1 Black and white cat peeking through the railings of a white bannister -—>
+
+I have became that person who takes tons of pictures of his cat. 
+
+<!-- more -->
+
+[^1]: (AijazCC)
+
+<!—- img Cat2 jpg 2 Black and white cat peeking through the railings of a white bannister -—>
+
+[^2]: (AijazCC)
