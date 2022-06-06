@@ -1,0 +1,12 @@
+title: Keyboard Maestro Snippet Video
+date: 2022-06-05 22:00
+Category: Computers
+Tags: KeyboardMaestro, Snippets 
+
+I'm gonna have to blog about how I did this (later). I'm giving a live-coding talk on Tuesday. I was gonna use Snippety but it lacks a minor feature and I didn’t wanna bug @icanzilb this week of all weeks. So I hacked up a pretty workable facsimile using [KeyboardMaestro][kb].
+
+<!-- yt uYrAH1hD4S4 Teaser video -->
+
+[kb]: https://www.keyboardmaestro.com/main/
+[mt]: https://twitter.com/icanzilb
+
