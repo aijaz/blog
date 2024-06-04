@@ -1,0 +1,87 @@
+title: TMUX
+date: 2022-06-27 22:00
+Category: Computers
+Tags: tmux 
+
+There are times when I have to log into Linux systems that don't have window managers. I have a single terminal window in which to work. With the help of [tmux][tmux], I can have multiple virtual windows in my single window. Each window can be split into panes. I can also save sessions so that I can bring the environment back after I disconnect from the system and reconnect several days (or weeks or months) later. In this blog post I'll share the most important tmux commands.
+
+<!-- more -->
+
+I don't want to make a tmux tutorial. There are several really good ones out there (see below). Instead, what you see below is a cheatsheet for quick reference:
+
+## Starting
+
+* `$ tmux`
+* `$ tmux new-session -s basic` Create a session named basic
+* `$ tmux new -s basic` Create a session named basic
+
+## Sessions
+
+* `__PREFIX__ d` detach from our tmux session
+* `$ tmux list-sessions` or `tmux ls` List sessions
+* `$ tmux attach` Attach to our session
+* `$ tmux new -s second_session -d` Create a new session and detach it immediately
+* `$ tmux attach -t second_session` Attach to named session
+* `$ tmux kill-session -t basic` Kill session named basic
+* `$ tmux new -s windows -n shell` Create a session name "windows" and name the first window "shell"
+* `__PREFIX__ s` Select sessions. Use the right arrow to select specific windows
+* `__PREFIX__ (` Switch to previous session
+* `__PREFIX__ )` Switch to next session
+* `__PREFIX__ $` Rename session
+
+## Windows
+
+* `__PREFIX__ c` Create a new window
+* `__PREFIX__ ,` Rename window
+* `__PREFIX__ n` Next window
+* `__PREFIX__ p` Previous Window
+* `__PREFIX__ 4` Go to window 4 (starting from 0)
+* `__PREFIX__ f` Find window by name
+* `__PREFIX__ w` Display a visual menu of window
+
+## Panes
+
+* `__PREFIX__ %` Split window vertically
+* `__PREFIX__ "` Split window horizontally
+* `__PREFIX__ o` Cycle through panes
+* `__PREFIX__ UP, DOWN, LEFT, RIGHT` Move around the panes
+* `__PREFIX__ Cntrl-UP/DOWN/LEFT/RIGHT` Resize pane. Repeatable
+* `__PREFIX__ SPACE` Cycle through default layouts
+* `__PREFIX__ x` Kill pane - useful if you can't communicate with the process.
+
+## Command Mode
+
+* `__PREFIX__ :` Go into command mode
+* `new-window -n processes "top"` Create a new window named `processes` running `top`
+
+## Custom setups
+
+* `tmux attach -t development` Attach to session named `development`
+* `tmux split-window -v -t development` Split window in session named `development`
+* `tmux new -s development -n machineOne -d` Create session named `development`, name window `machineOne` and detach immediately
+* `tmux send-keys -t development 'cd CocoaApps' C-m`
+* `tmux split-window -v -t development`
+* `tmux  select-layout -t devlopment main-horizontal`
+* `tmux send-keys -t development:0.1 'emacs' C-m` Open emacs in session `devlopment`, screen 0, window 1
+* `tmux select-window -t development:1`
+
+## Working with text
+
+* `__PREFIX__ [` to enter copy mode, `ESC` to exit. Emacs bindings to select and copy. Vi mode also possible.
+
+## Workflow
+
+* `__PREFIX__ z` toggle pane zoom
+* `: pipe-pane -o "log.txt"` Toggle output piping to log.txt
+* `: pipe-pane -o "cat >> ~/#W.log" \; display "Toggled logging to ~/#W.log"` Toggle output piping to log.txt
+
+
+## References
+
+
+
+[tmux]: https://github.com/tmux/tmux/wiki
+[tmux_guide]: https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
+[book]: https://pragprog.com/titles/bhtmux2/tmux-2/
+[cheatsheet]: https://tmuxcheatsheet.com/
+[videos]: https://www.google.com/search?client=firefox-b-1-d&tbm=vid&q=tmux

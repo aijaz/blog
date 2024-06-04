@@ -85,7 +85,7 @@ publishGenerate:
 publishOnServer:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	find $(OUTPUTDIR) -type f  -name '*.html' -exec ./imageCaption.pl --publish --file='{}' ';'
-	yui-compressor output/static/styles.css -o /tmp/styles.css
+	yuicompressor output/static/styles.css -o /tmp/styles.css
 	/bin/cp /tmp/styles.css output/static/styles.css
 # Now everything is saved in output in the repo
 # Now rsync all files and only recompress the saved ones
