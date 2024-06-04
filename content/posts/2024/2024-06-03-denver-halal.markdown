@@ -3,7 +3,7 @@ date: 2024-06-03 21:00
 Category: Personal
 Tags: Restaurants
 
-Every so often a Muslim friends contacts me saying they're coming to visit Denver and would like to know which Halal restaurants they can visit. I decide to post the list of restaurants here, so I can share it easily and update it periodically.
+Every so often a Muslim friend contacts me saying they're coming to visit Denver and would like to know which Halal restaurants they can visit. I decide to post the list of restaurants here, so I can share it easily and update it periodically.
 
 <!-- more -->
 
