@@ -13,10 +13,10 @@ _(This is a [now][now] page, and if you have your own site, you should [make one
 
 - I'm an Engineering Manager at [Gogo][gogo]
 - I serve at [Muslim Youth for Positive Impact][mypi] - which is an organization dedicated to helping youth - in the following capacities:
-  - Director of Technology
-  - Mentor for Youth
-  - Python Instructor
-  - Person responsible for the annual Camping Trips (and all things Outdoors)
+    + Director of Technology
+    + Mentor for Youth
+    + Python Instructor
+    + Person responsible for the annual Camping Trips (and all things Outdoors)
 - I've developed and maintain [MuslimCalendar][cal]
 - I serve on the Colorado Muslim Suicide Response Team
 - I'm trying to start a private school with a few other domain experts
