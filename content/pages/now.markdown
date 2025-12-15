@@ -1,7 +1,7 @@
 ---
-Title: About Me
+Title: Now
 Template: page
-Date: 2025-012-15 00:53
+Date: 2025-12-15 00:53
 save_as: now/index.html
 facebook_image: /images/aijaz4.jpg
 Summary: What I'm working on now
