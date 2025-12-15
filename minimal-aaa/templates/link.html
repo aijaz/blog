@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "baseIndex.html" %}
 {% block title %}{{ article.title|striptags }} - {{ SITENAME }}{% endblock %}
 {% block html_lang %}{{ article.lang }}{% endblock %}
 {% block meta %}
@@ -11,7 +11,7 @@
         <meta name="keywords" content="{{ article.tags|join(',')|striptags }}" />
     {% endif %}
     {% if article.summary %}
-        <meta name="description" content="{{ article.summary|striptags|escape }}" />
+        <meta name="description" content="{{ article.sum|striptags|escape }}" />
     {% endif %}
 {% endblock %}
 {% block opengraph %}
@@ -71,47 +71,80 @@
 {% endblock %}
 
 {% block content %}
-    <section id="content">
-        <article>
-            <div class="entry-content">
-                <h4 class="link-header">
-                    <a href="{{ article.link }}"
-                       title="{{ article.title|striptags }}">
-                        <i class="fa fa-external-link"></i> {{ article.title }}
+
+<div class="pure-g indexSection">
+  <div class="pure-u-md-1-3 pure-u-1">
+    <div class="indexCol indexHalf">
+            <header class="page-header">
+                    <a href="{{ SITEURL }}/{{ article.url }}"
+                       rel="bookmark"
+                       title="Permalink to {{ article.title|striptags }}">
+                        <h1 class="articleTitle">{{ article.title }}</h1>
                     </a>
-                </h4>
                 <span class="published published-header">
                     <time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }}</time>
                 </span>
-                {{ article.content }}<br>
-                [<a href="{{ article.link }}">Link</a>]
-                <div class="panel">
+            </header>
+            {% if article.video %}
+            <div class="video-container">
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/{{ article.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            {% endif %}
+            {% if article.video2 %}
+            <div class="video-container">
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/{{ article.video2 }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            {% endif %}
+
+    </div>
+
+
+    <div class="bigOnly indexCol indexHalf">
+            {% include "includes/article_info_left_col.html" %}
+    </div>
+    <div class="bigOnly indexCol indexHalf">
+           {% include 'includes/article_timeline.html' %}
+    </div>
+
+  </div>
+
+  <div class="pure-u-md-2-3 pure-u-1">
+    <div class="indexCol indexHalf">
+            <div class="entry-content">
+                <section id="content">
+                  {{ article.content }}
+                  [<a href="{{ article.link }}">Link</a>]
+                </section>
+            </div>
+                <div class="panel smallOnly">
                     <div class="panel-body">
+                        <hr>
                         {% include "includes/article_info.html" %}
                     </div>
                 </div>
-            </div>
-            <!-- /.entry-content -->
-            {% include 'includes/related-posts.html' %}
-            {% include 'includes/series.html' %}
-            {% include 'includes/addthis.html' %}
-            {% include 'includes/shariff.html' %}
+                <div class="panel smallOnly">
+                <hr>
+                {% include 'includes/article_timeline.html' %}
+                </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="pure-g indexSection">
+  <div class="pure-u-md-1-3 pure-u-1">
+    <div class="indexCol indexHalf">
+    </div>
+  </div>
+
+  <div class="pure-u-md-2-3 pure-u-1">
+    <div class="indexCol indexHalf">
+    </div>
+  </div>
+</div>
+
             {% include 'includes/comments.html' %}
-        </article>
-        {% include 'includes/article_timeline.html' %}
-    </section>
 
-{% endblock %}
 
-{% block scripts %}
-{% if ADDTHIS_PROFILE %}
-    {% if ADDTHIS_DATA_TRACK_ADDRESSBAR|default(true) %}
-        <script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
-    {% endif %}
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ ADDTHIS_PROFILE }}"></script>
-{% endif %}
-{% if SHARIFF|default(false) %}
-    <!-- add shariff support -->
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/shariff.min.js"></script>
-{% endif %}
 {% endblock %}

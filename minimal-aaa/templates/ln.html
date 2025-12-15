@@ -76,11 +76,12 @@
   <div class="pure-u-md-1-3 pure-u-1">
     <div class="indexCol indexHalf">
             <header class="page-header">
-                    <a href="{{ article.link }}"
+                    <a href="{{ SITEURL }}/{{ article.url }}"
                        rel="bookmark"
                        title="Permalink to {{ article.title|striptags }}">
                         <h1 class="articleTitle">{{ article.title }}</h1>
                     </a>
+                    [<a href="{{ article.link }}">Link</a>]
                 <span class="published published-header">
                     <time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }}</time>
                 </span>

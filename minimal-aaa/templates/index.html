@@ -11,14 +11,14 @@
       <h1 class="page-header">Hello, world!</h1>
   	</div>
   </div>
-  
+
   <div class="pure-u-md-2-3 pure-u-1">
   	<div class="indexCol indexHalf" id="content">
     <p>
-      Welcome to my corner of the web. My name is Aijaz and I'm the developer and 
-      designer behind the <a href="https://quranmem.com">Qur'an Memorizer</a> and <a href="https://apps.apple.com/us/app/quranreflect/id1444969758?mt=8">QuranReflect</a> 
+      Welcome to my corner of the web. My name is Aijaz and I'm the developer and
+      designer behind the <a href="https://quranmem.com">Qur'an Memorizer</a> and <a href="https://apps.apple.com/us/app/quranreflect/id1444969758?mt=8">QuranReflect</a>
       iOS apps, and am currently working as a Mobile Lead at
-      <a href="https://business.gogoair.com/">Gogo Business Aviation</a>. 
+      <a href="https://business.gogoair.com/">Gogo Business Aviation</a>.
       </p>
       <p>
       I'm also a community organizer and volunteer as head of security at my local mosque. In that capacity I also manage two additional blogs: <a href="https://masjiddefense.com">MasjidDefense</a> and <a href="https://thereluctantgunowner.com">The Reluctant Gun Owner</a>.
@@ -39,15 +39,20 @@
 {% set recent = articles if not all_articles else all_articles %}
 {% for article in recent %}
   {% if loop.index <= 3 %}
-  
+
     <div class="indexColThin indexHalf">
       <h2 class="article"><a href="{{ SITEURL }}/{{ article.url }}"><i class="fa fa-external-link"></i> {{ article.title }}</a></h2>
       <div>{{ article.locale_date }}</div>
       <p>
                           {% if article.link %}
-                            <div class="summary"><a href="{{ article.link }}">{{ article.summary }}</a></div>
+                            <div class="summary">
+                                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.summary }}</a>
+                                [<a href="{{ article.link }}">Link</a>]
+                            </div>
                           {% elif article.sum %}
-                            <div class="summary"><a href="{{ SITEURL }}/{{ article.url }}"><p>{{ article.sum }} <i>more...</i></p></a></div>
+                            <div class="summary">
+                                <a href="{{ SITEURL }}/{{ article.url }}"><p>{{ article.sum }} <i>more...</i></p></a>
+                            </div>
                           {% else %}
                             <div class="summary"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.summary}}</a></div>
                                 <a href="{{ SITEURL }}/{{ article.url }}"><i>more...</i></a>
@@ -57,7 +62,7 @@
 
 
 
-                    
+
 
 
 
@@ -75,7 +80,7 @@
   	<div class="indexColThin indexHalf">
   	</div>
   </div>
-  
+
   <div class="pure-u-md-2-3 pure-u-1">
   	<div class="indexColThin indexHalf">
   	</div>

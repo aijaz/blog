@@ -1,5 +1,5 @@
 title: The Worst Programmer I Know
-template: ln
+template: link
 date: 2025-12-14 23:00
 Category: Leadership
 Tags: Programming
