@@ -83,7 +83,8 @@
                 <span class="published published-header">
                     <time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }}</time>
                 </span>
-                {{ article.content }}
+                {{ article.content }}<br>
+                [<a href="{{ article.link }}">Link</a>]
                 <div class="panel">
                     <div class="panel-body">
                         {% include "includes/article_info.html" %}
