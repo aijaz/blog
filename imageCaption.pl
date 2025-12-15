@@ -22,15 +22,15 @@ my @lines = <I>;
 close I;
 
 
-# Scan each line for our special markup: 
+# Scan each line for our special markup:
 # a comment that starts with ai and then has upto 6
 # space-separated components
 #
-# For each such line, call makeDiv on the components and 
+# For each such line, call makeDiv on the components and
 # replace the markup with the output of that function
 #
 if ($file =~ /2009/ || $file =~ /201[012345678]/) {
-    foreach my $line (@lines) { 
+    foreach my $line (@lines) {
         # 30 or so
         $line =~ s^<!-- ([lcr])\s+(\S+)\s+(.*?)\s*-->^makeSimpleImageDiv($2, $3, $1)^ge;
 
@@ -42,7 +42,7 @@ if ($file =~ /2009/ || $file =~ /201[012345678]/) {
     }
 }
 else {
-    foreach my $line (@lines) { 
+    foreach my $line (@lines) {
         # i imageURL caption
         # $line =~ s^<!-- ([lcr])\s+(\S+)\s+(.*?)\s*-->^makeSimpleImageDiv($2, $3, $1)^ge;
         # $line =~ s^<!-- ai\s+(\S+)\s+(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(.*?)\s*-->^makeDiv($1, $2, $3, $4, $5, $6)^ge;
@@ -57,7 +57,7 @@ else {
         $line =~ s^<!--\s*yt\s+(\S+)\s+(.*?)\s*-->^makeResponsiveYTDiv($1, $2)^ge;
 
         # 3 or so
-        $line =~ s[\(\s*AijazCC\s*\)][&copy; 2022 <a xmlns:cc="http://creativecommons.org/ns#" href="https://aijaz.net" property="cc:attributionName" rel="cc:attributionURL">Aijaz Ansari</a>, and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>]ig;
+        $line =~ s[\(\s*AijazCC\s*\)][&copy; <a xmlns:cc="http://creativecommons.org/ns#" href="https://aijaz.net" property="cc:attributionName" rel="cc:attributionURL">Aijaz Ansari</a>, and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>]ig;
     }
 }
 
@@ -108,10 +108,10 @@ sub makeResponsiveDiv {
     # ext:      The extension of the image
     # footnote: The number of the footnote to be used for
     #           credit
-    # caption:  This is used as the alt tag of the image, 
+    # caption:  This is used as the alt tag of the image,
     #           and the caption that's displayed under it.
-    #           This field may be blank, but don't do that 
-    #           because really, that's the whole point of 
+    #           This field may be blank, but don't do that
+    #           because really, that's the whole point of
     #           this exercise.
     #
 
@@ -119,9 +119,9 @@ sub makeResponsiveDiv {
     my ($dir, $ext, $footnote, $caption) = @_;
 
     $caption =~ s/[^a-zA-Z0-9 \*\+\,\.\:\-\;\!\[\]\(\)\&]//g;
-    
+
     # make resized images if necessary
-    # the images need to have the following widths: 
+    # the images need to have the following widths:
     # 1x:  320px,  480px,  640px,  714px
     # 2x:  640px,  960px, 1280px, 1428px
     # 3x:  960px, 1440px, 1920px, 2142px
@@ -144,19 +144,19 @@ sub makeResponsiveDiv {
 
     my @srcSets = map { "$CDNURL/$dir/gen/$_.$ext ${_}w" } @requiredWidths;
     my $srcSetString = join (",\n         ", @srcSets);
-    my $sizes = qq[(max-width: 320px) 320px, 
-         (max-width: 480px) 480px, 
-         (max-width: 640px) 640px, 
+    my $sizes = qq[(max-width: 320px) 320px,
+         (max-width: 480px) 480px,
+         (max-width: 640px) 640px,
          714px];
     my $imageStr = qq[
-<img class="pure-img" 
-     src="$CDNURL/$dir/gen/320.$ext" 
-     alt="$caption" 
+<img class="pure-img"
+     src="$CDNURL/$dir/gen/320.$ext"
+     alt="$caption"
      srcset="
          $srcSetString
-     " 
+     "
      sizes="
-         $sizes  
+         $sizes
      "
      >
 ];
@@ -178,10 +178,10 @@ sub makeResponsiveLeftDiv {
     # ext:      The extension of the image
     # footnote: The number of the footnote to be used for
     #           credit
-    # caption:  This is used as the alt tag of the image, 
+    # caption:  This is used as the alt tag of the image,
     #           and the caption that's displayed under it.
-    #           This field may be blank, but don't do that 
-    #           because really, that's the whole point of 
+    #           This field may be blank, but don't do that
+    #           because really, that's the whole point of
     #           this exercise.
     #
 
@@ -189,9 +189,9 @@ sub makeResponsiveLeftDiv {
     my ($dir, $ext, $footnote, $caption) = @_;
 
     $caption =~ s/[^a-zA-Z0-9 \*\+\,\.\:\-\;\!\[\]\(\)\&]//g;
-    
+
     # make resized images if necessary
-    # the images need to have the following widths: 
+    # the images need to have the following widths:
     # 1x:  320px,  480px,  640px,  714px
     # 2x:  640px,  960px, 1280px, 1428px
     # 3x:  960px, 1440px, 1920px, 2142px
@@ -214,19 +214,19 @@ sub makeResponsiveLeftDiv {
 
     my @srcSets = map { "$CDNURL/$dir/gen/$_.$ext ${_}w" } @requiredWidths;
     my $srcSetString = join (",\n         ", @srcSets);
-    my $sizes = qq[(max-width: 320px) 320px, 
-         (max-width: 480px) 480px, 
-         (max-width: 640px) 640px, 
+    my $sizes = qq[(max-width: 320px) 320px,
+         (max-width: 480px) 480px,
+         (max-width: 640px) 640px,
          714px];
     my $imageStr = qq[
-<img width=160 height=160 align=left style="margin-right: 1em" 
-     src="$CDNURL/$dir/gen/320.$ext" 
-     alt="$caption" 
+<img width=160 height=160 align=left style="margin-right: 1em"
+     src="$CDNURL/$dir/gen/320.$ext"
+     alt="$caption"
      srcset="
          $srcSetString
-     " 
+     "
      sizes="
-         $sizes  
+         $sizes
      "
      >
 ];
@@ -252,17 +252,17 @@ sub makeSimpleImageDiv {
     #          css class
     # target:  The href of the a tag that's put around
     #          the image
-    # image:   The URL of the image 
+    # image:   The URL of the image
     # width:   The width of the image
     # height:  The height of the image
-    # caption: This is used as the alt tag of the image, 
-    #          the title of the a tag as well as the 
+    # caption: This is used as the alt tag of the image,
+    #          the title of the a tag as well as the
     #          caption that's displayed under the image.
-    #          This field may be blank, but don't do that 
-    #          because really, that's the whole point of 
+    #          This field may be blank, but don't do that
+    #          because really, that's the whole point of
     #          this exercise.
     #
-    
+
     my $maxWidthInPoints = 720;
     my $maxWidthInPixels = $maxWidthInPoints * 2;
     my $originalFileName = "./content/$image";
@@ -273,14 +273,14 @@ sub makeSimpleImageDiv {
         my $nonRetinaFileName = $originalFileName;
         $nonRetinaFileName =~ s/\@2x//;
 
-        if (-e $nonRetinaFileName) { 
+        if (-e $nonRetinaFileName) {
             # don't do anything
                 my $nonRetinaWidth = int($width / 2);
                 my $nonRetinaHeight = int($height / 2);
                 $width = $nonRetinaWidth;
                 $height = $nonRetinaHeight;
         }
-        else { 
+        else {
             # resize if necessary
             if ($width > $maxWidthInPixels) {
                 #print STDERR "RETINA TOO WIDE: $width\n";
@@ -295,7 +295,7 @@ sub makeSimpleImageDiv {
                 $width = $nonRetinaWidth;
                 $height = $nonRetinaHeight;
             }
-            else { 
+            else {
                 #print STDERR "RETINA NOT TOO WIDE: $width\n";
                 my $nonRetinaWidth = int($width / 2);
                 my $nonRetinaHeight = int($height / 2);
@@ -308,7 +308,7 @@ sub makeSimpleImageDiv {
 
     }
     else {
-        if ($width > $maxWidthInPoints) { 
+        if ($width > $maxWidthInPoints) {
             # resize
                 my $newWidth = $maxWidthInPoints;
                 my $newHeight = int($newWidth * $height / $width);
@@ -319,7 +319,7 @@ sub makeSimpleImageDiv {
                 $height = $newHeight;
         }
     }
-    
+
     my $div_width = $width + $width_inc;
 
     # Construct the html.  Note that the css class is
@@ -349,19 +349,19 @@ sub makeDiv {
     #          css class
     # target:  The href of the a tag that's put around
     #          the image
-    # image:   The URL of the image 
+    # image:   The URL of the image
     # width:   The width of the image
     # height:  The height of the image
-    # caption: This is used as the alt tag of the image, 
-    #          the title of the a tag as well as the 
+    # caption: This is used as the alt tag of the image,
+    #          the title of the a tag as well as the
     #          caption that's displayed under the image.
-    #          This field may be blank, but don't do that 
-    #          because really, that's the whole point of 
+    #          This field may be blank, but don't do that
+    #          because really, that's the whole point of
     #          this exercise.
     #
-    my ($align, $target, $image, 
+    my ($align, $target, $image,
         $width, $height, $caption) = @_;
-    
+
     my $div_width = $width + $width_inc;
 
     # Construct the html.  Note that the css class is
@@ -386,9 +386,9 @@ sub makePhoto {
     #
     my $width_inc = 20;
 
-    my ($alt, $target, $image, 
+    my ($alt, $target, $image,
         $width, $height, $caption) = @_;
-    
+
     my $div_width = $width + $width_inc;
 
     # Construct the html.  Note that the css class is
@@ -404,4 +404,3 @@ sub makePhoto {
                     qq^border=0></a><br>^,
             qq^</div><div class=photoExifCenter>$caption</div></div>^);
 }
-

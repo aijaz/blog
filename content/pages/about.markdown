@@ -12,24 +12,38 @@ Summary: I enjoy making things. I'm an iOS and Python developer who teaches and 
 [^1]: (AijazCC)
 
 
-As a hacker by nature, I enjoy making things. My name is Aijaz Ansari and I'm the developer and 
+As a hacker by nature, I enjoy making things. My name is Aijaz Ansari and 
+I'm the developer and 
 designer behind the [Qur'an Memorizer](https://quranmem.com) and [QuranReflect](https://apps.apple.com/us/app/quranreflect/id1444969758?mt=8)
-iOS apps, and am currently working as a Mobile Lead at
+iOS apps, and am currently working as an Engineering Manager at
 [Gogo Business Aviation](https://business.gogoair.com/). 
 
-I'm also a community organizer and volunteer as head of security at my local mosque. In that capacity I also manage two additional blogs: [MasjidDefense](https://masjiddefense.com) and [The Reluctant Gun Owner](https://thereluctantgunowner.com).
+I'm also a community organizer. I served for about six years as 
+head of security at my local mosque. 
+In that capacity I also managed two now-defunct blogs: [MasjidDefense](https://masjiddefense.com) and [The Reluctant Gun Owner](https://thereluctantgunowner.com).
+
+I serve as a Mentor add as the Director of Technology at [MYPI](https://mypi.org) - Muslim Youth for Positive Impact. 
+In addition to being responsible for all-things tech, I'm also responsible for 
+running MYPI's annual camping trips and anything to do with the Great Outdoors. 
+
+I am honored to be an instructor at [CABPES](https://cabpes.org) - 
+The Colorado Association of Black Professional Engineers and Scientists. 
+At CABPES I teach high school students how to program using Python. 
 
 I'm a student of Wing Chun Kung Fu, having studied at the excellent
 [Philip Nearing School of Wing Chun](http://wingchunchicago.com/).  I've
 also [made a Kung Fu wooden dummy](/2012/07/15/making-a-kung-fu-wooden-dummy/) (what a fun project!).  
 
-Finally, I'm also a fitness enthusiast, with a particular fondness for Tony Horton's P90X series. 
+Finally, I'm also a fitness enthusiast. As I've grown older I've 
+switched my focus to Functional Fitness, primarily using kettlebells. If it's 
+winter, you can find me in the Rocky Mountains Snowboarding, and if it's summer, 
+you can find me in the Rocky Mountains camping. 
 
 You can find me here:
 
 * [This blog](http://www.aijazansari.com/)
 * [GitHub](http://github.com/aijaz)
-* [Twitter](http://twitter.com/_aijaz_)
+* [Mastodon](https://mastodon.social/deck/@aijaz)
 * [LinkedIn](http://www.linkedin.com/in/aijaz)
 * Email - &lt;myfirstname&gt; at &lt;myfirstname&gt; dot net
 * [Instagram](http://instagram.com/aijaz_ansari)

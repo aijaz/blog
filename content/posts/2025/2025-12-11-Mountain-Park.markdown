@@ -6,6 +6,8 @@ Tags: Camping
 
 It's time for our first Family Camping Trip. We will be camping at Mountain Park Campground, which is located on the Cache la Poudre River, 32 miles northwest of Fort Collins. Alhamdulillah, we have the group site reserved, so we will have plenty of space for campers and their vehicles, inshaAllah.
 
+<!-- more -->
+
 Mountain Park Campground is located on CO 14, on the Cache la Poudre River. 
 [Click here](https://maps.app.goo.gl/4PexrrRfjXnXfWYB6) for a map
 
