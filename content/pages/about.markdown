@@ -16,7 +16,7 @@ As a hacker by nature, I enjoy making things. My name is Aijaz Ansari and
 I'm the developer and 
 designer behind the [Qur'an Memorizer](https://quranmem.com) and [QuranReflect](https://apps.apple.com/us/app/quranreflect/id1444969758?mt=8)
 iOS apps, and am currently working as an Engineering Manager at
-[Gogo Business Aviation](https://business.gogoair.com/). 
+[Gogo](https://gogoair.com/). 
 
 I'm also a community organizer. I served for about six years as 
 head of security at my local mosque. 
@@ -228,5 +228,5 @@ Because the VLR application ran on a diskless board on Motorola's telecom switch
 [Citadel]: http://citadel.com/
 [Motorola]: http://motorola.com
 [fastlane]: https://fastlane.tools
-[BA]: https://business.gogoair.com
+[BA]: https://gogoair.com
 [zf]: https://zainafoundation.org
