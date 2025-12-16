@@ -11,8 +11,7 @@
                     <div class="pure-u-md-3-8 pure-u-sm-1 pure-u-1">
                     {%  if article.link %}
                         <h2 class="article">
-                            <a href="{{ SITEURL }}/{{ article.url }}"><i class="fa fa-external-link"></i> {{ article.title }}</a>
-                            [<a href="{{ article.link }}">Link</a>]
+                            <a href="{{ article.link }}"><i class="fa fa-external-link"></i> {{ article.title }} (Link)</a>
                         </h2>
                         {% else %}
                         <h2 class="article"><a href="{{ SITEURL }}/{{ article.url }}">{% if article.image %}<i class="fa fa-photo"></i> {% endif %}{{ article.title }}</a></h2>
@@ -22,8 +21,7 @@
                         {% if article.thumbnail %}
                             {% if article.link %}
                                 <div class="ail">
-                                    <a href="{{ SITEURL }}/{{ article.url }}"><img border=0 alt="{{ article.title }}" src="{{ article.thumbnail }}" {% if article.thumbnail_width %}width="{{ article.thumbnail_width }}"{% endif %} {% if article.thumbnail_height %}height="{{ article.thumbnail_height}}"{% endif %}></a>
-                                    [<a href="{{ article.link }}">Link</a>]
+                                    <a href="{{ article.link }}"><img border=0 alt="{{ article.title }}" src="{{ article.thumbnail }}" {% if article.thumbnail_width %}width="{{ article.thumbnail_width }}"{% endif %} {% if article.thumbnail_height %}height="{{ article.thumbnail_height}}"{% endif %}></a>
                                 </div>
                             {% else %}
                                 <div class="ail"><a href="{{ SITEURL }}/{{ article.url }}"><img border=0 alt="{{ article.title }}" src="{{ article.thumbnail }}" {% if article.thumbnail_width %}width="{{ article.thumbnail_width }}"{% endif %} {% if article.thumbnail_height %}height="{{ article.thumbnail_height}}"{% endif %}></a></div>
@@ -31,8 +29,7 @@
                         {% elif article.image %}
                             {% if article.link %}
                                 <div class="ail">
-                                    <a href="{{ SITEURL }}/{{ article.url }}"><img alt="{{ article.title }}" src="{{ article.image }}"></a>
-                                    [<a href="{{ article.link }}">Link</a>]
+                                    <a href="{{ article.link }}"><img alt="{{ article.title }}" src="{{ article.image }}"></a>
                                 </div>
                             {% else %}
                                 <div class="ail"><a href="{{ SITEURL }}/{{ article.url }}"><img alt="{{ article.title }}" src="{{ article.image }}"></a></div>

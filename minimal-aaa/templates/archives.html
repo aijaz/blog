@@ -31,13 +31,18 @@
 {% for article in dates %}
 
     <div class="indexColThin indexHalf">
-      <h2 class="article"><a href="{{ SITEURL }}/{{ article.url }}"><i class="fa fa-external-link"></i> {{ article.title }}</a></h2>
+      <h2 class="article">
+        {% if article.link %}
+        <a href="{{ article.link }}"><i class="fa fa-external-link"></i> {{ article.title }}</a>
+        {% else %}
+        <a href="{{ SITEURL }}/{{ article.url }}"><i class="fa fa-external-link"></i> {{ article.title }}</a>
+        {% endif %}
+      </h2>
       <div>{{ article.locale_date }}</div>
       <p>
                           {% if article.link %}
                             <div class="summary">
-                                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.summary }}</a>
-                                [<a href="{{ article.link }}">Link</a>]
+                                <a href="{{ article.link }}">{{ article.summary }}</a>
                             </div>
                           {% elif article.sum %}
                             <div class="summary"><a href="{{ SITEURL }}/{{ article.url }}"><p>{{ article.sum }} <i>more...</i></p></a></div>
