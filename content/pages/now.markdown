@@ -23,6 +23,7 @@ _(This is a [now][now] page, and if you have your own site, you should [make one
 - I teach the Computer Science class to High School Students at [Colorado Association of Black Professional Engineers and Scientists (CABPES)][cabpes]
 - It's winter, so I'm trying to snowboard as much as possible
 - I'm working out with kettlebells
+- I'm training to become a personal fitness coach
 
 [cal]: https://muslimcalendar.online/
 [qm]: https://quranmem.com
