@@ -51,7 +51,7 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
 html, button, input, select, textarea, body
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
-    font-family: "EB Garamond", serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -89,9 +89,9 @@ a.more {
 }
 
 div.title {
-    font-family: "EB Garamond", serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-size: 2em;
 }
@@ -99,7 +99,7 @@ div.title {
 div.titleIndexBig {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 900;
     font-style: normal;
     font-size: 3em;
     line-height: 1.2em;
@@ -108,7 +108,7 @@ div.titleIndexBig {
 div.titleIndexSmall {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 900;
     font-style: normal;
     font-size: 1.4em;
     margin-top: 6pt;
@@ -119,7 +119,7 @@ div.titleIndexSmall {
 div.titleInner {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 900;
     font-style: normal;
     font-size: 2em;
     float: left;
@@ -129,7 +129,7 @@ div.titleInner {
 div.navBig {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
     font-size: 1.5em;
 }
@@ -141,17 +141,17 @@ div.navBig {
 h1,h2,h3,h4,h5 {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
 }
 
   h1 {
-    font-size: 2em;   
+    font-size: 2em;
     margin-top: 0.2em;
   }
 
 
-.indexSection { 
+.indexSection {
     margin-top: 1em;
  }
 
@@ -182,7 +182,7 @@ h1,h2,h3,h4,h5 {
     margin-bottom: 0.75em;
 }
 
-div.navInner { 
+div.navInner {
     border-bottom: 1pt solid #000000;
     padding-bottom: 0.25em;
     margin-bottom: 0.75em;
@@ -192,7 +192,7 @@ div.navInner {
     float: left;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
     font-size: 1em;
     margin-left: 0;
@@ -201,14 +201,14 @@ div.navInner {
     border-right: 1pt solid #000000;
     padding-bottom: 0.25em;
     margin-bottom: 0.25em;
-    } 
+    }
 
 
 div.heavyBottomBorder {
     border-bottom: 3pt solid #000000;
 }
 
-h1.categoryName { 
+h1.categoryName {
     font-size: 6em;
     border-bottom: 1pt solid #000000;
     padding-bottom: 8pt;
@@ -251,22 +251,21 @@ div.mainContent {
     padding: 1em;
 }
 
-div.logo { 
+div.logo {
     float: left;
  }
  div.bigLogoText {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
     font-size: 3em;
     line-height: 0.9em;
  }
  div.bigSubTitleText {
-    font-family: "EB Garamond", serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
-    font-style: normal;
     font-size: 1.5em;
     font-style: oblique;
     color: #666666;
@@ -275,7 +274,7 @@ div.logo {
     clear: both;
  }
 
-div.navSmall { 
+div.navSmall {
     border-bottom: 1pt solid #000000;
     padding-bottom: 0.25em;
     margin-bottom: 0.75em;
@@ -285,7 +284,7 @@ div.navSmall {
     float: left;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
     font-size: 1em;
     margin-left: 0;
@@ -294,7 +293,7 @@ div.navSmall {
     border-right: 1pt solid #000000;
     padding-bottom: 0.25em;
     margin-bottom: 0.25em;
-    } 
+    }
 
 .noRightBorder {
     border-right: none;
@@ -326,10 +325,10 @@ div.pure-img {
   padding-bottom: 56.25%; /*16:9*/
   padding-top: 0;
   margin-top: 2em;
-  height: 0; 
+  height: 0;
   overflow: hidden;
 }
- 
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -346,21 +345,21 @@ div.pure-img {
   h1 {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
-      font-size: 1.5em;   
+      font-size: 1.5em;
   }
 
-  .indexSection { 
+  .indexSection {
       margin-top: 1em;
    }
-  
+
    .indexCol {
       border: none !important;
       margin: 0;
       padding: 0;
    }
-  
+
    .indexHalf {
       margin: 0;
    }
@@ -374,7 +373,7 @@ div.pure-img {
     padding-bottom: 0;
     }
 
-   h1.categoryName { 
+   h1.categoryName {
        font-size: 3em;
        border-bottom: 1pt solid #000000;
    }
@@ -410,7 +409,7 @@ pre code {
 span.info_label {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
     font-size: 1em;
 }
